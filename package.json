@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "cd react-gbajs && yarn build && cd ../sc_dev && yarn run compile"
+  },
+  "workspaces": [
+    "react-gbajs",
+    "sc_dev",
+    "frontend"
+  ]
+}
