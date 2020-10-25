@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Container } from '../../core';
 import GBAEmulator from 'react-gbajs';
 import { loadRomFromIPFS } from '../../../utils/ipfs';
+import { useWallet } from 'use-wallet';
 
 export default function Home() {
     const [hash] = useState('QmPJD8k2Lawf6hEo79AjUGFU8xoZ6bNMjC12GM9AAPrA7v');
 
     const [rom, setRom] = useState();
+    const wallet = useWallet();
 
     function setup(path: string) {
         loadRomFromIPFS(path, (data: any) => {

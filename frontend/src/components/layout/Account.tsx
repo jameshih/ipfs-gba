@@ -3,8 +3,6 @@ import { useWallet } from 'use-wallet';
 import styled from 'styled-components';
 import { Blockie, MetaMaskButton } from 'rimble-ui';
 import { BigNumber } from 'bignumber.js';
-import { useDispatch } from 'react-redux';
-import userActions from '../../store/user/userActions';
 import { balanceOf, getDetail } from '../../utils/web3';
 
 const Connect = styled.button.attrs({
@@ -12,7 +10,6 @@ const Connect = styled.button.attrs({
 })``;
 
 export default function Account() {
-    const dispatch = useDispatch();
     const wallet = useWallet();
     const [ui, setUI] = useState(false);
     const [roms, setRoms] = useState<any>([]);
@@ -23,18 +20,10 @@ export default function Account() {
 
     function connectWallet() {
         wallet.connect('injected');
-        dispatch({
-            type: userActions.CONNECT,
-            wallet,
-        });
     }
 
     function disconnectWallet() {
         wallet.reset();
-        dispatch({
-            type: userActions.DISCONNECT,
-            wallet,
-        });
     }
 
     useEffect(() => {
