@@ -8,6 +8,5 @@ export async function loadRomFromIPFS(hash: string, callback: Function) {
             ipfs_data.push(elm);
         }
     }
-    const file = new Blob([new Uint8Array(ipfs_data).buffer]);
-    callback(file);
+    callback(new Blob([new Uint8Array(ipfs_data).buffer]));
 }
