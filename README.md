@@ -2,6 +2,13 @@
 
 play gba games from ipfs
 
+## Instructions
+
+```bash
+$ yarn install
+$ cd frontend && yarn start
+```
+
 ## Todo
 
 - [ ] integrate gba emulator to frontend (ERROR: Invalid hook call. Hooks can only be called inside of the body of a function component.)
