@@ -2,6 +2,15 @@
 
 play gba games from ipfs
 
+## Todo
+
+- [ ] integrate gba emulator to frontend (ERROR: Invalid hook call. Hooks can only be called inside of the body of a function component.)
+- [ ] workflow for pushing rom to ipfs
+- [x] token factory
+- [x] save ipfs hash to erc721
+- [x] fetch ipfs hash from erc721
+- [x] fetch rom from ipfs hash
+
 ## Rinkeby contracs
 
 Ipfs_hash store in token = QmPJD8k2Lawf6hEo79AjUGFU8xoZ6bNMjC12GM9AAPrA7v
