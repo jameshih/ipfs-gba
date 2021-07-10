@@ -1,17 +1,16331 @@
-module.exports=function(t){var e={};function i(s){if(e[s])return e[s].exports;var r=e[s]={i:s,l:!1,exports:{}};return t[s].call(r.exports,r,r.exports,i),r.l=!0,r.exports}return i.m=t,i.c=e,i.d=function(t,e,s){i.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:s})},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.t=function(t,e){if(1&e&&(t=i(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var s=Object.create(null);if(i.r(s),Object.defineProperty(s,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)i.d(s,r,function(e){return t[e]}.bind(null,r));return s},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="",i(i.s=33)}([function(t,e){t.exports=require("react")},function(t,e,i){t.exports=i(11)()},function(module,exports,__webpack_require__){(function(process,global){var __WEBPACK_AMD_DEFINE_RESULT__;
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./assets/bios.bin":
+/*!*************************!*\
+  !*** ./assets/bios.bin ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ../node_modules/arraybuffer-loader/lib/to-array-buffer.js */ "./node_modules/arraybuffer-loader/lib/to-array-buffer.js")("BgAA6v7//+oFAADq/v//6v7//+oAAKDhDAAA6v7//+oC86DjAABd4wHToAMg0E0CAEAt6QIAXuUEAFDjCQAACwUAUOMHAAALAEC96A7wsOEPUC3pAQOg4wDgj+IE8BDlD1C96ATwXuIQQC3pBNBN4rAQzeEBQ6DjAkyE4rAA1OGyAM3hsBDd4QEAgOGwAMThAUOg4x8AoOMA8CnhAACg4wEDxOXTAKDjAPAp4bgAVOGwEN3hABAR4AAQIRC4EEQR8///CgFDoOMCTITisgDd4bAAxOEE0I3iEIC96A==")
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(arr, i) {
+  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
+    return;
+  }
+
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableRest.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+module.exports = _nonIterableRest;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/slicedToArray.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js");
+
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js");
+
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/nonIterableRest.js");
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/arraybuffer-loader/lib/to-array-buffer.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/arraybuffer-loader/lib/to-array-buffer.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Buffer) {
+
+module.exports = function (base64Data) {
+  var isBrowser = typeof window !== 'undefined' && typeof window.atob === 'function'
+  var binary = isBrowser ? window.atob(base64Data) : Buffer.from(base64Data, 'base64').toString('binary')
+  var bytes = new Uint8Array(binary.length)
+
+  for (var i = 0; i < binary.length; ++i) {
+    bytes[i] = binary.charCodeAt(i)
+  }
+
+  return bytes.buffer
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
+
+/***/ }),
+
+/***/ "./node_modules/base64-js/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/base64-js/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+// Support decoding URL-safe base64 strings, as Node.js does.
+// See: https://en.wikipedia.org/wiki/Base64#URL_applications
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function getLens (b64) {
+  var len = b64.length
+
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // Trim off extra bytes after placeholder bytes are found
+  // See: https://github.com/beatgammit/base64-js/issues/42
+  var validLen = b64.indexOf('=')
+  if (validLen === -1) validLen = len
+
+  var placeHoldersLen = validLen === len
+    ? 0
+    : 4 - (validLen % 4)
+
+  return [validLen, placeHoldersLen]
+}
+
+// base64 is 4/3 + up to two characters of the original data
+function byteLength (b64) {
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function _byteLength (b64, validLen, placeHoldersLen) {
+  return ((validLen + placeHoldersLen) * 3 / 4) - placeHoldersLen
+}
+
+function toByteArray (b64) {
+  var tmp
+  var lens = getLens(b64)
+  var validLen = lens[0]
+  var placeHoldersLen = lens[1]
+
+  var arr = new Arr(_byteLength(b64, validLen, placeHoldersLen))
+
+  var curByte = 0
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  var len = placeHoldersLen > 0
+    ? validLen - 4
+    : validLen
+
+  var i
+  for (i = 0; i < len; i += 4) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 18) |
+      (revLookup[b64.charCodeAt(i + 1)] << 12) |
+      (revLookup[b64.charCodeAt(i + 2)] << 6) |
+      revLookup[b64.charCodeAt(i + 3)]
+    arr[curByte++] = (tmp >> 16) & 0xFF
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 2) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 2) |
+      (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  if (placeHoldersLen === 1) {
+    tmp =
+      (revLookup[b64.charCodeAt(i)] << 10) |
+      (revLookup[b64.charCodeAt(i + 1)] << 4) |
+      (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[curByte++] = (tmp >> 8) & 0xFF
+    arr[curByte++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] +
+    lookup[num >> 12 & 0x3F] +
+    lookup[num >> 6 & 0x3F] +
+    lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp =
+      ((uint8[i] << 16) & 0xFF0000) +
+      ((uint8[i + 1] << 8) & 0xFF00) +
+      (uint8[i + 2] & 0xFF)
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 2] +
+      lookup[(tmp << 4) & 0x3F] +
+      '=='
+    )
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + uint8[len - 1]
+    parts.push(
+      lookup[tmp >> 10] +
+      lookup[(tmp >> 4) & 0x3F] +
+      lookup[(tmp << 2) & 0x3F] +
+      '='
+    )
+  }
+
+  return parts.join('')
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/buffer/index.js":
+/*!**************************************!*\
+  !*** ./node_modules/buffer/index.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+
+
+var base64 = __webpack_require__(/*! base64-js */ "./node_modules/base64-js/index.js")
+var ieee754 = __webpack_require__(/*! ieee754 */ "./node_modules/ieee754/index.js")
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/isarray/index.js")
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
 /*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/ieee754/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/ieee754/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+exports.read = function (buffer, offset, isLE, mLen, nBytes) {
+  var e, m
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var nBits = -7
+  var i = isLE ? (nBytes - 1) : 0
+  var d = isLE ? -1 : 1
+  var s = buffer[offset + i]
+
+  i += d
+
+  e = s & ((1 << (-nBits)) - 1)
+  s >>= (-nBits)
+  nBits += eLen
+  for (; nBits > 0; e = (e * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  m = e & ((1 << (-nBits)) - 1)
+  e >>= (-nBits)
+  nBits += mLen
+  for (; nBits > 0; m = (m * 256) + buffer[offset + i], i += d, nBits -= 8) {}
+
+  if (e === 0) {
+    e = 1 - eBias
+  } else if (e === eMax) {
+    return m ? NaN : ((s ? -1 : 1) * Infinity)
+  } else {
+    m = m + Math.pow(2, mLen)
+    e = e - eBias
+  }
+  return (s ? -1 : 1) * m * Math.pow(2, e - mLen)
+}
+
+exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
+  var e, m, c
+  var eLen = (nBytes * 8) - mLen - 1
+  var eMax = (1 << eLen) - 1
+  var eBias = eMax >> 1
+  var rt = (mLen === 23 ? Math.pow(2, -24) - Math.pow(2, -77) : 0)
+  var i = isLE ? 0 : (nBytes - 1)
+  var d = isLE ? 1 : -1
+  var s = value < 0 || (value === 0 && 1 / value < 0) ? 1 : 0
+
+  value = Math.abs(value)
+
+  if (isNaN(value) || value === Infinity) {
+    m = isNaN(value) ? 1 : 0
+    e = eMax
+  } else {
+    e = Math.floor(Math.log(value) / Math.LN2)
+    if (value * (c = Math.pow(2, -e)) < 1) {
+      e--
+      c *= 2
+    }
+    if (e + eBias >= 1) {
+      value += rt / c
+    } else {
+      value += rt * Math.pow(2, 1 - eBias)
+    }
+    if (value * c >= 2) {
+      e++
+      c /= 2
+    }
+
+    if (e + eBias >= eMax) {
+      m = 0
+      e = eMax
+    } else if (e + eBias >= 1) {
+      m = ((value * c) - 1) * Math.pow(2, mLen)
+      e = e + eBias
+    } else {
+      m = value * Math.pow(2, eBias - 1) * Math.pow(2, mLen)
+      e = 0
+    }
+  }
+
+  for (; mLen >= 8; buffer[offset + i] = m & 0xff, i += d, m /= 256, mLen -= 8) {}
+
+  e = (e << mLen) | m
+  eLen += mLen
+  for (; eLen > 0; buffer[offset + i] = e & 0xff, i += d, e /= 256, eLen -= 8) {}
+
+  buffer[offset + i - d] |= s * 128
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/isarray/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/isarray/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/js-sha1/src/sha1.js":
+/*!******************************************!*\
+  !*** ./node_modules/js-sha1/src/sha1.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*
  * [js-sha1]{@link https://github.com/emn178/js-sha1}
  *
  * @version 0.6.0
  * @author Chen, Yi-Cyuan [emn178@gmail.com]
  * @copyright Chen, Yi-Cyuan 2014-2017
  * @license MIT
- */!function(){"use strict";var root="object"==typeof window?window:{},NODE_JS=!root.JS_SHA1_NO_NODE_JS&&"object"==typeof process&&process.versions&&process.versions.node;NODE_JS&&(root=global);var COMMON_JS=!root.JS_SHA1_NO_COMMON_JS&&"object"==typeof module&&module.exports,AMD=__webpack_require__(14),HEX_CHARS="0123456789abcdef".split(""),EXTRA=[-2147483648,8388608,32768,128],SHIFT=[24,16,8,0],OUTPUT_TYPES=["hex","array","digest","arrayBuffer"],blocks=[],createOutputMethod=function(t){return function(e){return new Sha1(!0).update(e)[t]()}},createMethod=function(){var t=createOutputMethod("hex");NODE_JS&&(t=nodeWrap(t)),t.create=function(){return new Sha1},t.update=function(e){return t.create().update(e)};for(var e=0;e<OUTPUT_TYPES.length;++e){var i=OUTPUT_TYPES[e];t[i]=createOutputMethod(i)}return t},nodeWrap=function(method){var crypto=eval("require('crypto')"),Buffer=eval("require('buffer').Buffer"),nodeMethod=function(t){if("string"==typeof t)return crypto.createHash("sha1").update(t,"utf8").digest("hex");if(t.constructor===ArrayBuffer)t=new Uint8Array(t);else if(void 0===t.length)return method(t);return crypto.createHash("sha1").update(new Buffer(t)).digest("hex")};return nodeMethod};function Sha1(t){t?(blocks[0]=blocks[16]=blocks[1]=blocks[2]=blocks[3]=blocks[4]=blocks[5]=blocks[6]=blocks[7]=blocks[8]=blocks[9]=blocks[10]=blocks[11]=blocks[12]=blocks[13]=blocks[14]=blocks[15]=0,this.blocks=blocks):this.blocks=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],this.h0=1732584193,this.h1=4023233417,this.h2=2562383102,this.h3=271733878,this.h4=3285377520,this.block=this.start=this.bytes=this.hBytes=0,this.finalized=this.hashed=!1,this.first=!0}Sha1.prototype.update=function(t){if(!this.finalized){var e="string"!=typeof t;e&&t.constructor===root.ArrayBuffer&&(t=new Uint8Array(t));for(var i,s,r=0,n=t.length||0,a=this.blocks;r<n;){if(this.hashed&&(this.hashed=!1,a[0]=this.block,a[16]=a[1]=a[2]=a[3]=a[4]=a[5]=a[6]=a[7]=a[8]=a[9]=a[10]=a[11]=a[12]=a[13]=a[14]=a[15]=0),e)for(s=this.start;r<n&&s<64;++r)a[s>>2]|=t[r]<<SHIFT[3&s++];else for(s=this.start;r<n&&s<64;++r)(i=t.charCodeAt(r))<128?a[s>>2]|=i<<SHIFT[3&s++]:i<2048?(a[s>>2]|=(192|i>>6)<<SHIFT[3&s++],a[s>>2]|=(128|63&i)<<SHIFT[3&s++]):i<55296||i>=57344?(a[s>>2]|=(224|i>>12)<<SHIFT[3&s++],a[s>>2]|=(128|i>>6&63)<<SHIFT[3&s++],a[s>>2]|=(128|63&i)<<SHIFT[3&s++]):(i=65536+((1023&i)<<10|1023&t.charCodeAt(++r)),a[s>>2]|=(240|i>>18)<<SHIFT[3&s++],a[s>>2]|=(128|i>>12&63)<<SHIFT[3&s++],a[s>>2]|=(128|i>>6&63)<<SHIFT[3&s++],a[s>>2]|=(128|63&i)<<SHIFT[3&s++]);this.lastByteIndex=s,this.bytes+=s-this.start,s>=64?(this.block=a[16],this.start=s-64,this.hash(),this.hashed=!0):this.start=s}return this.bytes>4294967295&&(this.hBytes+=this.bytes/4294967296<<0,this.bytes=this.bytes%4294967296),this}},Sha1.prototype.finalize=function(){if(!this.finalized){this.finalized=!0;var t=this.blocks,e=this.lastByteIndex;t[16]=this.block,t[e>>2]|=EXTRA[3&e],this.block=t[16],e>=56&&(this.hashed||this.hash(),t[0]=this.block,t[16]=t[1]=t[2]=t[3]=t[4]=t[5]=t[6]=t[7]=t[8]=t[9]=t[10]=t[11]=t[12]=t[13]=t[14]=t[15]=0),t[14]=this.hBytes<<3|this.bytes>>>29,t[15]=this.bytes<<3,this.hash()}},Sha1.prototype.hash=function(){var t,e,i=this.h0,s=this.h1,r=this.h2,n=this.h3,a=this.h4,o=this.blocks;for(t=16;t<80;++t)e=o[t-3]^o[t-8]^o[t-14]^o[t-16],o[t]=e<<1|e>>>31;for(t=0;t<20;t+=5)i=(e=(s=(e=(r=(e=(n=(e=(a=(e=i<<5|i>>>27)+(s&r|~s&n)+a+1518500249+o[t]<<0)<<5|a>>>27)+(i&(s=s<<30|s>>>2)|~i&r)+n+1518500249+o[t+1]<<0)<<5|n>>>27)+(a&(i=i<<30|i>>>2)|~a&s)+r+1518500249+o[t+2]<<0)<<5|r>>>27)+(n&(a=a<<30|a>>>2)|~n&i)+s+1518500249+o[t+3]<<0)<<5|s>>>27)+(r&(n=n<<30|n>>>2)|~r&a)+i+1518500249+o[t+4]<<0,r=r<<30|r>>>2;for(;t<40;t+=5)i=(e=(s=(e=(r=(e=(n=(e=(a=(e=i<<5|i>>>27)+(s^r^n)+a+1859775393+o[t]<<0)<<5|a>>>27)+(i^(s=s<<30|s>>>2)^r)+n+1859775393+o[t+1]<<0)<<5|n>>>27)+(a^(i=i<<30|i>>>2)^s)+r+1859775393+o[t+2]<<0)<<5|r>>>27)+(n^(a=a<<30|a>>>2)^i)+s+1859775393+o[t+3]<<0)<<5|s>>>27)+(r^(n=n<<30|n>>>2)^a)+i+1859775393+o[t+4]<<0,r=r<<30|r>>>2;for(;t<60;t+=5)i=(e=(s=(e=(r=(e=(n=(e=(a=(e=i<<5|i>>>27)+(s&r|s&n|r&n)+a-1894007588+o[t]<<0)<<5|a>>>27)+(i&(s=s<<30|s>>>2)|i&r|s&r)+n-1894007588+o[t+1]<<0)<<5|n>>>27)+(a&(i=i<<30|i>>>2)|a&s|i&s)+r-1894007588+o[t+2]<<0)<<5|r>>>27)+(n&(a=a<<30|a>>>2)|n&i|a&i)+s-1894007588+o[t+3]<<0)<<5|s>>>27)+(r&(n=n<<30|n>>>2)|r&a|n&a)+i-1894007588+o[t+4]<<0,r=r<<30|r>>>2;for(;t<80;t+=5)i=(e=(s=(e=(r=(e=(n=(e=(a=(e=i<<5|i>>>27)+(s^r^n)+a-899497514+o[t]<<0)<<5|a>>>27)+(i^(s=s<<30|s>>>2)^r)+n-899497514+o[t+1]<<0)<<5|n>>>27)+(a^(i=i<<30|i>>>2)^s)+r-899497514+o[t+2]<<0)<<5|r>>>27)+(n^(a=a<<30|a>>>2)^i)+s-899497514+o[t+3]<<0)<<5|s>>>27)+(r^(n=n<<30|n>>>2)^a)+i-899497514+o[t+4]<<0,r=r<<30|r>>>2;this.h0=this.h0+i<<0,this.h1=this.h1+s<<0,this.h2=this.h2+r<<0,this.h3=this.h3+n<<0,this.h4=this.h4+a<<0},Sha1.prototype.hex=function(){this.finalize();var t=this.h0,e=this.h1,i=this.h2,s=this.h3,r=this.h4;return HEX_CHARS[t>>28&15]+HEX_CHARS[t>>24&15]+HEX_CHARS[t>>20&15]+HEX_CHARS[t>>16&15]+HEX_CHARS[t>>12&15]+HEX_CHARS[t>>8&15]+HEX_CHARS[t>>4&15]+HEX_CHARS[15&t]+HEX_CHARS[e>>28&15]+HEX_CHARS[e>>24&15]+HEX_CHARS[e>>20&15]+HEX_CHARS[e>>16&15]+HEX_CHARS[e>>12&15]+HEX_CHARS[e>>8&15]+HEX_CHARS[e>>4&15]+HEX_CHARS[15&e]+HEX_CHARS[i>>28&15]+HEX_CHARS[i>>24&15]+HEX_CHARS[i>>20&15]+HEX_CHARS[i>>16&15]+HEX_CHARS[i>>12&15]+HEX_CHARS[i>>8&15]+HEX_CHARS[i>>4&15]+HEX_CHARS[15&i]+HEX_CHARS[s>>28&15]+HEX_CHARS[s>>24&15]+HEX_CHARS[s>>20&15]+HEX_CHARS[s>>16&15]+HEX_CHARS[s>>12&15]+HEX_CHARS[s>>8&15]+HEX_CHARS[s>>4&15]+HEX_CHARS[15&s]+HEX_CHARS[r>>28&15]+HEX_CHARS[r>>24&15]+HEX_CHARS[r>>20&15]+HEX_CHARS[r>>16&15]+HEX_CHARS[r>>12&15]+HEX_CHARS[r>>8&15]+HEX_CHARS[r>>4&15]+HEX_CHARS[15&r]},Sha1.prototype.toString=Sha1.prototype.hex,Sha1.prototype.digest=function(){this.finalize();var t=this.h0,e=this.h1,i=this.h2,s=this.h3,r=this.h4;return[t>>24&255,t>>16&255,t>>8&255,255&t,e>>24&255,e>>16&255,e>>8&255,255&e,i>>24&255,i>>16&255,i>>8&255,255&i,s>>24&255,s>>16&255,s>>8&255,255&s,r>>24&255,r>>16&255,r>>8&255,255&r]},Sha1.prototype.array=Sha1.prototype.digest,Sha1.prototype.arrayBuffer=function(){this.finalize();var t=new ArrayBuffer(20),e=new DataView(t);return e.setUint32(0,this.h0),e.setUint32(4,this.h1),e.setUint32(8,this.h2),e.setUint32(12,this.h3),e.setUint32(16,this.h4),t};var exports=createMethod();COMMON_JS?module.exports=exports:(root.sha1=exports,AMD&&(__WEBPACK_AMD_DEFINE_RESULT__=function(){return exports}.call(exports,__webpack_require__,exports,module),void 0===__WEBPACK_AMD_DEFINE_RESULT__||(module.exports=__WEBPACK_AMD_DEFINE_RESULT__)))}()}).call(this,__webpack_require__(13),__webpack_require__(3))},function(t,e){var i;i=function(){return this}();try{i=i||new Function("return this")()}catch(t){"object"==typeof window&&(i=window)}t.exports=i},function(t,e){function i(t,e){MemoryView.call(this,t,e),this.ICACHE_PAGE_BITS=10,this.PAGE_MASK=(2<<this.ICACHE_PAGE_BITS)-1,this.icache=new Array(t.byteLength>>this.ICACHE_PAGE_BITS+1),this.mask=33554431,this.resetMask()}function s(t,e){MemoryView.call(this,t,e),this.ICACHE_PAGE_BITS=16,this.PAGE_MASK=(2<<this.ICACHE_PAGE_BITS)-1,this.icache=new Array(1)}function r(t,e){this.cpu=e,this.mmu=t}window.MemoryView=function(t,e){this.buffer=t,this.view=new DataView(this.buffer,"number"==typeof e?e:0),this.mask=t.byteLength-1,this.resetMask()},MemoryView.prototype.resetMask=function(){this.mask8=4294967295&this.mask,this.mask16=4294967294&this.mask,this.mask32=4294967292&this.mask},MemoryView.prototype.load8=function(t){return this.view.getInt8(t&this.mask8)},MemoryView.prototype.load16=function(t){return this.view.getInt16(t&this.mask,!0)},MemoryView.prototype.loadU8=function(t){return this.view.getUint8(t&this.mask8)},MemoryView.prototype.loadU16=function(t){return this.view.getUint16(t&this.mask,!0)},MemoryView.prototype.load32=function(t){var e=(3&t)<<3,i=this.view.getInt32(t&this.mask32,!0);return i>>>e|i<<32-e},MemoryView.prototype.store8=function(t,e){this.view.setInt8(t&this.mask8,e)},MemoryView.prototype.store16=function(t,e){this.view.setInt16(t&this.mask16,e,!0)},MemoryView.prototype.store32=function(t,e){this.view.setInt32(t&this.mask32,e,!0)},MemoryView.prototype.invalidatePage=function(t){},MemoryView.prototype.replaceData=function(t,e){this.buffer=t,this.view=new DataView(this.buffer,"number"==typeof e?e:0),this.icache&&(this.icache=new Array(this.icache.length))},window.MemoryBlock=function(t,e){MemoryView.call(this,new ArrayBuffer(t)),this.ICACHE_PAGE_BITS=e,this.PAGE_MASK=(2<<this.ICACHE_PAGE_BITS)-1,this.icache=new Array(t>>this.ICACHE_PAGE_BITS+1)},MemoryBlock.prototype=Object.create(MemoryView.prototype),MemoryBlock.prototype.invalidatePage=function(t){var e=this.icache[(t&this.mask)>>this.ICACHE_PAGE_BITS];e&&(e.invalid=!0)},i.prototype=Object.create(MemoryView.prototype),i.prototype.store8=function(t,e){},i.prototype.store16=function(t,e){t<202&&t>=196&&(this.gpio||(this.gpio=this.mmu.allocGPIO(this)),this.gpio.store16(t,e))},i.prototype.store32=function(t,e){t<202&&t>=196&&(this.gpio||(this.gpio=this.mmu.allocGPIO(this)),this.gpio.store32(t,e))},s.prototype=Object.create(MemoryView.prototype),s.prototype.load8=function(t){return t>=this.buffer.byteLength?-1:this.view.getInt8(t)},s.prototype.load16=function(t){return t>=this.buffer.byteLength?-1:this.view.getInt16(t,!0)},s.prototype.loadU8=function(t){return t>=this.buffer.byteLength?-1:this.view.getUint8(t)},s.prototype.loadU16=function(t){return t>=this.buffer.byteLength?-1:this.view.getUint16(t,!0)},s.prototype.load32=function(t){return t>=this.buffer.byteLength?-1:this.view.getInt32(t,!0)},s.prototype.store8=function(t,e){},s.prototype.store16=function(t,e){},s.prototype.store32=function(t,e){},r.prototype.load8=function(t){return this.mmu.load8(this.cpu.gprs[this.cpu.PC]-this.cpu.instructionWidth+(3&t))},r.prototype.load16=function(t){return this.mmu.load16(this.cpu.gprs[this.cpu.PC]-this.cpu.instructionWidth+(2&t))},r.prototype.loadU8=function(t){return this.mmu.loadU8(this.cpu.gprs[this.cpu.PC]-this.cpu.instructionWidth+(3&t))},r.prototype.loadU16=function(t){return this.mmu.loadU16(this.cpu.gprs[this.cpu.PC]-this.cpu.instructionWidth+(2&t))},r.prototype.load32=function(t){if(this.cpu.execMode==this.cpu.MODE_ARM)return this.mmu.load32(this.cpu.gprs[this.cpu.gprs.PC]-this.cpu.instructionWidth);var e=this.mmu.loadU16(this.cpu.gprs[this.cpu.PC]-this.cpu.instructionWidth);return e|e<<16},r.prototype.store8=function(t,e){},r.prototype.store16=function(t,e){},r.prototype.store32=function(t,e){},r.prototype.invalidatePage=function(t){},window.GameBoyAdvanceMMU=function(){this.REGION_BIOS=0,this.REGION_WORKING_RAM=2,this.REGION_WORKING_IRAM=3,this.REGION_IO=4,this.REGION_PALETTE_RAM=5,this.REGION_VRAM=6,this.REGION_OAM=7,this.REGION_CART0=8,this.REGION_CART1=10,this.REGION_CART2=12,this.REGION_CART_SRAM=14,this.BASE_BIOS=0,this.BASE_WORKING_RAM=33554432,this.BASE_WORKING_IRAM=50331648,this.BASE_IO=67108864,this.BASE_PALETTE_RAM=83886080,this.BASE_VRAM=100663296,this.BASE_OAM=117440512,this.BASE_CART0=134217728,this.BASE_CART1=167772160,this.BASE_CART2=201326592,this.BASE_CART_SRAM=234881024,this.BASE_MASK=251658240,this.BASE_OFFSET=24,this.OFFSET_MASK=16777215,this.SIZE_BIOS=16384,this.SIZE_WORKING_RAM=262144,this.SIZE_WORKING_IRAM=32768,this.SIZE_IO=1024,this.SIZE_PALETTE_RAM=1024,this.SIZE_VRAM=98304,this.SIZE_OAM=1024,this.SIZE_CART0=33554432,this.SIZE_CART1=33554432,this.SIZE_CART2=33554432,this.SIZE_CART_SRAM=32768,this.SIZE_CART_FLASH512=65536,this.SIZE_CART_FLASH1M=131072,this.SIZE_CART_EEPROM=8192,this.DMA_TIMING_NOW=0,this.DMA_TIMING_VBLANK=1,this.DMA_TIMING_HBLANK=2,this.DMA_TIMING_CUSTOM=3,this.DMA_INCREMENT=0,this.DMA_DECREMENT=1,this.DMA_FIXED=2,this.DMA_INCREMENT_RELOAD=3,this.DMA_OFFSET=[1,-1,0,1],this.WAITSTATES=[0,0,2,0,0,0,0,0,4,4,4,4,4,4,4],this.WAITSTATES_32=[0,0,5,0,0,1,0,1,7,7,9,9,13,13,8],this.WAITSTATES_SEQ=[0,0,2,0,0,0,0,0,2,2,4,4,8,8,4],this.WAITSTATES_SEQ_32=[0,0,5,0,0,1,0,1,5,5,9,9,17,17,8],this.NULLWAIT=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];for(var t=15;t<256;++t)this.WAITSTATES[t]=0,this.WAITSTATES_32[t]=0,this.WAITSTATES_SEQ[t]=0,this.WAITSTATES_SEQ_32[t]=0,this.NULLWAIT[t]=0;this.ROM_WS=[4,3,2,8],this.ROM_WS_SEQ=[[2,1],[4,1],[8,1]],this.ICACHE_PAGE_BITS=8,this.PAGE_MASK=(2<<this.ICACHE_PAGE_BITS)-1,this.bios=null},GameBoyAdvanceMMU.prototype.mmap=function(t,e){this.memory[t]=e},GameBoyAdvanceMMU.prototype.clear=function(){this.badMemory=new r(this,this.cpu),this.memory=[this.bios,this.badMemory,new MemoryBlock(this.SIZE_WORKING_RAM,9),new MemoryBlock(this.SIZE_WORKING_IRAM,7),null,null,null,null,this.badMemory,this.badMemory,this.badMemory,this.badMemory,this.badMemory,this.badMemory,this.badMemory,this.badMemory];for(var t=16;t<256;++t)this.memory[t]=this.badMemory;this.waitstates=this.WAITSTATES.slice(0),this.waitstatesSeq=this.WAITSTATES_SEQ.slice(0),this.waitstates32=this.WAITSTATES_32.slice(0),this.waitstatesSeq32=this.WAITSTATES_SEQ_32.slice(0),this.waitstatesPrefetch=this.WAITSTATES_SEQ.slice(0),this.waitstatesPrefetch32=this.WAITSTATES_SEQ_32.slice(0),this.cart=null,this.save=null,this.DMA_REGISTER=[this.core.io.DMA0CNT_HI>>1,this.core.io.DMA1CNT_HI>>1,this.core.io.DMA2CNT_HI>>1,this.core.io.DMA3CNT_HI>>1]},GameBoyAdvanceMMU.prototype.freeze=function(){return{ram:Serializer.prefix(this.memory[this.REGION_WORKING_RAM].buffer),iram:Serializer.prefix(this.memory[this.REGION_WORKING_IRAM].buffer)}},GameBoyAdvanceMMU.prototype.defrost=function(t){this.memory[this.REGION_WORKING_RAM].replaceData(t.ram),this.memory[this.REGION_WORKING_IRAM].replaceData(t.iram)},GameBoyAdvanceMMU.prototype.loadBios=function(t,e){this.bios=new s(t),this.bios.real=!!e},GameBoyAdvanceMMU.prototype.loadRom=function(t,e){var s={title:null,code:null,maker:null,memory:t,saveType:null},r=new i(t);if(150!=r.view.getUint8(178))return null;if(r.mmu=this,this.memory[this.REGION_CART0]=r,this.memory[this.REGION_CART1]=r,this.memory[this.REGION_CART2]=r,t.byteLength>16777216){var n=new i(t,16777216);this.memory[this.REGION_CART0+1]=n,this.memory[this.REGION_CART1+1]=n,this.memory[this.REGION_CART2+1]=n}if(e){for(var a="",o=0;o<12;++o){if(!(u=r.loadU8(o+160)))break;a+=String.fromCharCode(u)}s.title=a;var h="";for(o=0;o<4;++o){if(!(u=r.loadU8(o+172)))break;h+=String.fromCharCode(u)}s.code=h;var c="";for(o=0;o<2;++o){var u;if(!(u=r.loadU8(o+176)))break;c+=String.fromCharCode(u)}s.maker=c;var p,d="",l=!1;for(o=228;o<t.byteLength&&!l;++o)switch(d+=p=String.fromCharCode(r.loadU8(o))){case"F":case"FL":case"FLA":case"FLAS":case"FLASH":case"FLASH_":case"FLASH5":case"FLASH51":case"FLASH512":case"FLASH512_":case"FLASH1":case"FLASH1M":case"FLASH1M_":case"S":case"SR":case"SRA":case"SRAM":case"SRAM_":case"E":case"EE":case"EEP":case"EEPR":case"EEPRO":case"EEPROM":case"EEPROM_":break;case"FLASH_V":case"FLASH512_V":case"FLASH1M_V":case"SRAM_V":case"EEPROM_V":l=!0;break;default:d=p}if(l)switch(s.saveType=d,d){case"FLASH_V":case"FLASH512_V":this.save=this.memory[this.REGION_CART_SRAM]=new FlashSavedata(this.SIZE_CART_FLASH512);break;case"FLASH1M_V":this.save=this.memory[this.REGION_CART_SRAM]=new FlashSavedata(this.SIZE_CART_FLASH1M);break;case"SRAM_V":this.save=this.memory[this.REGION_CART_SRAM]=new SRAMSavedata(this.SIZE_CART_SRAM);break;case"EEPROM_V":this.save=this.memory[this.REGION_CART2+1]=new EEPROMSavedata(this.SIZE_CART_EEPROM,this)}this.save||(this.save=this.memory[this.REGION_CART_SRAM]=new SRAMSavedata(this.SIZE_CART_SRAM))}return this.cart=s,s},GameBoyAdvanceMMU.prototype.loadSavedata=function(t){this.save.replaceData(t)},GameBoyAdvanceMMU.prototype.load8=function(t){return this.memory[t>>>this.BASE_OFFSET].load8(16777215&t)},GameBoyAdvanceMMU.prototype.load16=function(t){return this.memory[t>>>this.BASE_OFFSET].load16(16777215&t)},GameBoyAdvanceMMU.prototype.load32=function(t){return this.memory[t>>>this.BASE_OFFSET].load32(16777215&t)},GameBoyAdvanceMMU.prototype.loadU8=function(t){return this.memory[t>>>this.BASE_OFFSET].loadU8(16777215&t)},GameBoyAdvanceMMU.prototype.loadU16=function(t){return this.memory[t>>>this.BASE_OFFSET].loadU16(16777215&t)},GameBoyAdvanceMMU.prototype.store8=function(t,e){var i=16777215&t,s=this.memory[t>>>this.BASE_OFFSET];s.store8(i,e),s.invalidatePage(i)},GameBoyAdvanceMMU.prototype.store16=function(t,e){var i=16777214&t,s=this.memory[t>>>this.BASE_OFFSET];s.store16(i,e),s.invalidatePage(i)},GameBoyAdvanceMMU.prototype.store32=function(t,e){var i=16777212&t,s=this.memory[t>>>this.BASE_OFFSET];s.store32(i,e),s.invalidatePage(i),s.invalidatePage(i+2)},GameBoyAdvanceMMU.prototype.waitPrefetch=function(t){this.cpu.cycles+=1+this.waitstatesPrefetch[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.waitPrefetch32=function(t){this.cpu.cycles+=1+this.waitstatesPrefetch32[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.wait=function(t){this.cpu.cycles+=1+this.waitstates[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.wait32=function(t){this.cpu.cycles+=1+this.waitstates32[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.waitSeq=function(t){this.cpu.cycles+=1+this.waitstatesSeq[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.waitSeq32=function(t){this.cpu.cycles+=1+this.waitstatesSeq32[t>>>this.BASE_OFFSET]},GameBoyAdvanceMMU.prototype.waitMul=function(t){this.cpu.cycles+=!0&t||!(4294967040&t)?1:!0&t||!(4294901760&t)?2:!0&t||!(4278190080&t)?3:4},GameBoyAdvanceMMU.prototype.waitMulti32=function(t,e){this.cpu.cycles+=1+this.waitstates32[t>>>this.BASE_OFFSET],this.cpu.cycles+=(1+this.waitstatesSeq32[t>>>this.BASE_OFFSET])*(e-1)},GameBoyAdvanceMMU.prototype.addressToPage=function(t,e){return e>>this.memory[t].ICACHE_PAGE_BITS},GameBoyAdvanceMMU.prototype.accessPage=function(t,e){var i=this.memory[t],s=i.icache[e];return s&&!s.invalid||(s={thumb:new Array(1<<i.ICACHE_PAGE_BITS),arm:new Array(1<<i.ICACHE_PAGE_BITS-1),invalid:!1},i.icache[e]=s),s},GameBoyAdvanceMMU.prototype.scheduleDma=function(t,e){switch(e.timing){case this.DMA_TIMING_NOW:this.serviceDma(t,e);break;case this.DMA_TIMING_HBLANK:case this.DMA_TIMING_VBLANK:break;case this.DMA_TIMING_CUSTOM:switch(t){case 0:this.core.WARN("Discarding invalid DMA0 scheduling");break;case 1:case 2:this.cpu.irq.audio.scheduleFIFODma(t,e);break;case 3:this.cpu.irq.video.scheduleVCaptureDma(dma,e)}}},GameBoyAdvanceMMU.prototype.runHblankDmas=function(){for(var t,e=0;e<this.cpu.irq.dma.length;++e)(t=this.cpu.irq.dma[e]).enable&&t.timing==this.DMA_TIMING_HBLANK&&this.serviceDma(e,t)},GameBoyAdvanceMMU.prototype.runVblankDmas=function(){for(var t,e=0;e<this.cpu.irq.dma.length;++e)(t=this.cpu.irq.dma[e]).enable&&t.timing==this.DMA_TIMING_VBLANK&&this.serviceDma(e,t)},GameBoyAdvanceMMU.prototype.serviceDma=function(t,e){if(e.enable){var i,s=e.width,r=this.DMA_OFFSET[e.srcControl]*s,n=this.DMA_OFFSET[e.dstControl]*s,a=e.nextCount,o=e.nextSource&this.OFFSET_MASK,h=e.nextDest&this.OFFSET_MASK,c=e.nextSource>>>this.BASE_OFFSET,u=e.nextDest>>>this.BASE_OFFSET,p=this.memory[c],d=this.memory[u],l=null,f=null,m=4294967295,A=4294967295;if(d.ICACHE_PAGE_BITS)for(var y=h+a*s>>d.ICACHE_PAGE_BITS,R=h>>d.ICACHE_PAGE_BITS;R<=y;++R)d.invalidatePage(R<<d.ICACHE_PAGE_BITS);if(u!=this.REGION_WORKING_RAM&&u!=this.REGION_WORKING_IRAM||(f=d.view,A=d.mask),c!=this.REGION_WORKING_RAM&&c!=this.REGION_WORKING_IRAM&&c!=this.REGION_CART0&&c!=this.REGION_CART1||(l=p.view,m=p.mask),p&&d)if(l&&f)if(4==s)for(o&=4294967292,h&=4294967292;a--;)i=l.getInt32(o&m),f.setInt32(h&A,i),o+=r,h+=n;else for(;a--;)i=l.getUint16(o&m),f.setUint16(h&A,i),o+=r,h+=n;else if(l)if(4==s)for(o&=4294967292,h&=4294967292;a--;)i=l.getInt32(o&m,!0),d.store32(h,i),o+=r,h+=n;else for(;a--;)i=l.getUint16(o&m,!0),d.store16(h,i),o+=r,h+=n;else if(4==s)for(o&=4294967292,h&=4294967292;a--;)i=p.load32(o),d.store32(h,i),o+=r,h+=n;else for(;a--;)i=p.loadU16(o),d.store16(h,i),o+=r,h+=n;else this.core.WARN("Invalid DMA");if(e.doIrq&&(e.nextIRQ=this.cpu.cycles+2,e.nextIRQ+=4==s?this.waitstates32[c]+this.waitstates32[u]:this.waitstates[c]+this.waitstates[u],e.nextIRQ+=(e.count-1)*(4==s?this.waitstatesSeq32[c]+this.waitstatesSeq32[u]:this.waitstatesSeq[c]+this.waitstatesSeq[u])),e.nextSource=o|c<<this.BASE_OFFSET,e.nextDest=h|u<<this.BASE_OFFSET,e.nextCount=a,e.repeat)e.nextCount=e.count,e.dstControl==this.DMA_INCREMENT_RELOAD&&(e.nextDest=e.dest),this.scheduleDma(t,e);else e.enable=!1,this.memory[this.REGION_IO].registers[this.DMA_REGISTER[t]]&=32736}},GameBoyAdvanceMMU.prototype.adjustTimings=function(t){var e=3&t,i=(12&t)>>2,s=(16&t)>>4,r=(96&t)>>5,n=(128&t)>>7,a=(768&t)>>8,o=(1024&t)>>10,h=16384&t;this.waitstates[this.REGION_CART_SRAM]=this.ROM_WS[e],this.waitstatesSeq[this.REGION_CART_SRAM]=this.ROM_WS[e],this.waitstates32[this.REGION_CART_SRAM]=this.ROM_WS[e],this.waitstatesSeq32[this.REGION_CART_SRAM]=this.ROM_WS[e],this.waitstates[this.REGION_CART0]=this.waitstates[this.REGION_CART0+1]=this.ROM_WS[i],this.waitstates[this.REGION_CART1]=this.waitstates[this.REGION_CART1+1]=this.ROM_WS[r],this.waitstates[this.REGION_CART2]=this.waitstates[this.REGION_CART2+1]=this.ROM_WS[a],this.waitstatesSeq[this.REGION_CART0]=this.waitstatesSeq[this.REGION_CART0+1]=this.ROM_WS_SEQ[0][s],this.waitstatesSeq[this.REGION_CART1]=this.waitstatesSeq[this.REGION_CART1+1]=this.ROM_WS_SEQ[1][n],this.waitstatesSeq[this.REGION_CART2]=this.waitstatesSeq[this.REGION_CART2+1]=this.ROM_WS_SEQ[2][o],this.waitstates32[this.REGION_CART0]=this.waitstates32[this.REGION_CART0+1]=this.waitstates[this.REGION_CART0]+1+this.waitstatesSeq[this.REGION_CART0],this.waitstates32[this.REGION_CART1]=this.waitstates32[this.REGION_CART1+1]=this.waitstates[this.REGION_CART1]+1+this.waitstatesSeq[this.REGION_CART1],this.waitstates32[this.REGION_CART2]=this.waitstates32[this.REGION_CART2+1]=this.waitstates[this.REGION_CART2]+1+this.waitstatesSeq[this.REGION_CART2],this.waitstatesSeq32[this.REGION_CART0]=this.waitstatesSeq32[this.REGION_CART0+1]=2*this.waitstatesSeq[this.REGION_CART0]+1,this.waitstatesSeq32[this.REGION_CART1]=this.waitstatesSeq32[this.REGION_CART1+1]=2*this.waitstatesSeq[this.REGION_CART1]+1,this.waitstatesSeq32[this.REGION_CART2]=this.waitstatesSeq32[this.REGION_CART2+1]=2*this.waitstatesSeq[this.REGION_CART2]+1,h?(this.waitstatesPrefetch[this.REGION_CART0]=this.waitstatesPrefetch[this.REGION_CART0+1]=0,this.waitstatesPrefetch[this.REGION_CART1]=this.waitstatesPrefetch[this.REGION_CART1+1]=0,this.waitstatesPrefetch[this.REGION_CART2]=this.waitstatesPrefetch[this.REGION_CART2+1]=0,this.waitstatesPrefetch32[this.REGION_CART0]=this.waitstatesPrefetch32[this.REGION_CART0+1]=0,this.waitstatesPrefetch32[this.REGION_CART1]=this.waitstatesPrefetch32[this.REGION_CART1+1]=0,this.waitstatesPrefetch32[this.REGION_CART2]=this.waitstatesPrefetch32[this.REGION_CART2+1]=0):(this.waitstatesPrefetch[this.REGION_CART0]=this.waitstatesPrefetch[this.REGION_CART0+1]=this.waitstatesSeq[this.REGION_CART0],this.waitstatesPrefetch[this.REGION_CART1]=this.waitstatesPrefetch[this.REGION_CART1+1]=this.waitstatesSeq[this.REGION_CART1],this.waitstatesPrefetch[this.REGION_CART2]=this.waitstatesPrefetch[this.REGION_CART2+1]=this.waitstatesSeq[this.REGION_CART2],this.waitstatesPrefetch32[this.REGION_CART0]=this.waitstatesPrefetch32[this.REGION_CART0+1]=this.waitstatesSeq32[this.REGION_CART0],this.waitstatesPrefetch32[this.REGION_CART1]=this.waitstatesPrefetch32[this.REGION_CART1+1]=this.waitstatesSeq32[this.REGION_CART1],this.waitstatesPrefetch32[this.REGION_CART2]=this.waitstatesPrefetch32[this.REGION_CART2+1]=this.waitstatesSeq32[this.REGION_CART2])},GameBoyAdvanceMMU.prototype.saveNeedsFlush=function(){return this.save.writePending},GameBoyAdvanceMMU.prototype.flushSave=function(){this.save.writePending=!1},GameBoyAdvanceMMU.prototype.allocGPIO=function(t){return new GameBoyAdvanceGPIO(this.core,t)}},function(t,e,i){var s=i(8),r=i(9),n=i(10);t.exports=function(t,e){return s(t)||r(t,e)||n()}},function(t,e){function i(t){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function s(e){return"function"==typeof Symbol&&"symbol"===i(Symbol.iterator)?t.exports=s=function(t){return i(t)}:t.exports=s=function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":i(t)},s(e)}t.exports=s},function(t,e,i){t.exports=i(28)("BgAA6v7//+oFAADq/v//6v7//+oAAKDhDAAA6v7//+oC86DjAABd4wHToAMg0E0CAEAt6QIAXuUEAFDjCQAACwUAUOMHAAALAEC96A7wsOEPUC3pAQOg4wDgj+IE8BDlD1C96ATwXuIQQC3pBNBN4rAQzeEBQ6DjAkyE4rAA1OGyAM3hsBDd4QEAgOGwAMThAUOg4x8AoOMA8CnhAACg4wEDxOXTAKDjAPAp4bgAVOGwEN3hABAR4AAQIRC4EEQR8///CgFDoOMCTITisgDd4bAAxOEE0I3iEIC96A==")},function(t,e){t.exports=function(t){if(Array.isArray(t))return t}},function(t,e){t.exports=function(t,e){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t)){var i=[],s=!0,r=!1,n=void 0;try{for(var a,o=t[Symbol.iterator]();!(s=(a=o.next()).done)&&(i.push(a.value),!e||i.length!==e);s=!0);}catch(t){r=!0,n=t}finally{try{s||null==o.return||o.return()}finally{if(r)throw n}}return i}}},function(t,e){t.exports=function(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}},function(t,e,i){"use strict";var s=i(12);function r(){}function n(){}n.resetWarningCache=r,t.exports=function(){function t(t,e,i,r,n,a){if(a!==s){var o=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw o.name="Invariant Violation",o}}function e(){return t}t.isRequired=t;var i={array:t,bool:t,func:t,number:t,object:t,string:t,symbol:t,any:t,arrayOf:e,element:t,elementType:t,instanceOf:e,node:t,objectOf:e,oneOf:e,oneOfType:e,shape:e,exact:e,checkPropTypes:n,resetWarningCache:r};return i.PropTypes=i,i}},function(t,e,i){"use strict";t.exports="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"},function(t,e){var i,s,r=t.exports={};function n(){throw new Error("setTimeout has not been defined")}function a(){throw new Error("clearTimeout has not been defined")}function o(t){if(i===setTimeout)return setTimeout(t,0);if((i===n||!i)&&setTimeout)return i=setTimeout,setTimeout(t,0);try{return i(t,0)}catch(e){try{return i.call(null,t,0)}catch(e){return i.call(this,t,0)}}}!function(){try{i="function"==typeof setTimeout?setTimeout:n}catch(t){i=n}try{s="function"==typeof clearTimeout?clearTimeout:a}catch(t){s=a}}();var h,c=[],u=!1,p=-1;function d(){u&&h&&(u=!1,h.length?c=h.concat(c):p=-1,c.length&&l())}function l(){if(!u){var t=o(d);u=!0;for(var e=c.length;e;){for(h=c,c=[];++p<e;)h&&h[p].run();p=-1,e=c.length}h=null,u=!1,function(t){if(s===clearTimeout)return clearTimeout(t);if((s===a||!s)&&clearTimeout)return s=clearTimeout,clearTimeout(t);try{s(t)}catch(e){try{return s.call(null,t)}catch(e){return s.call(this,t)}}}(t)}}function f(t,e){this.fun=t,this.array=e}function m(){}r.nextTick=function(t){var e=new Array(arguments.length-1);if(arguments.length>1)for(var i=1;i<arguments.length;i++)e[i-1]=arguments[i];c.push(new f(t,e)),1!==c.length||u||o(l)},f.prototype.run=function(){this.fun.apply(null,this.array)},r.title="browser",r.browser=!0,r.env={},r.argv=[],r.version="",r.versions={},r.on=m,r.addListener=m,r.once=m,r.off=m,r.removeListener=m,r.removeAllListeners=m,r.emit=m,r.prependListener=m,r.prependOnceListener=m,r.listeners=function(t){return[]},r.binding=function(t){throw new Error("process.binding is not supported")},r.cwd=function(){return"/"},r.chdir=function(t){throw new Error("process.chdir is not supported")},r.umask=function(){return 0}},function(t,e){(function(e){t.exports=e}).call(this,{})},function(t,e){window.ARMCore=function(){this.SP=13,this.LR=14,this.PC=15,this.MODE_ARM=0,this.MODE_THUMB=1,this.MODE_USER=16,this.MODE_FIQ=17,this.MODE_IRQ=18,this.MODE_SUPERVISOR=19,this.MODE_ABORT=23,this.MODE_UNDEFINED=27,this.MODE_SYSTEM=31,this.BANK_NONE=0,this.BANK_FIQ=1,this.BANK_IRQ=2,this.BANK_SUPERVISOR=3,this.BANK_ABORT=4,this.BANK_UNDEFINED=5,this.UNALLOC_MASK=268435200,this.USER_MASK=4026531840,this.PRIV_MASK=207,this.STATE_MASK=32,this.WORD_SIZE_ARM=4,this.WORD_SIZE_THUMB=2,this.BASE_RESET=0,this.BASE_UNDEF=4,this.BASE_SWI=8,this.BASE_PABT=12,this.BASE_DABT=16,this.BASE_IRQ=24,this.BASE_FIQ=28,this.armCompiler=new ARMCoreArm(this),this.thumbCompiler=new ARMCoreThumb(this),this.generateConds(),this.gprs=new Int32Array(16)},ARMCore.prototype.resetCPU=function(t){for(var e=0;e<this.PC;++e)this.gprs[e]=0;this.gprs[this.PC]=t+this.WORD_SIZE_ARM,this.loadInstruction=this.loadInstructionArm,this.execMode=this.MODE_ARM,this.instructionWidth=this.WORD_SIZE_ARM,this.mode=this.MODE_SYSTEM,this.cpsrI=!1,this.cpsrF=!1,this.cpsrV=!1,this.cpsrC=!1,this.cpsrZ=!1,this.cpsrN=!1,this.bankedRegisters=[new Int32Array(7),new Int32Array(7),new Int32Array(2),new Int32Array(2),new Int32Array(2),new Int32Array(2)],this.spsr=0,this.bankedSPSRs=new Int32Array(6),this.cycles=0,this.shifterOperand=0,this.shifterCarryOut=0,this.page=null,this.pageId=0,this.pageRegion=-1,this.instruction=null,this.irq.clear();var i=this.gprs,s=this.mmu;this.step=function(){var t=this.instruction||(this.instruction=this.loadInstruction(i[this.PC]-this.instructionWidth));if(i[this.PC]+=this.instructionWidth,this.conditionPassed=!0,t(),t.writesPC)if(this.conditionPassed){var e=i[this.PC]&=4294967294;this.execMode==this.MODE_ARM?(s.wait32(e),s.waitPrefetch32(e)):(s.wait(e),s.waitPrefetch(e)),i[this.PC]+=this.instructionWidth,t.fixedJump?null!=this.instruction&&((null==t.next||t.next.page.invalid)&&(t.next=this.loadInstruction(i[this.PC]-this.instructionWidth)),this.instruction=t.next):this.instruction=null}else this.instruction=null;else null!=this.instruction&&((null==t.next||t.next.page.invalid)&&(t.next=this.loadInstruction(i[this.PC]-this.instructionWidth)),this.instruction=t.next);this.irq.updateTimers()}},ARMCore.prototype.freeze=function(){return{gprs:[this.gprs[0],this.gprs[1],this.gprs[2],this.gprs[3],this.gprs[4],this.gprs[5],this.gprs[6],this.gprs[7],this.gprs[8],this.gprs[9],this.gprs[10],this.gprs[11],this.gprs[12],this.gprs[13],this.gprs[14],this.gprs[15]],mode:this.mode,cpsrI:this.cpsrI,cpsrF:this.cpsrF,cpsrV:this.cpsrV,cpsrC:this.cpsrC,cpsrZ:this.cpsrZ,cpsrN:this.cpsrN,bankedRegisters:[[this.bankedRegisters[0][0],this.bankedRegisters[0][1],this.bankedRegisters[0][2],this.bankedRegisters[0][3],this.bankedRegisters[0][4],this.bankedRegisters[0][5],this.bankedRegisters[0][6]],[this.bankedRegisters[1][0],this.bankedRegisters[1][1],this.bankedRegisters[1][2],this.bankedRegisters[1][3],this.bankedRegisters[1][4],this.bankedRegisters[1][5],this.bankedRegisters[1][6]],[this.bankedRegisters[2][0],this.bankedRegisters[2][1]],[this.bankedRegisters[3][0],this.bankedRegisters[3][1]],[this.bankedRegisters[4][0],this.bankedRegisters[4][1]],[this.bankedRegisters[5][0],this.bankedRegisters[5][1]]],spsr:this.spsr,bankedSPSRs:[this.bankedSPSRs[0],this.bankedSPSRs[1],this.bankedSPSRs[2],this.bankedSPSRs[3],this.bankedSPSRs[4],this.bankedSPSRs[5]],cycles:this.cycles}},ARMCore.prototype.defrost=function(t){this.instruction=null,this.page=null,this.pageId=0,this.pageRegion=-1,this.gprs[0]=t.gprs[0],this.gprs[1]=t.gprs[1],this.gprs[2]=t.gprs[2],this.gprs[3]=t.gprs[3],this.gprs[4]=t.gprs[4],this.gprs[5]=t.gprs[5],this.gprs[6]=t.gprs[6],this.gprs[7]=t.gprs[7],this.gprs[8]=t.gprs[8],this.gprs[9]=t.gprs[9],this.gprs[10]=t.gprs[10],this.gprs[11]=t.gprs[11],this.gprs[12]=t.gprs[12],this.gprs[13]=t.gprs[13],this.gprs[14]=t.gprs[14],this.gprs[15]=t.gprs[15],this.mode=t.mode,this.cpsrI=t.cpsrI,this.cpsrF=t.cpsrF,this.cpsrV=t.cpsrV,this.cpsrC=t.cpsrC,this.cpsrZ=t.cpsrZ,this.cpsrN=t.cpsrN,this.bankedRegisters[0][0]=t.bankedRegisters[0][0],this.bankedRegisters[0][1]=t.bankedRegisters[0][1],this.bankedRegisters[0][2]=t.bankedRegisters[0][2],this.bankedRegisters[0][3]=t.bankedRegisters[0][3],this.bankedRegisters[0][4]=t.bankedRegisters[0][4],this.bankedRegisters[0][5]=t.bankedRegisters[0][5],this.bankedRegisters[0][6]=t.bankedRegisters[0][6],this.bankedRegisters[1][0]=t.bankedRegisters[1][0],this.bankedRegisters[1][1]=t.bankedRegisters[1][1],this.bankedRegisters[1][2]=t.bankedRegisters[1][2],this.bankedRegisters[1][3]=t.bankedRegisters[1][3],this.bankedRegisters[1][4]=t.bankedRegisters[1][4],this.bankedRegisters[1][5]=t.bankedRegisters[1][5],this.bankedRegisters[1][6]=t.bankedRegisters[1][6],this.bankedRegisters[2][0]=t.bankedRegisters[2][0],this.bankedRegisters[2][1]=t.bankedRegisters[2][1],this.bankedRegisters[3][0]=t.bankedRegisters[3][0],this.bankedRegisters[3][1]=t.bankedRegisters[3][1],this.bankedRegisters[4][0]=t.bankedRegisters[4][0],this.bankedRegisters[4][1]=t.bankedRegisters[4][1],this.bankedRegisters[5][0]=t.bankedRegisters[5][0],this.bankedRegisters[5][1]=t.bankedRegisters[5][1],this.spsr=t.spsr,this.bankedSPSRs[0]=t.bankedSPSRs[0],this.bankedSPSRs[1]=t.bankedSPSRs[1],this.bankedSPSRs[2]=t.bankedSPSRs[2],this.bankedSPSRs[3]=t.bankedSPSRs[3],this.bankedSPSRs[4]=t.bankedSPSRs[4],this.bankedSPSRs[5]=t.bankedSPSRs[5],this.cycles=t.cycles},ARMCore.prototype.fetchPage=function(t){var e=t>>this.mmu.BASE_OFFSET,i=this.mmu.addressToPage(e,t&this.mmu.OFFSET_MASK);if(e==this.pageRegion){if(i==this.pageId&&!this.page.invalid)return;this.pageId=i}else this.pageMask=this.mmu.memory[e].PAGE_MASK,this.pageRegion=e,this.pageId=i;this.page=this.mmu.accessPage(e,i)},ARMCore.prototype.loadInstructionArm=function(t){var e=null;this.fetchPage(t);var i=(t&this.pageMask)>>2;if(e=this.page.arm[i])return e;var s=this.mmu.load32(t)>>>0;return(e=this.compileArm(s)).next=null,e.page=this.page,e.address=t,e.opcode=s,this.page.arm[i]=e,e},ARMCore.prototype.loadInstructionThumb=function(t){var e=null;this.fetchPage(t);var i=(t&this.pageMask)>>1;if(e=this.page.thumb[i])return e;var s=this.mmu.load16(t);return(e=this.compileThumb(s)).next=null,e.page=this.page,e.address=t,e.opcode=s,this.page.thumb[i]=e,e},ARMCore.prototype.selectBank=function(t){switch(t){case this.MODE_USER:case this.MODE_SYSTEM:return this.BANK_NONE;case this.MODE_FIQ:return this.BANK_FIQ;case this.MODE_IRQ:return this.BANK_IRQ;case this.MODE_SUPERVISOR:return this.BANK_SUPERVISOR;case this.MODE_ABORT:return this.BANK_ABORT;case this.MODE_UNDEFINED:return this.BANK_UNDEFINED;default:throw"Invalid user mode passed to selectBank"}},ARMCore.prototype.switchExecMode=function(t){this.execMode!=t&&(this.execMode=t,t==this.MODE_ARM?(this.instructionWidth=this.WORD_SIZE_ARM,this.loadInstruction=this.loadInstructionArm):(this.instructionWidth=this.WORD_SIZE_THUMB,this.loadInstruction=this.loadInstructionThumb))},ARMCore.prototype.switchMode=function(t){if(t!=this.mode){if(t!=this.MODE_USER||t!=this.MODE_SYSTEM){var e=this.selectBank(t),i=this.selectBank(this.mode);if(e!=i){if(t==this.MODE_FIQ||this.mode==this.MODE_FIQ){var s=(i==this.BANK_FIQ)+0,r=(e==this.BANK_FIQ)+0;this.bankedRegisters[s][2]=this.gprs[8],this.bankedRegisters[s][3]=this.gprs[9],this.bankedRegisters[s][4]=this.gprs[10],this.bankedRegisters[s][5]=this.gprs[11],this.bankedRegisters[s][6]=this.gprs[12],this.gprs[8]=this.bankedRegisters[r][2],this.gprs[9]=this.bankedRegisters[r][3],this.gprs[10]=this.bankedRegisters[r][4],this.gprs[11]=this.bankedRegisters[r][5],this.gprs[12]=this.bankedRegisters[r][6]}this.bankedRegisters[i][0]=this.gprs[this.SP],this.bankedRegisters[i][1]=this.gprs[this.LR],this.gprs[this.SP]=this.bankedRegisters[e][0],this.gprs[this.LR]=this.bankedRegisters[e][1],this.bankedSPSRs[i]=this.spsr,this.spsr=this.bankedSPSRs[e]}}this.mode=t}},ARMCore.prototype.packCPSR=function(){return this.mode|!!this.execMode<<5|!!this.cpsrF<<6|!!this.cpsrI<<7|!!this.cpsrN<<31|!!this.cpsrZ<<30|!!this.cpsrC<<29|!!this.cpsrV<<28},ARMCore.prototype.unpackCPSR=function(t){this.switchMode(31&t),this.switchExecMode(!!(32&t)),this.cpsrF=64&t,this.cpsrI=128&t,this.cpsrN=2147483648&t,this.cpsrZ=1073741824&t,this.cpsrC=536870912&t,this.cpsrV=268435456&t,this.irq.testIRQ()},ARMCore.prototype.hasSPSR=function(){return this.mode!=this.MODE_SYSTEM&&this.mode!=this.MODE_USER},ARMCore.prototype.raiseIRQ=function(){if(!this.cpsrI){var t=this.packCPSR(),e=this.instructionWidth;this.switchMode(this.MODE_IRQ),this.spsr=t,this.gprs[this.LR]=this.gprs[this.PC]-e+4,this.gprs[this.PC]=this.BASE_IRQ+this.WORD_SIZE_ARM,this.instruction=null,this.switchExecMode(this.MODE_ARM),this.cpsrI=!0}},ARMCore.prototype.raiseTrap=function(){var t=this.packCPSR(),e=this.instructionWidth;this.switchMode(this.MODE_SUPERVISOR),this.spsr=t,this.gprs[this.LR]=this.gprs[this.PC]-e,this.gprs[this.PC]=this.BASE_SWI+this.WORD_SIZE_ARM,this.instruction=null,this.switchExecMode(this.MODE_ARM),this.cpsrI=!0},ARMCore.prototype.badOp=function(t){var e=function(){throw"Illegal instruction: 0x"+t.toString(16)};return e.writesPC=!0,e.fixedJump=!1,e},ARMCore.prototype.generateConds=function(){var t=this;this.conds=[function(){return t.conditionPassed=t.cpsrZ},function(){return t.conditionPassed=!t.cpsrZ},function(){return t.conditionPassed=t.cpsrC},function(){return t.conditionPassed=!t.cpsrC},function(){return t.conditionPassed=t.cpsrN},function(){return t.conditionPassed=!t.cpsrN},function(){return t.conditionPassed=t.cpsrV},function(){return t.conditionPassed=!t.cpsrV},function(){return t.conditionPassed=t.cpsrC&&!t.cpsrZ},function(){return t.conditionPassed=!t.cpsrC||t.cpsrZ},function(){return t.conditionPassed=!t.cpsrN==!t.cpsrV},function(){return t.conditionPassed=!t.cpsrN!=!t.cpsrV},function(){return t.conditionPassed=!t.cpsrZ&&!t.cpsrN==!t.cpsrV},function(){return t.conditionPassed=t.cpsrZ||!t.cpsrN!=!t.cpsrV},null,null]},ARMCore.prototype.barrelShiftImmediate=function(t,e,i){var s=this,r=this.gprs,n=this.badOp;switch(t){case 0:n=e?function(){s.shifterOperand=r[i]<<e,s.shifterCarryOut=r[i]&1<<32-e}:function(){s.shifterOperand=r[i],s.shifterCarryOut=s.cpsrC};break;case 32:n=e?function(){s.shifterOperand=r[i]>>>e,s.shifterCarryOut=r[i]&1<<e-1}:function(){s.shifterOperand=0,s.shifterCarryOut=2147483648&r[i]};break;case 64:n=e?function(){s.shifterOperand=r[i]>>e,s.shifterCarryOut=r[i]&1<<e-1}:function(){s.shifterCarryOut=2147483648&r[i],s.shifterCarryOut?s.shifterOperand=4294967295:s.shifterOperand=0};break;case 96:n=e?function(){s.shifterOperand=r[i]>>>e|r[i]<<32-e,s.shifterCarryOut=r[i]&1<<e-1}:function(){s.shifterOperand=!!s.cpsrC<<31|r[i]>>>1,s.shifterCarryOut=1&r[i]}}return n},ARMCore.prototype.compileArm=function(t){var e=this.badOp(t),i=234881024&t,s=(this.gprs,this.conds[(4026531840&t)>>>28]);if(19922704==(268435440&t)){var r=15&t;(e=this.armCompiler.constructBX(r,s)).writesPC=!0,e.fixedJump=!1}else if(201326592&t||33554432!=i&&144==(144&t))if(16777360==(263196656&t)){r=15&t,S=t>>12&15,C=t>>16&15;(e=4194304&t?this.armCompiler.constructSWPB(S,C,r,s):this.armCompiler.constructSWP(S,C,r,s)).writesPC=S==this.PC}else switch(i){case 0:if(144==(16777456&t)){S=(983040&t)>>16,C=(61440&t)>>12,_=(3840&t)>>8,r=15&t;switch(15728640&t){case 0:e=this.armCompiler.constructMUL(S,_,r,s);break;case 1048576:e=this.armCompiler.constructMULS(S,_,r,s);break;case 2097152:e=this.armCompiler.constructMLA(S,C,_,r,s);break;case 3145728:e=this.armCompiler.constructMLAS(S,C,_,r,s);break;case 8388608:e=this.armCompiler.constructUMULL(S,C,_,r,s);break;case 9437184:e=this.armCompiler.constructUMULLS(S,C,_,r,s);break;case 10485760:e=this.armCompiler.constructUMLAL(S,C,_,r,s);break;case 11534336:e=this.armCompiler.constructUMLALS(S,C,_,r,s);break;case 12582912:e=this.armCompiler.constructSMULL(S,C,_,r,s);break;case 13631488:e=this.armCompiler.constructSMULLS(S,C,_,r,s);break;case 14680064:e=this.armCompiler.constructSMLAL(S,C,_,r,s);break;case 15728640:e=this.armCompiler.constructSMLALS(S,C,_,r,s)}e.writesPC=S==this.PC}else{var n=1048576&t,a=(S=(61440&t)>>12,r=15&t),o=32&t,h=(R=64&t,2097152&t);if(i=4194304&t){w=a|(3840&t)>>4;u=this.armCompiler.constructAddressingMode23Immediate(t,w,s)}else u=this.armCompiler.constructAddressingMode23Register(t,r,s);u.writesPC=!!h&&C==this.PC,144==(144&t)&&(n?o?e=R?this.armCompiler.constructLDRSH(S,u,s):this.armCompiler.constructLDRH(S,u,s):R&&(e=this.armCompiler.constructLDRSB(S,u,s)):!R&&o&&(e=this.armCompiler.constructSTRH(S,u,s))),e.writesPC=S==this.PC||u.writesPC}break;case 67108864:case 100663296:S=(61440&t)>>12,n=1048576&t;var c=4194304&t,u=(i=33554432&t,function(){throw"Unimplemented memory access: 0x"+t.toString(16)});if(16777216&~t&&(t&=4292870143),i){r=15&t;var p=(3968&t)>>7;if((b=96&t)||p){v=this.barrelShiftImmediate(b,p,r);u=this.armCompiler.constructAddressingMode2RegisterShifted(t,v,s)}else u=this.armCompiler.constructAddressingMode23Register(t,r,s)}else{var d=4095&t;u=this.armCompiler.constructAddressingMode23Immediate(t,d,s)}(e=n?c?this.armCompiler.constructLDRB(S,u,s):this.armCompiler.constructLDR(S,u,s):c?this.armCompiler.constructSTRB(S,u,s):this.armCompiler.constructSTR(S,u,s)).writesPC=S==this.PC||u.writesPC;break;case 134217728:n=1048576&t,h=2097152&t;var l=4194304&t,f=16777216&t,m=(_=65535&t,C=(983040&t)>>16,w=0,d=0,!1);if(8388608&t){f&&(w=4);var A=1;for(i=0;i<16;A<<=1,++i)_&A&&(h&&i==C&&!d&&(_&=~A,w+=4,m=!0),d+=4)}else{f||(w=4);for(A=1,i=0;i<16;A<<=1,++i)_&A&&(h&&i==C&&!d&&(_&=~A,w+=4,m=!0),w-=4,d-=4)}u=h?this.armCompiler.constructAddressingMode4Writeback(w,d,C,m):this.armCompiler.constructAddressingMode4(w,C),n?(e=l?this.armCompiler.constructLDMS(_,u,s):this.armCompiler.constructLDM(_,u,s)).writesPC=!!(32768&_):(e=l?this.armCompiler.constructSTMS(_,u,s):this.armCompiler.constructSTM(_,u,s)).writesPC=!1;break;case 167772160:8388608&(w=16777215&t)&&(w|=4278190080),w<<=2,(e=16777216&t?this.armCompiler.constructBL(w,s):this.armCompiler.constructB(w,s)).writesPC=!0,e.fixedJump=!0;break;case 201326592:break;case 234881024:if(251658240==(251658240&t)){w=16777215&t;(e=this.armCompiler.constructSWI(w,s)).writesPC=!1}break;default:throw"Bad opcode: 0x"+t.toString(16)}else{var y=31457280&t,R=1048576&t;if(16777216!=(25165824&y)||R){var C=(983040&t)>>16,S=(61440&t)>>12,b=96&t,r=15&t,v=function(){throw"BUG: invalid barrel shifter"};if(33554432&t){var w=255&t,g=(3840&t)>>7;v=g?this.armCompiler.constructAddressingMode1ImmediateRotate(w,g):this.armCompiler.constructAddressingMode1Immediate(w)}else if(16&t){var _=(3840&t)>>8;switch(!0,b){case 0:v=this.armCompiler.constructAddressingMode1LSL(_,r);break;case 32:v=this.armCompiler.constructAddressingMode1LSR(_,r);break;case 64:v=this.armCompiler.constructAddressingMode1ASR(_,r);break;case 96:v=this.armCompiler.constructAddressingMode1ROR(_,r)}}else{var w=(3968&t)>>7;v=this.barrelShiftImmediate(b,w,r)}switch(y){case 0:e=R?this.armCompiler.constructANDS(S,C,v,s):this.armCompiler.constructAND(S,C,v,s);break;case 2097152:e=R?this.armCompiler.constructEORS(S,C,v,s):this.armCompiler.constructEOR(S,C,v,s);break;case 4194304:e=R?this.armCompiler.constructSUBS(S,C,v,s):this.armCompiler.constructSUB(S,C,v,s);break;case 6291456:e=R?this.armCompiler.constructRSBS(S,C,v,s):this.armCompiler.constructRSB(S,C,v,s);break;case 8388608:e=R?this.armCompiler.constructADDS(S,C,v,s):this.armCompiler.constructADD(S,C,v,s);break;case 10485760:e=R?this.armCompiler.constructADCS(S,C,v,s):this.armCompiler.constructADC(S,C,v,s);break;case 12582912:e=R?this.armCompiler.constructSBCS(S,C,v,s):this.armCompiler.constructSBC(S,C,v,s);break;case 14680064:e=R?this.armCompiler.constructRSCS(S,C,v,s):this.armCompiler.constructRSC(S,C,v,s);break;case 16777216:e=this.armCompiler.constructTST(S,C,v,s);break;case 18874368:e=this.armCompiler.constructTEQ(S,C,v,s);break;case 20971520:e=this.armCompiler.constructCMP(S,C,v,s);break;case 23068672:e=this.armCompiler.constructCMN(S,C,v,s);break;case 25165824:e=R?this.armCompiler.constructORRS(S,C,v,s):this.armCompiler.constructORR(S,C,v,s);break;case 27262976:e=R?this.armCompiler.constructMOVS(S,C,v,s):this.armCompiler.constructMOV(S,C,v,s);break;case 29360128:e=R?this.armCompiler.constructBICS(S,C,v,s):this.armCompiler.constructBIC(S,C,v,s);break;case 31457280:e=R?this.armCompiler.constructMVNS(S,C,v,s):this.armCompiler.constructMVN(S,C,v,s)}e.writesPC=S==this.PC}else{var M=4194304&t;if(2158592==(11595776&t)){var r=15&t,E=(3840&t)>>7;w=(w=255&t)>>>E|w<<32-E,(e=this.armCompiler.constructMSR(r,M,t,w,s)).writesPC=!1}else if(983040==(12517376&t)){var S=(61440&t)>>12;(e=this.armCompiler.constructMRS(S,M,s)).writesPC=S==this.PC}}}return e.execMode=this.MODE_ARM,e.fixedJump=e.fixedJump||!1,e},ARMCore.prototype.compileThumb=function(t){var e=this.badOp(65535&t);this.gprs;if(16384==(64512&t)){var i=(56&t)>>3,s=7&t;switch(960&t){case 0:e=this.thumbCompiler.constructAND(s,i);break;case 64:e=this.thumbCompiler.constructEOR(s,i);break;case 128:e=this.thumbCompiler.constructLSL2(s,i);break;case 192:e=this.thumbCompiler.constructLSR2(s,i);break;case 256:e=this.thumbCompiler.constructASR2(s,i);break;case 320:e=this.thumbCompiler.constructADC(s,i);break;case 384:e=this.thumbCompiler.constructSBC(s,i);break;case 448:e=this.thumbCompiler.constructROR(s,i);break;case 512:e=this.thumbCompiler.constructTST(s,i);break;case 576:e=this.thumbCompiler.constructNEG(s,i);break;case 640:e=this.thumbCompiler.constructCMP2(s,i);break;case 704:e=this.thumbCompiler.constructCMN(s,i);break;case 768:e=this.thumbCompiler.constructORR(s,i);break;case 832:e=this.thumbCompiler.constructMUL(s,i);break;case 896:e=this.thumbCompiler.constructBIC(s,i);break;case 960:e=this.thumbCompiler.constructMVN(s,i)}e.writesPC=!1}else if(17408==(64512&t)){i=(120&t)>>3,s=(r=7&t)|(128&t)>>4;switch(768&t){case 0:(e=this.thumbCompiler.constructADD4(s,i)).writesPC=s==this.PC;break;case 256:(e=this.thumbCompiler.constructCMP3(s,i)).writesPC=!1;break;case 512:(e=this.thumbCompiler.constructMOV3(s,i)).writesPC=s==this.PC;break;case 768:(e=this.thumbCompiler.constructBX(s,i)).writesPC=!0,e.fixedJump=!1}}else if(6144==(63488&t)){i=(448&t)>>6;var r=(56&t)>>3;s=7&t;switch(1536&t){case 0:e=this.thumbCompiler.constructADD3(s,r,i);break;case 512:e=this.thumbCompiler.constructSUB3(s,r,i);break;case 1024:e=(n=(448&t)>>6)?this.thumbCompiler.constructADD1(s,r,n):this.thumbCompiler.constructMOV2(s,r,i);break;case 1536:var n=(448&t)>>6;e=this.thumbCompiler.constructSUB1(s,r,n)}e.writesPC=!1}else if(57344&t)if(8192==(57344&t)){n=255&t,r=(1792&t)>>8;switch(6144&t){case 0:e=this.thumbCompiler.constructMOV1(r,n);break;case 2048:e=this.thumbCompiler.constructCMP1(r,n);break;case 4096:e=this.thumbCompiler.constructADD2(r,n);break;case 6144:e=this.thumbCompiler.constructSUB2(r,n)}e.writesPC=!1}else if(18432==(63488&t)){s=(1792&t)>>8,n=(255&t)<<2;(e=this.thumbCompiler.constructLDR3(s,n)).writesPC=!1}else if(20480==(61440&t)){s=7&t,r=(56&t)>>3,i=(448&t)>>6;switch(3584&t){case 0:e=this.thumbCompiler.constructSTR2(s,r,i);break;case 512:e=this.thumbCompiler.constructSTRH2(s,r,i);break;case 1024:e=this.thumbCompiler.constructSTRB2(s,r,i);break;case 1536:e=this.thumbCompiler.constructLDRSB(s,r,i);break;case 2048:e=this.thumbCompiler.constructLDR2(s,r,i);break;case 2560:e=this.thumbCompiler.constructLDRH2(s,r,i);break;case 3072:e=this.thumbCompiler.constructLDRB2(s,r,i);break;case 3584:e=this.thumbCompiler.constructLDRSH(s,r,i)}e.writesPC=!1}else if(24576==(57344&t)){s=7&t,r=(56&t)>>3,n=(1984&t)>>4;(h=4096&t)&&(n>>=2),(e=2048&t?h?this.thumbCompiler.constructLDRB1(s,r,n):this.thumbCompiler.constructLDR1(s,r,n):h?this.thumbCompiler.constructSTRB1(s,r,n):this.thumbCompiler.constructSTR1(s,r,n)).writesPC=!1}else if(46080==(62976&t)){var a=!!(256&t),o=255&t;2048&t?((e=this.thumbCompiler.constructPOP(o,a)).writesPC=a,e.fixedJump=!1):(e=this.thumbCompiler.constructPUSH(o,a)).writesPC=!1}else{if(!(32768&t))throw"Bad opcode: 0x"+t.toString(16);switch(28672&t){case 0:s=7&t,r=(56&t)>>3,n=(1984&t)>>5;(e=2048&t?this.thumbCompiler.constructLDRH1(s,r,n):this.thumbCompiler.constructSTRH1(s,r,n)).writesPC=!1;break;case 4096:s=(1792&t)>>8,n=(255&t)<<2;(e=2048&t?this.thumbCompiler.constructLDR4(s,n):this.thumbCompiler.constructSTR3(s,n)).writesPC=!1;break;case 8192:s=(1792&t)>>8,n=(255&t)<<2;(e=2048&t?this.thumbCompiler.constructADD6(s,n):this.thumbCompiler.constructADD5(s,n)).writesPC=!1;break;case 12288:if(!(3840&t)){var h;n=(127&t)<<2;(h=128&t)&&(n=-n),(e=this.thumbCompiler.constructADD7(n)).writesPC=!1}break;case 16384:r=(1792&t)>>8,o=255&t;(e=2048&t?this.thumbCompiler.constructLDMIA(r,o):this.thumbCompiler.constructSTMIA(r,o)).writesPC=!1;break;case 20480:var c=(3840&t)>>8;n=255&t;if(15==c)(e=this.thumbCompiler.constructSWI(n)).writesPC=!1;else{128&t&&(n|=4294967040),n<<=1;var u=this.conds[c];(e=this.thumbCompiler.constructB1(n,u)).writesPC=!0,e.fixedJump=!0}break;case 24576:case 28672:n=2047&t;switch(6144&t){case 0:1024&n&&(n|=4294965248),n<<=1,(e=this.thumbCompiler.constructB2(n)).writesPC=!0,e.fixedJump=!0;break;case 2048:break;case 4096:1024&n&&(n|=4294966272),n<<=12,(e=this.thumbCompiler.constructBL1(n)).writesPC=!1;break;case 6144:(e=this.thumbCompiler.constructBL2(n)).writesPC=!0,e.fixedJump=!1}break;default:this.WARN("Undefined instruction: 0x"+t.toString(16))}}else{var s=7&t,i=(56&t)>>3,n=(1984&t)>>6;switch(6144&t){case 0:e=this.thumbCompiler.constructLSL1(s,i,n);break;case 2048:e=this.thumbCompiler.constructLSR1(s,i,n);break;case 4096:e=this.thumbCompiler.constructASR1(s,i,n)}e.writesPC=!1}return e.execMode=this.MODE_THUMB,e.fixedJump=e.fixedJump||!1,e}},function(t,e){ARMCoreArm=function(t){this.cpu=t,this.addressingMode23Immediate=[function(e,i,s){var r=t.gprs,n=function(){var t=r[e];return s&&!s()||(r[e]-=i),t};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){var t=r[e];return s&&!s()||(r[e]+=i),t};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){return addr=r[e]-i};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){var t=r[e]-i;return s&&!s()||(r[e]=t),t};return n.writesPC=e==t.PC,n},null,null,function(e,i,s){var r=t.gprs,n=function(){return addr=r[e]+i};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){var t=r[e]+i;return s&&!s()||(r[e]=t),t};return n.writesPC=e==t.PC,n},null,null],this.addressingMode23Register=[function(e,i,s){var r=t.gprs,n=function(){var t=r[e];return s&&!s()||(r[e]-=r[i]),t};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){var t=r[e];return s&&!s()||(r[e]+=r[i]),t};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){return r[e]-r[i]};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){var t=r[e]-r[i];return s&&!s()||(r[e]=t),t};return n.writesPC=e==t.PC,n},null,null,function(e,i,s){var r=t.gprs,n=function(){return r[e]+r[i]};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){var t=r[e]+r[i];return s&&!s()||(r[e]=t),t};return n.writesPC=e==t.PC,n},null,null],this.addressingMode2RegisterShifted=[function(e,i,s){var r=t.gprs,n=function(){var n=r[e];return s&&!s()||(i(),r[e]-=t.shifterOperand),n};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){var n=r[e];return s&&!s()||(i(),r[e]+=t.shifterOperand),n};return n.writesPC=e==t.PC,n},null,null,null,function(e,i,s){var r=t.gprs,n=function(){return i(),r[e]-t.shifterOperand};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){i();var n=r[e]-t.shifterOperand;return s&&!s()||(r[e]=n),n};return n.writesPC=e==t.PC,n},null,null,function(e,i,s){var r=t.gprs,n=function(){return i(),r[e]+t.shifterOperand};return n.writesPC=!1,n},function(e,i,s){var r=t.gprs,n=function(){i();var n=r[e]+t.shifterOperand;return s&&!s()||(r[e]=n),n};return n.writePC=e==t.PC,n},null,null]},ARMCoreArm.prototype.constructAddressingMode1ASR=function(t,e){var i=this.cpu,s=i.gprs;return function(){++i.cycles;var r=s[t];t==i.PC&&(r+=4),r&=255;var n=s[e];e==i.PC&&(n+=4),0==r?(i.shifterOperand=n,i.shifterCarryOut=i.cpsrC):r<32?(i.shifterOperand=n>>r,i.shifterCarryOut=n&1<<r-1):s[e]>>31?(i.shifterOperand=4294967295,i.shifterCarryOut=2147483648):(i.shifterOperand=0,i.shifterCarryOut=0)}},ARMCoreArm.prototype.constructAddressingMode1Immediate=function(t){var e=this.cpu;return function(){e.shifterOperand=t,e.shifterCarryOut=e.cpsrC}},ARMCoreArm.prototype.constructAddressingMode1ImmediateRotate=function(t,e){var i=this.cpu;return function(){i.shifterOperand=t>>>e|t<<32-e,i.shifterCarryOut=i.shifterOperand>>31}},ARMCoreArm.prototype.constructAddressingMode1LSL=function(t,e){var i=this.cpu,s=i.gprs;return function(){++i.cycles;var r=s[t];t==i.PC&&(r+=4),r&=255;var n=s[e];e==i.PC&&(n+=4),0==r?(i.shifterOperand=n,i.shifterCarryOut=i.cpsrC):r<32?(i.shifterOperand=n<<r,i.shifterCarryOut=n&1<<32-r):32==r?(i.shifterOperand=0,i.shifterCarryOut=1&n):(i.shifterOperand=0,i.shifterCarryOut=0)}},ARMCoreArm.prototype.constructAddressingMode1LSR=function(t,e){var i=this.cpu,s=i.gprs;return function(){++i.cycles;var r=s[t];t==i.PC&&(r+=4),r&=255;var n=s[e];e==i.PC&&(n+=4),0==r?(i.shifterOperand=n,i.shifterCarryOut=i.cpsrC):r<32?(i.shifterOperand=n>>>r,i.shifterCarryOut=n&1<<r-1):32==r?(i.shifterOperand=0,i.shifterCarryOut=n>>31):(i.shifterOperand=0,i.shifterCarryOut=0)}},ARMCoreArm.prototype.constructAddressingMode1ROR=function(t,e){var i=this.cpu,s=i.gprs;return function(){++i.cycles;var r=s[t];t==i.PC&&(r+=4),r&=255;var n=s[e];e==i.PC&&(n+=4);var a=31&r;0==r?(i.shifterOperand=n,i.shifterCarryOut=i.cpsrC):a?(i.shifterOperand=s[e]>>>a|s[e]<<32-a,i.shifterCarryOut=n&1<<a-1):(i.shifterOperand=n,i.shifterCarryOut=n>>31)}},ARMCoreArm.prototype.constructAddressingMode23Immediate=function(t,e,i){var s=(983040&t)>>16;return this.addressingMode23Immediate[(27262976&t)>>21](s,e,i)},ARMCoreArm.prototype.constructAddressingMode23Register=function(t,e,i){var s=(983040&t)>>16;return this.addressingMode23Register[(27262976&t)>>21](s,e,i)},ARMCoreArm.prototype.constructAddressingMode2RegisterShifted=function(t,e,i){var s=(983040&t)>>16;return this.addressingMode2RegisterShifted[(27262976&t)>>21](s,e,i)},ARMCoreArm.prototype.constructAddressingMode4=function(t,e){var i=this.cpu.gprs;return function(){return i[e]+t}},ARMCoreArm.prototype.constructAddressingMode4Writeback=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(a){var o=n[i]+t;return a&&s&&r.mmu.store32(n[i]+t-4,n[i]),n[i]+=e,o}},ARMCoreArm.prototype.constructADC=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(r.shifterOperand>>>0)+!!r.cpsrC;n[t]=(n[e]>>>0)+a}}},ARMCoreArm.prototype.constructADCS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(r.shifterOperand>>>0)+!!r.cpsrC,o=(n[e]>>>0)+a;t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=o>>31,r.cpsrZ=!(4294967295&o),r.cpsrC=o>4294967295,r.cpsrV=n[e]>>31==a>>31&&n[e]>>31!=o>>31&&a>>31!=o>>31),n[t]=o}}},ARMCoreArm.prototype.constructADD=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=(n[e]>>>0)+(r.shifterOperand>>>0))}},ARMCoreArm.prototype.constructADDS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(n[e]>>>0)+(r.shifterOperand>>>0);t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=a>>31,r.cpsrZ=!(4294967295&a),r.cpsrC=a>4294967295,r.cpsrV=n[e]>>31==r.shifterOperand>>31&&n[e]>>31!=a>>31&&r.shifterOperand>>31!=a>>31),n[t]=a}}},ARMCoreArm.prototype.constructAND=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]&r.shifterOperand)}},ARMCoreArm.prototype.constructANDS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]&r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructB=function(t,e){var i=this.cpu,s=i.gprs;return function(){!e||e()?(i.mmu.waitPrefetch32(s[i.PC]),s[i.PC]+=t):i.mmu.waitPrefetch32(s[i.PC])}},ARMCoreArm.prototype.constructBIC=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]&~r.shifterOperand)}},ARMCoreArm.prototype.constructBICS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]&~r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructBL=function(t,e){var i=this.cpu,s=i.gprs;return function(){!e||e()?(i.mmu.waitPrefetch32(s[i.PC]),s[i.LR]=s[i.PC]-4,s[i.PC]+=t):i.mmu.waitPrefetch32(s[i.PC])}},ARMCoreArm.prototype.constructBX=function(t,e){var i=this.cpu,s=i.gprs;return function(){!e||e()?(i.mmu.waitPrefetch32(s[i.PC]),i.switchExecMode(1&s[t]),s[i.PC]=4294967294&s[t]):i.mmu.waitPrefetch32(s[i.PC])}},ARMCoreArm.prototype.constructCMN=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var t=(n[e]>>>0)+(r.shifterOperand>>>0);r.cpsrN=t>>31,r.cpsrZ=!(4294967295&t),r.cpsrC=t>4294967295,r.cpsrV=n[e]>>31==r.shifterOperand>>31&&n[e]>>31!=t>>31&&r.shifterOperand>>31!=t>>31}}},ARMCoreArm.prototype.constructCMP=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var t=n[e]-r.shifterOperand;r.cpsrN=t>>31,r.cpsrZ=!(4294967295&t),r.cpsrC=n[e]>>>0>=r.shifterOperand>>>0,r.cpsrV=n[e]>>31!=r.shifterOperand>>31&&n[e]>>31!=t>>31}}},ARMCoreArm.prototype.constructEOR=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]^r.shifterOperand)}},ARMCoreArm.prototype.constructEORS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]^r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructLDM=function(t,e,i){var s=this.cpu,r=s.gprs,n=s.mmu;return function(){if(n.waitPrefetch32(r[s.PC]),!i||i()){var a,o,h=e(!1),c=0;for(a=t,o=0;a;a>>=1,++o)1&a&&(r[o]=n.load32(4294967292&h),h+=4,++c);n.waitMulti32(h,c),++s.cycles}}},ARMCoreArm.prototype.constructLDMS=function(t,e,i){var s=this.cpu,r=s.gprs,n=s.mmu;return function(){if(n.waitPrefetch32(r[s.PC]),!i||i()){var a,o,h=e(!1),c=0,u=s.mode;for(s.switchMode(s.MODE_SYSTEM),a=t,o=0;a;a>>=1,++o)1&a&&(r[o]=n.load32(4294967292&h),h+=4,++c);s.switchMode(u),n.waitMulti32(h,c),++s.cycles}}},ARMCoreArm.prototype.constructLDR=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(s.mmu.waitPrefetch32(r[s.PC]),!i||i()){var n=e();r[t]=s.mmu.load32(n),s.mmu.wait32(n),++s.cycles}}},ARMCoreArm.prototype.constructLDRB=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(s.mmu.waitPrefetch32(r[s.PC]),!i||i()){var n=e();r[t]=s.mmu.loadU8(n),s.mmu.wait(n),++s.cycles}}},ARMCoreArm.prototype.constructLDRH=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(s.mmu.waitPrefetch32(r[s.PC]),!i||i()){var n=e();r[t]=s.mmu.loadU16(n),s.mmu.wait(n),++s.cycles}}},ARMCoreArm.prototype.constructLDRSB=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(s.mmu.waitPrefetch32(r[s.PC]),!i||i()){var n=e();r[t]=s.mmu.load8(n),s.mmu.wait(n),++s.cycles}}},ARMCoreArm.prototype.constructLDRSH=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(s.mmu.waitPrefetch32(r[s.PC]),!i||i()){var n=e();r[t]=s.mmu.load16(n),s.mmu.wait(n),++s.cycles}}},ARMCoreArm.prototype.constructMLA=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r())if(++n.cycles,n.mmu.waitMul(i),4294901760&a[s]&&4294901760&a[i]){var o=(4294901760&a[s])*a[i]&4294967295,h=(65535&a[s])*a[i]&4294967295;a[t]=o+h+a[e]&4294967295}else a[t]=a[s]*a[i]+a[e]}},ARMCoreArm.prototype.constructMLAS=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){if(++n.cycles,n.mmu.waitMul(i),4294901760&a[s]&&4294901760&a[i]){var o=(4294901760&a[s])*a[i]&4294967295,h=(65535&a[s])*a[i]&4294967295;a[t]=o+h+a[e]&4294967295}else a[t]=a[s]*a[i]+a[e];n.cpsrN=a[t]>>31,n.cpsrZ=!(4294967295&a[t])}}},ARMCoreArm.prototype.constructMOV=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=r.shifterOperand)}},ARMCoreArm.prototype.constructMOVS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructMRS=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch32(r[s.PC]),i&&!i()||(r[t]=e?s.spsr:s.packCPSR())}},ARMCoreArm.prototype.constructMSR=function(t,e,i,s,r){var n=this.cpu,a=n.gprs,o=65536&i,h=524288&i;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){var c;c=33554432&i?s:a[t];var u=(o?255:0)|(h?4278190080:0);e?(u&=n.USER_MASK|n.PRIV_MASK|n.STATE_MASK,n.spsr=n.spsr&~u|c&u):(u&n.USER_MASK&&(n.cpsrN=c>>31,n.cpsrZ=1073741824&c,n.cpsrC=536870912&c,n.cpsrV=268435456&c),n.mode!=n.MODE_USER&&u&n.PRIV_MASK&&(n.switchMode(15&c|16),n.cpsrI=128&c,n.cpsrF=64&c))}}},ARMCoreArm.prototype.constructMUL=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s())if(r.mmu.waitMul(n[e]),4294901760&n[i]&&4294901760&n[e]){var a=(4294901760&n[i])*n[e]|0,o=(65535&n[i])*n[e]|0;n[t]=a+o}else n[t]=n[i]*n[e]}},ARMCoreArm.prototype.constructMULS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){if(r.mmu.waitMul(n[e]),4294901760&n[i]&&4294901760&n[e]){var a=(4294901760&n[i])*n[e]|0,o=(65535&n[i])*n[e]|0;n[t]=a+o}else n[t]=n[i]*n[e];r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t])}}},ARMCoreArm.prototype.constructMVN=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=~r.shifterOperand)}},ARMCoreArm.prototype.constructMVNS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=~r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructORR=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]|r.shifterOperand)}},ARMCoreArm.prototype.constructORRS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]|r.shifterOperand,t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=n[t]>>31,r.cpsrZ=!(4294967295&n[t]),r.cpsrC=r.shifterCarryOut))}},ARMCoreArm.prototype.constructRSB=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=r.shifterOperand-n[e])}},ARMCoreArm.prototype.constructRSBS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=r.shifterOperand-n[e];t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=a>>31,r.cpsrZ=!(4294967295&a),r.cpsrC=r.shifterOperand>>>0>=n[e]>>>0,r.cpsrV=r.shifterOperand>>31!=n[e]>>31&&r.shifterOperand>>31!=a>>31),n[t]=a}}},ARMCoreArm.prototype.constructRSC=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(n[e]>>>0)+!r.cpsrC;n[t]=(r.shifterOperand>>>0)-a}}},ARMCoreArm.prototype.constructRSCS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(n[e]>>>0)+!r.cpsrC,o=(r.shifterOperand>>>0)-a;t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=o>>31,r.cpsrZ=!(4294967295&o),r.cpsrC=r.shifterOperand>>>0>=o>>>0,r.cpsrV=r.shifterOperand>>31!=a>>31&&r.shifterOperand>>31!=o>>31),n[t]=o}}},ARMCoreArm.prototype.constructSBC=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(r.shifterOperand>>>0)+!r.cpsrC;n[t]=(n[e]>>>0)-a}}},ARMCoreArm.prototype.constructSBCS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=(r.shifterOperand>>>0)+!r.cpsrC,o=(n[e]>>>0)-a;t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=o>>31,r.cpsrZ=!(4294967295&o),r.cpsrC=n[e]>>>0>=o>>>0,r.cpsrV=n[e]>>31!=a>>31&&n[e]>>31!=o>>31),n[t]=o}}},ARMCoreArm.prototype.constructSMLAL=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){n.cycles+=2,n.mmu.waitMul(i);var o=(4294901760&a[s])*a[i],h=(65535&a[s])*a[i],c=(a[e]>>>0)+o+h;a[e]=c,a[t]+=Math.floor(c*(1/4294967296))}}},ARMCoreArm.prototype.constructSMLALS=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){n.cycles+=2,n.mmu.waitMul(i);var o=(4294901760&a[s])*a[i],h=(65535&a[s])*a[i],c=(a[e]>>>0)+o+h;a[e]=c,a[t]+=Math.floor(c*(1/4294967296)),n.cpsrN=a[t]>>31,n.cpsrZ=!(4294967295&a[t]||4294967295&a[e])}}},ARMCoreArm.prototype.constructSMULL=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){++n.cycles,n.mmu.waitMul(a[i]);var o=((4294901760&a[s])>>0)*(a[i]>>0),h=((65535&a[s])>>0)*(a[i]>>0);a[e]=(4294967295&o)+(4294967295&h)&4294967295,a[t]=Math.floor(o*(1/4294967296)+h*(1/4294967296))}}},ARMCoreArm.prototype.constructSMULLS=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){++n.cycles,n.mmu.waitMul(a[i]);var o=((4294901760&a[s])>>0)*(a[i]>>0),h=((65535&a[s])>>0)*(a[i]>>0);a[e]=(4294967295&o)+(4294967295&h)&4294967295,a[t]=Math.floor(o*(1/4294967296)+h*(1/4294967296)),n.cpsrN=a[t]>>31,n.cpsrZ=!(4294967295&a[t]||4294967295&a[e])}}},ARMCoreArm.prototype.constructSTM=function(t,e,i){var s=this.cpu,r=s.gprs,n=s.mmu;return function(){if(!i||i()){n.wait32(r[s.PC]);var a,o,h=e(!0),c=0;for(a=t,o=0;a;a>>=1,++o)1&a&&(n.store32(h,r[o]),h+=4,++c);n.waitMulti32(h,c)}else n.waitPrefetch32(r[s.PC])}},ARMCoreArm.prototype.constructSTMS=function(t,e,i){var s=this.cpu,r=s.gprs,n=s.mmu;return function(){if(!i||i()){n.wait32(r[s.PC]);var a,o,h=s.mode,c=e(!0),u=0;for(s.switchMode(s.MODE_SYSTEM),a=t,o=0;a;a>>=1,++o)1&a&&(n.store32(c,r[o]),c+=4,++u);s.switchMode(h),n.waitMulti32(c,u)}else n.waitPrefetch32(r[s.PC])}},ARMCoreArm.prototype.constructSTR=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(!i||i()){var n=e();s.mmu.store32(n,r[t]),s.mmu.wait32(n),s.mmu.wait32(r[s.PC])}else s.mmu.waitPrefetch32(r[s.PC])}},ARMCoreArm.prototype.constructSTRB=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(!i||i()){var n=e();s.mmu.store8(n,r[t]),s.mmu.wait(n),s.mmu.wait32(r[s.PC])}else s.mmu.waitPrefetch32(r[s.PC])}},ARMCoreArm.prototype.constructSTRH=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){if(!i||i()){var n=e();s.mmu.store16(n,r[t]),s.mmu.wait(n),s.mmu.wait32(r[s.PC])}else s.mmu.waitPrefetch32(r[s.PC])}},ARMCoreArm.prototype.constructSUB=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){r.mmu.waitPrefetch32(n[r.PC]),s&&!s()||(i(),n[t]=n[e]-r.shifterOperand)}},ARMCoreArm.prototype.constructSUBS=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var a=n[e]-r.shifterOperand;t==r.PC&&r.hasSPSR()?r.unpackCPSR(r.spsr):(r.cpsrN=a>>31,r.cpsrZ=!(4294967295&a),r.cpsrC=n[e]>>>0>=r.shifterOperand>>>0,r.cpsrV=n[e]>>31!=r.shifterOperand>>31&&n[e]>>31!=a>>31),n[t]=a}}},ARMCoreArm.prototype.constructSWI=function(t,e){var i=this.cpu,s=i.gprs;return function(){!e||e()?(i.irq.swi32(t),i.mmu.waitPrefetch32(s[i.PC])):i.mmu.waitPrefetch32(s[i.PC])}},ARMCoreArm.prototype.constructSWP=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){r.mmu.wait32(n[e]),r.mmu.wait32(n[e]);var a=r.mmu.load32(n[e]);r.mmu.store32(n[e],n[i]),n[t]=a,++r.cycles}}},ARMCoreArm.prototype.constructSWPB=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){r.mmu.wait(n[e]),r.mmu.wait(n[e]);var a=r.mmu.load8(n[e]);r.mmu.store8(n[e],n[i]),n[t]=a,++r.cycles}}},ARMCoreArm.prototype.constructTEQ=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var t=n[e]^r.shifterOperand;r.cpsrN=t>>31,r.cpsrZ=!(4294967295&t),r.cpsrC=r.shifterCarryOut}}},ARMCoreArm.prototype.constructTST=function(t,e,i,s){var r=this.cpu,n=r.gprs;return function(){if(r.mmu.waitPrefetch32(n[r.PC]),!s||s()){i();var t=n[e]&r.shifterOperand;r.cpsrN=t>>31,r.cpsrZ=!(4294967295&t),r.cpsrC=r.shifterCarryOut}}},ARMCoreArm.prototype.constructUMLAL=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){n.cycles+=2,n.mmu.waitMul(i);var o=((4294901760&a[s])>>>0)*(a[i]>>>0),h=(65535&a[s])*(a[i]>>>0),c=(a[e]>>>0)+o+h;a[e]=c,a[t]+=c*(1/4294967296)}}},ARMCoreArm.prototype.constructUMLALS=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){n.cycles+=2,n.mmu.waitMul(i);var o=((4294901760&a[s])>>>0)*(a[i]>>>0),h=(65535&a[s])*(a[i]>>>0),c=(a[e]>>>0)+o+h;a[e]=c,a[t]+=c*(1/4294967296),n.cpsrN=a[t]>>31,n.cpsrZ=!(4294967295&a[t]||4294967295&a[e])}}},ARMCoreArm.prototype.constructUMULL=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){++n.cycles,n.mmu.waitMul(a[i]);var o=((4294901760&a[s])>>>0)*(a[i]>>>0),h=((65535&a[s])>>>0)*(a[i]>>>0);a[e]=(4294967295&o)+(4294967295&h)&4294967295,a[t]=o*(1/4294967296)+h*(1/4294967296)>>>0}}},ARMCoreArm.prototype.constructUMULLS=function(t,e,i,s,r){var n=this.cpu,a=n.gprs;return function(){if(n.mmu.waitPrefetch32(a[n.PC]),!r||r()){++n.cycles,n.mmu.waitMul(a[i]);var o=((4294901760&a[s])>>>0)*(a[i]>>>0),h=((65535&a[s])>>>0)*(a[i]>>>0);a[e]=(4294967295&o)+(4294967295&h)&4294967295,a[t]=o*(1/4294967296)+h*(1/4294967296)>>>0,n.cpsrN=a[t]>>31,n.cpsrZ=!(4294967295&a[t]||4294967295&a[e])}}}},function(t,e){window.ARMCoreThumb=ARMCoreThumb=function(t){this.cpu=t},ARMCoreThumb.prototype.constructADC=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=(s[e]>>>0)+!!i.cpsrC,n=s[t],a=(n>>>0)+r,o=n>>31,h=a>>31,c=r>>31;i.cpsrN=h,i.cpsrZ=!(4294967295&a),i.cpsrC=a>4294967295,i.cpsrV=o==c&&o!=h&&c!=h,s[t]=a}},ARMCoreThumb.prototype.constructADD1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var n=(r[e]>>>0)+i;s.cpsrN=n>>31,s.cpsrZ=!(4294967295&n),s.cpsrC=n>4294967295,s.cpsrV=!(r[e]>>31)&&(r[e]>>31^n)>>31&&n>>31,r[t]=n}},ARMCoreThumb.prototype.constructADD2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=(s[t]>>>0)+e;i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=r>4294967295,i.cpsrV=!(s[t]>>31)&&(s[t]^r)>>31&&(e^r)>>31,s[t]=r}},ARMCoreThumb.prototype.constructADD3=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var n=(r[e]>>>0)+(r[i]>>>0);s.cpsrN=n>>31,s.cpsrZ=!(4294967295&n),s.cpsrC=n>4294967295,s.cpsrV=!((r[e]^r[i])>>31)&&(r[e]^n)>>31&&(r[i]^n)>>31,r[t]=n}},ARMCoreThumb.prototype.constructADD4=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]+=s[e]}},ARMCoreThumb.prototype.constructADD5=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=(4294967292&s[i.PC])+e}},ARMCoreThumb.prototype.constructADD6=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[i.SP]+e}},ARMCoreThumb.prototype.constructADD7=function(t){var e=this.cpu,i=e.gprs;return function(){e.mmu.waitPrefetch(i[e.PC]),i[e.SP]+=t}},ARMCoreThumb.prototype.constructAND=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[t]&s[e],i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructASR1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),0==i?(s.cpsrC=r[e]>>31,s.cpsrC?r[t]=4294967295:r[t]=0):(s.cpsrC=r[e]&1<<i-1,r[t]=r[e]>>i),s.cpsrN=r[t]>>31,s.cpsrZ=!(4294967295&r[t])}},ARMCoreThumb.prototype.constructASR2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=255&s[e];r&&(r<32?(i.cpsrC=s[t]&1<<r-1,s[t]>>=r):(i.cpsrC=s[t]>>31,i.cpsrC?s[t]=4294967295:s[t]=0)),i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructB1=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),e()&&(s[i.PC]+=t)}},ARMCoreThumb.prototype.constructB2=function(t){var e=this.cpu,i=e.gprs;return function(){e.mmu.waitPrefetch(i[e.PC]),i[e.PC]+=t}},ARMCoreThumb.prototype.constructBIC=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[t]&~s[e],i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructBL1=function(t){var e=this.cpu,i=e.gprs;return function(){e.mmu.waitPrefetch(i[e.PC]),i[e.LR]=i[e.PC]+t}},ARMCoreThumb.prototype.constructBL2=function(t){var e=this.cpu,i=e.gprs;return function(){e.mmu.waitPrefetch(i[e.PC]);var s=i[e.PC];i[e.PC]=i[e.LR]+(t<<1),i[e.LR]=s-1}},ARMCoreThumb.prototype.constructBX=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),i.switchExecMode(1&s[e]);var t=0;15==e&&(t=2&s[e]),s[i.PC]=s[e]&4294967294-t}},ARMCoreThumb.prototype.constructCMN=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=(s[t]>>>0)+(s[e]>>>0);i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=r>4294967295,i.cpsrV=s[t]>>31==s[e]>>31&&s[t]>>31!=r>>31&&s[e]>>31!=r>>31}},ARMCoreThumb.prototype.constructCMP1=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=s[t]-e;i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=s[t]>>>0>=e,i.cpsrV=s[t]>>31&&(s[t]^r)>>31}},ARMCoreThumb.prototype.constructCMP2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=s[t],n=s[e],a=r-n,o=a>>31,h=r>>31;i.cpsrN=o,i.cpsrZ=!(4294967295&a),i.cpsrC=r>>>0>=n>>>0,i.cpsrV=h!=n>>31&&h!=o}},ARMCoreThumb.prototype.constructCMP3=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=s[t]-s[e];i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=s[t]>>>0>=s[e]>>>0,i.cpsrV=(s[t]^s[e])>>31&&(s[t]^r)>>31}},ARMCoreThumb.prototype.constructEOR=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[t]^s[e],i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructLDMIA=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r,n,a=s[t],o=0;for(r=1,n=0;n<8;r<<=1,++n)e&r&&(s[n]=i.mmu.load32(a),a+=4,++o);i.mmu.waitMulti32(a,o),1<<t&e||(s[t]=a)}},ARMCoreThumb.prototype.constructLDR1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var n=r[e]+i;r[t]=s.mmu.load32(n),s.mmu.wait32(n),++s.cycles}},ARMCoreThumb.prototype.constructLDR2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.load32(r[e]+r[i]),s.mmu.wait32(r[e]+r[i]),++s.cycles}},ARMCoreThumb.prototype.constructLDR3=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=i.mmu.load32((4294967292&s[i.PC])+e),i.mmu.wait32(s[i.PC]),++i.cycles}},ARMCoreThumb.prototype.constructLDR4=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=i.mmu.load32(s[i.SP]+e),i.mmu.wait32(s[i.SP]+e),++i.cycles}},ARMCoreThumb.prototype.constructLDRB1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){var n=r[e]+i;s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.loadU8(n),s.mmu.wait(n),++s.cycles}},ARMCoreThumb.prototype.constructLDRB2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.loadU8(r[e]+r[i]),s.mmu.wait(r[e]+r[i]),++s.cycles}},ARMCoreThumb.prototype.constructLDRH1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){var n=r[e]+i;s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.loadU16(n),s.mmu.wait(n),++s.cycles}},ARMCoreThumb.prototype.constructLDRH2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.loadU16(r[e]+r[i]),s.mmu.wait(r[e]+r[i]),++s.cycles}},ARMCoreThumb.prototype.constructLDRSB=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.load8(r[e]+r[i]),s.mmu.wait(r[e]+r[i]),++s.cycles}},ARMCoreThumb.prototype.constructLDRSH=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),r[t]=s.mmu.load16(r[e]+r[i]),s.mmu.wait(r[e]+r[i]),++s.cycles}},ARMCoreThumb.prototype.constructLSL1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),0==i?r[t]=r[e]:(s.cpsrC=r[e]&1<<32-i,r[t]=r[e]<<i),s.cpsrN=r[t]>>31,s.cpsrZ=!(4294967295&r[t])}},ARMCoreThumb.prototype.constructLSL2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=255&s[e];r&&(r<32?(i.cpsrC=s[t]&1<<32-r,s[t]<<=r):(i.cpsrC=r>32?0:1&s[t],s[t]=0)),i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructLSR1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]),0==i?(s.cpsrC=r[e]>>31,r[t]=0):(s.cpsrC=r[e]&1<<i-1,r[t]=r[e]>>>i),s.cpsrN=0,s.cpsrZ=!(4294967295&r[t])}},ARMCoreThumb.prototype.constructLSR2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=255&s[e];r&&(r<32?(i.cpsrC=s[t]&1<<r-1,s[t]>>>=r):(i.cpsrC=r>32?0:s[t]>>31,s[t]=0)),i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructMOV1=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=e,i.cpsrN=e>>31,i.cpsrZ=!(4294967295&e)}},ARMCoreThumb.prototype.constructMOV2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var i=r[e];s.cpsrN=i>>31,s.cpsrZ=!(4294967295&i),s.cpsrC=0,s.cpsrV=0,r[t]=i}},ARMCoreThumb.prototype.constructMOV3=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[e]}},ARMCoreThumb.prototype.constructMUL=function(t,e){var i=this.cpu,s=i.gprs;return function(){if(i.mmu.waitPrefetch(s[i.PC]),i.mmu.waitMul(s[e]),4294901760&s[e]&&4294901760&s[t]){var r=(4294901760&s[t])*s[e]&4294967295,n=(65535&s[t])*s[e]&4294967295;s[t]=r+n&4294967295}else s[t]*=s[e];i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructMVN=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=~s[e],i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructNEG=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=-s[e];i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=0>=r>>>0,i.cpsrV=s[e]>>31&&r>>31,s[t]=r}},ARMCoreThumb.prototype.constructORR=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),s[t]=s[t]|s[e],i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructPOP=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]),++i.cycles;var r,n,a=s[i.SP],o=0;for(r=1,n=0;n<8;r<<=1,++n)t&r&&(i.mmu.waitSeq32(a),s[n]=i.mmu.load32(a),a+=4,++o);e&&(s[i.PC]=4294967294&i.mmu.load32(a),a+=4,++o),i.mmu.waitMulti32(a,o),s[i.SP]=a}},ARMCoreThumb.prototype.constructPUSH=function(t,e){var i=this.cpu,s=i.gprs;return function(){var r,n,a=s[i.SP]-4,o=0;for(i.mmu.waitPrefetch(s[i.PC]),e&&(i.mmu.store32(a,s[i.LR]),a-=4,++o),r=128,n=7;r;r>>=1,--n)if(t&r){i.mmu.store32(a,s[n]),a-=4,++o;break}for(r>>=1,--n;r;r>>=1,--n)t&r&&(i.mmu.store32(a,s[n]),a-=4,++o);i.mmu.waitMulti32(a,o),s[i.SP]=a+4}},ARMCoreThumb.prototype.constructROR=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=255&s[e];if(r){var n=31&r;n>0?(i.cpsrC=s[t]&1<<n-1,s[t]=s[t]>>>n|s[t]<<32-n):i.cpsrC=s[t]>>31}i.cpsrN=s[t]>>31,i.cpsrZ=!(4294967295&s[t])}},ARMCoreThumb.prototype.constructSBC=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=(s[e]>>>0)+!i.cpsrC,n=(s[t]>>>0)-r;i.cpsrN=n>>31,i.cpsrZ=!(4294967295&n),i.cpsrC=s[t]>>>0>=n>>>0,i.cpsrV=(s[t]^r)>>31&&(s[t]^n)>>31,s[t]=n}},ARMCoreThumb.prototype.constructSTMIA=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.wait(s[i.PC]);var r,n,a=s[t],o=0;for(r=1,n=0;n<8;r<<=1,++n)if(e&r){i.mmu.store32(a,s[n]),a+=4,++o;break}for(r<<=1,++n;n<8;r<<=1,++n)e&r&&(i.mmu.store32(a,s[n]),a+=4,++o);i.mmu.waitMulti32(a,o),s[t]=a}},ARMCoreThumb.prototype.constructSTR1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){var n=r[e]+i;s.mmu.store32(n,r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait32(n)}},ARMCoreThumb.prototype.constructSTR2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.store32(r[e]+r[i],r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait32(r[e]+r[i])}},ARMCoreThumb.prototype.constructSTR3=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.store32(s[i.SP]+e,s[t]),i.mmu.wait(s[i.PC]),i.mmu.wait32(s[i.SP]+e)}},ARMCoreThumb.prototype.constructSTRB1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){var n=r[e]+i;s.mmu.store8(n,r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait(n)}},ARMCoreThumb.prototype.constructSTRB2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.store8(r[e]+r[i],r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait(r[e]+r[i])}},ARMCoreThumb.prototype.constructSTRH1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){var n=r[e]+i;s.mmu.store16(n,r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait(n)}},ARMCoreThumb.prototype.constructSTRH2=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.store16(r[e]+r[i],r[t]),s.mmu.wait(r[s.PC]),s.mmu.wait(r[e]+r[i])}},ARMCoreThumb.prototype.constructSUB1=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var n=r[e]-i;s.cpsrN=n>>31,s.cpsrZ=!(4294967295&n),s.cpsrC=r[e]>>>0>=i,s.cpsrV=r[e]>>31&&(r[e]^n)>>31,r[t]=n}},ARMCoreThumb.prototype.constructSUB2=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=s[t]-e;i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r),i.cpsrC=s[t]>>>0>=e,i.cpsrV=s[t]>>31&&(s[t]^r)>>31,s[t]=r}},ARMCoreThumb.prototype.constructSUB3=function(t,e,i){var s=this.cpu,r=s.gprs;return function(){s.mmu.waitPrefetch(r[s.PC]);var n=r[e]-r[i];s.cpsrN=n>>31,s.cpsrZ=!(4294967295&n),s.cpsrC=r[e]>>>0>=r[i]>>>0,s.cpsrV=r[e]>>31!=r[i]>>31&&r[e]>>31!=n>>31,r[t]=n}},ARMCoreThumb.prototype.constructSWI=function(t){var e=this.cpu,i=e.gprs;return function(){e.irq.swi(t),e.mmu.waitPrefetch(i[e.PC])}},ARMCoreThumb.prototype.constructTST=function(t,e){var i=this.cpu,s=i.gprs;return function(){i.mmu.waitPrefetch(s[i.PC]);var r=s[t]&s[e];i.cpsrN=r>>31,i.cpsrZ=!(4294967295&r)}}},function(t,e){window.GameBoyAdvanceIO=function(){this.DISPCNT=0,this.GREENSWP=2,this.DISPSTAT=4,this.VCOUNT=6,this.BG0CNT=8,this.BG1CNT=10,this.BG2CNT=12,this.BG3CNT=14,this.BG0HOFS=16,this.BG0VOFS=18,this.BG1HOFS=20,this.BG1VOFS=22,this.BG2HOFS=24,this.BG2VOFS=26,this.BG3HOFS=28,this.BG3VOFS=30,this.BG2PA=32,this.BG2PB=34,this.BG2PC=36,this.BG2PD=38,this.BG2X_LO=40,this.BG2X_HI=42,this.BG2Y_LO=44,this.BG2Y_HI=46,this.BG3PA=48,this.BG3PB=50,this.BG3PC=52,this.BG3PD=54,this.BG3X_LO=56,this.BG3X_HI=58,this.BG3Y_LO=60,this.BG3Y_HI=62,this.WIN0H=64,this.WIN1H=66,this.WIN0V=68,this.WIN1V=70,this.WININ=72,this.WINOUT=74,this.MOSAIC=76,this.BLDCNT=80,this.BLDALPHA=82,this.BLDY=84,this.SOUND1CNT_LO=96,this.SOUND1CNT_HI=98,this.SOUND1CNT_X=100,this.SOUND2CNT_LO=104,this.SOUND2CNT_HI=108,this.SOUND3CNT_LO=112,this.SOUND3CNT_HI=114,this.SOUND3CNT_X=116,this.SOUND4CNT_LO=120,this.SOUND4CNT_HI=124,this.SOUNDCNT_LO=128,this.SOUNDCNT_HI=130,this.SOUNDCNT_X=132,this.SOUNDBIAS=136,this.WAVE_RAM0_LO=144,this.WAVE_RAM0_HI=146,this.WAVE_RAM1_LO=148,this.WAVE_RAM1_HI=150,this.WAVE_RAM2_LO=152,this.WAVE_RAM2_HI=154,this.WAVE_RAM3_LO=156,this.WAVE_RAM3_HI=158,this.FIFO_A_LO=160,this.FIFO_A_HI=162,this.FIFO_B_LO=164,this.FIFO_B_HI=166,this.DMA0SAD_LO=176,this.DMA0SAD_HI=178,this.DMA0DAD_LO=180,this.DMA0DAD_HI=182,this.DMA0CNT_LO=184,this.DMA0CNT_HI=186,this.DMA1SAD_LO=188,this.DMA1SAD_HI=190,this.DMA1DAD_LO=192,this.DMA1DAD_HI=194,this.DMA1CNT_LO=196,this.DMA1CNT_HI=198,this.DMA2SAD_LO=200,this.DMA2SAD_HI=202,this.DMA2DAD_LO=204,this.DMA2DAD_HI=206,this.DMA2CNT_LO=208,this.DMA2CNT_HI=210,this.DMA3SAD_LO=212,this.DMA3SAD_HI=214,this.DMA3DAD_LO=216,this.DMA3DAD_HI=218,this.DMA3CNT_LO=220,this.DMA3CNT_HI=222,this.TM0CNT_LO=256,this.TM0CNT_HI=258,this.TM1CNT_LO=260,this.TM1CNT_HI=262,this.TM2CNT_LO=264,this.TM2CNT_HI=266,this.TM3CNT_LO=268,this.TM3CNT_HI=270,this.SIODATA32_LO=288,this.SIOMULTI0=288,this.SIODATA32_HI=290,this.SIOMULTI1=290,this.SIOMULTI2=292,this.SIOMULTI3=294,this.SIOCNT=296,this.SIOMLT_SEND=298,this.SIODATA8=298,this.RCNT=308,this.JOYCNT=320,this.JOY_RECV=336,this.JOY_TRANS=340,this.JOYSTAT=344,this.KEYINPUT=304,this.KEYCNT=306,this.IE=512,this.IF=514,this.WAITCNT=516,this.IME=520,this.POSTFLG=768,this.HALTCNT=769,this.DEFAULT_DISPCNT=128,this.DEFAULT_SOUNDBIAS=512,this.DEFAULT_BGPA=1,this.DEFAULT_BGPD=1,this.DEFAULT_RCNT=32768},GameBoyAdvanceIO.prototype.clear=function(){this.registers=new Uint16Array(this.cpu.mmu.SIZE_IO),this.registers[this.DISPCNT>>1]=this.DEFAULT_DISPCNT,this.registers[this.SOUNDBIAS>>1]=this.DEFAULT_SOUNDBIAS,this.registers[this.BG2PA>>1]=this.DEFAULT_BGPA,this.registers[this.BG2PD>>1]=this.DEFAULT_BGPD,this.registers[this.BG3PA>>1]=this.DEFAULT_BGPA,this.registers[this.BG3PD>>1]=this.DEFAULT_BGPD,this.registers[this.RCNT>>1]=this.DEFAULT_RCNT},GameBoyAdvanceIO.prototype.freeze=function(){return{registers:Serializer.prefix(this.registers.buffer)}},GameBoyAdvanceIO.prototype.defrost=function(t){this.registers=new Uint16Array(t.registers);for(var e=0;e<=this.BLDY;e+=2)this.store16(this.registers[e>>1])},GameBoyAdvanceIO.prototype.load8=function(t){throw"Unimplmeneted unaligned I/O access"},GameBoyAdvanceIO.prototype.load16=function(t){return this.loadU16(t)<<16>>16},GameBoyAdvanceIO.prototype.load32=function(t){switch(t&=4294967292){case this.DMA0CNT_LO:case this.DMA1CNT_LO:case this.DMA2CNT_LO:case this.DMA3CNT_LO:return this.loadU16(2|t)<<16;case this.IME:return 65535&this.loadU16(t);case this.JOY_RECV:case this.JOY_TRANS:return this.core.STUB("Unimplemented JOY register read: 0x"+t.toString(16)),0}return this.loadU16(t)|this.loadU16(2|t)<<16},GameBoyAdvanceIO.prototype.loadU8=function(t){var e=1&t;return this.loadU16(65534&t)>>>(e<<3)&255},GameBoyAdvanceIO.prototype.loadU16=function(t){switch(t){case this.DISPCNT:case this.BG0CNT:case this.BG1CNT:case this.BG2CNT:case this.BG3CNT:case this.WININ:case this.WINOUT:case this.SOUND1CNT_LO:case this.SOUND3CNT_LO:case this.SOUNDCNT_LO:case this.SOUNDCNT_HI:case this.SOUNDBIAS:case this.BLDCNT:case this.BLDALPHA:case this.TM0CNT_HI:case this.TM1CNT_HI:case this.TM2CNT_HI:case this.TM3CNT_HI:case this.DMA0CNT_HI:case this.DMA1CNT_HI:case this.DMA2CNT_HI:case this.DMA3CNT_HI:case this.RCNT:case this.WAITCNT:case this.IE:case this.IF:case this.IME:case this.POSTFLG:break;case this.DISPSTAT:return this.registers[t>>1]|this.video.readDisplayStat();case this.VCOUNT:return this.video.vcount;case this.SOUND1CNT_HI:case this.SOUND2CNT_LO:return 65472&this.registers[t>>1];case this.SOUND1CNT_X:case this.SOUND2CNT_HI:case this.SOUND3CNT_X:return 16384&this.registers[t>>1];case this.SOUND3CNT_HI:return 57344&this.registers[t>>1];case this.SOUND4CNT_LO:return 65280&this.registers[t>>1];case this.SOUND4CNT_HI:return 16639&this.registers[t>>1];case this.SOUNDCNT_X:return this.core.STUB("Unimplemented sound register read: SOUNDCNT_X"),0|this.registers[t>>1];case this.TM0CNT_LO:return this.cpu.irq.timerRead(0);case this.TM1CNT_LO:return this.cpu.irq.timerRead(1);case this.TM2CNT_LO:return this.cpu.irq.timerRead(2);case this.TM3CNT_LO:return this.cpu.irq.timerRead(3);case this.SIOCNT:return this.sio.readSIOCNT();case this.KEYINPUT:return this.keypad.pollGamepads(),this.keypad.currentDown;case this.KEYCNT:return this.core.STUB("Unimplemented I/O register read: KEYCNT"),0;case this.BG0HOFS:case this.BG0VOFS:case this.BG1HOFS:case this.BG1VOFS:case this.BG2HOFS:case this.BG2VOFS:case this.BG3HOFS:case this.BG3VOFS:case this.BG2PA:case this.BG2PB:case this.BG2PC:case this.BG2PD:case this.BG3PA:case this.BG3PB:case this.BG3PC:case this.BG3PD:case this.BG2X_LO:case this.BG2X_HI:case this.BG2Y_LO:case this.BG2Y_HI:case this.BG3X_LO:case this.BG3X_HI:case this.BG3Y_LO:case this.BG3Y_HI:case this.WIN0H:case this.WIN1H:case this.WIN0V:case this.WIN1V:case this.BLDY:case this.DMA0SAD_LO:case this.DMA0SAD_HI:case this.DMA0DAD_LO:case this.DMA0DAD_HI:case this.DMA0CNT_LO:case this.DMA1SAD_LO:case this.DMA1SAD_HI:case this.DMA1DAD_LO:case this.DMA1DAD_HI:case this.DMA1CNT_LO:case this.DMA2SAD_LO:case this.DMA2SAD_HI:case this.DMA2DAD_LO:case this.DMA2DAD_HI:case this.DMA2CNT_LO:case this.DMA3SAD_LO:case this.DMA3SAD_HI:case this.DMA3DAD_LO:case this.DMA3DAD_HI:case this.DMA3CNT_LO:case this.FIFO_A_LO:case this.FIFO_A_HI:case this.FIFO_B_LO:case this.FIFO_B_HI:return this.core.WARN("Read for write-only register: 0x"+t.toString(16)),this.core.mmu.badMemory.loadU16(0);case this.MOSAIC:return this.core.WARN("Read for write-only register: 0x"+t.toString(16)),0;case this.SIOMULTI0:case this.SIOMULTI1:case this.SIOMULTI2:case this.SIOMULTI3:return this.sio.read(t-this.SIOMULTI0>>1);case this.SIODATA8:return this.core.STUB("Unimplemented SIO register read: 0x"+t.toString(16)),0;case this.JOYCNT:case this.JOYSTAT:return this.core.STUB("Unimplemented JOY register read: 0x"+t.toString(16)),0;default:return this.core.WARN("Bad I/O register read: 0x"+t.toString(16)),this.core.mmu.badMemory.loadU16(0)}return this.registers[t>>1]},GameBoyAdvanceIO.prototype.store8=function(t,e){switch(t){case this.WININ:case 1|this.WININ:case this.WINOUT:case 1|this.WINOUT:this.value;break;case this.SOUND1CNT_LO:case 1|this.SOUND1CNT_LO:case this.SOUND1CNT_HI:case 1|this.SOUND1CNT_HI:case this.SOUND1CNT_X:case 1|this.SOUND1CNT_X:case this.SOUND2CNT_LO:case 1|this.SOUND2CNT_LO:case this.SOUND2CNT_HI:case 1|this.SOUND2CNT_HI:case this.SOUND3CNT_LO:case 1|this.SOUND3CNT_LO:case this.SOUND3CNT_HI:case 1|this.SOUND3CNT_HI:case this.SOUND3CNT_X:case 1|this.SOUND3CNT_X:case this.SOUND4CNT_LO:case 1|this.SOUND4CNT_LO:case this.SOUND4CNT_HI:case 1|this.SOUND4CNT_HI:case this.SOUNDCNT_LO:case 1|this.SOUNDCNT_LO:case this.SOUNDCNT_X:case this.IF:case this.IME:break;case 1|this.SOUNDBIAS:this.STUB_REG("sound",t);break;case this.HALTCNT:return void((e&=128)?this.core.STUB("Stop"):this.core.irq.halt());default:this.STUB_REG("8-bit I/O",t)}1&t?(e<<=8,e|=255&this.registers[t>>1]):(e&=255,e|=65280&this.registers[t>>1]),this.store16(268435454&t,e)},GameBoyAdvanceIO.prototype.store16=function(t,e){switch(t){case this.DISPCNT:this.video.renderPath.writeDisplayControl(e);break;case this.DISPSTAT:e&=this.video.DISPSTAT_MASK,this.video.writeDisplayStat(e);break;case this.BG0CNT:this.video.renderPath.writeBackgroundControl(0,e);break;case this.BG1CNT:this.video.renderPath.writeBackgroundControl(1,e);break;case this.BG2CNT:this.video.renderPath.writeBackgroundControl(2,e);break;case this.BG3CNT:this.video.renderPath.writeBackgroundControl(3,e);break;case this.BG0HOFS:this.video.renderPath.writeBackgroundHOffset(0,e);break;case this.BG0VOFS:this.video.renderPath.writeBackgroundVOffset(0,e);break;case this.BG1HOFS:this.video.renderPath.writeBackgroundHOffset(1,e);break;case this.BG1VOFS:this.video.renderPath.writeBackgroundVOffset(1,e);break;case this.BG2HOFS:this.video.renderPath.writeBackgroundHOffset(2,e);break;case this.BG2VOFS:this.video.renderPath.writeBackgroundVOffset(2,e);break;case this.BG3HOFS:this.video.renderPath.writeBackgroundHOffset(3,e);break;case this.BG3VOFS:this.video.renderPath.writeBackgroundVOffset(3,e);break;case this.BG2X_LO:this.video.renderPath.writeBackgroundRefX(2,this.registers[t>>1|1]<<16|e);break;case this.BG2X_HI:this.video.renderPath.writeBackgroundRefX(2,this.registers[t>>1^1]|e<<16);break;case this.BG2Y_LO:this.video.renderPath.writeBackgroundRefY(2,this.registers[t>>1|1]<<16|e);break;case this.BG2Y_HI:this.video.renderPath.writeBackgroundRefY(2,this.registers[t>>1^1]|e<<16);break;case this.BG2PA:this.video.renderPath.writeBackgroundParamA(2,e);break;case this.BG2PB:this.video.renderPath.writeBackgroundParamB(2,e);break;case this.BG2PC:this.video.renderPath.writeBackgroundParamC(2,e);break;case this.BG2PD:this.video.renderPath.writeBackgroundParamD(2,e);break;case this.BG3X_LO:this.video.renderPath.writeBackgroundRefX(3,this.registers[t>>1|1]<<16|e);break;case this.BG3X_HI:this.video.renderPath.writeBackgroundRefX(3,this.registers[t>>1^1]|e<<16);break;case this.BG3Y_LO:this.video.renderPath.writeBackgroundRefY(3,this.registers[t>>1|1]<<16|e);break;case this.BG3Y_HI:this.video.renderPath.writeBackgroundRefY(3,this.registers[t>>1^1]|e<<16);break;case this.BG3PA:this.video.renderPath.writeBackgroundParamA(3,e);break;case this.BG3PB:this.video.renderPath.writeBackgroundParamB(3,e);break;case this.BG3PC:this.video.renderPath.writeBackgroundParamC(3,e);break;case this.BG3PD:this.video.renderPath.writeBackgroundParamD(3,e);break;case this.WIN0H:this.video.renderPath.writeWin0H(e);break;case this.WIN1H:this.video.renderPath.writeWin1H(e);break;case this.WIN0V:this.video.renderPath.writeWin0V(e);break;case this.WIN1V:this.video.renderPath.writeWin1V(e);break;case this.WININ:e&=16191,this.video.renderPath.writeWinIn(e);break;case this.WINOUT:e&=16191,this.video.renderPath.writeWinOut(e);break;case this.BLDCNT:e&=32767,this.video.renderPath.writeBlendControl(e);break;case this.BLDALPHA:e&=7967,this.video.renderPath.writeBlendAlpha(e);break;case this.BLDY:e&=31,this.video.renderPath.writeBlendY(e);break;case this.MOSAIC:this.video.renderPath.writeMosaic(e);break;case this.SOUND1CNT_LO:e&=127,this.audio.writeSquareChannelSweep(0,e);break;case this.SOUND1CNT_HI:this.audio.writeSquareChannelDLE(0,e);break;case this.SOUND1CNT_X:e&=51199,this.audio.writeSquareChannelFC(0,e),e&=-32769;break;case this.SOUND2CNT_LO:this.audio.writeSquareChannelDLE(1,e);break;case this.SOUND2CNT_HI:e&=51199,this.audio.writeSquareChannelFC(1,e),e&=-32769;break;case this.SOUND3CNT_LO:e&=224,this.audio.writeChannel3Lo(e);break;case this.SOUND3CNT_HI:e&=57599,this.audio.writeChannel3Hi(e);break;case this.SOUND3CNT_X:e&=51199,this.audio.writeChannel3X(e),e&=-32769;break;case this.SOUND4CNT_LO:e&=65343,this.audio.writeChannel4LE(e);break;case this.SOUND4CNT_HI:e&=49407,this.audio.writeChannel4FC(e),e&=-32769;break;case this.SOUNDCNT_LO:e&=65399,this.audio.writeSoundControlLo(e);break;case this.SOUNDCNT_HI:e&=65295,this.audio.writeSoundControlHi(e);break;case this.SOUNDCNT_X:e&=128,this.audio.writeEnable(e);break;case this.WAVE_RAM0_LO:case this.WAVE_RAM0_HI:case this.WAVE_RAM1_LO:case this.WAVE_RAM1_HI:case this.WAVE_RAM2_LO:case this.WAVE_RAM2_HI:case this.WAVE_RAM3_LO:case this.WAVE_RAM3_HI:this.audio.writeWaveData(t-this.WAVE_RAM0_LO,e,2);break;case this.DMA0SAD_LO:case this.DMA0DAD_LO:case this.DMA1SAD_LO:case this.DMA1DAD_LO:case this.DMA2SAD_LO:case this.DMA2DAD_LO:case this.DMA3SAD_LO:case this.DMA3DAD_LO:return void this.store32(t,this.registers[1+(t>>1)]<<16|e);case this.DMA0SAD_HI:case this.DMA0DAD_HI:case this.DMA1SAD_HI:case this.DMA1DAD_HI:case this.DMA2SAD_HI:case this.DMA2DAD_HI:case this.DMA3SAD_HI:case this.DMA3DAD_HI:return void this.store32(t-2,this.registers[(t>>1)-1]|e<<16);case this.DMA0CNT_LO:this.cpu.irq.dmaSetWordCount(0,e);break;case this.DMA0CNT_HI:return this.registers[t>>1]=65504&e,void this.cpu.irq.dmaWriteControl(0,e);case this.DMA1CNT_LO:this.cpu.irq.dmaSetWordCount(1,e);break;case this.DMA1CNT_HI:return this.registers[t>>1]=65504&e,void this.cpu.irq.dmaWriteControl(1,e);case this.DMA2CNT_LO:this.cpu.irq.dmaSetWordCount(2,e);break;case this.DMA2CNT_HI:return this.registers[t>>1]=65504&e,void this.cpu.irq.dmaWriteControl(2,e);case this.DMA3CNT_LO:this.cpu.irq.dmaSetWordCount(3,e);break;case this.DMA3CNT_HI:return this.registers[t>>1]=65504&e,void this.cpu.irq.dmaWriteControl(3,e);case this.TM0CNT_LO:return void this.cpu.irq.timerSetReload(0,e);case this.TM1CNT_LO:return void this.cpu.irq.timerSetReload(1,e);case this.TM2CNT_LO:return void this.cpu.irq.timerSetReload(2,e);case this.TM3CNT_LO:return void this.cpu.irq.timerSetReload(3,e);case this.TM0CNT_HI:e&=199,this.cpu.irq.timerWriteControl(0,e);break;case this.TM1CNT_HI:e&=199,this.cpu.irq.timerWriteControl(1,e);break;case this.TM2CNT_HI:e&=199,this.cpu.irq.timerWriteControl(2,e);break;case this.TM3CNT_HI:e&=199,this.cpu.irq.timerWriteControl(3,e);break;case this.SIOMULTI0:case this.SIOMULTI1:case this.SIOMULTI2:case this.SIOMULTI3:case this.SIODATA8:this.STUB_REG("SIO",t);break;case this.RCNT:this.sio.setMode(e>>12&12|this.registers[this.SIOCNT>>1]>>12&3),this.sio.writeRCNT(e);break;case this.SIOCNT:return this.sio.setMode(e>>12&3|this.registers[this.RCNT>>1]>>12&12),void this.sio.writeSIOCNT(e);case this.JOYCNT:case this.JOYSTAT:this.STUB_REG("JOY",t);break;case this.IE:e&=16383,this.cpu.irq.setInterruptsEnabled(e);break;case this.IF:return void this.cpu.irq.dismissIRQs(e);case this.WAITCNT:e&=57343,this.cpu.mmu.adjustTimings(e);break;case this.IME:e&=1,this.cpu.irq.masterEnable(e);break;default:this.STUB_REG("I/O",t)}this.registers[t>>1]=e},GameBoyAdvanceIO.prototype.store32=function(t,e){switch(t){case this.BG2X_LO:e&=268435455,this.video.renderPath.writeBackgroundRefX(2,e);break;case this.BG2Y_LO:e&=268435455,this.video.renderPath.writeBackgroundRefY(2,e);break;case this.BG3X_LO:e&=268435455,this.video.renderPath.writeBackgroundRefX(3,e);break;case this.BG3Y_LO:e&=268435455,this.video.renderPath.writeBackgroundRefY(3,e);break;case this.DMA0SAD_LO:this.cpu.irq.dmaSetSourceAddress(0,e);break;case this.DMA0DAD_LO:this.cpu.irq.dmaSetDestAddress(0,e);break;case this.DMA1SAD_LO:this.cpu.irq.dmaSetSourceAddress(1,e);break;case this.DMA1DAD_LO:this.cpu.irq.dmaSetDestAddress(1,e);break;case this.DMA2SAD_LO:this.cpu.irq.dmaSetSourceAddress(2,e);break;case this.DMA2DAD_LO:this.cpu.irq.dmaSetDestAddress(2,e);break;case this.DMA3SAD_LO:this.cpu.irq.dmaSetSourceAddress(3,e);break;case this.DMA3DAD_LO:this.cpu.irq.dmaSetDestAddress(3,e);break;case this.FIFO_A_LO:return void this.audio.appendToFifoA(e);case this.FIFO_B_LO:return void this.audio.appendToFifoB(e);case this.IME:return void this.store16(t,65535&e);case this.JOY_RECV:case this.JOY_TRANS:return void this.STUB_REG("JOY",t);default:return this.store16(t,65535&e),void this.store16(2|t,e>>>16)}this.registers[t>>1]=65535&e,this.registers[1+(t>>1)]=e>>>16},GameBoyAdvanceIO.prototype.invalidatePage=function(t){},GameBoyAdvanceIO.prototype.STUB_REG=function(t,e){this.core.STUB("Unimplemented "+t+" register write: "+e.toString(16))}},function(t,e){window.GameBoyAdvanceAudio=function(){if(window.AudioContext=window.AudioContext||window.webkitAudioContext,window.AudioContext){var t=this;this.context=new AudioContext,this.bufferSize=0,this.bufferSize=4096,this.maxSamples=this.bufferSize<<2,this.buffers=[new Float32Array(this.maxSamples),new Float32Array(this.maxSamples)],this.sampleMask=this.maxSamples-1,this.context.createScriptProcessor?this.jsAudio=this.context.createScriptProcessor(this.bufferSize):this.jsAudio=this.context.createJavaScriptNode(this.bufferSize),this.jsAudio.onaudioprocess=function(e){t.audioProcess(e)}}else this.context=null;this.masterEnable=!0,this.masterVolume=1,this.SOUND_MAX=1024,this.FIFO_MAX=512,this.PSG_MAX=128},GameBoyAdvanceAudio.prototype.clear=function(){if(this.fifoA=[],this.fifoB=[],this.fifoASample=0,this.fifoBSample=0,this.enabled=!1,this.context)try{this.jsAudio.disconnect(this.context.destination)}catch(t){}this.enableChannel3=!1,this.enableChannel4=!1,this.enableChannelA=!1,this.enableChannelB=!1,this.enableRightChannelA=!1,this.enableLeftChannelA=!1,this.enableRightChannelB=!1,this.enableLeftChannelB=!1,this.playingChannel3=!1,this.playingChannel4=!1,this.volumeLeft=0,this.volumeRight=0,this.ratioChannelA=1,this.ratioChannelB=1,this.enabledLeft=0,this.enabledRight=0,this.dmaA=-1,this.dmaB=-1,this.soundTimerA=0,this.soundTimerB=0,this.soundRatio=1,this.soundBias=512,this.squareChannels=new Array;for(var t=0;t<2;++t)this.squareChannels[t]={enabled:!1,playing:!1,sample:0,duty:.5,increment:0,step:0,initialVolume:0,volume:0,frequency:0,interval:0,sweepSteps:0,sweepIncrement:0,sweepInterval:0,doSweep:!1,raise:0,lower:0,nextStep:0,timed:!1,length:0,end:0};this.waveData=new Uint8Array(32),this.channel3Dimension=0,this.channel3Bank=0,this.channel3Volume=0,this.channel3Interval=0,this.channel3Next=0,this.channel3Length=0,this.channel3Timed=!1,this.channel3End=0,this.channel3Pointer=0,this.channel3Sample=0,this.cpuFrequency=this.core.irq.FREQUENCY,this.channel4={sample:0,lfsr:0,width:15,interval:this.cpuFrequency/524288,increment:0,step:0,initialVolume:0,volume:0,nextStep:0,timed:!1,length:0,end:0},this.nextEvent=0,this.nextSample=0,this.outputPointer=0,this.samplePointer=0,this.backup=0,this.totalSamples=0,this.sampleRate=32768,this.sampleInterval=this.cpuFrequency/this.sampleRate,this.resampleRatio=1,this.context&&(this.resampleRatio=this.sampleRate/this.context.sampleRate),this.writeSquareChannelFC(0,0),this.writeSquareChannelFC(1,0),this.writeChannel4FC(0)},GameBoyAdvanceAudio.prototype.freeze=function(){return{nextSample:this.nextSample}},GameBoyAdvanceAudio.prototype.defrost=function(t){this.nextSample=t.nextSample},GameBoyAdvanceAudio.prototype.pause=function(t){if(this.context)if(t)try{this.jsAudio.disconnect(this.context.destination)}catch(t){}else this.enabled&&this.jsAudio.connect(this.context.destination)},GameBoyAdvanceAudio.prototype.updateTimers=function(){var t=this.cpu.cycles;if(this.enabled&&!(t<this.nextEvent&&t<this.nextSample)){if(t>=this.nextEvent){var e=this.squareChannels[0];if(this.nextEvent=1/0,e.playing&&this.updateSquareChannel(e,t),(e=this.squareChannels[1]).playing&&this.updateSquareChannel(e,t),this.enableChannel3&&this.playingChannel3){if(t>=this.channel3Next){if(this.channel3Write){var i=this.waveData[this.channel3Pointer>>1];this.channel3Sample=((i>>((1&this.channel3Pointer)<<2)&15)-8)/8,this.channel3Pointer=this.channel3Pointer+1,this.channel3Dimension&&this.channel3Pointer>=64?this.channel3Pointer-=64:(!this.channel3Bank&&this.channel3Pointer>=32||this.channel3Pointer>=64)&&(this.channel3Pointer-=32)}this.channel3Next+=this.channel3Interval,this.channel3Interval&&this.nextEvent>this.channel3Next&&(this.nextEvent=this.channel3Next)}this.channel3Timed&&t>=this.channel3End&&(this.playingChannel3=!1)}if(this.enableChannel4&&this.playingChannel4)if(this.channel4.timed&&t>=this.channel4.end)this.playingChannel4=!1;else{if(t>=this.channel4.next){this.channel4.lfsr>>=1;i=1&this.channel4.lfsr;this.channel4.lfsr|=(this.channel4.lfsr>>1&1^i)<<this.channel4.width-1,this.channel4.next+=this.channel4.interval,this.channel4.sample=2*(i-.5)*this.channel4.volume}this.updateEnvelope(this.channel4,t),this.nextEvent>this.channel4.next&&(this.nextEvent=this.channel4.next),this.channel4.timed&&this.nextEvent>this.channel4.end&&(this.nextEvent=this.channel4.end)}}t>=this.nextSample&&(this.sample(),this.nextSample+=this.sampleInterval),this.nextEvent=Math.ceil(this.nextEvent),(this.nextEvent<t||this.nextSample<t)&&this.updateTimers()}},GameBoyAdvanceAudio.prototype.writeEnable=function(t){if(this.enabled=!!t,this.nextEvent=this.cpu.cycles,this.nextSample=this.nextEvent,this.updateTimers(),this.core.irq.pollNextEvent(),this.context)if(t)this.jsAudio.connect(this.context.destination);else try{this.jsAudio.disconnect(this.context.destination)}catch(t){}},GameBoyAdvanceAudio.prototype.writeSoundControlLo=function(t){this.masterVolumeLeft=7&t,this.masterVolumeRight=t>>4&7,this.enabledLeft=t>>8&15,this.enabledRight=t>>12&15,this.setSquareChannelEnabled(this.squareChannels[0],1&(this.enabledLeft|this.enabledRight)),this.setSquareChannelEnabled(this.squareChannels[1],2&(this.enabledLeft|this.enabledRight)),this.enableChannel3=4&(this.enabledLeft|this.enabledRight),this.setChannel4Enabled(8&(this.enabledLeft|this.enabledRight)),this.updateTimers(),this.core.irq.pollNextEvent()},GameBoyAdvanceAudio.prototype.writeSoundControlHi=function(t){switch(3&t){case 0:this.soundRatio=.25;break;case 1:this.soundRatio=.5;break;case 2:this.soundRatio=1}this.ratioChannelA=.5*(1+((4&t)>>2)),this.ratioChannelB=.5*(1+((8&t)>>3)),this.enableRightChannelA=256&t,this.enableLeftChannelA=512&t,this.enableChannelA=768&t,this.soundTimerA=1024&t,2048&t&&(this.fifoA=[]),this.enableRightChannelB=4096&t,this.enableLeftChannelB=8192&t,this.enableChannelB=12288&t,this.soundTimerB=16384&t,32768&t&&(this.fifoB=[])},GameBoyAdvanceAudio.prototype.resetSquareChannel=function(t){t.step&&(t.nextStep=this.cpu.cycles+t.step),t.enabled&&!t.playing&&(t.raise=this.cpu.cycles,t.lower=t.raise+t.duty*t.interval,t.end=this.cpu.cycles+t.length,this.nextEvent=this.cpu.cycles),t.playing=t.enabled,this.updateTimers(),this.core.irq.pollNextEvent()},GameBoyAdvanceAudio.prototype.setSquareChannelEnabled=function(t,e){t.enabled&&t.playing||!e?t.enabled=!!e:(t.enabled=!!e,this.updateTimers(),this.core.irq.pollNextEvent())},GameBoyAdvanceAudio.prototype.writeSquareChannelSweep=function(t,e){var i=this.squareChannels[t];i.sweepSteps=7&e,i.sweepIncrement=8&e?-1:1,i.sweepInterval=(e>>4&7)*this.cpuFrequency/128,i.doSweep=!!i.sweepInterval,i.nextSweep=this.cpu.cycles+i.sweepInterval,this.resetSquareChannel(i)},GameBoyAdvanceAudio.prototype.writeSquareChannelDLE=function(t,e){var i=this.squareChannels[t];switch(e>>6&3){case 0:i.duty=.125;break;case 1:i.duty=.25;break;case 2:i.duty=.5;break;case 3:i.duty=.75}this.writeChannelLE(i,e),this.resetSquareChannel(i)},GameBoyAdvanceAudio.prototype.writeSquareChannelFC=function(t,e){var i=this.squareChannels[t],s=2047&e;i.frequency=s,i.interval=this.cpuFrequency*(2048-s)/131072,i.timed=!!(16384&e),32768&e&&(this.resetSquareChannel(i),i.volume=i.initialVolume)},GameBoyAdvanceAudio.prototype.updateSquareChannel=function(t,e){if(t.timed&&e>=t.end)t.playing=!1;else{if(t.doSweep&&e>=t.nextSweep){if(t.frequency+=t.sweepIncrement*(t.frequency>>t.sweepSteps),t.frequency<0)t.frequency=0;else if(t.frequency>2047)return t.frequency=2047,void(t.playing=!1);t.interval=this.cpuFrequency*(2048-t.frequency)/131072,t.nextSweep+=t.sweepInterval}e>=t.raise?(t.sample=t.volume,t.lower=t.raise+t.duty*t.interval,t.raise+=t.interval):e>=t.lower&&(t.sample=-t.volume,t.lower+=t.interval),this.updateEnvelope(t,e),this.nextEvent>t.raise&&(this.nextEvent=t.raise),this.nextEvent>t.lower&&(this.nextEvent=t.lower),t.timed&&this.nextEvent>t.end&&(this.nextEvent=t.end),t.doSweep&&this.nextEvent>t.nextSweep&&(this.nextEvent=t.nextSweep)}},GameBoyAdvanceAudio.prototype.writeChannel3Lo=function(t){this.channel3Dimension=32&t,this.channel3Bank=64&t;var e=128&t;!this.channel3Write&&e?(this.channel3Write=e,this.resetChannel3()):this.channel3Write=e},GameBoyAdvanceAudio.prototype.writeChannel3Hi=function(t){switch(this.channel3Length=this.cpuFrequency*(256-(255&t))/256,t>>13&7){case 0:this.channel3Volume=0;break;case 1:this.channel3Volume=1;break;case 2:this.channel3Volume=.5;break;case 3:this.channel3Volume=.25;break;default:this.channel3Volume=.75}},GameBoyAdvanceAudio.prototype.writeChannel3X=function(t){this.channel3Interval=this.cpuFrequency*(2048-(2047&t))/2097152,this.channel3Timed=!!(16384&t),this.channel3Write&&this.resetChannel3()},GameBoyAdvanceAudio.prototype.resetChannel3=function(){this.channel3Next=this.cpu.cycles,this.nextEvent=this.channel3Next,this.channel3End=this.cpu.cycles+this.channel3Length,this.playingChannel3=this.channel3Write,this.updateTimers(),this.core.irq.pollNextEvent()},GameBoyAdvanceAudio.prototype.writeWaveData=function(t,e,i){this.channel3Bank||(t+=16),2==i&&(this.waveData[t]=255&e,e>>=8,++t),this.waveData[t]=255&e},GameBoyAdvanceAudio.prototype.setChannel4Enabled=function(t){!this.enableChannel4&&t?(this.channel4.next=this.cpu.cycles,this.channel4.end=this.cpu.cycles+this.channel4.length,this.enableChannel4=!0,this.playingChannel4=!0,this.nextEvent=this.cpu.cycles,this.updateEnvelope(this.channel4),this.updateTimers(),this.core.irq.pollNextEvent()):this.enableChannel4=t},GameBoyAdvanceAudio.prototype.writeChannel4LE=function(t){this.writeChannelLE(this.channel4,t),this.resetChannel4()},GameBoyAdvanceAudio.prototype.writeChannel4FC=function(t){this.channel4.timed=!!(16384&t);var e=7&t;e||(e=.5);var i=t>>4&15,s=this.cpuFrequency*(e*(2<<i))/524288;s!=this.channel4.interval&&(this.channel4.interval=s,this.resetChannel4());var r=8&t?7:15;r!=this.channel4.width&&(this.channel4.width=r,this.resetChannel4()),32768&t&&this.resetChannel4()},GameBoyAdvanceAudio.prototype.resetChannel4=function(){15==this.channel4.width?this.channel4.lfsr=16384:this.channel4.lfsr=64,this.channel4.volume=this.channel4.initialVolume,this.channel4.step&&(this.channel4.nextStep=this.cpu.cycles+this.channel4.step),this.channel4.end=this.cpu.cycles+this.channel4.length,this.channel4.next=this.cpu.cycles,this.nextEvent=this.channel4.next,this.playingChannel4=this.enableChannel4,this.updateTimers(),this.core.irq.pollNextEvent()},GameBoyAdvanceAudio.prototype.writeChannelLE=function(t,e){t.length=this.cpuFrequency*((64-(63&e))/256),t.increment=2048&e?1/16:-1/16,t.initialVolume=(e>>12&15)/16,t.step=this.cpuFrequency*((e>>8&7)/64)},GameBoyAdvanceAudio.prototype.updateEnvelope=function(t,e){t.step&&(e>=t.nextStep&&(t.volume+=t.increment,t.volume>1?t.volume=1:t.volume<0&&(t.volume=0),t.nextStep+=t.step),this.nextEvent>t.nextStep&&(this.nextEvent=t.nextStep))},GameBoyAdvanceAudio.prototype.appendToFifoA=function(t){var e;this.fifoA.length>28&&(this.fifoA=this.fifoA.slice(-28));for(var i=0;i<4;++i)e=(255&t)<<24,t>>=8,this.fifoA.push(e/2147483648)},GameBoyAdvanceAudio.prototype.appendToFifoB=function(t){var e;this.fifoB.length>28&&(this.fifoB=this.fifoB.slice(-28));for(var i=0;i<4;++i)e=(255&t)<<24,t>>=8,this.fifoB.push(e/2147483648)},GameBoyAdvanceAudio.prototype.sampleFifoA=function(){if(this.fifoA.length<=16){var t=this.core.irq.dma[this.dmaA];t.nextCount=4,this.core.mmu.serviceDma(this.dmaA,t)}this.fifoASample=this.fifoA.shift()},GameBoyAdvanceAudio.prototype.sampleFifoB=function(){if(this.fifoB.length<=16){var t=this.core.irq.dma[this.dmaB];t.nextCount=4,this.core.mmu.serviceDma(this.dmaB,t)}this.fifoBSample=this.fifoB.shift()},GameBoyAdvanceAudio.prototype.scheduleFIFODma=function(t,e){switch(e.dest){case this.cpu.mmu.BASE_IO|this.cpu.irq.io.FIFO_A_LO:e.dstControl=2,this.dmaA=t;break;case this.cpu.mmu.BASE_IO|this.cpu.irq.io.FIFO_B_LO:e.dstControl=2,this.dmaB=t;break;default:this.core.WARN("Tried to schedule FIFO DMA for non-FIFO destination")}},GameBoyAdvanceAudio.prototype.sample=function(){var t,e,i=0,s=0;(e=this.squareChannels[0]).playing&&(t=e.sample*this.soundRatio*this.PSG_MAX,1&this.enabledLeft&&(i+=t),1&this.enabledRight&&(s+=t)),(e=this.squareChannels[1]).playing&&(t=e.sample*this.soundRatio*this.PSG_MAX,2&this.enabledLeft&&(i+=t),2&this.enabledRight&&(s+=t)),this.playingChannel3&&(t=this.channel3Sample*this.soundRatio*this.channel3Volume*this.PSG_MAX,4&this.enabledLeft&&(i+=t),4&this.enabledRight&&(s+=t)),this.playingChannel4&&(t=this.channel4.sample*this.soundRatio*this.PSG_MAX,8&this.enabledLeft&&(i+=t),8&this.enabledRight&&(s+=t)),this.enableChannelA&&(t=this.fifoASample*this.FIFO_MAX*this.ratioChannelA,this.enableLeftChannelA&&(i+=t),this.enableRightChannelA&&(s+=t)),this.enableChannelB&&(t=this.fifoBSample*this.FIFO_MAX*this.ratioChannelB,this.enableLeftChannelB&&(i+=t),this.enableRightChannelB&&(s+=t));var r=this.samplePointer;i*=this.masterVolume/this.SOUND_MAX,i=Math.max(Math.min(i,1),-1),s*=this.masterVolume/this.SOUND_MAX,s=Math.max(Math.min(s,1),-1),this.buffers&&(this.buffers[0][r]=i,this.buffers[1][r]=s),this.samplePointer=r+1&this.sampleMask},GameBoyAdvanceAudio.prototype.audioProcess=function(t){var e=t.outputBuffer.getChannelData(0),i=t.outputBuffer.getChannelData(1);if(this.masterEnable){var s,r=this.outputPointer;for(s=0;s<this.bufferSize;++s,r+=this.resampleRatio){if(r>=this.maxSamples&&(r-=this.maxSamples),(0|r)==this.samplePointer){++this.backup;break}e[s]=this.buffers[0][0|r],i[s]=this.buffers[1][0|r]}for(;s<this.bufferSize;++s)e[s]=0,i[s]=0;this.outputPointer=r,++this.totalSamples}else for(s=0;s<this.bufferSize;++s)e[s]=0,i[s]=0}},function(t,e){window.GameBoyAdvanceVideo=function(){this.renderPath=new GameBoyAdvanceSoftwareRenderer,this.CYCLES_PER_PIXEL=4,this.HORIZONTAL_PIXELS=240,this.HBLANK_PIXELS=68,this.HDRAW_LENGTH=1006,this.HBLANK_LENGTH=226,this.HORIZONTAL_LENGTH=1232,this.VERTICAL_PIXELS=160,this.VBLANK_PIXELS=68,this.VERTICAL_TOTAL_PIXELS=228,this.TOTAL_LENGTH=280896,this.drawCallback=function(){},this.vblankCallback=function(){}},GameBoyAdvanceVideo.prototype.clear=function(){this.renderPath.clear(this.cpu.mmu),this.DISPSTAT_MASK=65336,this.inHblank=!1,this.inVblank=!1,this.vcounter=0,this.vblankIRQ=0,this.hblankIRQ=0,this.vcounterIRQ=0,this.vcountSetting=0,this.vcount=-1,this.lastHblank=0,this.nextHblank=this.HDRAW_LENGTH,this.nextEvent=this.nextHblank,this.nextHblankIRQ=0,this.nextVblankIRQ=0,this.nextVcounterIRQ=0},GameBoyAdvanceVideo.prototype.freeze=function(){return{inHblank:this.inHblank,inVblank:this.inVblank,vcounter:this.vcounter,vblankIRQ:this.vblankIRQ,hblankIRQ:this.hblankIRQ,vcounterIRQ:this.vcounterIRQ,vcountSetting:this.vcountSetting,vcount:this.vcount,lastHblank:this.lastHblank,nextHblank:this.nextHblank,nextEvent:this.nextEvent,nextHblankIRQ:this.nextHblankIRQ,nextVblankIRQ:this.nextVblankIRQ,nextVcounterIRQ:this.nextVcounterIRQ,renderPath:this.renderPath.freeze(this.core.encodeBase64)}},GameBoyAdvanceVideo.prototype.defrost=function(t){this.inHblank=t.inHblank,this.inVblank=t.inVblank,this.vcounter=t.vcounter,this.vblankIRQ=t.vblankIRQ,this.hblankIRQ=t.hblankIRQ,this.vcounterIRQ=t.vcounterIRQ,this.vcountSetting=t.vcountSetting,this.vcount=t.vcount,this.lastHblank=t.lastHblank,this.nextHblank=t.nextHblank,this.nextEvent=t.nextEvent,this.nextHblankIRQ=t.nextHblankIRQ,this.nextVblankIRQ=t.nextVblankIRQ,this.nextVcounterIRQ=t.nextVcounterIRQ,this.renderPath.defrost(t.renderPath,this.core.decodeBase64)},GameBoyAdvanceVideo.prototype.setBacking=function(t){var e=t.createImageData(this.HORIZONTAL_PIXELS,this.VERTICAL_PIXELS);this.context=t;for(var i=0;i<this.HORIZONTAL_PIXELS*this.VERTICAL_PIXELS*4;)e.data[i++]=255,e.data[i++]=255,e.data[i++]=255,e.data[i++]=255;this.renderPath.setBacking(e)},GameBoyAdvanceVideo.prototype.updateTimers=function(t){var e=t.cycles;if(this.nextEvent<=e)if(this.inHblank){switch(this.inHblank=!1,this.nextEvent=this.nextHblank,++this.vcount,this.vcount){case this.VERTICAL_PIXELS:this.inVblank=!0,this.renderPath.finishDraw(this),this.nextVblankIRQ=this.nextEvent+this.TOTAL_LENGTH,this.cpu.mmu.runVblankDmas(),this.vblankIRQ&&this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_VBLANK),this.vblankCallback();break;case this.VERTICAL_TOTAL_PIXELS-1:this.inVblank=!1;break;case this.VERTICAL_TOTAL_PIXELS:this.vcount=0,this.renderPath.startDraw()}this.vcounter=this.vcount==this.vcountSetting,this.vcounter&&this.vcounterIRQ&&(this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_VCOUNTER),this.nextVcounterIRQ+=this.TOTAL_LENGTH),this.vcount<this.VERTICAL_PIXELS&&this.renderPath.drawScanline(this.vcount)}else this.inHblank=!0,this.lastHblank=this.nextHblank,this.nextEvent=this.lastHblank+this.HBLANK_LENGTH,this.nextHblank=this.nextEvent+this.HDRAW_LENGTH,this.nextHblankIRQ=this.nextHblank,this.vcount<this.VERTICAL_PIXELS&&this.cpu.mmu.runHblankDmas(),this.hblankIRQ&&this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_HBLANK)},GameBoyAdvanceVideo.prototype.writeDisplayStat=function(t){this.vblankIRQ=8&t,this.hblankIRQ=16&t,this.vcounterIRQ=32&t,this.vcountSetting=(65280&t)>>8,this.vcounterIRQ&&(this.nextVcounterIRQ=this.nextHblank+this.HBLANK_LENGTH+(this.vcountSetting-this.vcount)*this.HORIZONTAL_LENGTH,this.nextVcounterIRQ<this.nextEvent&&(this.nextVcounterIRQ+=this.TOTAL_LENGTH))},GameBoyAdvanceVideo.prototype.readDisplayStat=function(){return this.inVblank|this.inHblank<<1|this.vcounter<<2},GameBoyAdvanceVideo.prototype.finishDraw=function(t){this.context.putImageData(t,0,0),this.drawCallback()}},function(t,e){function i(t,e,i){if(this.owner=t,this.blocks=[],this.blockSize=i,this.mask=(1<<i)-1,this.size=e,i)for(var s=0;s<e>>i;++s)this.blocks.push(new MemoryView(new ArrayBuffer(1<<i)));else this.blockSize=31,this.mask=-1,this.blocks[0]=new MemoryView(new ArrayBuffer(e))}function s(){this.worker=new Worker("js/video/worker.js"),this.currentFrame=0,this.delay=0,this.skipFrame=!1,this.dirty=null;var t=this,e={finish:function(e){t.backing=e.backing,t.caller.finishDraw(t.backing),--t.delay}};this.worker.onmessage=function(t){e[t.data.type](t.data)}}i.prototype.combine=function(){if(this.blocks.length>1){for(var t=new Uint8Array(this.size),e=0;e<this.blocks.length;++e)t.set(new Uint8Array(this.blocks[e].buffer),e<<this.blockSize);return t.buffer}return this.blocks[0].buffer},i.prototype.replace=function(t){for(var e=0;e<this.blocks.length;++e)this.blocks[e]=new MemoryView(t.slice(e<<this.blockSize,(e<<this.blockSize)+this.blocks[e].buffer.byteLength))},i.prototype.load8=function(t){return this.blocks[t>>this.blockSize].load8(t&this.mask)},i.prototype.load16=function(t){return this.blocks[t>>this.blockSize].load16(t&this.mask)},i.prototype.loadU8=function(t){return this.blocks[t>>this.blockSize].loadU8(t&this.mask)},i.prototype.loadU16=function(t){return this.blocks[t>>this.blockSize].loadU16(t&this.mask)},i.prototype.load32=function(t){return this.blocks[t>>this.blockSize].load32(t&this.mask)},i.prototype.store8=function(t,e){t>=this.size||(this.owner.memoryDirtied(this,t>>this.blockSize),this.blocks[t>>this.blockSize].store8(t&this.mask,e),this.blocks[t>>this.blockSize].store8(t&this.mask^1,e))},i.prototype.store16=function(t,e){if(!(t>=this.size))return this.owner.memoryDirtied(this,t>>this.blockSize),this.blocks[t>>this.blockSize].store16(t&this.mask,e)},i.prototype.store32=function(t,e){if(!(t>=this.size))return this.owner.memoryDirtied(this,t>>this.blockSize),this.blocks[t>>this.blockSize].store32(t&this.mask,e)},i.prototype.invalidatePage=function(t){},s.prototype.memoryDirtied=function(t,e){this.dirty=this.dirty||{},this.dirty.memory=this.dirty.memory||{},t===this.palette&&(this.dirty.memory.palette=t.blocks[0].buffer),t===this.oam&&(this.dirty.memory.oam=t.blocks[0].buffer),t===this.vram&&(this.dirty.memory.vram=this.dirty.memory.vram||[],this.dirty.memory.vram[e]=t.blocks[e].buffer)},s.prototype.clear=function(t){this.palette=new i(this,t.SIZE_PALETTE_RAM,0),this.vram=new i(this,t.SIZE_VRAM,13),this.oam=new i(this,t.SIZE_OAM,0),this.dirty=null,this.scanlineQueue=[],this.worker.postMessage({type:"clear",SIZE_VRAM:t.SIZE_VRAM,SIZE_OAM:t.SIZE_OAM})},s.prototype.freeze=function(t){return{palette:Serializer.prefix(this.palette.combine()),vram:Serializer.prefix(this.vram.combine()),oam:Serializer.prefix(this.oam.combine())}},s.prototype.defrost=function(t,e){this.palette.replace(t.palette),this.memoryDirtied(this.palette,0),this.vram.replace(t.vram);for(var i=0;i<this.vram.blocks.length;++i)this.memoryDirtied(this.vram,i);this.oam.replace(t.oam),this.memoryDirtied(this.oam,0)},s.prototype.writeDisplayControl=function(t){this.dirty=this.dirty||{},this.dirty.DISPCNT=t},s.prototype.writeBackgroundControl=function(t,e){this.dirty=this.dirty||{},this.dirty.BGCNT=this.dirty.BGCNT||[],this.dirty.BGCNT[t]=e},s.prototype.writeBackgroundHOffset=function(t,e){this.dirty=this.dirty||{},this.dirty.BGHOFS=this.dirty.BGHOFS||[],this.dirty.BGHOFS[t]=e},s.prototype.writeBackgroundVOffset=function(t,e){this.dirty=this.dirty||{},this.dirty.BGVOFS=this.dirty.BGVOFS||[],this.dirty.BGVOFS[t]=e},s.prototype.writeBackgroundRefX=function(t,e){this.dirty=this.dirty||{},this.dirty.BGX=this.dirty.BGX||[],this.dirty.BGX[t]=e},s.prototype.writeBackgroundRefY=function(t,e){this.dirty=this.dirty||{},this.dirty.BGY=this.dirty.BGY||[],this.dirty.BGY[t]=e},s.prototype.writeBackgroundParamA=function(t,e){this.dirty=this.dirty||{},this.dirty.BGPA=this.dirty.BGPA||[],this.dirty.BGPA[t]=e},s.prototype.writeBackgroundParamB=function(t,e){this.dirty=this.dirty||{},this.dirty.BGPB=this.dirty.BGPB||[],this.dirty.BGPB[t]=e},s.prototype.writeBackgroundParamC=function(t,e){this.dirty=this.dirty||{},this.dirty.BGPC=this.dirty.BGPC||[],this.dirty.BGPC[t]=e},s.prototype.writeBackgroundParamD=function(t,e){this.dirty=this.dirty||{},this.dirty.BGPD=this.dirty.BGPD||[],this.dirty.BGPD[t]=e},s.prototype.writeWin0H=function(t){this.dirty=this.dirty||{},this.dirty.WIN0H=t},s.prototype.writeWin1H=function(t){this.dirty=this.dirty||{},this.dirty.WIN1H=t},s.prototype.writeWin0V=function(t){this.dirty=this.dirty||{},this.dirty.WIN0V=t},s.prototype.writeWin1V=function(t){this.dirty=this.dirty||{},this.dirty.WIN1V=t},s.prototype.writeWinIn=function(t){this.dirty=this.dirty||{},this.dirty.WININ=t},s.prototype.writeWinOut=function(t){this.dirty=this.dirty||{},this.dirty.WINOUT=t},s.prototype.writeBlendControl=function(t){this.dirty=this.dirty||{},this.dirty.BLDCNT=t},s.prototype.writeBlendAlpha=function(t){this.dirty=this.dirty||{},this.dirty.BLDALPHA=t},s.prototype.writeBlendY=function(t){this.dirty=this.dirty||{},this.dirty.BLDY=t},s.prototype.writeMosaic=function(t){this.dirty=this.dirty||{},this.dirty.MOSAIC=t},s.prototype.clearSubsets=function(t,e){if(this.dirty=this.dirty||{},4&e&&(this.palette=new i(this,t.SIZE_PALETTE_RAM,0),t.mmap(t.REGION_PALETTE_RAM,this.palette),this.memoryDirtied(this.palette,0)),8&e){this.vram=new i(this,t.SIZE_VRAM,13),t.mmap(t.REGION_VRAM,this.vram);for(var s=0;s<this.vram.blocks.length;++s)this.memoryDirtied(this.vram,s)}16&e&&(this.oam=new i(this,t.SIZE_OAM,0),t.mmap(t.REGION_OAM,this.oam),this.memoryDirtied(this.oam,0))},s.prototype.setBacking=function(t){this.backing=t,this.worker.postMessage({type:"start",backing:this.backing})},s.prototype.drawScanline=function(t){if(!this.skipFrame&&this.dirty){if(this.dirty.memory&&(this.dirty.memory.palette&&(this.dirty.memory.palette=this.dirty.memory.palette.slice(0)),this.dirty.memory.oam&&(this.dirty.memory.oam=this.dirty.memory.oam.slice(0)),this.dirty.memory.vram))for(var e=0;e<12;++e)this.dirty.memory.vram[e]&&(this.dirty.memory.vram[e]=this.dirty.memory.vram[e].slice(0));this.scanlineQueue.push({y:t,dirty:this.dirty}),this.dirty=null}},s.prototype.startDraw=function(){++this.currentFrame,this.delay<=0&&(this.skipFrame=!1),this.skipFrame||++this.delay},s.prototype.finishDraw=function(t){this.caller=t,this.skipFrame||(this.worker.postMessage({type:"finish",scanlines:this.scanlineQueue,frame:this.currentFrame}),this.scanlineQueue=[],this.delay>2&&(this.skipFrame=!0))}},function(t,e){function i(t){this.buffer=new Uint16Array(t>>1)}function s(t){i.call(this,t),this.vram=this.buffer}function r(t){i.call(this,t),this.oam=this.buffer,this.objs=new Array(128);for(var e=0;e<128;++e)this.objs[e]=new a(this,e);this.scalerot=new Array(32);for(e=0;e<32;++e)this.scalerot[e]={a:1,b:0,c:0,d:1}}function n(){this.colors=[new Array(256),new Array(256)],this.adjustedColors=[new Array(256),new Array(256)],this.passthroughColors=[this.colors[0],this.colors[0],this.colors[0],this.colors[0],this.colors[1],this.colors[0]],this.blendY=1}function a(t,e){this.TILE_OFFSET=65536,this.oam=t,this.index=e,this.x=0,this.y=0,this.scalerot=0,this.doublesize=!1,this.disable=1,this.mode=0,this.mosaic=!1,this.multipalette=!1,this.shape=0,this.scalerotParam=0,this.hflip=0,this.vflip=0,this.tileBase=0,this.priority=0,this.palette=0,this.drawScanline=this.drawScanlineNormal,this.pushPixel=GameBoyAdvanceSoftwareRenderer.pushPixel,this.cachedWidth=8,this.cachedHeight=8}function o(t,e){this.video=t,this.bg=!1,this.index=t.LAYER_OBJ,this.priority=e,this.enabled=!1,this.objwin=0}i.prototype.load8=function(t){return this.loadU8(t)<<24>>24},i.prototype.load16=function(t){return this.loadU16(t)<<16>>16},i.prototype.loadU8=function(t){var e=t>>1;return 1&t?(65280&this.buffer[e])>>>8:255&this.buffer[e]},i.prototype.loadU16=function(t){return this.buffer[t>>1]},i.prototype.load32=function(t){return this.buffer[t>>1&-2]|this.buffer[t>>1|1]<<16},i.prototype.store8=function(t,e){this.store16(t,e<<8|e)},i.prototype.store16=function(t,e){this.buffer[t>>1]=e},i.prototype.store32=function(t,e){var i=t>>1;this.store16(t,this.buffer[i]=65535&e),this.store16(t+2,this.buffer[i+1]=e>>>16)},i.prototype.insert=function(t,e){this.buffer.set(e,t)},i.prototype.invalidatePage=function(t){},s.prototype=Object.create(i.prototype),r.prototype=Object.create(i.prototype),r.prototype.overwrite=function(t){for(var e=0;e<this.buffer.byteLength>>1;++e)this.store16(e<<1,t[e])},r.prototype.store16=function(t,e){var s=(1016&t)>>3,r=this.objs[s],n=this.scalerot[s>>2];r.priority,r.disable,r.y;switch(6&t){case 0:r.y=255&e;var a=r.scalerot;r.scalerot=256&e,r.scalerot?(r.scalerotOam=this.scalerot[r.scalerotParam],r.doublesize=!!(512&e),r.disable=0,r.hflip=0,r.vflip=0):(r.doublesize=!1,r.disable=512&e,a&&(r.hflip=8&r.scalerotParam,r.vflip=16&r.scalerotParam)),r.mode=(3072&e)>>6,r.mosaic=4096&e,r.multipalette=8192&e,r.shape=(49152&e)>>14,r.recalcSize();break;case 2:r.x=511&e,r.scalerot?(r.scalerotParam=(15872&e)>>9,r.scalerotOam=this.scalerot[r.scalerotParam],r.hflip=0,r.vflip=0,r.drawScanline=r.drawScanlineAffine):(r.hflip=4096&e,r.vflip=8192&e,r.drawScanline=r.drawScanlineNormal),r.size=(49152&e)>>14,r.recalcSize();break;case 4:r.tileBase=1023&e,r.priority=(3072&e)>>10,r.palette=(61440&e)>>8;break;case 6:switch(3&s){case 0:n.a=(e<<16)/16777216;break;case 1:n.b=(e<<16)/16777216;break;case 2:n.c=(e<<16)/16777216;break;case 3:n.d=(e<<16)/16777216}}i.prototype.store16.call(this,t,e)},n.prototype.overwrite=function(t){for(var e=0;e<512;++e)this.store16(e<<1,t[e])},n.prototype.loadU8=function(t){return this.loadU16(t)>>8*(1&t)&255},n.prototype.loadU16=function(t){return this.colors[(512&t)>>9][(511&t)>>1]},n.prototype.load16=function(t){return this.loadU16(t)<<16>>16},n.prototype.load32=function(t){return this.loadU16(t)|this.loadU16(t+2)<<16},n.prototype.store16=function(t,e){var i=(512&t)>>9,s=(511&t)>>1;this.colors[i][s]=e,this.adjustedColors[i][s]=this.adjustColor(e)},n.prototype.store32=function(t,e){this.store16(t,65535&e),this.store16(t+2,e>>16)},n.prototype.invalidatePage=function(t){},n.prototype.convert16To32=function(t,e){var i=(31&t)<<3,s=(992&t)>>2,r=(31744&t)>>7;e[0]=i,e[1]=s,e[2]=r},n.prototype.mix=function(t,e,i,s){var r=31&e,n=(992&e)>>5,a=(31744&e)>>10,o=31&s,h=(992&s)>>5,c=(31744&s)>>10;return Math.min(t*r+i*o,31)|Math.min(t*n+i*h,31)<<5|Math.min(t*a+i*c,31)<<10},n.prototype.makeDarkPalettes=function(t){this.adjustColor!=this.adjustColorDark&&(this.adjustColor=this.adjustColorDark,this.resetPalettes()),this.resetPaletteLayers(t)},n.prototype.makeBrightPalettes=function(t){this.adjustColor!=this.adjustColorBright&&(this.adjustColor=this.adjustColorBright,this.resetPalettes()),this.resetPaletteLayers(t)},n.prototype.makeNormalPalettes=function(){this.passthroughColors[0]=this.colors[0],this.passthroughColors[1]=this.colors[0],this.passthroughColors[2]=this.colors[0],this.passthroughColors[3]=this.colors[0],this.passthroughColors[4]=this.colors[1],this.passthroughColors[5]=this.colors[0]},n.prototype.makeSpecialPalette=function(t){this.passthroughColors[t]=this.adjustedColors[4==t?1:0]},n.prototype.makeNormalPalette=function(t){this.passthroughColors[t]=this.colors[4==t?1:0]},n.prototype.resetPaletteLayers=function(t){this.passthroughColors[0]=1&t?this.adjustedColors[0]:this.colors[0],this.passthroughColors[1]=2&t?this.adjustedColors[0]:this.colors[0],this.passthroughColors[2]=4&t?this.adjustedColors[0]:this.colors[0],this.passthroughColors[3]=8&t?this.adjustedColors[0]:this.colors[0],this.passthroughColors[4]=16&t?this.adjustedColors[1]:this.colors[1],this.passthroughColors[5]=32&t?this.adjustedColors[0]:this.colors[0]},n.prototype.resetPalettes=function(){var t,e=this.adjustedColors[0],i=this.colors[0];for(t=0;t<256;++t)e[t]=this.adjustColor(i[t]);for(e=this.adjustedColors[1],i=this.colors[1],t=0;t<256;++t)e[t]=this.adjustColor(i[t])},n.prototype.accessColor=function(t,e){return this.passthroughColors[t][e]},n.prototype.adjustColorDark=function(t){var e=31&t,i=(992&t)>>5,s=(31744&t)>>10;return(e-=e*this.blendY)|(i-=i*this.blendY)<<5|(s-=s*this.blendY)<<10},n.prototype.adjustColorBright=function(t){var e=31&t,i=(992&t)>>5,s=(31744&t)>>10;return(e+=(31-e)*this.blendY)|(i+=(31-i)*this.blendY)<<5|(s+=(31-s)*this.blendY)<<10},n.prototype.adjustColor=n.prototype.adjustColorBright,n.prototype.setBlendY=function(t){this.blendY!=t&&(this.blendY=t,this.resetPalettes())},a.prototype.drawScanlineNormal=function(t,e,i,s,r){var n,a,o,h=this.oam.video,c=this.mode|h.target2[h.LAYER_OBJ]|this.priority<<1;16==this.mode&&(c|=h.TARGET1_MASK),1==h.blendMode&&h.alphaEnabled&&(c|=h.target1[h.LAYER_OBJ]);var u,p,d=this.cachedWidth;this.x<h.HORIZONTAL_PIXELS?(this.x<s?(a=s-this.x,o=s):(a=0,o=this.x),r<this.cachedWidth+this.x&&(d=r-this.x)):(a=s+512-this.x,o=s,r<this.cachedWidth-a&&(d=r));var l,f,m=7&(p=this.vflip?this.cachedHeight-e+i-1:e-i),A=this.multipalette?1:0;f=h.objCharacterMapping?(504&p)*this.cachedWidth>>6:(504&p)<<2-A,this.mosaic&&(o+=l=h.objMosaicX-1-(h.objMosaicX+o-1)%h.objMosaicX,a+=l),u=this.hflip?this.cachedWidth-a-1:a;var y=h.accessTile(this.TILE_OFFSET+(4&n)*A,this.tileBase+(f<<A)+((504&u)>>3-A),m<<A);for(n=a;n<d;++n)l=this.mosaic?o%h.objMosaicX:0,u=this.hflip?this.cachedWidth-(n-l)-1:n-l,A?3&n&&(!this.mosaic||l)||(y=h.accessTile(this.TILE_OFFSET+(4&u),this.tileBase+(f<<1)+((504&u)>>2),m<<1)):7&n&&(!this.mosaic||l)||(y=h.accessTile(this.TILE_OFFSET,this.tileBase+f+(u>>3),m)),this.pushPixel(h.LAYER_OBJ,this,h,y,7&u,o,t,c,!1),o++},a.prototype.drawScanlineAffine=function(t,e,i,s,r){var n,a,o,h,c,u=this.oam.video,p=this.mode|u.target2[u.LAYER_OBJ]|this.priority<<1;16==this.mode&&(p|=u.TARGET1_MASK),1==u.blendMode&&u.alphaEnabled&&(p|=u.target1[u.LAYER_OBJ]);var d,l=e-i,f=this.multipalette?1:0,m=this.cachedWidth<<this.doublesize,A=this.cachedHeight<<this.doublesize,y=m;for(y>u.HORIZONTAL_PIXELS&&(m=u.HORIZONTAL_PIXELS),this.x<u.HORIZONTAL_PIXELS?(this.x<s?(a=s-this.x,o=s):(a=0,o=this.x),r<y+this.x&&(y=r-this.x)):(o=s,r<y-(a=s+512-this.x)&&(y=r)),n=a;n<y;++n)h=this.scalerotOam.a*(n-(m>>1))+this.scalerotOam.b*(l-(A>>1))+(this.cachedWidth>>1),c=this.scalerotOam.c*(n-(m>>1))+this.scalerotOam.d*(l-(A>>1))+(this.cachedHeight>>1),this.mosaic&&(h-=n%u.objMosaicX*this.scalerotOam.a+e%u.objMosaicY*this.scalerotOam.b,c-=n%u.objMosaicX*this.scalerotOam.c+e%u.objMosaicY*this.scalerotOam.d),h<0||h>=this.cachedWidth||c<0||c>=this.cachedHeight||(d=u.objCharacterMapping?(504&c)*this.cachedWidth>>6:(504&c)<<2-f,tileRow=u.accessTile(this.TILE_OFFSET+(4&h)*f,this.tileBase+(d<<f)+((504&h)>>3-f),(7&c)<<f),this.pushPixel(u.LAYER_OBJ,this,u,tileRow,7&h,o,t,p,!1)),o++},a.prototype.recalcSize=function(){switch(this.shape){case 0:this.cachedHeight=this.cachedWidth=8<<this.size;break;case 1:switch(this.size){case 0:this.cachedHeight=8,this.cachedWidth=16;break;case 1:this.cachedHeight=8,this.cachedWidth=32;break;case 2:this.cachedHeight=16,this.cachedWidth=32;break;case 3:this.cachedHeight=32,this.cachedWidth=64}break;case 2:switch(this.size){case 0:this.cachedHeight=16,this.cachedWidth=8;break;case 1:this.cachedHeight=32,this.cachedWidth=8;break;case 2:this.cachedHeight=32,this.cachedWidth=16;break;case 3:this.cachedHeight=64,this.cachedWidth=32}}},o.prototype.drawScanline=function(t,e,i,s){var r,n,a,o=this.video.vcount;if(!(i>=s))for(var h=this.video.oam.objs,c=0;c<h.length;++c){var u;if(!(a=h[c]).disable)if((a.mode&this.video.OBJWIN_MASK)==this.objwin)if(a.mode&this.video.OBJWIN_MASK||this.priority==a.priority)r=a.y<this.video.VERTICAL_PIXELS?a.y:a.y-256,u=a.scalerot?a.cachedHeight<<a.doublesize:a.cachedHeight,n=a.mosaic?o-o%this.video.objMosaicY:o,r<=o&&r+u>o&&a.drawScanline(t,n,r,i,s)}},o.prototype.objComparator=function(t,e){return t.index-e.index},window.GameBoyAdvanceSoftwareRenderer=function(){this.LAYER_BG0=0,this.LAYER_BG1=1,this.LAYER_BG2=2,this.LAYER_BG3=3,this.LAYER_OBJ=4,this.LAYER_BACKDROP=5,this.HORIZONTAL_PIXELS=240,this.VERTICAL_PIXELS=160,this.LAYER_MASK=6,this.BACKGROUND_MASK=1,this.TARGET2_MASK=8,this.TARGET1_MASK=16,this.OBJWIN_MASK=32,this.WRITTEN_MASK=128,this.PRIORITY_MASK=this.LAYER_MASK|this.BACKGROUND_MASK,this.drawBackdrop=new function(t){this.bg=!0,this.priority=-1,this.index=t.LAYER_BACKDROP,this.enabled=!0,this.drawScanline=function(e,i,s,r){for(var n=s;n<r;++n)e.stencil[n]&t.WRITTEN_MASK?e.stencil[n]&t.TARGET1_MASK&&(e.color[n]=t.palette.mix(t.blendB,t.palette.accessColor(this.index,0),t.blendA,e.color[n]),e.stencil[n]=t.WRITTEN_MASK):(e.color[n]=t.palette.accessColor(this.index,0),e.stencil[n]=t.WRITTEN_MASK)}}(this)},GameBoyAdvanceSoftwareRenderer.prototype.clear=function(t){this.palette=new n,this.vram=new s(t.SIZE_VRAM),this.oam=new r(t.SIZE_OAM),this.oam.video=this,this.objLayers=[new o(this,0),new o(this,1),new o(this,2),new o(this,3)],this.objwinLayer=new o(this,4),this.objwinLayer.objwin=this.OBJWIN_MASK,this.backgroundMode=0,this.displayFrameSelect=0,this.hblankIntervalFree=0,this.objCharacterMapping=0,this.forcedBlank=1,this.win0=0,this.win1=0,this.objwin=0,this.vcount=-1,this.win0Left=0,this.win0Right=240,this.win1Left=0,this.win1Right=240,this.win0Top=0,this.win0Bottom=160,this.win1Top=0,this.win1Bottom=160,this.windows=new Array;for(var e=0;e<4;++e)this.windows.push({enabled:[!1,!1,!1,!1,!1,!0],special:0});this.target1=new Array(5),this.target2=new Array(5),this.blendMode=0,this.blendA=0,this.blendB=0,this.blendY=0,this.bgMosaicX=1,this.bgMosaicY=1,this.objMosaicX=1,this.objMosaicY=1,this.lastHblank=0,this.nextHblank=this.HDRAW_LENGTH,this.nextEvent=this.nextHblank,this.nextHblankIRQ=0,this.nextVblankIRQ=0,this.nextVcounterIRQ=0,this.bg=new Array;for(e=0;e<4;++e)this.bg.push({bg:!0,index:e,enabled:!1,video:this,vram:this.vram,priority:0,charBase:0,mosaic:!1,multipalette:!1,screenBase:0,overflow:0,size:0,x:0,y:0,refx:0,refy:0,dx:1,dmx:0,dy:0,dmy:1,sx:0,sy:0,pushPixel:GameBoyAdvanceSoftwareRenderer.pushPixel,drawScanline:this.drawScanlineBGMode0});this.bgModes=[this.drawScanlineBGMode0,this.drawScanlineBGMode2,this.drawScanlineBGMode2,this.drawScanlineBGMode3,this.drawScanlineBGMode4,this.drawScanlineBGMode5],this.drawLayers=[this.bg[0],this.bg[1],this.bg[2],this.bg[3],this.objLayers[0],this.objLayers[1],this.objLayers[2],this.objLayers[3],this.objwinLayer,this.drawBackdrop],objwinActive=!1,this.alphaEnabled=!1,this.scanline={color:new Uint16Array(this.HORIZONTAL_PIXELS),stencil:new Uint8Array(this.HORIZONTAL_PIXELS)},this.sharedColor=[0,0,0],this.sharedMap={tile:0,hflip:!1,vflip:!1,palette:0}},GameBoyAdvanceSoftwareRenderer.prototype.clearSubsets=function(t,e){4&e&&this.palette.overwrite(new Uint16Array(t.SIZE_PALETTE>>1)),8&e&&this.vram.insert(0,new Uint16Array(t.SIZE_VRAM>>1)),16&e&&(this.oam.overwrite(new Uint16Array(t.SIZE_OAM>>1)),this.oam.video=this)},GameBoyAdvanceSoftwareRenderer.prototype.freeze=function(){},GameBoyAdvanceSoftwareRenderer.prototype.defrost=function(t){},GameBoyAdvanceSoftwareRenderer.prototype.setBacking=function(t){this.pixelData=t;for(var e=0;e<this.HORIZONTAL_PIXELS*this.VERTICAL_PIXELS*4;)this.pixelData.data[e++]=255,this.pixelData.data[e++]=255,this.pixelData.data[e++]=255,this.pixelData.data[e++]=255},GameBoyAdvanceSoftwareRenderer.prototype.writeDisplayControl=function(t){this.backgroundMode=7&t,this.displayFrameSelect=16&t,this.hblankIntervalFree=32&t,this.objCharacterMapping=64&t,this.forcedBlank=128&t,this.bg[0].enabled=256&t,this.bg[1].enabled=512&t,this.bg[2].enabled=1024&t,this.bg[3].enabled=2048&t,this.objLayers[0].enabled=4096&t,this.objLayers[1].enabled=4096&t,this.objLayers[2].enabled=4096&t,this.objLayers[3].enabled=4096&t,this.win0=8192&t,this.win1=16384&t,this.objwin=32768&t,this.objwinLayer.enabled=4096&t&&32768&t,this.bg[2].multipalette&=-2,this.bg[3].multipalette&=-2,this.backgroundMode>0&&(this.bg[2].multipalette|=1),2==this.backgroundMode&&(this.bg[3].multipalette|=1),this.resetLayers()},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundControl=function(t,e){var i=this.bg[t];i.priority=3&e,i.charBase=(12&e)<<12,i.mosaic=64&e,i.multipalette&=-129,(t<2||0==this.backgroundMode)&&(i.multipalette|=128&e),i.screenBase=(7936&e)<<3,i.overflow=8192&e,i.size=(49152&e)>>14,this.drawLayers.sort(this.layerComparator)},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundHOffset=function(t,e){this.bg[t].x=511&e},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundVOffset=function(t,e){this.bg[t].y=511&e},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundRefX=function(t,e){this.bg[t].refx=(e<<4)/4096,this.bg[t].sx=this.bg[t].refx},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundRefY=function(t,e){this.bg[t].refy=(e<<4)/4096,this.bg[t].sy=this.bg[t].refy},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamA=function(t,e){this.bg[t].dx=(e<<16)/16777216},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamB=function(t,e){this.bg[t].dmx=(e<<16)/16777216},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamC=function(t,e){this.bg[t].dy=(e<<16)/16777216},GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamD=function(t,e){this.bg[t].dmy=(e<<16)/16777216},GameBoyAdvanceSoftwareRenderer.prototype.writeWin0H=function(t){this.win0Left=(65280&t)>>8,this.win0Right=Math.min(this.HORIZONTAL_PIXELS,255&t),this.win0Left>this.win0Right&&(this.win0Right=this.HORIZONTAL_PIXELS)},GameBoyAdvanceSoftwareRenderer.prototype.writeWin1H=function(t){this.win1Left=(65280&t)>>8,this.win1Right=Math.min(this.HORIZONTAL_PIXELS,255&t),this.win1Left>this.win1Right&&(this.win1Right=this.HORIZONTAL_PIXELS)},GameBoyAdvanceSoftwareRenderer.prototype.writeWin0V=function(t){this.win0Top=(65280&t)>>8,this.win0Bottom=Math.min(this.VERTICAL_PIXELS,255&t),this.win0Top>this.win0Bottom&&(this.win0Bottom=this.VERTICAL_PIXELS)},GameBoyAdvanceSoftwareRenderer.prototype.writeWin1V=function(t){this.win1Top=(65280&t)>>8,this.win1Bottom=Math.min(this.VERTICAL_PIXELS,255&t),this.win1Top>this.win1Bottom&&(this.win1Bottom=this.VERTICAL_PIXELS)},GameBoyAdvanceSoftwareRenderer.prototype.writeWindow=function(t,e){var i=this.windows[t];i.enabled[0]=1&e,i.enabled[1]=2&e,i.enabled[2]=4&e,i.enabled[3]=8&e,i.enabled[4]=16&e,i.special=32&e},GameBoyAdvanceSoftwareRenderer.prototype.writeWinIn=function(t){this.writeWindow(0,t),this.writeWindow(1,t>>8)},GameBoyAdvanceSoftwareRenderer.prototype.writeWinOut=function(t){this.writeWindow(2,t),this.writeWindow(3,t>>8)},GameBoyAdvanceSoftwareRenderer.prototype.writeBlendControl=function(t){switch(this.target1[0]=!!(1&t)*this.TARGET1_MASK,this.target1[1]=!!(2&t)*this.TARGET1_MASK,this.target1[2]=!!(4&t)*this.TARGET1_MASK,this.target1[3]=!!(8&t)*this.TARGET1_MASK,this.target1[4]=!!(16&t)*this.TARGET1_MASK,this.target1[5]=!!(32&t)*this.TARGET1_MASK,this.target2[0]=!!(256&t)*this.TARGET2_MASK,this.target2[1]=!!(512&t)*this.TARGET2_MASK,this.target2[2]=!!(1024&t)*this.TARGET2_MASK,this.target2[3]=!!(2048&t)*this.TARGET2_MASK,this.target2[4]=!!(4096&t)*this.TARGET2_MASK,this.target2[5]=!!(8192&t)*this.TARGET2_MASK,this.blendMode=(192&t)>>6,this.blendMode){case 1:case 0:this.palette.makeNormalPalettes();break;case 2:this.palette.makeBrightPalettes(63&t);break;case 3:this.palette.makeDarkPalettes(63&t)}},GameBoyAdvanceSoftwareRenderer.prototype.setBlendEnabled=function(t,e,i){if(this.alphaEnabled=e&&1==i,e)switch(i){case 1:case 0:this.palette.makeNormalPalette(t);break;case 2:case 3:this.palette.makeSpecialPalette(t)}else this.palette.makeNormalPalette(t)},GameBoyAdvanceSoftwareRenderer.prototype.writeBlendAlpha=function(t){this.blendA=(31&t)/16,this.blendA>1&&(this.blendA=1),this.blendB=((7936&t)>>8)/16,this.blendB>1&&(this.blendB=1)},GameBoyAdvanceSoftwareRenderer.prototype.writeBlendY=function(t){this.blendY=t,this.palette.setBlendY(t>=16?1:t/16)},GameBoyAdvanceSoftwareRenderer.prototype.writeMosaic=function(t){this.bgMosaicX=1+(15&t),this.bgMosaicY=1+(t>>4&15),this.objMosaicX=1+(t>>8&15),this.objMosaicY=1+(t>>12&15)},GameBoyAdvanceSoftwareRenderer.prototype.resetLayers=function(){this.backgroundMode>1&&(this.bg[0].enabled=!1,this.bg[1].enabled=!1),this.bg[2].enabled&&(this.bg[2].drawScanline=this.bgModes[this.backgroundMode]),0==this.backgroundMode||2==this.backgroundMode?this.bg[3].enabled&&(this.bg[3].drawScanline=this.bgModes[this.backgroundMode]):this.bg[3].enabled=!1,this.drawLayers.sort(this.layerComparator)},GameBoyAdvanceSoftwareRenderer.prototype.layerComparator=function(t,e){var i=e.priority-t.priority;return i||(t.bg&&!e.bg?-1:!t.bg&&e.bg?1:e.index-t.index)},GameBoyAdvanceSoftwareRenderer.prototype.accessMapMode0=function(t,e,i,s,r){var n=t+(i>>2&62)+s;1&e&&(n+=(256&i)<<3);var a=this.vram.loadU16(n);r.tile=1023&a,r.hflip=1024&a,r.vflip=2048&a,r.palette=(61440&a)>>8},GameBoyAdvanceSoftwareRenderer.prototype.accessMapMode1=function(t,e,i,s,r){var n=t+(i>>3)+s;r.tile=this.vram.loadU8(n)},GameBoyAdvanceSoftwareRenderer.prototype.accessTile=function(t,e,i){var s=t+(e<<5);return s|=i<<2,this.vram.load32(s)},GameBoyAdvanceSoftwareRenderer.pushPixel=function(t,e,i,s,r,n,a,o,h){var c;if(!h){if(!(c=this.multipalette?s>>(r<<3)&255:s>>(r<<2)&15))return;this.multipalette||(c|=e.palette)}var u=i.WRITTEN_MASK,p=a.stencil[n],d=i.blendMode;if(i.objwinActive)if(p&i.OBJWIN_MASK){if(!i.windows[3].enabled[t])return;i.setBlendEnabled(t,i.windows[3].special&&i.target1[t],d),i.windows[3].special&&i.alphaEnabled&&(o|=i.target1[t]),u|=i.OBJWIN_MASK}else{if(!i.windows[2].enabled[t])return;i.setBlendEnabled(t,i.windows[2].special&&i.target1[t],d),i.windows[2].special&&i.alphaEnabled&&(o|=i.target1[t])}o&i.TARGET1_MASK&&p&i.TARGET2_MASK&&i.setBlendEnabled(t,!0,1);var l=h?s:i.palette.accessColor(t,c);o&i.TARGET1_MASK&&i.setBlendEnabled(t,!!d,d);var f=(o&i.PRIORITY_MASK)<(p&i.PRIORITY_MASK);if((o&i.PRIORITY_MASK)==(p&i.PRIORITY_MASK)&&(f=o&i.BACKGROUND_MASK),p&i.WRITTEN_MASK)if(f)o&i.TARGET1_MASK&&p&i.TARGET2_MASK&&(l=i.palette.mix(i.blendA,l,i.blendB,a.color[n])),u|=o&~i.TARGET1_MASK;else{if(!((o&i.PRIORITY_MASK)>(p&i.PRIORITY_MASK)))return;if(u=p&~(i.TARGET1_MASK|i.TARGET2_MASK),!(o&i.TARGET2_MASK&&p&i.TARGET1_MASK))return;l=i.palette.mix(i.blendB,l,i.blendA,a.color[n])}else u|=o;o&i.OBJWIN_MASK?a.stencil[n]|=i.OBJWIN_MASK:(a.color[n]=l,a.stencil[n]=u)},GameBoyAdvanceSoftwareRenderer.prototype.identity=function(t){return t},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBlank=function(t){for(var e=0;e<this.HORIZONTAL_PIXELS;++e)t.color[e]=65535,t.stencil[e]=0},GameBoyAdvanceSoftwareRenderer.prototype.prepareScanline=function(t){for(var e=0;e<this.HORIZONTAL_PIXELS;++e)t.stencil[e]=this.target2[this.LAYER_BACKDROP]},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode0=function(t,e,i,s){var r,n,a,o=this.video,h=o.vcount,c=i,u=e.x,p=h+e.y;this.mosaic&&(p-=h%o.bgMosaicY);var d,l=7&p,f=e.screenBase,m=e.charBase,A=e.size,y=e.index,R=o.sharedMap,C=e.multipalette?1:0,S=o.target2[y]|e.priority<<1|o.BACKGROUND_MASK;1==o.blendMode&&o.alphaEnabled&&(S|=o.target1[y]);var b,v=p<<3&1984;2==A?v+=p<<3&2048:3==A&&(v+=p<<4&4096),b=1&A?511:255,o.accessMapMode0(f,A,i+u&b,v,R);var w=o.accessTile(m,R.tile<<C,(R.vflip?7-l:l)<<C);for(r=i;r<s;++r){if(n=r+u&b,a=7&(n-=d=this.mosaic?c%o.bgMosaicX:0),C){if((!a||this.mosaic&&!d)&&o.accessMapMode0(f,A,n,v,R),(!(3&a)||this.mosaic&&!d)&&!((w=o.accessTile(m+(!!(4&n)==!R.hflip?4:0),R.tile<<1,(R.vflip?7-l:l)<<1))||3&a)){r+=3,c+=4;continue}}else if((!a||this.mosaic&&!d)&&(o.accessMapMode0(f,A,n,v,R),!(w=o.accessTile(m,R.tile,R.vflip?7-l:l))&&!a)){r+=7,c+=8;continue}R.hflip&&(a=7-a),e.pushPixel(y,R,o,w,a,c,t,S,!1),c++}},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode2=function(t,e,i,s){var r,n,a,o,h,c=this.video,u=c.vcount,p=i,d=e.screenBase,l=e.charBase,f=e.size,m=128<<f,A=e.index,y=c.sharedMap,R=c.target2[A]|e.priority<<1|c.BACKGROUND_MASK;for(1==c.blendMode&&c.alphaEnabled&&(R|=c.target1[A]),r=i;r<s;++r){if(n=e.dx*r+e.sx,a=e.dy*r+e.sy,this.mosaic&&(n-=r%c.bgMosaicX*e.dx+u%c.bgMosaicY*e.dmx,a-=r%c.bgMosaicX*e.dy+u%c.bgMosaicY*e.dmy),e.overflow)(n&=m-1)<0&&(n+=m),(a&=m-1)<0&&(a+=m);else if(n<0||a<0||n>=m||a>=m){p++;continue}h=(a<<1&2032)<<f,c.accessMapMode1(d,f,n,h,y),o=this.vram.loadU8(l+(y.tile<<6)+((7&a)<<3)+(7&n)),e.pushPixel(A,y,c,o,0,p,t,R,!1),p++}},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode3=function(t,e,i,s){var r,n,a,o,h=this.video,c=h.vcount,u=i,p=e.index,d=h.sharedMap,l=h.target2[p]|e.priority<<1|h.BACKGROUND_MASK;for(1==h.blendMode&&h.alphaEnabled&&(l|=h.target1[p]),r=i;r<s;++r)n=e.dx*r+e.sx,a=e.dy*r+e.sy,this.mosaic&&(n-=r%h.bgMosaicX*e.dx+c%h.bgMosaicY*e.dmx,a-=r%h.bgMosaicX*e.dy+c%h.bgMosaicY*e.dmy),n<0||a<0||n>=h.HORIZONTAL_PIXELS||a>=h.VERTICAL_PIXELS||(o=this.vram.loadU16(a*h.HORIZONTAL_PIXELS+n<<1),e.pushPixel(p,d,h,o,0,u,t,l,!0)),u++},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode4=function(t,e,i,s){var r,n,a,o=this.video,h=o.vcount,c=i,u=0;o.displayFrameSelect&&(u+=40960);e.size;var p,d=e.index,l=o.sharedMap,f=o.target2[d]|e.priority<<1|o.BACKGROUND_MASK;for(1==o.blendMode&&o.alphaEnabled&&(f|=o.target1[d]),r=i;r<s;++r)n=e.dx*r+e.sx,a=0|e.dy*r+e.sy,this.mosaic&&(n-=r%o.bgMosaicX*e.dx+h%o.bgMosaicY*e.dmx,a-=r%o.bgMosaicX*e.dy+h%o.bgMosaicY*e.dmy),a<<2&2016,n<0||a<0||n>=o.HORIZONTAL_PIXELS||a>=o.VERTICAL_PIXELS||(p=this.vram.loadU8(u+a*o.HORIZONTAL_PIXELS+n),e.pushPixel(d,l,o,p,0,c,t,f,!1)),c++},GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode5=function(t,e,i,s){var r,n,a,o=this.video,h=o.vcount,c=i,u=0;o.displayFrameSelect&&(u+=40960);var p,d=e.index,l=o.sharedMap,f=o.target2[d]|e.priority<<1|o.BACKGROUND_MASK;for(1==o.blendMode&&o.alphaEnabled&&(f|=o.target1[d]),r=i;r<s;++r)n=e.dx*r+e.sx,a=e.dy*r+e.sy,this.mosaic&&(n-=r%o.bgMosaicX*e.dx+h%o.bgMosaicY*e.dmx,a-=r%o.bgMosaicX*e.dy+h%o.bgMosaicY*e.dmy),n<0||a<0||n>=160||a>=128||(p=this.vram.loadU16(u+(160*a+n)<<1),e.pushPixel(d,l,o,p,0,c,t,f,!0)),c++},GameBoyAdvanceSoftwareRenderer.prototype.drawScanline=function(t){var e=this.scanline;if(this.forcedBlank)this.drawScanlineBlank(e);else{var i,s,r,n,a;this.prepareScanline(e),this.vcount=t;for(var o=0;o<this.drawLayers.length;++o)(i=this.drawLayers[o]).enabled&&(this.objwinActive=!1,this.win0||this.win1||this.objwin?(s=0,r=this.HORIZONTAL_PIXELS,n=0,a=this.HORIZONTAL_PIXELS,this.win0&&t>=this.win0Top&&t<this.win0Bottom&&(this.windows[0].enabled[i.index]&&(this.setBlendEnabled(i.index,this.windows[0].special&&this.target1[i.index],this.blendMode),i.drawScanline(e,i,this.win0Left,this.win0Right)),s=Math.max(s,this.win0Left),r=Math.min(r,this.win0Left),n=Math.max(n,this.win0Right),a=Math.min(a,this.win0Right)),this.win1&&t>=this.win1Top&&t<this.win1Bottom&&(this.windows[1].enabled[i.index]&&(this.setBlendEnabled(i.index,this.windows[1].special&&this.target1[i.index],this.blendMode),!this.windows[0].enabled[i.index]&&(this.win1Left<s||this.win1Right<n)?(i.drawScanline(e,i,this.win1Left,s),i.drawScanline(e,i,a,this.win1Right)):i.drawScanline(e,i,this.win1Left,this.win1Right)),s=Math.max(s,this.win1Left),r=Math.min(r,this.win1Left),n=Math.max(n,this.win1Right),a=Math.min(a,this.win1Right)),(this.windows[2].enabled[i.index]||this.objwin&&this.windows[3].enabled[i.index])&&(this.objwinActive=this.objwin,this.setBlendEnabled(i.index,this.windows[2].special&&this.target1[i.index],this.blendMode),r>n?i.drawScanline(e,i,0,this.HORIZONTAL_PIXELS):(r&&i.drawScanline(e,i,0,r),n<this.HORIZONTAL_PIXELS&&i.drawScanline(e,i,n,this.HORIZONTAL_PIXELS),a<s&&i.drawScanline(e,i,a,s))),this.setBlendEnabled(this.LAYER_BACKDROP,this.target1[this.LAYER_BACKDROP]&&this.windows[2].special,this.blendMode)):(this.setBlendEnabled(i.index,this.target1[i.index],this.blendMode),i.drawScanline(e,i,0,this.HORIZONTAL_PIXELS)),i.bg&&(i.sx+=i.dmx,i.sy+=i.dmy));this.finishScanline(e)}},GameBoyAdvanceSoftwareRenderer.prototype.finishScanline=function(t){for(var e,i=this.palette.accessColor(this.LAYER_BACKDROP,0),s=this.vcount*this.HORIZONTAL_PIXELS*4,r=this.target2[this.LAYER_BACKDROP],n=0;n<this.HORIZONTAL_PIXELS;++n)t.stencil[n]&this.WRITTEN_MASK?(e=t.color[n],r&&t.stencil[n]&this.TARGET1_MASK&&(e=this.palette.mix(this.blendA,e,this.blendB,i)),this.palette.convert16To32(e,this.sharedColor)):this.palette.convert16To32(i,this.sharedColor),this.pixelData.data[s++]=this.sharedColor[0],this.pixelData.data[s++]=this.sharedColor[1],this.pixelData.data[s++]=this.sharedColor[2],s++},GameBoyAdvanceSoftwareRenderer.prototype.startDraw=function(){},GameBoyAdvanceSoftwareRenderer.prototype.finishDraw=function(t){this.bg[2].sx=this.bg[2].refx,this.bg[2].sy=this.bg[2].refy,this.bg[3].sx=this.bg[3].refx,this.bg[3].sy=this.bg[3].refy,t.finishDraw(this.pixelData)}},function(t,e){window.GameBoyAdvanceInterruptHandler=function(){this.FREQUENCY=16777216,this.cpu=null,this.enable=!1,this.IRQ_VBLANK=0,this.IRQ_HBLANK=1,this.IRQ_VCOUNTER=2,this.IRQ_TIMER0=3,this.IRQ_TIMER1=4,this.IRQ_TIMER2=5,this.IRQ_TIMER3=6,this.IRQ_SIO=7,this.IRQ_DMA0=8,this.IRQ_DMA1=9,this.IRQ_DMA2=10,this.IRQ_DMA3=11,this.IRQ_KEYPAD=12,this.IRQ_GAMEPAK=13,this.MASK_VBLANK=1,this.MASK_HBLANK=2,this.MASK_VCOUNTER=4,this.MASK_TIMER0=8,this.MASK_TIMER1=16,this.MASK_TIMER2=32,this.MASK_TIMER3=64,this.MASK_SIO=128,this.MASK_DMA0=256,this.MASK_DMA1=512,this.MASK_DMA2=1024,this.MASK_DMA3=2048,this.MASK_KEYPAD=4096,this.MASK_GAMEPAK=8192},GameBoyAdvanceInterruptHandler.prototype.clear=function(){this.enable=!1,this.enabledIRQs=0,this.interruptFlags=0,this.dma=new Array;for(var t=0;t<4;++t)this.dma.push({source:0,dest:0,count:0,nextSource:0,nextDest:0,nextCount:0,srcControl:0,dstControl:0,repeat:!1,width:0,drq:!1,timing:0,doIrq:!1,enable:!1,nextIRQ:0});this.timersEnabled=0,this.timers=new Array;for(t=0;t<4;++t)this.timers.push({reload:0,oldReload:0,prescaleBits:0,countUp:!1,doIrq:!1,enable:!1,lastEvent:0,nextEvent:0,overflowInterval:1});this.nextEvent=0,this.springIRQ=!1,this.resetSP()},GameBoyAdvanceInterruptHandler.prototype.freeze=function(){return{enable:this.enable,enabledIRQs:this.enabledIRQs,interruptFlags:this.interruptFlags,dma:this.dma,timers:this.timers,nextEvent:this.nextEvent,springIRQ:this.springIRQ}},GameBoyAdvanceInterruptHandler.prototype.defrost=function(t){this.enable=t.enable,this.enabledIRQs=t.enabledIRQs,this.interruptFlags=t.interruptFlags,this.dma=t.dma,this.timers=t.timers,this.timersEnabled=0,this.timers[0].enable&&++this.timersEnabled,this.timers[1].enable&&++this.timersEnabled,this.timers[2].enable&&++this.timersEnabled,this.timers[3].enable&&++this.timersEnabled,this.nextEvent=t.nextEvent,this.springIRQ=t.springIRQ},GameBoyAdvanceInterruptHandler.prototype.updateTimers=function(){if(!(this.nextEvent>this.cpu.cycles)){if(this.springIRQ&&(this.cpu.raiseIRQ(),this.springIRQ=!1),this.video.updateTimers(this.cpu),this.audio.updateTimers(),this.timersEnabled){var t=this.timers[0];t.enable&&this.cpu.cycles>=t.nextEvent&&(t.lastEvent=t.nextEvent,t.nextEvent+=t.overflowInterval,this.io.registers[this.io.TM0CNT_LO>>1]=t.reload,t.oldReload=t.reload,t.doIrq&&this.raiseIRQ(this.IRQ_TIMER0),this.audio.enabled&&(this.audio.enableChannelA&&!this.audio.soundTimerA&&this.audio.dmaA>=0&&this.audio.sampleFifoA(),this.audio.enableChannelB&&!this.audio.soundTimerB&&this.audio.dmaB>=0&&this.audio.sampleFifoB()),(t=this.timers[1]).countUp&&65536==++this.io.registers[this.io.TM1CNT_LO>>1]&&(t.nextEvent=this.cpu.cycles)),(t=this.timers[1]).enable&&this.cpu.cycles>=t.nextEvent&&(t.lastEvent=t.nextEvent,t.nextEvent+=t.overflowInterval,t.countUp&&65536!=this.io.registers[this.io.TM1CNT_LO>>1]||(this.io.registers[this.io.TM1CNT_LO>>1]=t.reload),t.oldReload=t.reload,t.doIrq&&this.raiseIRQ(this.IRQ_TIMER1),t.countUp&&(t.nextEvent=0),this.audio.enabled&&(this.audio.enableChannelA&&this.audio.soundTimerA&&this.audio.dmaA>=0&&this.audio.sampleFifoA(),this.audio.enableChannelB&&this.audio.soundTimerB&&this.audio.dmaB>=0&&this.audio.sampleFifoB()),(t=this.timers[2]).countUp&&65536==++this.io.registers[this.io.TM2CNT_LO>>1]&&(t.nextEvent=this.cpu.cycles)),(t=this.timers[2]).enable&&this.cpu.cycles>=t.nextEvent&&(t.lastEvent=t.nextEvent,t.nextEvent+=t.overflowInterval,t.countUp&&65536!=this.io.registers[this.io.TM2CNT_LO>>1]||(this.io.registers[this.io.TM2CNT_LO>>1]=t.reload),t.oldReload=t.reload,t.doIrq&&this.raiseIRQ(this.IRQ_TIMER2),t.countUp&&(t.nextEvent=0),(t=this.timers[3]).countUp&&65536==++this.io.registers[this.io.TM3CNT_LO>>1]&&(t.nextEvent=this.cpu.cycles)),(t=this.timers[3]).enable&&this.cpu.cycles>=t.nextEvent&&(t.lastEvent=t.nextEvent,t.nextEvent+=t.overflowInterval,t.countUp&&65536!=this.io.registers[this.io.TM3CNT_LO>>1]||(this.io.registers[this.io.TM3CNT_LO>>1]=t.reload),t.oldReload=t.reload,t.doIrq&&this.raiseIRQ(this.IRQ_TIMER3),t.countUp&&(t.nextEvent=0))}var e=this.dma[0];e.enable&&e.doIrq&&e.nextIRQ&&this.cpu.cycles>=e.nextIRQ&&(e.nextIRQ=0,this.raiseIRQ(this.IRQ_DMA0)),(e=this.dma[1]).enable&&e.doIrq&&e.nextIRQ&&this.cpu.cycles>=e.nextIRQ&&(e.nextIRQ=0,this.raiseIRQ(this.IRQ_DMA1)),(e=this.dma[2]).enable&&e.doIrq&&e.nextIRQ&&this.cpu.cycles>=e.nextIRQ&&(e.nextIRQ=0,this.raiseIRQ(this.IRQ_DMA2)),(e=this.dma[3]).enable&&e.doIrq&&e.nextIRQ&&this.cpu.cycles>=e.nextIRQ&&(e.nextIRQ=0,this.raiseIRQ(this.IRQ_DMA3)),this.pollNextEvent()}},GameBoyAdvanceInterruptHandler.prototype.resetSP=function(){this.cpu.switchMode(this.cpu.MODE_SUPERVISOR),this.cpu.gprs[this.cpu.SP]=50364384,this.cpu.switchMode(this.cpu.MODE_IRQ),this.cpu.gprs[this.cpu.SP]=50364320,this.cpu.switchMode(this.cpu.MODE_SYSTEM),this.cpu.gprs[this.cpu.SP]=50364160},GameBoyAdvanceInterruptHandler.prototype.swi32=function(t){this.swi(t>>16)},GameBoyAdvanceInterruptHandler.prototype.swi=function(t){if(this.core.mmu.bios.real)this.cpu.raiseTrap();else switch(t){case 0:for(var e=this.core.mmu.memory[this.core.mmu.REGION_WORKING_IRAM],i=e.loadU8(32762),s=32256;s<32768;s+=4)e.store32(s,0);this.resetSP(),this.cpu.gprs[this.cpu.LR]=i?33554432:134217728,this.cpu.switchExecMode(this.cpu.MODE_ARM),this.cpu.instruction.writesPC=!0,this.cpu.gprs[this.cpu.PC]=this.cpu.gprs[this.cpu.LR];break;case 1:var r=this.cpu.gprs[0];if(1&r&&(this.core.mmu.memory[this.core.mmu.REGION_WORKING_RAM]=new MemoryBlock(this.core.mmu.SIZE_WORKING_RAM,9)),2&r)for(s=0;s<this.core.mmu.SIZE_WORKING_IRAM-512;s+=4)this.core.mmu.memory[this.core.mmu.REGION_WORKING_IRAM].store32(s,0);28&r&&this.video.renderPath.clearSubsets(this.core.mmu,r),224&r&&this.core.STUB("Unimplemented RegisterRamReset");break;case 2:this.halt();break;case 5:this.cpu.gprs[0]=1,this.cpu.gprs[1]=1;case 4:if(this.enable||this.io.store16(this.io.IME,1),!this.cpu.gprs[0]&&this.interruptFlags&this.cpu.gprs[1])return;this.dismissIRQs(4294967295),this.cpu.raiseTrap();break;case 6:var n=(0|this.cpu.gprs[0])/(0|this.cpu.gprs[1]),a=(0|this.cpu.gprs[0])%(0|this.cpu.gprs[1]);this.cpu.gprs[0]=0|n,this.cpu.gprs[1]=0|a,this.cpu.gprs[3]=Math.abs(0|n);break;case 7:n=(0|this.cpu.gprs[1])/(0|this.cpu.gprs[0]),a=(0|this.cpu.gprs[1])%(0|this.cpu.gprs[0]);this.cpu.gprs[0]=0|n,this.cpu.gprs[1]=0|a,this.cpu.gprs[3]=Math.abs(0|n);break;case 8:var o=Math.sqrt(this.cpu.gprs[0]);this.cpu.gprs[0]=0|o;break;case 10:var h=this.cpu.gprs[0]/16384,c=this.cpu.gprs[1]/16384;this.cpu.gprs[0]=Math.atan2(c,h)/(2*Math.PI)*65536;break;case 11:var u=this.cpu.gprs[0],p=this.cpu.gprs[1],d=1048575&(m=this.cpu.gprs[2]),l=67108864&m?4:2;if(16777216&m)if(4==l){u&=4294967292,p&=4294967292;var f=this.cpu.mmu.load32(u);for(s=0;s<d;++s)this.cpu.mmu.store32(p+(s<<2),f)}else{u&=4294967294,p&=4294967294;for(f=this.cpu.mmu.load16(u),s=0;s<d;++s)this.cpu.mmu.store16(p+(s<<1),f)}else if(4==l){u&=4294967292,p&=4294967292;for(s=0;s<d;++s){f=this.cpu.mmu.load32(u+(s<<2));this.cpu.mmu.store32(p+(s<<2),f)}}else{u&=4294967294,p&=4294967294;for(s=0;s<d;++s){f=this.cpu.mmu.load16(u+(s<<1));this.cpu.mmu.store16(p+(s<<1),f)}}return;case 12:var m;u=4294967292&this.cpu.gprs[0],p=4294967292&this.cpu.gprs[1];if(d=(d=1048575&(m=this.cpu.gprs[2]))+7>>3<<3,16777216&m)for(f=this.cpu.mmu.load32(u),s=0;s<d;++s)this.cpu.mmu.store32(p+(s<<2),f);else for(s=0;s<d;++s){f=this.cpu.mmu.load32(u+(s<<2));this.cpu.mmu.store32(p+(s<<2),f)}return;case 14:s=this.cpu.gprs[2];for(var A,y,R,C,S,b,v=this.cpu.gprs[0],w=this.cpu.gprs[1];s--;)A=this.core.mmu.load32(v)/256,y=this.core.mmu.load32(v+4)/256,R=this.core.mmu.load16(v+8),C=this.core.mmu.load16(v+10),g=this.core.mmu.load16(v+12)/256,_=this.core.mmu.load16(v+14)/256,M=(this.core.mmu.loadU16(v+16)>>8)/128*Math.PI,v+=20,E=T=Math.cos(M),I=O=Math.sin(M),S=A-((E*=g)*R+(I*=-g)*C),b=y-((O*=_)*R+(T*=_)*C),this.core.mmu.store16(w,256*E|0),this.core.mmu.store16(w+2,256*I|0),this.core.mmu.store16(w+4,256*O|0),this.core.mmu.store16(w+6,256*T|0),this.core.mmu.store32(w+8,256*S|0),this.core.mmu.store32(w+12,256*b|0),w+=16;break;case 15:s=this.cpu.gprs[2],v=this.cpu.gprs[0],w=this.cpu.gprs[1];for(var g,_,M,E,I,O,T,P=this.cpu.gprs[3];s--;)g=this.core.mmu.load16(v)/256,_=this.core.mmu.load16(v+2)/256,M=(this.core.mmu.loadU16(v+4)>>8)/128*Math.PI,v+=6,E=T=Math.cos(M),I=O=Math.sin(M),E*=g,I*=-g,O*=_,T*=_,this.core.mmu.store16(w,256*E|0),this.core.mmu.store16(w+P,256*I|0),this.core.mmu.store16(w+2*P,256*O|0),this.core.mmu.store16(w+3*P,256*T|0),w+=4*P;break;case 17:this.lz77(this.cpu.gprs[0],this.cpu.gprs[1],1);break;case 18:this.lz77(this.cpu.gprs[0],this.cpu.gprs[1],2);break;case 19:this.huffman(this.cpu.gprs[0],this.cpu.gprs[1]);break;case 20:this.rl(this.cpu.gprs[0],this.cpu.gprs[1],1);break;case 21:this.rl(this.cpu.gprs[0],this.cpu.gprs[1],2);break;case 31:var B=this.cpu.mmu.load32(this.cpu.gprs[0]+4);this.cpu.gprs[0]=B/Math.pow(2,(180-this.cpu.gprs[1]-this.cpu.gprs[2]/256)/12)>>>0;break;default:throw"Unimplemented software interrupt: 0x"+t.toString(16)}},GameBoyAdvanceInterruptHandler.prototype.masterEnable=function(t){this.enable=t,this.enable&&this.enabledIRQs&this.interruptFlags&&this.cpu.raiseIRQ()},GameBoyAdvanceInterruptHandler.prototype.setInterruptsEnabled=function(t){this.enabledIRQs=t,this.enabledIRQs&this.MASK_SIO&&this.core.STUB("Serial I/O interrupts not implemented"),this.enabledIRQs&this.MASK_KEYPAD&&this.core.STUB("Keypad interrupts not implemented"),this.enable&&this.enabledIRQs&this.interruptFlags&&this.cpu.raiseIRQ()},GameBoyAdvanceInterruptHandler.prototype.pollNextEvent=function(){var t,e=this.video.nextEvent;if(this.audio.enabled&&(t=this.audio.nextEvent,(!e||t<e)&&(e=t)),this.timersEnabled){var i=this.timers[0];t=i.nextEvent,i.enable&&t&&(!e||t<e)&&(e=t),t=(i=this.timers[1]).nextEvent,i.enable&&t&&(!e||t<e)&&(e=t),t=(i=this.timers[2]).nextEvent,i.enable&&t&&(!e||t<e)&&(e=t),t=(i=this.timers[3]).nextEvent,i.enable&&t&&(!e||t<e)&&(e=t)}var s=this.dma[0];t=s.nextIRQ,s.enable&&s.doIrq&&t&&(!e||t<e)&&(e=t),t=(s=this.dma[1]).nextIRQ,s.enable&&s.doIrq&&t&&(!e||t<e)&&(e=t),t=(s=this.dma[2]).nextIRQ,s.enable&&s.doIrq&&t&&(!e||t<e)&&(e=t),t=(s=this.dma[3]).nextIRQ,s.enable&&s.doIrq&&t&&(!e||t<e)&&(e=t),this.core.ASSERT(e>=this.cpu.cycles,"Next event is before present"),this.nextEvent=e},GameBoyAdvanceInterruptHandler.prototype.waitForIRQ=function(){var t,e=this.testIRQ()||this.video.hblankIRQ||this.video.vblankIRQ||this.video.vcounterIRQ;if(this.timersEnabled&&(t=this.timers[0],e=e||t.doIrq,t=this.timers[1],e=e||t.doIrq,t=this.timers[2],e=e||t.doIrq,t=this.timers[3],e=e||t.doIrq),!e)return!1;for(;;){if(this.pollNextEvent(),!this.nextEvent)return!1;if(this.cpu.cycles=this.nextEvent,this.updateTimers(),this.interruptFlags)return!0}},GameBoyAdvanceInterruptHandler.prototype.testIRQ=function(){return!!(this.enable&&this.enabledIRQs&this.interruptFlags)&&(this.springIRQ=!0,this.nextEvent=this.cpu.cycles,!0)},GameBoyAdvanceInterruptHandler.prototype.raiseIRQ=function(t){this.interruptFlags|=1<<t,this.io.registers[this.io.IF>>1]=this.interruptFlags,this.enable&&this.enabledIRQs&1<<t&&this.cpu.raiseIRQ()},GameBoyAdvanceInterruptHandler.prototype.dismissIRQs=function(t){this.interruptFlags&=~t,this.io.registers[this.io.IF>>1]=this.interruptFlags},GameBoyAdvanceInterruptHandler.prototype.dmaSetSourceAddress=function(t,e){this.dma[t].source=4294967294&e},GameBoyAdvanceInterruptHandler.prototype.dmaSetDestAddress=function(t,e){this.dma[t].dest=4294967294&e},GameBoyAdvanceInterruptHandler.prototype.dmaSetWordCount=function(t,e){this.dma[t].count=e||(3==t?65536:16384)},GameBoyAdvanceInterruptHandler.prototype.dmaWriteControl=function(t,e){var i=this.dma[t],s=i.enable;i.dstControl=(96&e)>>5,i.srcControl=(384&e)>>7,i.repeat=!!(512&e),i.width=1024&e?4:2,i.drq=!!(2048&e),i.timing=(12288&e)>>12,i.doIrq=!!(16384&e),i.enable=!!(32768&e),i.nextIRQ=0,i.drq&&this.core.WARN("DRQ not implemented"),!s&&i.enable&&(i.nextSource=i.source,i.nextDest=i.dest,i.nextCount=i.count,this.cpu.mmu.scheduleDma(t,i))},GameBoyAdvanceInterruptHandler.prototype.timerSetReload=function(t,e){this.timers[t].reload=65535&e},GameBoyAdvanceInterruptHandler.prototype.timerWriteControl=function(t,e){var i=this.timers[t],s=i.prescaleBits;switch(3&e){case 0:i.prescaleBits=0;break;case 1:i.prescaleBits=6;break;case 2:i.prescaleBits=8;break;case 3:i.prescaleBits=10}i.countUp=!!(4&e),i.doIrq=!!(64&e),i.overflowInterval=65536-i.reload<<i.prescaleBits;var r=i.enable;i.enable=!!((128&e)>>7<<t),!r&&i.enable?(i.countUp?i.nextEvent=0:(i.lastEvent=this.cpu.cycles,i.nextEvent=this.cpu.cycles+i.overflowInterval),this.io.registers[this.io.TM0CNT_LO+(t<<2)>>1]=i.reload,i.oldReload=i.reload,++this.timersEnabled):r&&!i.enable?(i.countUp||(this.io.registers[this.io.TM0CNT_LO+(t<<2)>>1]=i.oldReload+(this.cpu.cycles-i.lastEvent)>>s),--this.timersEnabled):i.prescaleBits==s||i.countUp||(i.nextEvent=i.lastEvent+i.overflowInterval),this.pollNextEvent()},GameBoyAdvanceInterruptHandler.prototype.timerRead=function(t){var e=this.timers[t];return e.enable&&!e.countUp?e.oldReload+(this.cpu.cycles-e.lastEvent)>>e.prescaleBits:this.io.registers[this.io.TM0CNT_LO+(t<<2)>>1]},GameBoyAdvanceInterruptHandler.prototype.halt=function(){if(!this.enable)throw"Requested HALT when interrupts were disabled!";if(!this.waitForIRQ())throw"Waiting on interrupt forever."},GameBoyAdvanceInterruptHandler.prototype.lz77=function(t,e,i){for(var s,r,n,a,o,h=(4294967040&this.cpu.mmu.load32(t))>>8,c=t+4,u=e,p=0,d=0;h>0;)if(p){if(128&s)for(r=this.cpu.mmu.loadU8(c)|this.cpu.mmu.loadU8(c+1)<<8,c+=2,n=u-((15&r)<<8|(65280&r)>>8)-1,a=3+((240&r)>>4);a--&&h;)o=this.cpu.mmu.loadU8(n++),2==i?(d>>=8,d|=o<<8,1&u&&this.cpu.mmu.store16(u-1,d)):this.cpu.mmu.store8(u,o),--h,++u;else o=this.cpu.mmu.loadU8(c++),2==i?(d>>=8,d|=o<<8,1&u&&this.cpu.mmu.store16(u-1,d)):this.cpu.mmu.store8(u,o),--h,++u;s<<=1,--p}else s=this.cpu.mmu.loadU8(c++),p=8},GameBoyAdvanceInterruptHandler.prototype.huffman=function(t,e){t&=4294967292;var i=this.cpu.mmu.load32(t),s=i>>8,r=15&i;if(32%r)throw"Unimplemented unaligned Huffman";var n=4-s&3;s&=4294967292;var a,o,h,c=[],u=1+(this.cpu.mmu.loadU8(t+4)<<1),p=t+5+u,d=4294967292&e;for(o=0;o<u;++o)c.push(this.cpu.mmu.loadU8(t+5+o));var l,f,m=0,A=0;for(h=c[0];s>0;){var y=this.cpu.mmu.load32(p);for(p+=4,l=32;l>0;--l,y<<=1){if("number"==typeof h){var R=(m-1|1)+((63&h)<<1)+2;h={l:R,r:R+1,lTerm:128&h,rTerm:64&h},c[m]=h}if(2147483648&y){if(!h.rTerm){m=h.r,h=c[h.r];continue}f=c[h.r]}else{if(!h.lTerm){h=c[m=h.l];continue}f=c[h.l]}a|=(f&(1<<r)-1)<<A,A+=r,m=0,h=c[0],32==A&&(A=0,this.cpu.mmu.store32(d,a),d+=4,s-=4,a=0)}}n&&this.cpu.mmu.store32(d,a)},GameBoyAdvanceInterruptHandler.prototype.rl=function(t,e,i){t&=4294967292;for(var s,r,n=(4294967040&this.cpu.mmu.load32(t))>>8,a=4-n&3,o=t+4,h=e,c=0;n>0;)if(128&(s=this.cpu.mmu.loadU8(o++)))for(s&=127,s+=3,r=this.cpu.mmu.loadU8(o++);s--&&n;)--n,2==i?(c>>=8,c|=r<<8,1&h&&this.cpu.mmu.store16(h-1,c)):this.cpu.mmu.store8(h,r),++h;else for(s++;s--&&n;)--n,r=this.cpu.mmu.loadU8(o++),2==i?(c>>=8,c|=r<<8,1&h&&this.cpu.mmu.store16(h-1,c)):this.cpu.mmu.store8(h,r),++h;for(;a--;)this.cpu.mmu.store8(h++,0)}},function(t,e){window.GameBoyAdvanceKeypad=function(){this.KEYCODE_LEFT=37,this.KEYCODE_UP=38,this.KEYCODE_RIGHT=39,this.KEYCODE_DOWN=40,this.KEYCODE_START=13,this.KEYCODE_SELECT=220,this.KEYCODE_A=90,this.KEYCODE_B=88,this.KEYCODE_L=65,this.KEYCODE_R=83,this.GAMEPAD_LEFT=14,this.GAMEPAD_UP=12,this.GAMEPAD_RIGHT=15,this.GAMEPAD_DOWN=13,this.GAMEPAD_START=9,this.GAMEPAD_SELECT=8,this.GAMEPAD_A=1,this.GAMEPAD_B=0,this.GAMEPAD_L=4,this.GAMEPAD_R=5,this.GAMEPAD_THRESHOLD=.2,this.A=0,this.B=1,this.SELECT=2,this.START=3,this.RIGHT=4,this.LEFT=5,this.UP=6,this.DOWN=7,this.R=8,this.L=9,this.currentDown=1023,this.eatInput=!1,this.gamepads=[]},GameBoyAdvanceKeypad.prototype.keyboardHandler=function(t){var e=0;switch(t.keyCode){case this.KEYCODE_START:e=this.START;break;case this.KEYCODE_SELECT:e=this.SELECT;break;case this.KEYCODE_A:e=this.A;break;case this.KEYCODE_B:e=this.B;break;case this.KEYCODE_L:e=this.L;break;case this.KEYCODE_R:e=this.R;break;case this.KEYCODE_UP:e=this.UP;break;case this.KEYCODE_RIGHT:e=this.RIGHT;break;case this.KEYCODE_DOWN:e=this.DOWN;break;case this.KEYCODE_LEFT:e=this.LEFT;break;default:return}e=1<<e,"keydown"==t.type?this.currentDown&=~e:this.currentDown|=e,this.eatInput&&t.preventDefault()},GameBoyAdvanceKeypad.prototype.gamepadHandler=function(t){var e=0;t.buttons[this.GAMEPAD_LEFT]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.LEFT),t.buttons[this.GAMEPAD_UP]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.UP),t.buttons[this.GAMEPAD_RIGHT]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.RIGHT),t.buttons[this.GAMEPAD_DOWN]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.DOWN),t.buttons[this.GAMEPAD_START]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.START),t.buttons[this.GAMEPAD_SELECT]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.SELECT),t.buttons[this.GAMEPAD_A]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.A),t.buttons[this.GAMEPAD_B]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.B),t.buttons[this.GAMEPAD_L]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.L),t.buttons[this.GAMEPAD_R]>this.GAMEPAD_THRESHOLD&&(e|=1<<this.R),this.currentDown=1023&~e},GameBoyAdvanceKeypad.prototype.gamepadConnectHandler=function(t){this.gamepads.push(t)},GameBoyAdvanceKeypad.prototype.gamepadDisconnectHandler=function(t){this.gamepads=self.gamepads.filter((function(e){return e!=t}))},GameBoyAdvanceKeypad.prototype.pollGamepads=function(){var t=[];navigator.webkitGetGamepads?t=navigator.webkitGetGamepads():navigator.getGamepads&&(t=navigator.getGamepads()),t.length&&(this.gamepads=[]);for(var e=0;e<t.length;++e)t[e]&&this.gamepads.push(t[e]);this.gamepads.length>0&&this.gamepadHandler(this.gamepads[0])},GameBoyAdvanceKeypad.prototype.registerHandlers=function(){window.addEventListener("keydown",this.keyboardHandler.bind(this),!0),window.addEventListener("keyup",this.keyboardHandler.bind(this),!0),window.addEventListener("gamepadconnected",this.gamepadConnectHandler.bind(this),!0),window.addEventListener("mozgamepadconnected",this.gamepadConnectHandler.bind(this),!0),window.addEventListener("webkitgamepadconnected",this.gamepadConnectHandler.bind(this),!0),window.addEventListener("gamepaddisconnected",this.gamepadDisconnectHandler.bind(this),!0),window.addEventListener("mozgamepaddisconnected",this.gamepadDisconnectHandler.bind(this),!0),window.addEventListener("webkitgamepaddisconnected",this.gamepadDisconnectHandler.bind(this),!0)}},function(t,e){window.GameBoyAdvanceSIO=function(){this.SIO_NORMAL_8=0,this.SIO_NORMAL_32=1,this.SIO_MULTI=2,this.SIO_UART=3,this.SIO_GPIO=8,this.SIO_JOYBUS=12,this.BAUD=[9600,38400,57600,115200]},GameBoyAdvanceSIO.prototype.clear=function(){this.mode=this.SIO_GPIO,this.sd=!1,this.irq=!1,this.multiplayer={baud:0,si:0,id:0,error:0,busy:0,states:[65535,65535,65535,65535]},this.linkLayer=null},GameBoyAdvanceSIO.prototype.setMode=function(t){t&=8&t?12:3,this.mode=t,this.core.INFO("Setting SIO mode to "+hex(t,1))},GameBoyAdvanceSIO.prototype.writeRCNT=function(t){this.mode==this.SIO_GPIO&&this.core.STUB("General purpose serial not supported")},GameBoyAdvanceSIO.prototype.writeSIOCNT=function(t){switch(this.mode){case this.SIO_NORMAL_8:this.core.STUB("8-bit transfer unsupported");break;case this.SIO_NORMAL_32:this.core.STUB("32-bit transfer unsupported");break;case this.SIO_MULTI:this.multiplayer.baud=3&t,this.linkLayer&&this.linkLayer.setBaud(this.BAUD[this.multiplayer.baud]),this.multiplayer.si||(this.multiplayer.busy=128&t,this.linkLayer&&this.multiplayer.busy&&this.linkLayer.startMultiplayerTransfer()),this.irq=16384&t;break;case this.SIO_UART:this.core.STUB("UART unsupported");break;case this.SIO_GPIO:break;case this.SIO_JOYBUS:this.core.STUB("JOY BUS unsupported")}},GameBoyAdvanceSIO.prototype.readSIOCNT=function(){var t=this.mode<<12&65535;switch(this.mode){case this.SIO_NORMAL_8:this.core.STUB("8-bit transfer unsupported");break;case this.SIO_NORMAL_32:this.core.STUB("32-bit transfer unsupported");break;case this.SIO_MULTI:t|=this.multiplayer.baud,t|=this.multiplayer.si,t|=!!this.sd<<3,t|=this.multiplayer.id<<4,t|=this.multiplayer.error,t|=this.multiplayer.busy,t|=!!this.multiplayer.irq<<14;break;case this.SIO_UART:this.core.STUB("UART unsupported");break;case this.SIO_GPIO:break;case this.SIO_JOYBUS:this.core.STUB("JOY BUS unsupported")}return t},GameBoyAdvanceSIO.prototype.read=function(t){switch(this.mode){case this.SIO_NORMAL_32:this.core.STUB("32-bit transfer unsupported");break;case this.SIO_MULTI:return this.multiplayer.states[t];case this.SIO_UART:this.core.STUB("UART unsupported");break;default:this.core.WARN("Reading from transfer register in unsupported mode")}return 0}},function(t,e){function i(t){this.gpio=t,this.pins=0,this.direction=0,this.totalBytes=[0,0,7,0,1,0,3,0],this.bytesRemaining=0,this.transferStep=0,this.reading=0,this.bitsRead=0,this.bits=0,this.command=-1,this.control=64,this.time=[0,0,0,0,0,0,0]}window.GameBoyAdvanceGPIO=function(t,e){this.core=t,this.rom=e,this.readWrite=0,this.direction=0,this.device=new i(this)},GameBoyAdvanceGPIO.prototype.store16=function(t,e){switch(t){case 196:this.device.setPins(15&e);break;case 198:this.direction=15&e,this.device.setDirection(this.direction);break;case 200:this.readWrite=1&e;break;default:throw new Error("BUG: Bad offset passed to GPIO: "+t.toString(16))}if(this.readWrite){var i=this.rom.view.getUint16(t,!0);i&=~this.direction,this.rom.view.setUint16(t,i|e&this.direction,!0)}},GameBoyAdvanceGPIO.prototype.outputPins=function(t){if(this.readWrite){var e=this.rom.view.getUint16(196,!0);e&=this.direction,this.rom.view.setUint16(196,e|t&~this.direction&15,!0)}},i.prototype.setPins=function(t){switch(this.transferStep){case 0:1==(5&t)&&(this.transferStep=1);break;case 1:4&t&&(this.transferStep=2);break;case 2:1&t?4&t?2&this.direction&&!this.read?(++this.bitsRead,8==this.bitsRead&&this.processByte()):(this.gpio.outputPins(5|this.sioOutputPin()<<1),++this.bitsRead,8==this.bitsRead&&(--this.bytesRemaining,this.bytesRemaining<=0&&(this.command=-1),this.bitsRead=0)):(this.bitsRead=0,this.bytesRemaining=0,this.command=-1,this.transferStep=0):(this.bits&=~(1<<this.bitsRead),this.bits|=(2&t)>>1<<this.bitsRead)}this.pins=7&t},i.prototype.setDirection=function(t){this.direction=t},i.prototype.processByte=function(){switch(--this.bytesRemaining,this.command){case-1:if(6==(15&this.bits))switch(this.command=this.bits>>4&7,this.reading=128&this.bits,this.bytesRemaining=this.totalBytes[this.command],this.command){case 0:this.control=0;break;case 2:case 6:this.updateClock()}else this.gpio.core.WARN("Invalid RTC command byte: "+this.bits.toString(16));break;case 4:this.control=64&this.bits}this.bits=0,this.bitsRead=0,this.bytesRemaining||(this.command=-1)},i.prototype.sioOutputPin=function(){var t=0;switch(this.command){case 4:t=this.control;break;case 2:case 6:t=this.time[7-this.bytesRemaining]}return t>>this.bitsRead&1},i.prototype.updateClock=function(){var t=new Date;this.time[0]=this.bcd(t.getFullYear()),this.time[1]=this.bcd(t.getMonth()+1),this.time[2]=this.bcd(t.getDate()),this.time[3]=t.getDay()-1,this.time[3]<0&&(this.time[3]=6),64&this.control?this.time[4]=this.bcd(t.getHours()):(this.time[4]=this.bcd(t.getHours()%2),t.getHours()>=12&&(this.time[4]|=128)),this.time[5]=this.bcd(t.getMinutes()),this.time[6]=this.bcd(t.getSeconds())},i.prototype.bcd=function(t){var e=t%10;return e+=(t/=10)%10<<4}},function(t,e){function i(){this.LOG_ERROR=1,this.LOG_WARN=2,this.LOG_STUB=4,this.LOG_INFO=8,this.LOG_DEBUG=16,this.SYS_ID="com.endrift.gbajs",this.logLevel=this.LOG_ERROR|this.LOG_WARN,this.rom=null,this.cpu=new ARMCore,this.mmu=new GameBoyAdvanceMMU,this.irq=new GameBoyAdvanceInterruptHandler,this.io=new GameBoyAdvanceIO,this.audio=new GameBoyAdvanceAudio,this.video=new GameBoyAdvanceVideo,this.keypad=new GameBoyAdvanceKeypad,this.sio=new GameBoyAdvanceSIO,this.cpu.mmu=this.mmu,this.cpu.irq=this.irq,this.mmu.cpu=this.cpu,this.mmu.core=this,this.irq.cpu=this.cpu,this.irq.io=this.io,this.irq.audio=this.audio,this.irq.video=this.video,this.irq.core=this,this.io.cpu=this.cpu,this.io.audio=this.audio,this.io.video=this.video,this.io.keypad=this.keypad,this.io.sio=this.sio,this.io.core=this,this.audio.cpu=this.cpu,this.audio.core=this,this.video.cpu=this.cpu,this.video.core=this,this.keypad.core=this,this.sio.core=this,this.keypad.registerHandlers(),this.doStep=this.waitFrame,this.paused=!1,this.seenFrame=!1,this.seenSave=!1,this.lastVblank=0,this.queue=null,this.reportFPS=null,this.throttle=16;var t=this;window.queueFrame=function(e){t.queue=window.setTimeout(e,t.throttle)},window.URL=window.URL||window.webkitURL,this.video.vblankCallback=function(){t.seenFrame=!0}}window.GameBoyAdvance=i,i.prototype.setCanvas=function(t){var e=this;if(240!=t.offsetWidth||160!=t.offsetHeight){this.indirectCanvas=document.createElement("canvas"),this.indirectCanvas.setAttribute("height","160"),this.indirectCanvas.setAttribute("width","240"),this.targetCanvas=t,this.setCanvasDirect(this.indirectCanvas);var i=t.getContext("2d");this.video.drawCallback=function(){i.drawImage(e.indirectCanvas,0,0,t.offsetWidth,t.offsetHeight)}}else{this.setCanvasDirect(t);e=this}},i.prototype.setCanvasDirect=function(t){this.context=t.getContext("2d"),this.video.setBacking(this.context)},i.prototype.setBios=function(t,e){this.mmu.loadBios(t,e)},i.prototype.setRom=function(t){return this.reset(),this.rom=this.mmu.loadRom(t,!0),!!this.rom&&(this.retrieveSavedata(),!0)},i.prototype.hasRom=function(){return!!this.rom},i.prototype.loadRomFromFile=function(t,e){this.setRom(t.buffer),e&&e(t.buffer)},i.prototype.reset=function(){this.audio.pause(!0),this.mmu.clear(),this.io.clear(),this.audio.clear(),this.video.clear(),this.sio.clear(),this.mmu.mmap(this.mmu.REGION_IO,this.io),this.mmu.mmap(this.mmu.REGION_PALETTE_RAM,this.video.renderPath.palette),this.mmu.mmap(this.mmu.REGION_VRAM,this.video.renderPath.vram),this.mmu.mmap(this.mmu.REGION_OAM,this.video.renderPath.oam),this.cpu.resetCPU(0)},i.prototype.step=function(){for(;this.doStep();)this.cpu.step()},i.prototype.waitFrame=function(){var t=this.seenFrame;return this.seenFrame=!1,!t},i.prototype.pause=function(){this.paused=!0,this.audio.pause(!0),this.queue&&(clearTimeout(this.queue),this.queue=null)},i.prototype.advanceFrame=function(){this.step(),this.seenSave?this.mmu.saveNeedsFlush()?this.mmu.flushSave():(this.storeSavedata(),this.seenSave=!1):this.mmu.saveNeedsFlush()&&(this.seenSave=!0,this.mmu.flushSave())},i.prototype.runStable=function(){if(!this.interval){var t,e=this,i=0,s=0,r=Date.now();this.paused=!1,this.audio.pause(!1),t=this.reportFPS?function(){try{if(i+=Date.now()-r,e.paused)return;queueFrame(t),r=Date.now(),e.advanceFrame(),60==++s&&(e.reportFPS(1e3*s/i),s=0,i=0)}catch(t){throw e.ERROR(t),t.stack&&e.logStackTrace(t.stack.split("\n")),t}}:function(){try{if(e.paused)return;queueFrame(t),e.advanceFrame()}catch(t){throw e.ERROR(t),t.stack&&e.logStackTrace(t.stack.split("\n")),t}},queueFrame(t)}},i.prototype.setSavedata=function(t){this.mmu.loadSavedata(t)},i.prototype.loadSavedataFromFile=function(t){var e=new FileReader,i=this;e.onload=function(t){i.setSavedata(t.target.result)},e.readAsArrayBuffer(t)},i.prototype.decodeSavedata=function(t){this.setSavedata(this.decodeBase64(t))},i.prototype.decodeBase64=function(t){var e=3*t.length/4;"="==t[t.length-2]?e-=2:"="==t[t.length-1]&&(e-=1);for(var i=new ArrayBuffer(e),s=new Uint8Array(i),r=t.match(/..../g),n=0;n+2<e;n+=3){var a=atob(r.shift());s[n]=a.charCodeAt(0),s[n+1]=a.charCodeAt(1),s[n+2]=a.charCodeAt(2)}if(n<e){a=atob(r.shift());s[n++]=a.charCodeAt(0),a.length>1&&(s[n++]=a.charCodeAt(1))}return i},i.prototype.encodeBase64=function(t){for(var e,i,s=[],r=[],n=0;n<t.byteLength;++n)for(e=t.getUint8(n,!0),r.push(String.fromCharCode(e));r.length>=3;)i=r.splice(0,3),s.push(btoa(i.join("")));return r.length&&s.push(btoa(r.join(""))),s.join("")},i.prototype.downloadSavedata=function(){var t=this.mmu.save;if(!t)return this.WARN("No save data available"),null;if(window.URL){var e=window.URL.createObjectURL(new Blob([t.buffer],{type:"application/octet-stream"}));window.open(e)}else{var i=this.encodeBase64(t.view);window.open("data:application/octet-stream;base64,"+i,this.rom.code+".sav")}},i.prototype.storeSavedata=function(){var t=this.mmu.save;try{window.localStorage[this.SYS_ID+"."+this.mmu.cart.code]=this.encodeBase64(t.view)}catch(t){this.WARN("Could not store savedata! "+t)}},i.prototype.retrieveSavedata=function(){try{var t=window.localStorage[this.SYS_ID+"."+this.mmu.cart.code];if(t)return this.decodeSavedata(t),!0}catch(t){this.WARN("Could not retrieve savedata! "+t)}return!1},i.prototype.freeze=function(){return{cpu:this.cpu.freeze(),mmu:this.mmu.freeze(),irq:this.irq.freeze(),io:this.io.freeze(),audio:this.audio.freeze(),video:this.video.freeze()}},i.prototype.defrost=function(t){this.cpu.defrost(t.cpu),this.mmu.defrost(t.mmu),this.audio.defrost(t.audio),this.video.defrost(t.video),this.irq.defrost(t.irq),this.io.defrost(t.io)},i.prototype.log=function(t,e){},i.prototype.setLogger=function(t){this.log=t},i.prototype.logStackTrace=function(t){var e=t.length-32;this.ERROR("Stack trace follows:"),e>0&&this.log(-1,"> (Too many frames)");for(var i=Math.max(e,0);i<t.length;++i)this.log(-1,"> "+t[i])},i.prototype.ERROR=function(t){this.logLevel&this.LOG_ERROR&&this.log(this.LOG_ERROR,t)},i.prototype.WARN=function(t){this.logLevel&this.LOG_WARN&&this.log(this.LOG_WARN,t)},i.prototype.STUB=function(t){this.logLevel&this.LOG_STUB&&this.log(this.LOG_STUB,t)},i.prototype.INFO=function(t){this.logLevel&this.LOG_INFO&&this.log(this.LOG_INFO,t)},i.prototype.DEBUG=function(t){this.logLevel&this.LOG_DEBUG&&this.log(this.LOG_DEBUG,t)},i.prototype.ASSERT_UNREACHED=function(t){throw new Error("Should be unreached: "+t)},i.prototype.ASSERT=function(t,e){if(!t)throw new Error("Assertion failed: "+e)}},function(t,e,i){"use strict";(function(e){t.exports=function(t){for(var i="undefined"!=typeof window&&"function"==typeof window.atob?window.atob(t):e.from(t,"base64").toString("binary"),s=new Uint8Array(i.length),r=0;r<i.length;++r)s[r]=i.charCodeAt(r);return s.buffer}}).call(this,i(29).Buffer)},function(t,e,i){"use strict";(function(t){
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <http://feross.org>
- * @license  MIT
  */
-var s=i(30),r=i(31),n=i(32);function a(){return h.TYPED_ARRAY_SUPPORT?2147483647:1073741823}function o(t,e){if(a()<e)throw new RangeError("Invalid typed array length");return h.TYPED_ARRAY_SUPPORT?(t=new Uint8Array(e)).__proto__=h.prototype:(null===t&&(t=new h(e)),t.length=e),t}function h(t,e,i){if(!(h.TYPED_ARRAY_SUPPORT||this instanceof h))return new h(t,e,i);if("number"==typeof t){if("string"==typeof e)throw new Error("If encoding is specified then the first argument must be a string");return p(this,t)}return c(this,t,e,i)}function c(t,e,i,s){if("number"==typeof e)throw new TypeError('"value" argument must not be a number');return"undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer?function(t,e,i,s){if(e.byteLength,i<0||e.byteLength<i)throw new RangeError("'offset' is out of bounds");if(e.byteLength<i+(s||0))throw new RangeError("'length' is out of bounds");e=void 0===i&&void 0===s?new Uint8Array(e):void 0===s?new Uint8Array(e,i):new Uint8Array(e,i,s);h.TYPED_ARRAY_SUPPORT?(t=e).__proto__=h.prototype:t=d(t,e);return t}(t,e,i,s):"string"==typeof e?function(t,e,i){"string"==typeof i&&""!==i||(i="utf8");if(!h.isEncoding(i))throw new TypeError('"encoding" must be a valid string encoding');var s=0|f(e,i),r=(t=o(t,s)).write(e,i);r!==s&&(t=t.slice(0,r));return t}(t,e,i):function(t,e){if(h.isBuffer(e)){var i=0|l(e.length);return 0===(t=o(t,i)).length||e.copy(t,0,0,i),t}if(e){if("undefined"!=typeof ArrayBuffer&&e.buffer instanceof ArrayBuffer||"length"in e)return"number"!=typeof e.length||(s=e.length)!=s?o(t,0):d(t,e);if("Buffer"===e.type&&n(e.data))return d(t,e.data)}var s;throw new TypeError("First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.")}(t,e)}function u(t){if("number"!=typeof t)throw new TypeError('"size" argument must be a number');if(t<0)throw new RangeError('"size" argument must not be negative')}function p(t,e){if(u(e),t=o(t,e<0?0:0|l(e)),!h.TYPED_ARRAY_SUPPORT)for(var i=0;i<e;++i)t[i]=0;return t}function d(t,e){var i=e.length<0?0:0|l(e.length);t=o(t,i);for(var s=0;s<i;s+=1)t[s]=255&e[s];return t}function l(t){if(t>=a())throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x"+a().toString(16)+" bytes");return 0|t}function f(t,e){if(h.isBuffer(t))return t.length;if("undefined"!=typeof ArrayBuffer&&"function"==typeof ArrayBuffer.isView&&(ArrayBuffer.isView(t)||t instanceof ArrayBuffer))return t.byteLength;"string"!=typeof t&&(t=""+t);var i=t.length;if(0===i)return 0;for(var s=!1;;)switch(e){case"ascii":case"latin1":case"binary":return i;case"utf8":case"utf-8":case void 0:return x(t).length;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return 2*i;case"hex":return i>>>1;case"base64":return F(t).length;default:if(s)return x(t).length;e=(""+e).toLowerCase(),s=!0}}function m(t,e,i){var s=!1;if((void 0===e||e<0)&&(e=0),e>this.length)return"";if((void 0===i||i>this.length)&&(i=this.length),i<=0)return"";if((i>>>=0)<=(e>>>=0))return"";for(t||(t="utf8");;)switch(t){case"hex":return O(this,e,i);case"utf8":case"utf-8":return M(this,e,i);case"ascii":return E(this,e,i);case"latin1":case"binary":return I(this,e,i);case"base64":return _(this,e,i);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return T(this,e,i);default:if(s)throw new TypeError("Unknown encoding: "+t);t=(t+"").toLowerCase(),s=!0}}function A(t,e,i){var s=t[e];t[e]=t[i],t[i]=s}function y(t,e,i,s,r){if(0===t.length)return-1;if("string"==typeof i?(s=i,i=0):i>2147483647?i=2147483647:i<-2147483648&&(i=-2147483648),i=+i,isNaN(i)&&(i=r?0:t.length-1),i<0&&(i=t.length+i),i>=t.length){if(r)return-1;i=t.length-1}else if(i<0){if(!r)return-1;i=0}if("string"==typeof e&&(e=h.from(e,s)),h.isBuffer(e))return 0===e.length?-1:R(t,e,i,s,r);if("number"==typeof e)return e&=255,h.TYPED_ARRAY_SUPPORT&&"function"==typeof Uint8Array.prototype.indexOf?r?Uint8Array.prototype.indexOf.call(t,e,i):Uint8Array.prototype.lastIndexOf.call(t,e,i):R(t,[e],i,s,r);throw new TypeError("val must be string, number or Buffer")}function R(t,e,i,s,r){var n,a=1,o=t.length,h=e.length;if(void 0!==s&&("ucs2"===(s=String(s).toLowerCase())||"ucs-2"===s||"utf16le"===s||"utf-16le"===s)){if(t.length<2||e.length<2)return-1;a=2,o/=2,h/=2,i/=2}function c(t,e){return 1===a?t[e]:t.readUInt16BE(e*a)}if(r){var u=-1;for(n=i;n<o;n++)if(c(t,n)===c(e,-1===u?0:n-u)){if(-1===u&&(u=n),n-u+1===h)return u*a}else-1!==u&&(n-=n-u),u=-1}else for(i+h>o&&(i=o-h),n=i;n>=0;n--){for(var p=!0,d=0;d<h;d++)if(c(t,n+d)!==c(e,d)){p=!1;break}if(p)return n}return-1}function C(t,e,i,s){i=Number(i)||0;var r=t.length-i;s?(s=Number(s))>r&&(s=r):s=r;var n=e.length;if(n%2!=0)throw new TypeError("Invalid hex string");s>n/2&&(s=n/2);for(var a=0;a<s;++a){var o=parseInt(e.substr(2*a,2),16);if(isNaN(o))return a;t[i+a]=o}return a}function S(t,e,i,s){return W(x(e,t.length-i),t,i,s)}function b(t,e,i,s){return W(function(t){for(var e=[],i=0;i<t.length;++i)e.push(255&t.charCodeAt(i));return e}(e),t,i,s)}function v(t,e,i,s){return b(t,e,i,s)}function w(t,e,i,s){return W(F(e),t,i,s)}function g(t,e,i,s){return W(function(t,e){for(var i,s,r,n=[],a=0;a<t.length&&!((e-=2)<0);++a)i=t.charCodeAt(a),s=i>>8,r=i%256,n.push(r),n.push(s);return n}(e,t.length-i),t,i,s)}function _(t,e,i){return 0===e&&i===t.length?s.fromByteArray(t):s.fromByteArray(t.slice(e,i))}function M(t,e,i){i=Math.min(t.length,i);for(var s=[],r=e;r<i;){var n,a,o,h,c=t[r],u=null,p=c>239?4:c>223?3:c>191?2:1;if(r+p<=i)switch(p){case 1:c<128&&(u=c);break;case 2:128==(192&(n=t[r+1]))&&(h=(31&c)<<6|63&n)>127&&(u=h);break;case 3:n=t[r+1],a=t[r+2],128==(192&n)&&128==(192&a)&&(h=(15&c)<<12|(63&n)<<6|63&a)>2047&&(h<55296||h>57343)&&(u=h);break;case 4:n=t[r+1],a=t[r+2],o=t[r+3],128==(192&n)&&128==(192&a)&&128==(192&o)&&(h=(15&c)<<18|(63&n)<<12|(63&a)<<6|63&o)>65535&&h<1114112&&(u=h)}null===u?(u=65533,p=1):u>65535&&(u-=65536,s.push(u>>>10&1023|55296),u=56320|1023&u),s.push(u),r+=p}return function(t){var e=t.length;if(e<=4096)return String.fromCharCode.apply(String,t);var i="",s=0;for(;s<e;)i+=String.fromCharCode.apply(String,t.slice(s,s+=4096));return i}(s)}e.Buffer=h,e.SlowBuffer=function(t){+t!=t&&(t=0);return h.alloc(+t)},e.INSPECT_MAX_BYTES=50,h.TYPED_ARRAY_SUPPORT=void 0!==t.TYPED_ARRAY_SUPPORT?t.TYPED_ARRAY_SUPPORT:function(){try{var t=new Uint8Array(1);return t.__proto__={__proto__:Uint8Array.prototype,foo:function(){return 42}},42===t.foo()&&"function"==typeof t.subarray&&0===t.subarray(1,1).byteLength}catch(t){return!1}}(),e.kMaxLength=a(),h.poolSize=8192,h._augment=function(t){return t.__proto__=h.prototype,t},h.from=function(t,e,i){return c(null,t,e,i)},h.TYPED_ARRAY_SUPPORT&&(h.prototype.__proto__=Uint8Array.prototype,h.__proto__=Uint8Array,"undefined"!=typeof Symbol&&Symbol.species&&h[Symbol.species]===h&&Object.defineProperty(h,Symbol.species,{value:null,configurable:!0})),h.alloc=function(t,e,i){return function(t,e,i,s){return u(e),e<=0?o(t,e):void 0!==i?"string"==typeof s?o(t,e).fill(i,s):o(t,e).fill(i):o(t,e)}(null,t,e,i)},h.allocUnsafe=function(t){return p(null,t)},h.allocUnsafeSlow=function(t){return p(null,t)},h.isBuffer=function(t){return!(null==t||!t._isBuffer)},h.compare=function(t,e){if(!h.isBuffer(t)||!h.isBuffer(e))throw new TypeError("Arguments must be Buffers");if(t===e)return 0;for(var i=t.length,s=e.length,r=0,n=Math.min(i,s);r<n;++r)if(t[r]!==e[r]){i=t[r],s=e[r];break}return i<s?-1:s<i?1:0},h.isEncoding=function(t){switch(String(t).toLowerCase()){case"hex":case"utf8":case"utf-8":case"ascii":case"latin1":case"binary":case"base64":case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return!0;default:return!1}},h.concat=function(t,e){if(!n(t))throw new TypeError('"list" argument must be an Array of Buffers');if(0===t.length)return h.alloc(0);var i;if(void 0===e)for(e=0,i=0;i<t.length;++i)e+=t[i].length;var s=h.allocUnsafe(e),r=0;for(i=0;i<t.length;++i){var a=t[i];if(!h.isBuffer(a))throw new TypeError('"list" argument must be an Array of Buffers');a.copy(s,r),r+=a.length}return s},h.byteLength=f,h.prototype._isBuffer=!0,h.prototype.swap16=function(){var t=this.length;if(t%2!=0)throw new RangeError("Buffer size must be a multiple of 16-bits");for(var e=0;e<t;e+=2)A(this,e,e+1);return this},h.prototype.swap32=function(){var t=this.length;if(t%4!=0)throw new RangeError("Buffer size must be a multiple of 32-bits");for(var e=0;e<t;e+=4)A(this,e,e+3),A(this,e+1,e+2);return this},h.prototype.swap64=function(){var t=this.length;if(t%8!=0)throw new RangeError("Buffer size must be a multiple of 64-bits");for(var e=0;e<t;e+=8)A(this,e,e+7),A(this,e+1,e+6),A(this,e+2,e+5),A(this,e+3,e+4);return this},h.prototype.toString=function(){var t=0|this.length;return 0===t?"":0===arguments.length?M(this,0,t):m.apply(this,arguments)},h.prototype.equals=function(t){if(!h.isBuffer(t))throw new TypeError("Argument must be a Buffer");return this===t||0===h.compare(this,t)},h.prototype.inspect=function(){var t="",i=e.INSPECT_MAX_BYTES;return this.length>0&&(t=this.toString("hex",0,i).match(/.{2}/g).join(" "),this.length>i&&(t+=" ... ")),"<Buffer "+t+">"},h.prototype.compare=function(t,e,i,s,r){if(!h.isBuffer(t))throw new TypeError("Argument must be a Buffer");if(void 0===e&&(e=0),void 0===i&&(i=t?t.length:0),void 0===s&&(s=0),void 0===r&&(r=this.length),e<0||i>t.length||s<0||r>this.length)throw new RangeError("out of range index");if(s>=r&&e>=i)return 0;if(s>=r)return-1;if(e>=i)return 1;if(this===t)return 0;for(var n=(r>>>=0)-(s>>>=0),a=(i>>>=0)-(e>>>=0),o=Math.min(n,a),c=this.slice(s,r),u=t.slice(e,i),p=0;p<o;++p)if(c[p]!==u[p]){n=c[p],a=u[p];break}return n<a?-1:a<n?1:0},h.prototype.includes=function(t,e,i){return-1!==this.indexOf(t,e,i)},h.prototype.indexOf=function(t,e,i){return y(this,t,e,i,!0)},h.prototype.lastIndexOf=function(t,e,i){return y(this,t,e,i,!1)},h.prototype.write=function(t,e,i,s){if(void 0===e)s="utf8",i=this.length,e=0;else if(void 0===i&&"string"==typeof e)s=e,i=this.length,e=0;else{if(!isFinite(e))throw new Error("Buffer.write(string, encoding, offset[, length]) is no longer supported");e|=0,isFinite(i)?(i|=0,void 0===s&&(s="utf8")):(s=i,i=void 0)}var r=this.length-e;if((void 0===i||i>r)&&(i=r),t.length>0&&(i<0||e<0)||e>this.length)throw new RangeError("Attempt to write outside buffer bounds");s||(s="utf8");for(var n=!1;;)switch(s){case"hex":return C(this,t,e,i);case"utf8":case"utf-8":return S(this,t,e,i);case"ascii":return b(this,t,e,i);case"latin1":case"binary":return v(this,t,e,i);case"base64":return w(this,t,e,i);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return g(this,t,e,i);default:if(n)throw new TypeError("Unknown encoding: "+s);s=(""+s).toLowerCase(),n=!0}},h.prototype.toJSON=function(){return{type:"Buffer",data:Array.prototype.slice.call(this._arr||this,0)}};function E(t,e,i){var s="";i=Math.min(t.length,i);for(var r=e;r<i;++r)s+=String.fromCharCode(127&t[r]);return s}function I(t,e,i){var s="";i=Math.min(t.length,i);for(var r=e;r<i;++r)s+=String.fromCharCode(t[r]);return s}function O(t,e,i){var s=t.length;(!e||e<0)&&(e=0),(!i||i<0||i>s)&&(i=s);for(var r="",n=e;n<i;++n)r+=H(t[n]);return r}function T(t,e,i){for(var s=t.slice(e,i),r="",n=0;n<s.length;n+=2)r+=String.fromCharCode(s[n]+256*s[n+1]);return r}function P(t,e,i){if(t%1!=0||t<0)throw new RangeError("offset is not uint");if(t+e>i)throw new RangeError("Trying to access beyond buffer length")}function B(t,e,i,s,r,n){if(!h.isBuffer(t))throw new TypeError('"buffer" argument must be a Buffer instance');if(e>r||e<n)throw new RangeError('"value" argument is out of bounds');if(i+s>t.length)throw new RangeError("Index out of range")}function k(t,e,i,s){e<0&&(e=65535+e+1);for(var r=0,n=Math.min(t.length-i,2);r<n;++r)t[i+r]=(e&255<<8*(s?r:1-r))>>>8*(s?r:1-r)}function D(t,e,i,s){e<0&&(e=4294967295+e+1);for(var r=0,n=Math.min(t.length-i,4);r<n;++r)t[i+r]=e>>>8*(s?r:3-r)&255}function N(t,e,i,s,r,n){if(i+s>t.length)throw new RangeError("Index out of range");if(i<0)throw new RangeError("Index out of range")}function L(t,e,i,s,n){return n||N(t,0,i,4),r.write(t,e,i,s,23,4),i+4}function G(t,e,i,s,n){return n||N(t,0,i,8),r.write(t,e,i,s,52,8),i+8}h.prototype.slice=function(t,e){var i,s=this.length;if((t=~~t)<0?(t+=s)<0&&(t=0):t>s&&(t=s),(e=void 0===e?s:~~e)<0?(e+=s)<0&&(e=0):e>s&&(e=s),e<t&&(e=t),h.TYPED_ARRAY_SUPPORT)(i=this.subarray(t,e)).__proto__=h.prototype;else{var r=e-t;i=new h(r,void 0);for(var n=0;n<r;++n)i[n]=this[n+t]}return i},h.prototype.readUIntLE=function(t,e,i){t|=0,e|=0,i||P(t,e,this.length);for(var s=this[t],r=1,n=0;++n<e&&(r*=256);)s+=this[t+n]*r;return s},h.prototype.readUIntBE=function(t,e,i){t|=0,e|=0,i||P(t,e,this.length);for(var s=this[t+--e],r=1;e>0&&(r*=256);)s+=this[t+--e]*r;return s},h.prototype.readUInt8=function(t,e){return e||P(t,1,this.length),this[t]},h.prototype.readUInt16LE=function(t,e){return e||P(t,2,this.length),this[t]|this[t+1]<<8},h.prototype.readUInt16BE=function(t,e){return e||P(t,2,this.length),this[t]<<8|this[t+1]},h.prototype.readUInt32LE=function(t,e){return e||P(t,4,this.length),(this[t]|this[t+1]<<8|this[t+2]<<16)+16777216*this[t+3]},h.prototype.readUInt32BE=function(t,e){return e||P(t,4,this.length),16777216*this[t]+(this[t+1]<<16|this[t+2]<<8|this[t+3])},h.prototype.readIntLE=function(t,e,i){t|=0,e|=0,i||P(t,e,this.length);for(var s=this[t],r=1,n=0;++n<e&&(r*=256);)s+=this[t+n]*r;return s>=(r*=128)&&(s-=Math.pow(2,8*e)),s},h.prototype.readIntBE=function(t,e,i){t|=0,e|=0,i||P(t,e,this.length);for(var s=e,r=1,n=this[t+--s];s>0&&(r*=256);)n+=this[t+--s]*r;return n>=(r*=128)&&(n-=Math.pow(2,8*e)),n},h.prototype.readInt8=function(t,e){return e||P(t,1,this.length),128&this[t]?-1*(255-this[t]+1):this[t]},h.prototype.readInt16LE=function(t,e){e||P(t,2,this.length);var i=this[t]|this[t+1]<<8;return 32768&i?4294901760|i:i},h.prototype.readInt16BE=function(t,e){e||P(t,2,this.length);var i=this[t+1]|this[t]<<8;return 32768&i?4294901760|i:i},h.prototype.readInt32LE=function(t,e){return e||P(t,4,this.length),this[t]|this[t+1]<<8|this[t+2]<<16|this[t+3]<<24},h.prototype.readInt32BE=function(t,e){return e||P(t,4,this.length),this[t]<<24|this[t+1]<<16|this[t+2]<<8|this[t+3]},h.prototype.readFloatLE=function(t,e){return e||P(t,4,this.length),r.read(this,t,!0,23,4)},h.prototype.readFloatBE=function(t,e){return e||P(t,4,this.length),r.read(this,t,!1,23,4)},h.prototype.readDoubleLE=function(t,e){return e||P(t,8,this.length),r.read(this,t,!0,52,8)},h.prototype.readDoubleBE=function(t,e){return e||P(t,8,this.length),r.read(this,t,!1,52,8)},h.prototype.writeUIntLE=function(t,e,i,s){(t=+t,e|=0,i|=0,s)||B(this,t,e,i,Math.pow(2,8*i)-1,0);var r=1,n=0;for(this[e]=255&t;++n<i&&(r*=256);)this[e+n]=t/r&255;return e+i},h.prototype.writeUIntBE=function(t,e,i,s){(t=+t,e|=0,i|=0,s)||B(this,t,e,i,Math.pow(2,8*i)-1,0);var r=i-1,n=1;for(this[e+r]=255&t;--r>=0&&(n*=256);)this[e+r]=t/n&255;return e+i},h.prototype.writeUInt8=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,1,255,0),h.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),this[e]=255&t,e+1},h.prototype.writeUInt16LE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,2,65535,0),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8):k(this,t,e,!0),e+2},h.prototype.writeUInt16BE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,2,65535,0),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>8,this[e+1]=255&t):k(this,t,e,!1),e+2},h.prototype.writeUInt32LE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,4,4294967295,0),h.TYPED_ARRAY_SUPPORT?(this[e+3]=t>>>24,this[e+2]=t>>>16,this[e+1]=t>>>8,this[e]=255&t):D(this,t,e,!0),e+4},h.prototype.writeUInt32BE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,4,4294967295,0),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>24,this[e+1]=t>>>16,this[e+2]=t>>>8,this[e+3]=255&t):D(this,t,e,!1),e+4},h.prototype.writeIntLE=function(t,e,i,s){if(t=+t,e|=0,!s){var r=Math.pow(2,8*i-1);B(this,t,e,i,r-1,-r)}var n=0,a=1,o=0;for(this[e]=255&t;++n<i&&(a*=256);)t<0&&0===o&&0!==this[e+n-1]&&(o=1),this[e+n]=(t/a>>0)-o&255;return e+i},h.prototype.writeIntBE=function(t,e,i,s){if(t=+t,e|=0,!s){var r=Math.pow(2,8*i-1);B(this,t,e,i,r-1,-r)}var n=i-1,a=1,o=0;for(this[e+n]=255&t;--n>=0&&(a*=256);)t<0&&0===o&&0!==this[e+n+1]&&(o=1),this[e+n]=(t/a>>0)-o&255;return e+i},h.prototype.writeInt8=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,1,127,-128),h.TYPED_ARRAY_SUPPORT||(t=Math.floor(t)),t<0&&(t=255+t+1),this[e]=255&t,e+1},h.prototype.writeInt16LE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,2,32767,-32768),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8):k(this,t,e,!0),e+2},h.prototype.writeInt16BE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,2,32767,-32768),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>8,this[e+1]=255&t):k(this,t,e,!1),e+2},h.prototype.writeInt32LE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,4,2147483647,-2147483648),h.TYPED_ARRAY_SUPPORT?(this[e]=255&t,this[e+1]=t>>>8,this[e+2]=t>>>16,this[e+3]=t>>>24):D(this,t,e,!0),e+4},h.prototype.writeInt32BE=function(t,e,i){return t=+t,e|=0,i||B(this,t,e,4,2147483647,-2147483648),t<0&&(t=4294967295+t+1),h.TYPED_ARRAY_SUPPORT?(this[e]=t>>>24,this[e+1]=t>>>16,this[e+2]=t>>>8,this[e+3]=255&t):D(this,t,e,!1),e+4},h.prototype.writeFloatLE=function(t,e,i){return L(this,t,e,!0,i)},h.prototype.writeFloatBE=function(t,e,i){return L(this,t,e,!1,i)},h.prototype.writeDoubleLE=function(t,e,i){return G(this,t,e,!0,i)},h.prototype.writeDoubleBE=function(t,e,i){return G(this,t,e,!1,i)},h.prototype.copy=function(t,e,i,s){if(i||(i=0),s||0===s||(s=this.length),e>=t.length&&(e=t.length),e||(e=0),s>0&&s<i&&(s=i),s===i)return 0;if(0===t.length||0===this.length)return 0;if(e<0)throw new RangeError("targetStart out of bounds");if(i<0||i>=this.length)throw new RangeError("sourceStart out of bounds");if(s<0)throw new RangeError("sourceEnd out of bounds");s>this.length&&(s=this.length),t.length-e<s-i&&(s=t.length-e+i);var r,n=s-i;if(this===t&&i<e&&e<s)for(r=n-1;r>=0;--r)t[r+e]=this[r+i];else if(n<1e3||!h.TYPED_ARRAY_SUPPORT)for(r=0;r<n;++r)t[r+e]=this[r+i];else Uint8Array.prototype.set.call(t,this.subarray(i,i+n),e);return n},h.prototype.fill=function(t,e,i,s){if("string"==typeof t){if("string"==typeof e?(s=e,e=0,i=this.length):"string"==typeof i&&(s=i,i=this.length),1===t.length){var r=t.charCodeAt(0);r<256&&(t=r)}if(void 0!==s&&"string"!=typeof s)throw new TypeError("encoding must be a string");if("string"==typeof s&&!h.isEncoding(s))throw new TypeError("Unknown encoding: "+s)}else"number"==typeof t&&(t&=255);if(e<0||this.length<e||this.length<i)throw new RangeError("Out of range index");if(i<=e)return this;var n;if(e>>>=0,i=void 0===i?this.length:i>>>0,t||(t=0),"number"==typeof t)for(n=e;n<i;++n)this[n]=t;else{var a=h.isBuffer(t)?t:x(new h(t,s).toString()),o=a.length;for(n=0;n<i-e;++n)this[n+e]=a[n%o]}return this};var U=/[^+\/0-9A-Za-z-_]/g;function H(t){return t<16?"0"+t.toString(16):t.toString(16)}function x(t,e){var i;e=e||1/0;for(var s=t.length,r=null,n=[],a=0;a<s;++a){if((i=t.charCodeAt(a))>55295&&i<57344){if(!r){if(i>56319){(e-=3)>-1&&n.push(239,191,189);continue}if(a+1===s){(e-=3)>-1&&n.push(239,191,189);continue}r=i;continue}if(i<56320){(e-=3)>-1&&n.push(239,191,189),r=i;continue}i=65536+(r-55296<<10|i-56320)}else r&&(e-=3)>-1&&n.push(239,191,189);if(r=null,i<128){if((e-=1)<0)break;n.push(i)}else if(i<2048){if((e-=2)<0)break;n.push(i>>6|192,63&i|128)}else if(i<65536){if((e-=3)<0)break;n.push(i>>12|224,i>>6&63|128,63&i|128)}else{if(!(i<1114112))throw new Error("Invalid code point");if((e-=4)<0)break;n.push(i>>18|240,i>>12&63|128,i>>6&63|128,63&i|128)}}return n}function F(t){return s.toByteArray(function(t){if((t=function(t){return t.trim?t.trim():t.replace(/^\s+|\s+$/g,"")}(t).replace(U,"")).length<2)return"";for(;t.length%4!=0;)t+="=";return t}(t))}function W(t,e,i,s){for(var r=0;r<s&&!(r+i>=e.length||r>=t.length);++r)e[r+i]=t[r];return r}}).call(this,i(3))},function(t,e,i){"use strict";e.byteLength=function(t){var e=c(t),i=e[0],s=e[1];return 3*(i+s)/4-s},e.toByteArray=function(t){var e,i,s=c(t),a=s[0],o=s[1],h=new n(function(t,e,i){return 3*(e+i)/4-i}(0,a,o)),u=0,p=o>0?a-4:a;for(i=0;i<p;i+=4)e=r[t.charCodeAt(i)]<<18|r[t.charCodeAt(i+1)]<<12|r[t.charCodeAt(i+2)]<<6|r[t.charCodeAt(i+3)],h[u++]=e>>16&255,h[u++]=e>>8&255,h[u++]=255&e;2===o&&(e=r[t.charCodeAt(i)]<<2|r[t.charCodeAt(i+1)]>>4,h[u++]=255&e);1===o&&(e=r[t.charCodeAt(i)]<<10|r[t.charCodeAt(i+1)]<<4|r[t.charCodeAt(i+2)]>>2,h[u++]=e>>8&255,h[u++]=255&e);return h},e.fromByteArray=function(t){for(var e,i=t.length,r=i%3,n=[],a=0,o=i-r;a<o;a+=16383)n.push(u(t,a,a+16383>o?o:a+16383));1===r?(e=t[i-1],n.push(s[e>>2]+s[e<<4&63]+"==")):2===r&&(e=(t[i-2]<<8)+t[i-1],n.push(s[e>>10]+s[e>>4&63]+s[e<<2&63]+"="));return n.join("")};for(var s=[],r=[],n="undefined"!=typeof Uint8Array?Uint8Array:Array,a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",o=0,h=a.length;o<h;++o)s[o]=a[o],r[a.charCodeAt(o)]=o;function c(t){var e=t.length;if(e%4>0)throw new Error("Invalid string. Length must be a multiple of 4");var i=t.indexOf("=");return-1===i&&(i=e),[i,i===e?0:4-i%4]}function u(t,e,i){for(var r,n,a=[],o=e;o<i;o+=3)r=(t[o]<<16&16711680)+(t[o+1]<<8&65280)+(255&t[o+2]),a.push(s[(n=r)>>18&63]+s[n>>12&63]+s[n>>6&63]+s[63&n]);return a.join("")}r["-".charCodeAt(0)]=62,r["_".charCodeAt(0)]=63},function(t,e){e.read=function(t,e,i,s,r){var n,a,o=8*r-s-1,h=(1<<o)-1,c=h>>1,u=-7,p=i?r-1:0,d=i?-1:1,l=t[e+p];for(p+=d,n=l&(1<<-u)-1,l>>=-u,u+=o;u>0;n=256*n+t[e+p],p+=d,u-=8);for(a=n&(1<<-u)-1,n>>=-u,u+=s;u>0;a=256*a+t[e+p],p+=d,u-=8);if(0===n)n=1-c;else{if(n===h)return a?NaN:1/0*(l?-1:1);a+=Math.pow(2,s),n-=c}return(l?-1:1)*a*Math.pow(2,n-s)},e.write=function(t,e,i,s,r,n){var a,o,h,c=8*n-r-1,u=(1<<c)-1,p=u>>1,d=23===r?Math.pow(2,-24)-Math.pow(2,-77):0,l=s?0:n-1,f=s?1:-1,m=e<0||0===e&&1/e<0?1:0;for(e=Math.abs(e),isNaN(e)||e===1/0?(o=isNaN(e)?1:0,a=u):(a=Math.floor(Math.log(e)/Math.LN2),e*(h=Math.pow(2,-a))<1&&(a--,h*=2),(e+=a+p>=1?d/h:d*Math.pow(2,1-p))*h>=2&&(a++,h/=2),a+p>=u?(o=0,a=u):a+p>=1?(o=(e*h-1)*Math.pow(2,r),a+=p):(o=e*Math.pow(2,p-1)*Math.pow(2,r),a=0));r>=8;t[i+l]=255&o,l+=f,o/=256,r-=8);for(a=a<<r|o,c+=r;c>0;t[i+l]=255&a,l+=f,a/=256,c-=8);t[i+l-f]|=128*m}},function(t,e){var i={}.toString;t.exports=Array.isArray||function(t){return"[object Array]"==i.call(t)}},function(t,e,s){"use strict";s.r(e);var r=s(5),n=s.n(r),a=s(0),o=s.n(a),h=s(1),c=s.n(h),u=s(2),p=s.n(u),d=function(t,e,i){var s=document.getElementById(t),r=document.getElementById(e);if(s){var n=function t(){i?s.parentElement.removeChild(s):(s.setAttribute("class","dead"),s.removeEventListener("webkitTransitionEnd",t),s.removeEventListener("oTransitionEnd",t),s.removeEventListener("transitionend",t)),r&&(r.setAttribute("class","hidden"),setTimeout((function(){return r.removeAttribute("class")}),0))};s.addEventListener("webkitTransitionEnd",n,!1),s.addEventListener("oTransitionEnd",n,!1),s.addEventListener("transitionend",n,!1),s.setAttribute("class","hidden")}},l=s(6),f=s.n(l);var m={TAG_INT:1,TAG_STRING:2,TAG_STRUCT:3,TAG_BLOB:4,TAG_BOOLEAN:5,TYPE:"application/octet-stream",pointer:function(){this.index=0,this.top=0,this.stack=[]},pack:function(t){var e=new DataView(new ArrayBuffer(4));return e.setUint32(0,t,!0),e.buffer},pack8:function(t){var e=new DataView(new ArrayBuffer(1));return e.setUint8(0,t,!0),e.buffer},prefix:function(t){return new Blob([m.pack(t.size||t.length||t.byteLength),t],{type:m.TYPE})},serialize:function(t){var e=[],s=4;for(i in t)if(t.hasOwnProperty(i)){var r,n,a=m.prefix(i);switch(f()(t[i])){case"number":r=m.TAG_INT,n=m.pack(t[i]);break;case"string":r=m.TAG_STRING,n=m.prefix(t[i]);break;case"object":t[i].type==m.TYPE?(r=m.TAG_BLOB,n=t[i]):(r=m.TAG_STRUCT,n=m.serialize(t[i]));break;case"boolean":r=m.TAG_BOOLEAN,n=m.pack8(t[i]);break;default:console.log(t[i])}s+=1+a.size+(n.size||n.byteLength||n.length),e.push(m.pack8(r)),e.push(a),e.push(n)}return e.unshift(m.pack(s)),new Blob(e)},deserialize:function(t,e){var i=new FileReader;i.onload=function(t){e(m.deserealizeStream(new DataView(t.target.result),new m.pointer))},i.readAsArrayBuffer(t)},deserealizeStream:function(t,e){e.push();for(var i={},s=t.getUint32(e.advance(4),!0);e.mark()<s;){var r,n=t.getUint8(e.advance(1)),a=e.readString(t);switch(n){case m.TAG_INT:r=t.getUint32(e.advance(4),!0);break;case m.TAG_STRING:r=e.readString(t);break;case m.TAG_STRUCT:r=m.deserealizeStream(t,e);break;case m.TAG_BLOB:var o=t.getUint32(e.advance(4),!0);r=t.buffer.slice(e.advance(o),e.advance(0));break;case m.TAG_BOOLEAN:r=!!t.getUint8(e.advance(1))}i[a]=r}if(e.mark()>s)throw"Size of serialized data exceeded";return e.pop(),i},serializePNG:function(t,e,i){for(var s=document.createElement("canvas"),r=s.getContext("2d"),n=e.getContext("2d").getImageData(0,0,e.width,e.height),a=0,o=0;o<e.height;++o)for(var h=0;h<e.width;++h)n.data[4*(h+o*e.width)+3]||++a;for(var c=3*a+(e.width*e.height-a),u=1;c*u*u<t.size;++u);var p=c*u*u-t.size,d=Math.ceil(p/(e.width*u));s.setAttribute("width",e.width*u),s.setAttribute("height",e.height*u+d);var l=new FileReader;return l.onload=function(t){for(var a=new Uint8Array(t.target.result),o=0,h=0,c=r.createImageData(s.width,s.height+d),p=0;p<s.height;++p)for(var l=0;l<s.width;++l){var f=p/u|0,m=l/u|0;if(f>e.height||!n.data[4*(m+f*e.width)+3])c.data[h++]=a[o++],c.data[h++]=a[o++],c.data[h++]=a[o++],c.data[h++]=0;else{var A=a[o++];c.data[h++]=n.data[4*(m+f*e.width)+0]|7&A,c.data[h++]=n.data[4*(m+f*e.width)+1]|A>>3&7,c.data[h++]=n.data[4*(m+f*e.width)+2]|A>>6&7,c.data[h++]=n.data[4*(m+f*e.width)+3]}}r.putImageData(c,0,0),i(s.toDataURL("image/png"))},l.readAsArrayBuffer(t),s},deserializePNG:function(t,e){var i=new FileReader;i.onload=function(t){var i=document.createElement("img");i.setAttribute("src",t.target.result);var s=document.createElement("canvas");s.setAttribute("height",i.height),s.setAttribute("width",i.width);var r=s.getContext("2d");r.drawImage(i,0,0);for(var n=r.getImageData(0,0,s.width,s.height),a=(t=[],0);a<s.height;++a)for(var o=0;o<s.width;++o)if(n.data[4*(o+a*s.width)+3]){var h=0;h|=7&n.data[4*(o+a*s.width)+0],h|=(7&n.data[4*(o+a*s.width)+1])<<3,h|=(7&n.data[4*(o+a*s.width)+2])<<6,t.push(h)}else t.push(n.data[4*(o+a*s.width)+0]),t.push(n.data[4*(o+a*s.width)+1]),t.push(n.data[4*(o+a*s.width)+2]);newBlob=new Blob(t.map((function(t){var e=new Uint8Array(1);return e[0]=t,e})),{type:m.TYPE}),m.deserialize(newBlob,e)},i.readAsDataURL(t)}};m.pointer.prototype.advance=function(t){var e=this.index;return this.index+=t,e},m.pointer.prototype.mark=function(){return this.index-this.top},m.pointer.prototype.push=function(){this.stack.push(this.top),this.top=this.index},m.pointer.prototype.pop=function(){this.top=this.stack.pop()},m.pointer.prototype.readString=function(t){for(var e=t.getUint32(this.advance(4),!0),i=[],s=0;s<e;++s)i.push(String.fromCharCode(t.getUint8(this.advance(1))));return i.join("")};s(15),s(16),s(17),s(4),s(18),s(19),s(20),s(21),s(22),s(23),s(24),s(25);function A(t){MemoryView.call(this,new ArrayBuffer(t),0),this.writePending=!1}function y(t){MemoryView.call(this,new ArrayBuffer(t),0),this.COMMAND_WIPE=16,this.COMMAND_ERASE_SECTOR=48,this.COMMAND_ERASE=128,this.COMMAND_ID=144,this.COMMAND_WRITE=160,this.COMMAND_SWITCH_BANK=176,this.COMMAND_TERMINATE_ID=240,this.ID_PANASONIC=6962,this.ID_SANYO=4962,this.bank0=new DataView(this.buffer,0,65536),t>65536?(this.id=this.ID_SANYO,this.bank1=new DataView(this.buffer,65536)):(this.id=this.ID_PANASONIC,this.bank1=null),this.bank=this.bank0,this.idMode=!1,this.writePending=!1,this.first=0,this.second=0,this.command=0,this.pendingCommand=0}A.prototype=Object.create(MemoryView.prototype),A.prototype.store8=function(t,e){this.view.setInt8(t,e),this.writePending=!0},A.prototype.store16=function(t,e){this.view.setInt16(t,e,!0),this.writePending=!0},A.prototype.store32=function(t,e){this.view.setInt32(t,e,!0),this.writePending=!0},y.prototype=Object.create(MemoryView.prototype),y.prototype.load8=function(t){return this.idMode&&t<2?this.id>>(t<<3)&255:t<65536?this.bank.getInt8(t):0},y.prototype.load16=function(t){return 255&this.load8(t)|this.load8(t+1)<<8},y.prototype.load32=function(t){return 255&this.load8(t)|this.load8(t+1)<<8|this.load8(t+2)<<16|this.load8(t+3)<<24},y.prototype.loadU8=function(t){return 255&this.load8(t)},y.prototype.loadU16=function(t){return 255&this.loadU8(t)|this.loadU8(t+1)<<8},y.prototype.store8=function(t,e){switch(this.command){case 0:if(21845==t)if(85==this.second){switch(e){case this.COMMAND_ERASE:this.pendingCommand=e;break;case this.COMMAND_ID:this.idMode=!0;break;case this.COMMAND_TERMINATE_ID:this.idMode=!1;break;default:this.command=e}this.second=0,this.first=0}else this.command=0,this.first=e,this.idMode=!1;else 10922==t&&170==this.first&&(this.first=0,this.pendingCommand?this.command=this.pendingCommand:this.second=e);break;case this.COMMAND_ERASE:switch(e){case this.COMMAND_WIPE:if(21845==t)for(var i=0;i<this.view.byteLength;i+=4)this.view.setInt32(i,-1);break;case this.COMMAND_ERASE_SECTOR:if(0==(4095&t))for(i=t;i<t+4096;i+=4)this.bank.setInt32(i,-1)}this.pendingCommand=0,this.command=0;break;case this.COMMAND_WRITE:this.bank.setInt8(t,e),this.command=0,this.writePending=!0;break;case this.COMMAND_SWITCH_BANK:this.bank1&&0==t&&(this.bank=1==e?this.bank1:this.bank0),this.command=0}},y.prototype.store16=function(t,e){throw new Error("Unaligned save to flash!")},y.prototype.store32=function(t,e){throw new Error("Unaligned save to flash!")},y.prototype.replaceData=function(t){var e=this.view===this.bank1;MemoryView.prototype.replaceData.call(this,t,0),this.bank0=new DataView(this.buffer,0,65536),t.byteLength>65536?this.bank1=new DataView(this.buffer,65536):this.bank1=null,this.bank=e?this.bank1:this.bank0},window.EEPROMSavedata=function(t,e){MemoryView.call(this,new ArrayBuffer(t),0),this.writeAddress=0,this.readBitsRemaining=0,this.readAddress=0,this.command=0,this.commandBitsRemaining=0,this.realSize=0,this.addressBits=0,this.writePending=!1,this.dma=e.core.irq.dma[3],this.COMMAND_NULL=0,this.COMMAND_PENDING=1,this.COMMAND_WRITE=2,this.COMMAND_READ_PENDING=3,this.COMMAND_READ=4},EEPROMSavedata.prototype=Object.create(MemoryView.prototype),EEPROMSavedata.prototype.load8=function(t){throw new Error("Unsupported 8-bit access!")},EEPROMSavedata.prototype.load16=function(t){return this.loadU16(t)},EEPROMSavedata.prototype.loadU8=function(t){throw new Error("Unsupported 8-bit access!")},EEPROMSavedata.prototype.loadU16=function(t){if(this.command!=this.COMMAND_READ||!this.dma.enable)return 1;if(--this.readBitsRemaining,this.readBitsRemaining<64){var e=63-this.readBitsRemaining,i=this.view.getUint8(this.readAddress+e>>3,!1)>>7-(7&e);return this.readBitsRemaining||(this.command=this.COMMAND_NULL),1&i}return 0},EEPROMSavedata.prototype.load32=function(t){throw new Error("Unsupported 32-bit access!")},EEPROMSavedata.prototype.store8=function(t,e){throw new Error("Unsupported 8-bit access!")},EEPROMSavedata.prototype.store16=function(t,e){switch(this.command){case this.COMMAND_NULL:default:this.command=1&e;break;case this.COMMAND_PENDING:if(this.command<<=1,this.command|=1&e,this.command==this.COMMAND_WRITE){if(!this.realSize){var i=this.dma.count-67;this.realSize=8<<i,this.addressBits=i}this.commandBitsRemaining=this.addressBits+64+1,this.writeAddress=0}else{if(!this.realSize){i=this.dma.count-3;this.realSize=8<<i,this.addressBits=i}this.commandBitsRemaining=this.addressBits+1,this.readAddress=0}break;case this.COMMAND_WRITE:if(--this.commandBitsRemaining>64)this.writeAddress<<=1,this.writeAddress|=(1&e)<<6;else if(this.commandBitsRemaining<=0)this.command=this.COMMAND_NULL,this.writePending=!0;else{var s=this.view.getUint8(this.writeAddress>>3);s&=~(1<<7-(7&this.writeAddress)),s|=(1&e)<<7-(7&this.writeAddress),this.view.setUint8(this.writeAddress>>3,s),++this.writeAddress}break;case this.COMMAND_READ_PENDING:--this.commandBitsRemaining>0?(this.readAddress<<=1,1&e&&(this.readAddress|=64)):(this.readBitsRemaining=68,this.command=this.COMMAND_READ)}},EEPROMSavedata.prototype.store32=function(t,e){throw new Error("Unsupported 32-bit access!")},EEPROMSavedata.prototype.replaceData=function(t){MemoryView.prototype.replaceData.call(this,t,0)};s(26),s(27);var R=s(7),C=s.n(R),S=function(t){var e,i=[];try{(e=new GameBoyAdvance).keypad.eatInput=!0,e.setLogger((function(t,i){console.log(i),e.pause();var s=document.getElementById("screen");if("dead"!=s.getAttribute("class")){var r=document.createElement("img");r.setAttribute("id","crash"),r.setAttribute("src","../../assets/crash.png"),s.parentElement.insertBefore(r,s),s.setAttribute("class","dead")}else console.log("We appear to have crashed multiple times without reseting.")}))}catch(t){e=null}var s,r=document.getElementById("screen");return e.setCanvas(r),e.logLevel=e.LOG_ERROR,e.setBios(C.a),document.addEventListener("webkitfullscreenchange",(function(){var t=document.getElementById("screen");document.webkitIsFullScreen?(t.setAttribute("height",document.body.offsetHeight),t.setAttribute("width",document.body.offsetHeight/2*3),t.setAttribute("style","margin: 0")):(t.setAttribute("height",320),t.setAttribute("width",480),t.removeAttribute("style"))}),!1),s=t,e.loadRomFromFile(s,(function(t){if(t){for(var s=0;s<i.length;++s)i[s]();i=[],d("preload","ingame"),d("instructions",null,!0),e.runStable()}else setTimeout((function(){load.onclick=function(){document.getElementById("loader").click()}}),3e3)})),e},b=function(t){t.pause(),t.reset();var e=document.getElementById("crash");e?(t.targetCanvas.getContext("2d").clearRect(0,0,480,320),t.video.drawCallback(),e.parentElement.removeChild(e),document.getElementById("screen").removeAttribute("class")):function(t,e,i){var s=0,r=setInterval((function(){s++;for(var n=t.getImageData(0,0,240,160),a=0;a<160;++a)for(var o=0;o<240;++o){var h=Math.abs(o-120),c=.8*Math.abs(a-80),u=(120-s-h)/120,p=(80-s-10*(1&a)-c+Math.pow(h,.5))/80;n.data[4*(o+240*a)+3]*=Math.pow(u,1/3)*Math.pow(p,.5)}t.putImageData(n,0,0),e.clearRect(0,0,480,320),s>40?clearInterval(r):i()}),50)}(t.context,t.targetCanvas.getContext("2d"),t.video.drawCallback);d("ingame","preload")},v=function(t,e){return t.audio.masterVolume=Math.pow(2,e)-1},w=function(t){var e=t.romBufferMemory,i=t.volume,s=Object(a.useState)(null),r=n()(s,2),h=r[0],c=r[1];return Object(a.useEffect)((function(){null!==h&&b(h);var t=S(e);c(t)}),[p()(e)]),Object(a.useEffect)((function(){null!==h&&v(h,i)}),[h,i]),o.a.createElement("canvas",{id:"screen",width:"480",height:"320"})};w.propTypes={romBufferMemory:c.a.object.isRequired,volume:c.a.number.isRequired};var g=w;e.default=g}]);
+/*jslint bitwise: true */
+(function() {
+  'use strict';
+
+  var root = typeof window === 'object' ? window : {};
+  var NODE_JS = !root.JS_SHA1_NO_NODE_JS && typeof process === 'object' && process.versions && process.versions.node;
+  if (NODE_JS) {
+    root = global;
+  }
+  var COMMON_JS = !root.JS_SHA1_NO_COMMON_JS && typeof module === 'object' && module.exports;
+  var AMD =  true && __webpack_require__(/*! !webpack amd options */ "./node_modules/webpack/buildin/amd-options.js");
+  var HEX_CHARS = '0123456789abcdef'.split('');
+  var EXTRA = [-2147483648, 8388608, 32768, 128];
+  var SHIFT = [24, 16, 8, 0];
+  var OUTPUT_TYPES = ['hex', 'array', 'digest', 'arrayBuffer'];
+
+  var blocks = [];
+
+  var createOutputMethod = function (outputType) {
+    return function (message) {
+      return new Sha1(true).update(message)[outputType]();
+    };
+  };
+
+  var createMethod = function () {
+    var method = createOutputMethod('hex');
+    if (NODE_JS) {
+      method = nodeWrap(method);
+    }
+    method.create = function () {
+      return new Sha1();
+    };
+    method.update = function (message) {
+      return method.create().update(message);
+    };
+    for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createOutputMethod(type);
+    }
+    return method;
+  };
+
+  var nodeWrap = function (method) {
+    var crypto = eval("require('crypto')");
+    var Buffer = eval("require('buffer').Buffer");
+    var nodeMethod = function (message) {
+      if (typeof message === 'string') {
+        return crypto.createHash('sha1').update(message, 'utf8').digest('hex');
+      } else if (message.constructor === ArrayBuffer) {
+        message = new Uint8Array(message);
+      } else if (message.length === undefined) {
+        return method(message);
+      }
+      return crypto.createHash('sha1').update(new Buffer(message)).digest('hex');
+    };
+    return nodeMethod;
+  };
+
+  function Sha1(sharedMemory) {
+    if (sharedMemory) {
+      blocks[0] = blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      this.blocks = blocks;
+    } else {
+      this.blocks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    }
+
+    this.h0 = 0x67452301;
+    this.h1 = 0xEFCDAB89;
+    this.h2 = 0x98BADCFE;
+    this.h3 = 0x10325476;
+    this.h4 = 0xC3D2E1F0;
+
+    this.block = this.start = this.bytes = this.hBytes = 0;
+    this.finalized = this.hashed = false;
+    this.first = true;
+  }
+
+  Sha1.prototype.update = function (message) {
+    if (this.finalized) {
+      return;
+    }
+    var notString = typeof(message) !== 'string';
+    if (notString && message.constructor === root.ArrayBuffer) {
+      message = new Uint8Array(message);
+    }
+    var code, index = 0, i, length = message.length || 0, blocks = this.blocks;
+
+    while (index < length) {
+      if (this.hashed) {
+        this.hashed = false;
+        blocks[0] = this.block;
+        blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+        blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+        blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+        blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      }
+
+      if(notString) {
+        for (i = this.start; index < length && i < 64; ++index) {
+          blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
+        }
+      } else {
+        for (i = this.start; index < length && i < 64; ++index) {
+          code = message.charCodeAt(index);
+          if (code < 0x80) {
+            blocks[i >> 2] |= code << SHIFT[i++ & 3];
+          } else if (code < 0x800) {
+            blocks[i >> 2] |= (0xc0 | (code >> 6)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else if (code < 0xd800 || code >= 0xe000) {
+            blocks[i >> 2] |= (0xe0 | (code >> 12)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else {
+            code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
+            blocks[i >> 2] |= (0xf0 | (code >> 18)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 12) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          }
+        }
+      }
+
+      this.lastByteIndex = i;
+      this.bytes += i - this.start;
+      if (i >= 64) {
+        this.block = blocks[16];
+        this.start = i - 64;
+        this.hash();
+        this.hashed = true;
+      } else {
+        this.start = i;
+      }
+    }
+    if (this.bytes > 4294967295) {
+      this.hBytes += this.bytes / 4294967296 << 0;
+      this.bytes = this.bytes % 4294967296;
+    }
+    return this;
+  };
+
+  Sha1.prototype.finalize = function () {
+    if (this.finalized) {
+      return;
+    }
+    this.finalized = true;
+    var blocks = this.blocks, i = this.lastByteIndex;
+    blocks[16] = this.block;
+    blocks[i >> 2] |= EXTRA[i & 3];
+    this.block = blocks[16];
+    if (i >= 56) {
+      if (!this.hashed) {
+        this.hash();
+      }
+      blocks[0] = this.block;
+      blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+    }
+    blocks[14] = this.hBytes << 3 | this.bytes >>> 29;
+    blocks[15] = this.bytes << 3;
+    this.hash();
+  };
+
+  Sha1.prototype.hash = function () {
+    var a = this.h0, b = this.h1, c = this.h2, d = this.h3, e = this.h4;
+    var f, j, t, blocks = this.blocks;
+
+    for(j = 16; j < 80; ++j) {
+      t = blocks[j - 3] ^ blocks[j - 8] ^ blocks[j - 14] ^ blocks[j - 16];
+      blocks[j] =  (t << 1) | (t >>> 31);
+    }
+
+    for(j = 0; j < 20; j += 5) {
+      f = (b & c) | ((~b) & d);
+      t = (a << 5) | (a >>> 27);
+      e = t + f + e + 1518500249 + blocks[j] << 0;
+      b = (b << 30) | (b >>> 2);
+
+      f = (a & b) | ((~a) & c);
+      t = (e << 5) | (e >>> 27);
+      d = t + f + d + 1518500249 + blocks[j + 1] << 0;
+      a = (a << 30) | (a >>> 2);
+
+      f = (e & a) | ((~e) & b);
+      t = (d << 5) | (d >>> 27);
+      c = t + f + c + 1518500249 + blocks[j + 2] << 0;
+      e = (e << 30) | (e >>> 2);
+
+      f = (d & e) | ((~d) & a);
+      t = (c << 5) | (c >>> 27);
+      b = t + f + b + 1518500249 + blocks[j + 3] << 0;
+      d = (d << 30) | (d >>> 2);
+
+      f = (c & d) | ((~c) & e);
+      t = (b << 5) | (b >>> 27);
+      a = t + f + a + 1518500249 + blocks[j + 4] << 0;
+      c = (c << 30) | (c >>> 2);
+    }
+
+    for(; j < 40; j += 5) {
+      f = b ^ c ^ d;
+      t = (a << 5) | (a >>> 27);
+      e = t + f + e + 1859775393 + blocks[j] << 0;
+      b = (b << 30) | (b >>> 2);
+
+      f = a ^ b ^ c;
+      t = (e << 5) | (e >>> 27);
+      d = t + f + d + 1859775393 + blocks[j + 1] << 0;
+      a = (a << 30) | (a >>> 2);
+
+      f = e ^ a ^ b;
+      t = (d << 5) | (d >>> 27);
+      c = t + f + c + 1859775393 + blocks[j + 2] << 0;
+      e = (e << 30) | (e >>> 2);
+
+      f = d ^ e ^ a;
+      t = (c << 5) | (c >>> 27);
+      b = t + f + b + 1859775393 + blocks[j + 3] << 0;
+      d = (d << 30) | (d >>> 2);
+
+      f = c ^ d ^ e;
+      t = (b << 5) | (b >>> 27);
+      a = t + f + a + 1859775393 + blocks[j + 4] << 0;
+      c = (c << 30) | (c >>> 2);
+    }
+
+    for(; j < 60; j += 5) {
+      f = (b & c) | (b & d) | (c & d);
+      t = (a << 5) | (a >>> 27);
+      e = t + f + e - 1894007588 + blocks[j] << 0;
+      b = (b << 30) | (b >>> 2);
+
+      f = (a & b) | (a & c) | (b & c);
+      t = (e << 5) | (e >>> 27);
+      d = t + f + d - 1894007588 + blocks[j + 1] << 0;
+      a = (a << 30) | (a >>> 2);
+
+      f = (e & a) | (e & b) | (a & b);
+      t = (d << 5) | (d >>> 27);
+      c = t + f + c - 1894007588 + blocks[j + 2] << 0;
+      e = (e << 30) | (e >>> 2);
+
+      f = (d & e) | (d & a) | (e & a);
+      t = (c << 5) | (c >>> 27);
+      b = t + f + b - 1894007588 + blocks[j + 3] << 0;
+      d = (d << 30) | (d >>> 2);
+
+      f = (c & d) | (c & e) | (d & e);
+      t = (b << 5) | (b >>> 27);
+      a = t + f + a - 1894007588 + blocks[j + 4] << 0;
+      c = (c << 30) | (c >>> 2);
+    }
+
+    for(; j < 80; j += 5) {
+      f = b ^ c ^ d;
+      t = (a << 5) | (a >>> 27);
+      e = t + f + e - 899497514 + blocks[j] << 0;
+      b = (b << 30) | (b >>> 2);
+
+      f = a ^ b ^ c;
+      t = (e << 5) | (e >>> 27);
+      d = t + f + d - 899497514 + blocks[j + 1] << 0;
+      a = (a << 30) | (a >>> 2);
+
+      f = e ^ a ^ b;
+      t = (d << 5) | (d >>> 27);
+      c = t + f + c - 899497514 + blocks[j + 2] << 0;
+      e = (e << 30) | (e >>> 2);
+
+      f = d ^ e ^ a;
+      t = (c << 5) | (c >>> 27);
+      b = t + f + b - 899497514 + blocks[j + 3] << 0;
+      d = (d << 30) | (d >>> 2);
+
+      f = c ^ d ^ e;
+      t = (b << 5) | (b >>> 27);
+      a = t + f + a - 899497514 + blocks[j + 4] << 0;
+      c = (c << 30) | (c >>> 2);
+    }
+
+    this.h0 = this.h0 + a << 0;
+    this.h1 = this.h1 + b << 0;
+    this.h2 = this.h2 + c << 0;
+    this.h3 = this.h3 + d << 0;
+    this.h4 = this.h4 + e << 0;
+  };
+
+  Sha1.prototype.hex = function () {
+    this.finalize();
+
+    var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3, h4 = this.h4;
+
+    return HEX_CHARS[(h0 >> 28) & 0x0F] + HEX_CHARS[(h0 >> 24) & 0x0F] +
+           HEX_CHARS[(h0 >> 20) & 0x0F] + HEX_CHARS[(h0 >> 16) & 0x0F] +
+           HEX_CHARS[(h0 >> 12) & 0x0F] + HEX_CHARS[(h0 >> 8) & 0x0F] +
+           HEX_CHARS[(h0 >> 4) & 0x0F] + HEX_CHARS[h0 & 0x0F] +
+           HEX_CHARS[(h1 >> 28) & 0x0F] + HEX_CHARS[(h1 >> 24) & 0x0F] +
+           HEX_CHARS[(h1 >> 20) & 0x0F] + HEX_CHARS[(h1 >> 16) & 0x0F] +
+           HEX_CHARS[(h1 >> 12) & 0x0F] + HEX_CHARS[(h1 >> 8) & 0x0F] +
+           HEX_CHARS[(h1 >> 4) & 0x0F] + HEX_CHARS[h1 & 0x0F] +
+           HEX_CHARS[(h2 >> 28) & 0x0F] + HEX_CHARS[(h2 >> 24) & 0x0F] +
+           HEX_CHARS[(h2 >> 20) & 0x0F] + HEX_CHARS[(h2 >> 16) & 0x0F] +
+           HEX_CHARS[(h2 >> 12) & 0x0F] + HEX_CHARS[(h2 >> 8) & 0x0F] +
+           HEX_CHARS[(h2 >> 4) & 0x0F] + HEX_CHARS[h2 & 0x0F] +
+           HEX_CHARS[(h3 >> 28) & 0x0F] + HEX_CHARS[(h3 >> 24) & 0x0F] +
+           HEX_CHARS[(h3 >> 20) & 0x0F] + HEX_CHARS[(h3 >> 16) & 0x0F] +
+           HEX_CHARS[(h3 >> 12) & 0x0F] + HEX_CHARS[(h3 >> 8) & 0x0F] +
+           HEX_CHARS[(h3 >> 4) & 0x0F] + HEX_CHARS[h3 & 0x0F] +
+           HEX_CHARS[(h4 >> 28) & 0x0F] + HEX_CHARS[(h4 >> 24) & 0x0F] +
+           HEX_CHARS[(h4 >> 20) & 0x0F] + HEX_CHARS[(h4 >> 16) & 0x0F] +
+           HEX_CHARS[(h4 >> 12) & 0x0F] + HEX_CHARS[(h4 >> 8) & 0x0F] +
+           HEX_CHARS[(h4 >> 4) & 0x0F] + HEX_CHARS[h4 & 0x0F];
+  };
+
+  Sha1.prototype.toString = Sha1.prototype.hex;
+
+  Sha1.prototype.digest = function () {
+    this.finalize();
+
+    var h0 = this.h0, h1 = this.h1, h2 = this.h2, h3 = this.h3, h4 = this.h4;
+
+    return [
+      (h0 >> 24) & 0xFF, (h0 >> 16) & 0xFF, (h0 >> 8) & 0xFF, h0 & 0xFF,
+      (h1 >> 24) & 0xFF, (h1 >> 16) & 0xFF, (h1 >> 8) & 0xFF, h1 & 0xFF,
+      (h2 >> 24) & 0xFF, (h2 >> 16) & 0xFF, (h2 >> 8) & 0xFF, h2 & 0xFF,
+      (h3 >> 24) & 0xFF, (h3 >> 16) & 0xFF, (h3 >> 8) & 0xFF, h3 & 0xFF,
+      (h4 >> 24) & 0xFF, (h4 >> 16) & 0xFF, (h4 >> 8) & 0xFF, h4 & 0xFF
+    ];
+  };
+
+  Sha1.prototype.array = Sha1.prototype.digest;
+
+  Sha1.prototype.arrayBuffer = function () {
+    this.finalize();
+
+    var buffer = new ArrayBuffer(20);
+    var dataView = new DataView(buffer);
+    dataView.setUint32(0, this.h0);
+    dataView.setUint32(4, this.h1);
+    dataView.setUint32(8, this.h2);
+    dataView.setUint32(12, this.h3);
+    dataView.setUint32(16, this.h4);
+    return buffer;
+  };
+
+  var exports = createMethod();
+
+  if (COMMON_JS) {
+    module.exports = exports;
+  } else {
+    root.sha1 = exports;
+    if (AMD) {
+      !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+        return exports;
+      }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+  }
+})();
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js"), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/object-assign/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/object-assign/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !==
+				'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/process/browser.js":
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/checkPropTypes.js":
+/*!***************************************************!*\
+  !*** ./node_modules/prop-types/checkPropTypes.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var printWarning = function() {};
+
+if (true) {
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var loggedTypeFailures = {};
+  var has = Function.call.bind(Object.prototype.hasOwnProperty);
+
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if (true) {
+    for (var typeSpecName in typeSpecs) {
+      if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error(
+              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
+              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
+            );
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+        if (error && !(error instanceof Error)) {
+          printWarning(
+            (componentName || 'React class') + ': type specification of ' +
+            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
+            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
+            'You may have forgotten to pass an argument to the type checker ' +
+            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
+            'shape all require an argument).'
+          );
+        }
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+
+          var stack = getStack ? getStack() : '';
+
+          printWarning(
+            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
+          );
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */
+checkPropTypes.resetWarningCache = function() {
+  if (true) {
+    loggedTypeFailures = {};
+  }
+}
+
+module.exports = checkPropTypes;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var has = Function.call.bind(Object.prototype.hasOwnProperty);
+var printWarning = function() {};
+
+if (true) {
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function(isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error(
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            printWarning(
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
+            );
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if (true) {
+        if (arguments.length > 1) {
+          printWarning(
+            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
+            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
+          );
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+        if (type === 'symbol') {
+          return String(value);
+        }
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning(
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
+          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
+        );
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // falsy value can't be a Symbol
+    if (!propValue) {
+      return false;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+} else {}
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/amd-options.js":
+/*!****************************************!*\
+  !*** (webpack)/buildin/amd-options.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
+module.exports = __webpack_amd_options__;
+
+/* WEBPACK VAR INJECTION */}.call(this, {}))
+
+/***/ }),
+
+/***/ "./node_modules/webpack/buildin/global.js":
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "./src/emulator/arm.js":
+/*!*****************************!*\
+  !*** ./src/emulator/arm.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+ARMCoreArm = function ARMCoreArm(cpu) {
+  this.cpu = cpu;
+  this.addressingMode23Immediate = [// 000x0
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        gprs[rn] -= offset;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // 000xW
+  null, null, null, // 00Ux0
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        gprs[rn] += offset;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // 00UxW
+  null, null, null, // 0P0x0
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      return addr = gprs[rn] - offset;
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // 0P0xW
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn] - offset;
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, null, null, // 0PUx0
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      return addr = gprs[rn] + offset;
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // 0PUxW
+  function (rn, offset, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn] + offset;
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, null, null];
+  this.addressingMode23Register = [// I00x0
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        gprs[rn] -= gprs[rm];
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // I00xW
+  null, null, null, // I0Ux0
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        gprs[rn] += gprs[rm];
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // I0UxW
+  null, null, null, // IP0x0
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      return gprs[rn] - gprs[rm];
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // IP0xW
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn] - gprs[rm];
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, null, null, // IPUx0
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn] + gprs[rm];
+      return addr;
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // IPUxW
+  function (rn, rm, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn] + gprs[rm];
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, null, null];
+  this.addressingMode2RegisterShifted = [// I00x0
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        shiftOp();
+        gprs[rn] -= cpu.shifterOperand;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // I00xW
+  null, null, null, // I0Ux0
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      var addr = gprs[rn];
+
+      if (!condOp || condOp()) {
+        shiftOp();
+        gprs[rn] += cpu.shifterOperand;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, // I0UxW
+  null, null, null, // IP0x0
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      shiftOp();
+      return gprs[rn] - cpu.shifterOperand;
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // IP0xW
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      shiftOp();
+      var addr = gprs[rn] - cpu.shifterOperand;
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writesPC = rn == cpu.PC;
+    return address;
+  }, null, null, // IPUx0
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      shiftOp();
+      return gprs[rn] + cpu.shifterOperand;
+    };
+
+    address.writesPC = false;
+    return address;
+  }, // IPUxW
+  function (rn, shiftOp, condOp) {
+    var gprs = cpu.gprs;
+
+    var address = function address() {
+      shiftOp();
+      var addr = gprs[rn] + cpu.shifterOperand;
+
+      if (!condOp || condOp()) {
+        gprs[rn] = addr;
+      }
+
+      return addr;
+    };
+
+    address.writePC = rn == cpu.PC;
+    return address;
+  }, null, null];
+};
+
+ARMCoreArm.prototype.constructAddressingMode1ASR = function (rs, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    ++cpu.cycles;
+    var shift = gprs[rs];
+
+    if (rs == cpu.PC) {
+      shift += 4;
+    }
+
+    shift &= 0xFF;
+    var shiftVal = gprs[rm];
+
+    if (rm == cpu.PC) {
+      shiftVal += 4;
+    }
+
+    if (shift == 0) {
+      cpu.shifterOperand = shiftVal;
+      cpu.shifterCarryOut = cpu.cpsrC;
+    } else if (shift < 32) {
+      cpu.shifterOperand = shiftVal >> shift;
+      cpu.shifterCarryOut = shiftVal & 1 << shift - 1;
+    } else if (gprs[rm] >> 31) {
+      cpu.shifterOperand = 0xFFFFFFFF;
+      cpu.shifterCarryOut = 0x80000000;
+    } else {
+      cpu.shifterOperand = 0;
+      cpu.shifterCarryOut = 0;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode1Immediate = function (immediate) {
+  var cpu = this.cpu;
+  return function () {
+    cpu.shifterOperand = immediate;
+    cpu.shifterCarryOut = cpu.cpsrC;
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode1ImmediateRotate = function (immediate, rotate) {
+  var cpu = this.cpu;
+  return function () {
+    cpu.shifterOperand = immediate >>> rotate | immediate << 32 - rotate;
+    cpu.shifterCarryOut = cpu.shifterOperand >> 31;
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode1LSL = function (rs, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    ++cpu.cycles;
+    var shift = gprs[rs];
+
+    if (rs == cpu.PC) {
+      shift += 4;
+    }
+
+    shift &= 0xFF;
+    var shiftVal = gprs[rm];
+
+    if (rm == cpu.PC) {
+      shiftVal += 4;
+    }
+
+    if (shift == 0) {
+      cpu.shifterOperand = shiftVal;
+      cpu.shifterCarryOut = cpu.cpsrC;
+    } else if (shift < 32) {
+      cpu.shifterOperand = shiftVal << shift;
+      cpu.shifterCarryOut = shiftVal & 1 << 32 - shift;
+    } else if (shift == 32) {
+      cpu.shifterOperand = 0;
+      cpu.shifterCarryOut = shiftVal & 1;
+    } else {
+      cpu.shifterOperand = 0;
+      cpu.shifterCarryOut = 0;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode1LSR = function (rs, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    ++cpu.cycles;
+    var shift = gprs[rs];
+
+    if (rs == cpu.PC) {
+      shift += 4;
+    }
+
+    shift &= 0xFF;
+    var shiftVal = gprs[rm];
+
+    if (rm == cpu.PC) {
+      shiftVal += 4;
+    }
+
+    if (shift == 0) {
+      cpu.shifterOperand = shiftVal;
+      cpu.shifterCarryOut = cpu.cpsrC;
+    } else if (shift < 32) {
+      cpu.shifterOperand = shiftVal >>> shift;
+      cpu.shifterCarryOut = shiftVal & 1 << shift - 1;
+    } else if (shift == 32) {
+      cpu.shifterOperand = 0;
+      cpu.shifterCarryOut = shiftVal >> 31;
+    } else {
+      cpu.shifterOperand = 0;
+      cpu.shifterCarryOut = 0;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode1ROR = function (rs, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    ++cpu.cycles;
+    var shift = gprs[rs];
+
+    if (rs == cpu.PC) {
+      shift += 4;
+    }
+
+    shift &= 0xFF;
+    var shiftVal = gprs[rm];
+
+    if (rm == cpu.PC) {
+      shiftVal += 4;
+    }
+
+    var rotate = shift & 0x1F;
+
+    if (shift == 0) {
+      cpu.shifterOperand = shiftVal;
+      cpu.shifterCarryOut = cpu.cpsrC;
+    } else if (rotate) {
+      cpu.shifterOperand = gprs[rm] >>> rotate | gprs[rm] << 32 - rotate;
+      cpu.shifterCarryOut = shiftVal & 1 << rotate - 1;
+    } else {
+      cpu.shifterOperand = shiftVal;
+      cpu.shifterCarryOut = shiftVal >> 31;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode23Immediate = function (instruction, immediate, condOp) {
+  var rn = (instruction & 0x000F0000) >> 16;
+  return this.addressingMode23Immediate[(instruction & 0x01A00000) >> 21](rn, immediate, condOp);
+};
+
+ARMCoreArm.prototype.constructAddressingMode23Register = function (instruction, rm, condOp) {
+  var rn = (instruction & 0x000F0000) >> 16;
+  return this.addressingMode23Register[(instruction & 0x01A00000) >> 21](rn, rm, condOp);
+};
+
+ARMCoreArm.prototype.constructAddressingMode2RegisterShifted = function (instruction, shiftOp, condOp) {
+  var rn = (instruction & 0x000F0000) >> 16;
+  return this.addressingMode2RegisterShifted[(instruction & 0x01A00000) >> 21](rn, shiftOp, condOp);
+};
+
+ARMCoreArm.prototype.constructAddressingMode4 = function (immediate, rn) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var addr = gprs[rn] + immediate;
+    return addr;
+  };
+};
+
+ARMCoreArm.prototype.constructAddressingMode4Writeback = function (immediate, offset, rn, overlap) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function (writeInitial) {
+    var addr = gprs[rn] + immediate;
+
+    if (writeInitial && overlap) {
+      cpu.mmu.store32(gprs[rn] + immediate - 4, gprs[rn]);
+    }
+
+    gprs[rn] += offset;
+    return addr;
+  };
+};
+
+ARMCoreArm.prototype.constructADC = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var shifterOperand = (cpu.shifterOperand >>> 0) + !!cpu.cpsrC;
+    gprs[rd] = (gprs[rn] >>> 0) + shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructADCS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var shifterOperand = (cpu.shifterOperand >>> 0) + !!cpu.cpsrC;
+    var d = (gprs[rn] >>> 0) + shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = d > 0xFFFFFFFF;
+      cpu.cpsrV = gprs[rn] >> 31 == shifterOperand >> 31 && gprs[rn] >> 31 != d >> 31 && shifterOperand >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructADD = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = (gprs[rn] >>> 0) + (cpu.shifterOperand >>> 0);
+  };
+};
+
+ARMCoreArm.prototype.constructADDS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var d = (gprs[rn] >>> 0) + (cpu.shifterOperand >>> 0);
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = d > 0xFFFFFFFF;
+      cpu.cpsrV = gprs[rn] >> 31 == cpu.shifterOperand >> 31 && gprs[rn] >> 31 != d >> 31 && cpu.shifterOperand >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructAND = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] & cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructANDS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] & cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructB = function (immediate, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+    gprs[cpu.PC] += immediate;
+  };
+};
+
+ARMCoreArm.prototype.constructBIC = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] & ~cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructBICS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] & ~cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructBL = function (immediate, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+    gprs[cpu.LR] = gprs[cpu.PC] - 4;
+    gprs[cpu.PC] += immediate;
+  };
+};
+
+ARMCoreArm.prototype.constructBX = function (rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+    cpu.switchExecMode(gprs[rm] & 0x00000001);
+    gprs[cpu.PC] = gprs[rm] & 0xFFFFFFFE;
+  };
+};
+
+ARMCoreArm.prototype.constructCMN = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var aluOut = (gprs[rn] >>> 0) + (cpu.shifterOperand >>> 0);
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = aluOut > 0xFFFFFFFF;
+    cpu.cpsrV = gprs[rn] >> 31 == cpu.shifterOperand >> 31 && gprs[rn] >> 31 != aluOut >> 31 && cpu.shifterOperand >> 31 != aluOut >> 31;
+  };
+};
+
+ARMCoreArm.prototype.constructCMP = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var aluOut = gprs[rn] - cpu.shifterOperand;
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rn] >>> 0 >= cpu.shifterOperand >>> 0;
+    cpu.cpsrV = gprs[rn] >> 31 != cpu.shifterOperand >> 31 && gprs[rn] >> 31 != aluOut >> 31;
+  };
+};
+
+ARMCoreArm.prototype.constructEOR = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] ^ cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructEORS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] ^ cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructLDM = function (rs, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  var mmu = cpu.mmu;
+  return function () {
+    mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address(false);
+    var total = 0;
+    var m, i;
+
+    for (m = rs, i = 0; m; m >>= 1, ++i) {
+      if (m & 1) {
+        gprs[i] = mmu.load32(addr & 0xFFFFFFFC);
+        addr += 4;
+        ++total;
+      }
+    }
+
+    mmu.waitMulti32(addr, total);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDMS = function (rs, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  var mmu = cpu.mmu;
+  return function () {
+    mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address(false);
+    var total = 0;
+    var mode = cpu.mode;
+    cpu.switchMode(cpu.MODE_SYSTEM);
+    var m, i;
+
+    for (m = rs, i = 0; m; m >>= 1, ++i) {
+      if (m & 1) {
+        gprs[i] = mmu.load32(addr & 0xFFFFFFFC);
+        addr += 4;
+        ++total;
+      }
+    }
+
+    cpu.switchMode(mode);
+    mmu.waitMulti32(addr, total);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDR = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address();
+    gprs[rd] = cpu.mmu.load32(addr);
+    cpu.mmu.wait32(addr);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDRB = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address();
+    gprs[rd] = cpu.mmu.loadU8(addr);
+    cpu.mmu.wait(addr);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDRH = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address();
+    gprs[rd] = cpu.mmu.loadU16(addr);
+    cpu.mmu.wait(addr);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDRSB = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address();
+    gprs[rd] = cpu.mmu.load8(addr);
+    cpu.mmu.wait(addr);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructLDRSH = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var addr = address();
+    gprs[rd] = cpu.mmu.load16(addr);
+    cpu.mmu.wait(addr);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructMLA = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(rs);
+
+    if (gprs[rm] & 0xFFFF0000 && gprs[rs] & 0xFFFF0000) {
+      // Our data type is a double--we'll lose bits if we do it all at once!
+      var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs] & 0xFFFFFFFF;
+      var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs] & 0xFFFFFFFF;
+      gprs[rd] = hi + lo + gprs[rn] & 0xFFFFFFFF;
+    } else {
+      gprs[rd] = gprs[rm] * gprs[rs] + gprs[rn];
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructMLAS = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(rs);
+
+    if (gprs[rm] & 0xFFFF0000 && gprs[rs] & 0xFFFF0000) {
+      // Our data type is a double--we'll lose bits if we do it all at once!
+      var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs] & 0xFFFFFFFF;
+      var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs] & 0xFFFFFFFF;
+      gprs[rd] = hi + lo + gprs[rn] & 0xFFFFFFFF;
+    } else {
+      gprs[rd] = gprs[rm] * gprs[rs] + gprs[rn];
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreArm.prototype.constructMOV = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructMOVS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructMRS = function (rd, r, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    if (r) {
+      gprs[rd] = cpu.spsr;
+    } else {
+      gprs[rd] = cpu.packCPSR();
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructMSR = function (rm, r, instruction, immediate, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  var c = instruction & 0x00010000; //var x = instruction & 0x00020000;
+  //var s = instruction & 0x00040000;
+
+  var f = instruction & 0x00080000;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    var operand;
+
+    if (instruction & 0x02000000) {
+      operand = immediate;
+    } else {
+      operand = gprs[rm];
+    }
+
+    var mask = (c ? 0x000000FF : 0x00000000) | ( //(x ? 0x0000FF00 : 0x00000000) | // Irrelevant on ARMv4T
+    //(s ? 0x00FF0000 : 0x00000000) | // Irrelevant on ARMv4T
+    f ? 0xFF000000 : 0x00000000);
+
+    if (r) {
+      mask &= cpu.USER_MASK | cpu.PRIV_MASK | cpu.STATE_MASK;
+      cpu.spsr = cpu.spsr & ~mask | operand & mask;
+    } else {
+      if (mask & cpu.USER_MASK) {
+        cpu.cpsrN = operand >> 31;
+        cpu.cpsrZ = operand & 0x40000000;
+        cpu.cpsrC = operand & 0x20000000;
+        cpu.cpsrV = operand & 0x10000000;
+      }
+
+      if (cpu.mode != cpu.MODE_USER && mask & cpu.PRIV_MASK) {
+        cpu.switchMode(operand & 0x0000000F | 0x00000010);
+        cpu.cpsrI = operand & 0x00000080;
+        cpu.cpsrF = operand & 0x00000040;
+      }
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructMUL = function (rd, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.mmu.waitMul(gprs[rs]);
+
+    if (gprs[rm] & 0xFFFF0000 && gprs[rs] & 0xFFFF0000) {
+      // Our data type is a double--we'll lose bits if we do it all at once!
+      var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs] | 0;
+      var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs] | 0;
+      gprs[rd] = hi + lo;
+    } else {
+      gprs[rd] = gprs[rm] * gprs[rs];
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructMULS = function (rd, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.mmu.waitMul(gprs[rs]);
+
+    if (gprs[rm] & 0xFFFF0000 && gprs[rs] & 0xFFFF0000) {
+      // Our data type is a double--we'll lose bits if we do it all at once!
+      var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs] | 0;
+      var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs] | 0;
+      gprs[rd] = hi + lo;
+    } else {
+      gprs[rd] = gprs[rm] * gprs[rs];
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreArm.prototype.constructMVN = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = ~cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructMVNS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = ~cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructORR = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] | cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructORRS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] | cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = gprs[rd] >> 31;
+      cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterCarryOut;
+    }
+  };
+};
+
+ARMCoreArm.prototype.constructRSB = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = cpu.shifterOperand - gprs[rn];
+  };
+};
+
+ARMCoreArm.prototype.constructRSBS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var d = cpu.shifterOperand - gprs[rn];
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterOperand >>> 0 >= gprs[rn] >>> 0;
+      cpu.cpsrV = cpu.shifterOperand >> 31 != gprs[rn] >> 31 && cpu.shifterOperand >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructRSC = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var n = (gprs[rn] >>> 0) + !cpu.cpsrC;
+    gprs[rd] = (cpu.shifterOperand >>> 0) - n;
+  };
+};
+
+ARMCoreArm.prototype.constructRSCS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var n = (gprs[rn] >>> 0) + !cpu.cpsrC;
+    var d = (cpu.shifterOperand >>> 0) - n;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = cpu.shifterOperand >>> 0 >= d >>> 0;
+      cpu.cpsrV = cpu.shifterOperand >> 31 != n >> 31 && cpu.shifterOperand >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructSBC = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var shifterOperand = (cpu.shifterOperand >>> 0) + !cpu.cpsrC;
+    gprs[rd] = (gprs[rn] >>> 0) - shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructSBCS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var shifterOperand = (cpu.shifterOperand >>> 0) + !cpu.cpsrC;
+    var d = (gprs[rn] >>> 0) - shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = gprs[rn] >>> 0 >= d >>> 0;
+      cpu.cpsrV = gprs[rn] >> 31 != shifterOperand >> 31 && gprs[rn] >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructSMLAL = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.cycles += 2;
+    cpu.mmu.waitMul(rs);
+    var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs];
+    var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs];
+    var carry = (gprs[rn] >>> 0) + hi + lo;
+    gprs[rn] = carry;
+    gprs[rd] += Math.floor(carry * SHIFT_32);
+  };
+};
+
+ARMCoreArm.prototype.constructSMLALS = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.cycles += 2;
+    cpu.mmu.waitMul(rs);
+    var hi = (gprs[rm] & 0xFFFF0000) * gprs[rs];
+    var lo = (gprs[rm] & 0x0000FFFF) * gprs[rs];
+    var carry = (gprs[rn] >>> 0) + hi + lo;
+    gprs[rn] = carry;
+    gprs[rd] += Math.floor(carry * SHIFT_32);
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF || gprs[rn] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreArm.prototype.constructSMULL = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(gprs[rs]);
+    var hi = ((gprs[rm] & 0xFFFF0000) >> 0) * (gprs[rs] >> 0);
+    var lo = ((gprs[rm] & 0x0000FFFF) >> 0) * (gprs[rs] >> 0);
+    gprs[rn] = (hi & 0xFFFFFFFF) + (lo & 0xFFFFFFFF) & 0xFFFFFFFF;
+    gprs[rd] = Math.floor(hi * SHIFT_32 + lo * SHIFT_32);
+  };
+};
+
+ARMCoreArm.prototype.constructSMULLS = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(gprs[rs]);
+    var hi = ((gprs[rm] & 0xFFFF0000) >> 0) * (gprs[rs] >> 0);
+    var lo = ((gprs[rm] & 0x0000FFFF) >> 0) * (gprs[rs] >> 0);
+    gprs[rn] = (hi & 0xFFFFFFFF) + (lo & 0xFFFFFFFF) & 0xFFFFFFFF;
+    gprs[rd] = Math.floor(hi * SHIFT_32 + lo * SHIFT_32);
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF || gprs[rn] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreArm.prototype.constructSTM = function (rs, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  var mmu = cpu.mmu;
+  return function () {
+    if (condOp && !condOp()) {
+      mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    mmu.wait32(gprs[cpu.PC]);
+    var addr = address(true);
+    var total = 0;
+    var m, i;
+
+    for (m = rs, i = 0; m; m >>= 1, ++i) {
+      if (m & 1) {
+        mmu.store32(addr, gprs[i]);
+        addr += 4;
+        ++total;
+      }
+    }
+
+    mmu.waitMulti32(addr, total);
+  };
+};
+
+ARMCoreArm.prototype.constructSTMS = function (rs, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  var mmu = cpu.mmu;
+  return function () {
+    if (condOp && !condOp()) {
+      mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    mmu.wait32(gprs[cpu.PC]);
+    var mode = cpu.mode;
+    var addr = address(true);
+    var total = 0;
+    var m, i;
+    cpu.switchMode(cpu.MODE_SYSTEM);
+
+    for (m = rs, i = 0; m; m >>= 1, ++i) {
+      if (m & 1) {
+        mmu.store32(addr, gprs[i]);
+        addr += 4;
+        ++total;
+      }
+    }
+
+    cpu.switchMode(mode);
+    mmu.waitMulti32(addr, total);
+  };
+};
+
+ARMCoreArm.prototype.constructSTR = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    var addr = address();
+    cpu.mmu.store32(addr, gprs[rd]);
+    cpu.mmu.wait32(addr);
+    cpu.mmu.wait32(gprs[cpu.PC]);
+  };
+};
+
+ARMCoreArm.prototype.constructSTRB = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    var addr = address();
+    cpu.mmu.store8(addr, gprs[rd]);
+    cpu.mmu.wait(addr);
+    cpu.mmu.wait32(gprs[cpu.PC]);
+  };
+};
+
+ARMCoreArm.prototype.constructSTRH = function (rd, address, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    var addr = address();
+    cpu.mmu.store16(addr, gprs[rd]);
+    cpu.mmu.wait(addr);
+    cpu.mmu.wait32(gprs[cpu.PC]);
+  };
+};
+
+ARMCoreArm.prototype.constructSUB = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    gprs[rd] = gprs[rn] - cpu.shifterOperand;
+  };
+};
+
+ARMCoreArm.prototype.constructSUBS = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var d = gprs[rn] - cpu.shifterOperand;
+
+    if (rd == cpu.PC && cpu.hasSPSR()) {
+      cpu.unpackCPSR(cpu.spsr);
+    } else {
+      cpu.cpsrN = d >> 31;
+      cpu.cpsrZ = !(d & 0xFFFFFFFF);
+      cpu.cpsrC = gprs[rn] >>> 0 >= cpu.shifterOperand >>> 0;
+      cpu.cpsrV = gprs[rn] >> 31 != cpu.shifterOperand >> 31 && gprs[rn] >> 31 != d >> 31;
+    }
+
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreArm.prototype.constructSWI = function (immediate, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    if (condOp && !condOp()) {
+      cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+      return;
+    }
+
+    cpu.irq.swi32(immediate);
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+  };
+};
+
+ARMCoreArm.prototype.constructSWP = function (rd, rn, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.mmu.wait32(gprs[rn]);
+    cpu.mmu.wait32(gprs[rn]);
+    var d = cpu.mmu.load32(gprs[rn]);
+    cpu.mmu.store32(gprs[rn], gprs[rm]);
+    gprs[rd] = d;
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructSWPB = function (rd, rn, rm, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.mmu.wait(gprs[rn]);
+    cpu.mmu.wait(gprs[rn]);
+    var d = cpu.mmu.load8(gprs[rn]);
+    cpu.mmu.store8(gprs[rn], gprs[rm]);
+    gprs[rd] = d;
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreArm.prototype.constructTEQ = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var aluOut = gprs[rn] ^ cpu.shifterOperand;
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = cpu.shifterCarryOut;
+  };
+};
+
+ARMCoreArm.prototype.constructTST = function (rd, rn, shiftOp, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    shiftOp();
+    var aluOut = gprs[rn] & cpu.shifterOperand;
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = cpu.shifterCarryOut;
+  };
+};
+
+ARMCoreArm.prototype.constructUMLAL = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.cycles += 2;
+    cpu.mmu.waitMul(rs);
+    var hi = ((gprs[rm] & 0xFFFF0000) >>> 0) * (gprs[rs] >>> 0);
+    var lo = (gprs[rm] & 0x0000FFFF) * (gprs[rs] >>> 0);
+    var carry = (gprs[rn] >>> 0) + hi + lo;
+    gprs[rn] = carry;
+    gprs[rd] += carry * SHIFT_32;
+  };
+};
+
+ARMCoreArm.prototype.constructUMLALS = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    cpu.cycles += 2;
+    cpu.mmu.waitMul(rs);
+    var hi = ((gprs[rm] & 0xFFFF0000) >>> 0) * (gprs[rs] >>> 0);
+    var lo = (gprs[rm] & 0x0000FFFF) * (gprs[rs] >>> 0);
+    var carry = (gprs[rn] >>> 0) + hi + lo;
+    gprs[rn] = carry;
+    gprs[rd] += carry * SHIFT_32;
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF || gprs[rn] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreArm.prototype.constructUMULL = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(gprs[rs]);
+    var hi = ((gprs[rm] & 0xFFFF0000) >>> 0) * (gprs[rs] >>> 0);
+    var lo = ((gprs[rm] & 0x0000FFFF) >>> 0) * (gprs[rs] >>> 0);
+    gprs[rn] = (hi & 0xFFFFFFFF) + (lo & 0xFFFFFFFF) & 0xFFFFFFFF;
+    gprs[rd] = hi * SHIFT_32 + lo * SHIFT_32 >>> 0;
+  };
+};
+
+ARMCoreArm.prototype.constructUMULLS = function (rd, rn, rs, rm, condOp) {
+  var cpu = this.cpu;
+  var SHIFT_32 = 1 / 0x100000000;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch32(gprs[cpu.PC]);
+
+    if (condOp && !condOp()) {
+      return;
+    }
+
+    ++cpu.cycles;
+    cpu.mmu.waitMul(gprs[rs]);
+    var hi = ((gprs[rm] & 0xFFFF0000) >>> 0) * (gprs[rs] >>> 0);
+    var lo = ((gprs[rm] & 0x0000FFFF) >>> 0) * (gprs[rs] >>> 0);
+    gprs[rn] = (hi & 0xFFFFFFFF) + (lo & 0xFFFFFFFF) & 0xFFFFFFFF;
+    gprs[rd] = hi * SHIFT_32 + lo * SHIFT_32 >>> 0;
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF || gprs[rn] & 0xFFFFFFFF);
+  };
+};
+
+/***/ }),
+
+/***/ "./src/emulator/audio.js":
+/*!*******************************!*\
+  !*** ./src/emulator/audio.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceAudio = function GameBoyAdvanceAudio() {
+  window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+  if (window.AudioContext) {
+    var self = this;
+    this.context = new AudioContext();
+    this.bufferSize = 0;
+    this.bufferSize = 4096;
+    this.maxSamples = this.bufferSize << 2;
+    this.buffers = [new Float32Array(this.maxSamples), new Float32Array(this.maxSamples)];
+    this.sampleMask = this.maxSamples - 1;
+
+    if (this.context.createScriptProcessor) {
+      this.jsAudio = this.context.createScriptProcessor(this.bufferSize);
+    } else {
+      this.jsAudio = this.context.createJavaScriptNode(this.bufferSize);
+    }
+
+    this.jsAudio.onaudioprocess = function (e) {
+      self.audioProcess(e);
+    };
+  } else {
+    this.context = null;
+  }
+
+  this.masterEnable = true;
+  this.masterVolume = 1.0;
+  this.SOUND_MAX = 0x400;
+  this.FIFO_MAX = 0x200;
+  this.PSG_MAX = 0x080;
+};
+
+GameBoyAdvanceAudio.prototype.clear = function () {
+  this.fifoA = [];
+  this.fifoB = [];
+  this.fifoASample = 0;
+  this.fifoBSample = 0;
+  this.enabled = false;
+
+  if (this.context) {
+    try {
+      this.jsAudio.disconnect(this.context.destination);
+    } catch (e) {}
+  }
+
+  this.enableChannel3 = false;
+  this.enableChannel4 = false;
+  this.enableChannelA = false;
+  this.enableChannelB = false;
+  this.enableRightChannelA = false;
+  this.enableLeftChannelA = false;
+  this.enableRightChannelB = false;
+  this.enableLeftChannelB = false;
+  this.playingChannel3 = false;
+  this.playingChannel4 = false;
+  this.volumeLeft = 0;
+  this.volumeRight = 0;
+  this.ratioChannelA = 1;
+  this.ratioChannelB = 1;
+  this.enabledLeft = 0;
+  this.enabledRight = 0;
+  this.dmaA = -1;
+  this.dmaB = -1;
+  this.soundTimerA = 0;
+  this.soundTimerB = 0;
+  this.soundRatio = 1;
+  this.soundBias = 0x200;
+  this.squareChannels = new Array();
+
+  for (var i = 0; i < 2; ++i) {
+    this.squareChannels[i] = {
+      enabled: false,
+      playing: false,
+      sample: 0,
+      duty: 0.5,
+      increment: 0,
+      step: 0,
+      initialVolume: 0,
+      volume: 0,
+      frequency: 0,
+      interval: 0,
+      sweepSteps: 0,
+      sweepIncrement: 0,
+      sweepInterval: 0,
+      doSweep: false,
+      raise: 0,
+      lower: 0,
+      nextStep: 0,
+      timed: false,
+      length: 0,
+      end: 0
+    };
+  }
+
+  this.waveData = new Uint8Array(32);
+  this.channel3Dimension = 0;
+  this.channel3Bank = 0;
+  this.channel3Volume = 0;
+  this.channel3Interval = 0;
+  this.channel3Next = 0;
+  this.channel3Length = 0;
+  this.channel3Timed = false;
+  this.channel3End = 0;
+  this.channel3Pointer = 0;
+  this.channel3Sample = 0;
+  this.cpuFrequency = this.core.irq.FREQUENCY;
+  this.channel4 = {
+    sample: 0,
+    lfsr: 0,
+    width: 15,
+    interval: this.cpuFrequency / 524288,
+    increment: 0,
+    step: 0,
+    initialVolume: 0,
+    volume: 0,
+    nextStep: 0,
+    timed: false,
+    length: 0,
+    end: 0
+  };
+  this.nextEvent = 0;
+  this.nextSample = 0;
+  this.outputPointer = 0;
+  this.samplePointer = 0;
+  this.backup = 0;
+  this.totalSamples = 0;
+  this.sampleRate = 32768;
+  this.sampleInterval = this.cpuFrequency / this.sampleRate;
+  this.resampleRatio = 1;
+
+  if (this.context) {
+    this.resampleRatio = this.sampleRate / this.context.sampleRate;
+  }
+
+  this.writeSquareChannelFC(0, 0);
+  this.writeSquareChannelFC(1, 0);
+  this.writeChannel4FC(0);
+};
+
+GameBoyAdvanceAudio.prototype.freeze = function () {
+  return {
+    nextSample: this.nextSample
+  };
+};
+
+GameBoyAdvanceAudio.prototype.defrost = function (frost) {
+  this.nextSample = frost.nextSample;
+};
+
+GameBoyAdvanceAudio.prototype.pause = function (paused) {
+  if (this.context) {
+    if (paused) {
+      try {
+        this.jsAudio.disconnect(this.context.destination);
+      } catch (e) {// Sigh
+      }
+    } else if (this.enabled) {
+      this.jsAudio.connect(this.context.destination);
+    }
+  }
+};
+
+GameBoyAdvanceAudio.prototype.updateTimers = function () {
+  var cycles = this.cpu.cycles;
+
+  if (!this.enabled || cycles < this.nextEvent && cycles < this.nextSample) {
+    return;
+  }
+
+  if (cycles >= this.nextEvent) {
+    var channel = this.squareChannels[0];
+    this.nextEvent = Infinity;
+
+    if (channel.playing) {
+      this.updateSquareChannel(channel, cycles);
+    }
+
+    channel = this.squareChannels[1];
+
+    if (channel.playing) {
+      this.updateSquareChannel(channel, cycles);
+    }
+
+    if (this.enableChannel3 && this.playingChannel3) {
+      if (cycles >= this.channel3Next) {
+        if (this.channel3Write) {
+          var sample = this.waveData[this.channel3Pointer >> 1];
+          this.channel3Sample = ((sample >> ((this.channel3Pointer & 1) << 2) & 0xF) - 0x8) / 8;
+          this.channel3Pointer = this.channel3Pointer + 1;
+
+          if (this.channel3Dimension && this.channel3Pointer >= 64) {
+            this.channel3Pointer -= 64;
+          } else if (!this.channel3Bank && this.channel3Pointer >= 32) {
+            this.channel3Pointer -= 32;
+          } else if (this.channel3Pointer >= 64) {
+            this.channel3Pointer -= 32;
+          }
+        }
+
+        this.channel3Next += this.channel3Interval;
+
+        if (this.channel3Interval && this.nextEvent > this.channel3Next) {
+          this.nextEvent = this.channel3Next;
+        }
+      }
+
+      if (this.channel3Timed && cycles >= this.channel3End) {
+        this.playingChannel3 = false;
+      }
+    }
+
+    if (this.enableChannel4 && this.playingChannel4) {
+      if (this.channel4.timed && cycles >= this.channel4.end) {
+        this.playingChannel4 = false;
+      } else {
+        if (cycles >= this.channel4.next) {
+          this.channel4.lfsr >>= 1;
+          var sample = this.channel4.lfsr & 1;
+          this.channel4.lfsr |= (this.channel4.lfsr >> 1 & 1 ^ sample) << this.channel4.width - 1;
+          this.channel4.next += this.channel4.interval;
+          this.channel4.sample = (sample - 0.5) * 2 * this.channel4.volume;
+        }
+
+        this.updateEnvelope(this.channel4, cycles);
+
+        if (this.nextEvent > this.channel4.next) {
+          this.nextEvent = this.channel4.next;
+        }
+
+        if (this.channel4.timed && this.nextEvent > this.channel4.end) {
+          this.nextEvent = this.channel4.end;
+        }
+      }
+    }
+  }
+
+  if (cycles >= this.nextSample) {
+    this.sample();
+    this.nextSample += this.sampleInterval;
+  }
+
+  this.nextEvent = Math.ceil(this.nextEvent);
+
+  if (this.nextEvent < cycles || this.nextSample < cycles) {
+    // STM instructions may take a long time
+    this.updateTimers();
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeEnable = function (value) {
+  this.enabled = !!value;
+  this.nextEvent = this.cpu.cycles;
+  this.nextSample = this.nextEvent;
+  this.updateTimers();
+  this.core.irq.pollNextEvent();
+
+  if (this.context) {
+    if (value) {
+      this.jsAudio.connect(this.context.destination);
+    } else {
+      try {
+        this.jsAudio.disconnect(this.context.destination);
+      } catch (e) {}
+    }
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeSoundControlLo = function (value) {
+  this.masterVolumeLeft = value & 0x7;
+  this.masterVolumeRight = value >> 4 & 0x7;
+  this.enabledLeft = value >> 8 & 0xF;
+  this.enabledRight = value >> 12 & 0xF;
+  this.setSquareChannelEnabled(this.squareChannels[0], (this.enabledLeft | this.enabledRight) & 0x1);
+  this.setSquareChannelEnabled(this.squareChannels[1], (this.enabledLeft | this.enabledRight) & 0x2);
+  this.enableChannel3 = (this.enabledLeft | this.enabledRight) & 0x4;
+  this.setChannel4Enabled((this.enabledLeft | this.enabledRight) & 0x8);
+  this.updateTimers();
+  this.core.irq.pollNextEvent();
+};
+
+GameBoyAdvanceAudio.prototype.writeSoundControlHi = function (value) {
+  switch (value & 0x0003) {
+    case 0:
+      this.soundRatio = 0.25;
+      break;
+
+    case 1:
+      this.soundRatio = 0.50;
+      break;
+
+    case 2:
+      this.soundRatio = 1;
+      break;
+  }
+
+  this.ratioChannelA = (((value & 0x0004) >> 2) + 1) * 0.5;
+  this.ratioChannelB = (((value & 0x0008) >> 3) + 1) * 0.5;
+  this.enableRightChannelA = value & 0x0100;
+  this.enableLeftChannelA = value & 0x0200;
+  this.enableChannelA = value & 0x0300;
+  this.soundTimerA = value & 0x0400;
+
+  if (value & 0x0800) {
+    this.fifoA = [];
+  }
+
+  this.enableRightChannelB = value & 0x1000;
+  this.enableLeftChannelB = value & 0x2000;
+  this.enableChannelB = value & 0x3000;
+  this.soundTimerB = value & 0x4000;
+
+  if (value & 0x8000) {
+    this.fifoB = [];
+  }
+};
+
+GameBoyAdvanceAudio.prototype.resetSquareChannel = function (channel) {
+  if (channel.step) {
+    channel.nextStep = this.cpu.cycles + channel.step;
+  }
+
+  if (channel.enabled && !channel.playing) {
+    channel.raise = this.cpu.cycles;
+    channel.lower = channel.raise + channel.duty * channel.interval;
+    channel.end = this.cpu.cycles + channel.length;
+    this.nextEvent = this.cpu.cycles;
+  }
+
+  channel.playing = channel.enabled;
+  this.updateTimers();
+  this.core.irq.pollNextEvent();
+};
+
+GameBoyAdvanceAudio.prototype.setSquareChannelEnabled = function (channel, enable) {
+  if (!(channel.enabled && channel.playing) && enable) {
+    channel.enabled = !!enable;
+    this.updateTimers();
+    this.core.irq.pollNextEvent();
+  } else {
+    channel.enabled = !!enable;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeSquareChannelSweep = function (channelId, value) {
+  var channel = this.squareChannels[channelId];
+  channel.sweepSteps = value & 0x07;
+  channel.sweepIncrement = value & 0x08 ? -1 : 1;
+  channel.sweepInterval = (value >> 4 & 0x7) * this.cpuFrequency / 128;
+  channel.doSweep = !!channel.sweepInterval;
+  channel.nextSweep = this.cpu.cycles + channel.sweepInterval;
+  this.resetSquareChannel(channel);
+};
+
+GameBoyAdvanceAudio.prototype.writeSquareChannelDLE = function (channelId, value) {
+  var channel = this.squareChannels[channelId];
+  var duty = value >> 6 & 0x3;
+
+  switch (duty) {
+    case 0:
+      channel.duty = 0.125;
+      break;
+
+    case 1:
+      channel.duty = 0.25;
+      break;
+
+    case 2:
+      channel.duty = 0.5;
+      break;
+
+    case 3:
+      channel.duty = 0.75;
+      break;
+  }
+
+  this.writeChannelLE(channel, value);
+  this.resetSquareChannel(channel);
+};
+
+GameBoyAdvanceAudio.prototype.writeSquareChannelFC = function (channelId, value) {
+  var channel = this.squareChannels[channelId];
+  var frequency = value & 2047;
+  channel.frequency = frequency;
+  channel.interval = this.cpuFrequency * (2048 - frequency) / 131072;
+  channel.timed = !!(value & 0x4000);
+
+  if (value & 0x8000) {
+    this.resetSquareChannel(channel);
+    channel.volume = channel.initialVolume;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.updateSquareChannel = function (channel, cycles) {
+  if (channel.timed && cycles >= channel.end) {
+    channel.playing = false;
+    return;
+  }
+
+  if (channel.doSweep && cycles >= channel.nextSweep) {
+    channel.frequency += channel.sweepIncrement * (channel.frequency >> channel.sweepSteps);
+
+    if (channel.frequency < 0) {
+      channel.frequency = 0;
+    } else if (channel.frequency > 2047) {
+      channel.frequency = 2047;
+      channel.playing = false;
+      return;
+    }
+
+    channel.interval = this.cpuFrequency * (2048 - channel.frequency) / 131072;
+    channel.nextSweep += channel.sweepInterval;
+  }
+
+  if (cycles >= channel.raise) {
+    channel.sample = channel.volume;
+    channel.lower = channel.raise + channel.duty * channel.interval;
+    channel.raise += channel.interval;
+  } else if (cycles >= channel.lower) {
+    channel.sample = -channel.volume;
+    channel.lower += channel.interval;
+  }
+
+  this.updateEnvelope(channel, cycles);
+
+  if (this.nextEvent > channel.raise) {
+    this.nextEvent = channel.raise;
+  }
+
+  if (this.nextEvent > channel.lower) {
+    this.nextEvent = channel.lower;
+  }
+
+  if (channel.timed && this.nextEvent > channel.end) {
+    this.nextEvent = channel.end;
+  }
+
+  if (channel.doSweep && this.nextEvent > channel.nextSweep) {
+    this.nextEvent = channel.nextSweep;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeChannel3Lo = function (value) {
+  this.channel3Dimension = value & 0x20;
+  this.channel3Bank = value & 0x40;
+  var enable = value & 0x80;
+
+  if (!this.channel3Write && enable) {
+    this.channel3Write = enable;
+    this.resetChannel3();
+  } else {
+    this.channel3Write = enable;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeChannel3Hi = function (value) {
+  this.channel3Length = this.cpuFrequency * (0x100 - (value & 0xFF)) / 256;
+  var volume = value >> 13 & 0x7;
+
+  switch (volume) {
+    case 0:
+      this.channel3Volume = 0;
+      break;
+
+    case 1:
+      this.channel3Volume = 1;
+      break;
+
+    case 2:
+      this.channel3Volume = 0.5;
+      break;
+
+    case 3:
+      this.channel3Volume = 0.25;
+      break;
+
+    default:
+      this.channel3Volume = 0.75;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeChannel3X = function (value) {
+  this.channel3Interval = this.cpuFrequency * (2048 - (value & 0x7FF)) / 2097152;
+  this.channel3Timed = !!(value & 0x4000);
+
+  if (this.channel3Write) {
+    this.resetChannel3();
+  }
+};
+
+GameBoyAdvanceAudio.prototype.resetChannel3 = function () {
+  this.channel3Next = this.cpu.cycles;
+  this.nextEvent = this.channel3Next;
+  this.channel3End = this.cpu.cycles + this.channel3Length;
+  this.playingChannel3 = this.channel3Write;
+  this.updateTimers();
+  this.core.irq.pollNextEvent();
+};
+
+GameBoyAdvanceAudio.prototype.writeWaveData = function (offset, data, width) {
+  if (!this.channel3Bank) {
+    offset += 16;
+  }
+
+  if (width == 2) {
+    this.waveData[offset] = data & 0xFF;
+    data >>= 8;
+    ++offset;
+  }
+
+  this.waveData[offset] = data & 0xFF;
+};
+
+GameBoyAdvanceAudio.prototype.setChannel4Enabled = function (enable) {
+  if (!this.enableChannel4 && enable) {
+    this.channel4.next = this.cpu.cycles;
+    this.channel4.end = this.cpu.cycles + this.channel4.length;
+    this.enableChannel4 = true;
+    this.playingChannel4 = true;
+    this.nextEvent = this.cpu.cycles;
+    this.updateEnvelope(this.channel4);
+    this.updateTimers();
+    this.core.irq.pollNextEvent();
+  } else {
+    this.enableChannel4 = enable;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.writeChannel4LE = function (value) {
+  this.writeChannelLE(this.channel4, value);
+  this.resetChannel4();
+};
+
+GameBoyAdvanceAudio.prototype.writeChannel4FC = function (value) {
+  this.channel4.timed = !!(value & 0x4000);
+  var r = value & 0x7;
+
+  if (!r) {
+    r = 0.5;
+  }
+
+  var s = value >> 4 & 0xF;
+  var interval = this.cpuFrequency * (r * (2 << s)) / 524288;
+
+  if (interval != this.channel4.interval) {
+    this.channel4.interval = interval;
+    this.resetChannel4();
+  }
+
+  var width = value & 0x8 ? 7 : 15;
+
+  if (width != this.channel4.width) {
+    this.channel4.width = width;
+    this.resetChannel4();
+  }
+
+  if (value & 0x8000) {
+    this.resetChannel4();
+  }
+};
+
+GameBoyAdvanceAudio.prototype.resetChannel4 = function () {
+  if (this.channel4.width == 15) {
+    this.channel4.lfsr = 0x4000;
+  } else {
+    this.channel4.lfsr = 0x40;
+  }
+
+  this.channel4.volume = this.channel4.initialVolume;
+
+  if (this.channel4.step) {
+    this.channel4.nextStep = this.cpu.cycles + this.channel4.step;
+  }
+
+  this.channel4.end = this.cpu.cycles + this.channel4.length;
+  this.channel4.next = this.cpu.cycles;
+  this.nextEvent = this.channel4.next;
+  this.playingChannel4 = this.enableChannel4;
+  this.updateTimers();
+  this.core.irq.pollNextEvent();
+};
+
+GameBoyAdvanceAudio.prototype.writeChannelLE = function (channel, value) {
+  channel.length = this.cpuFrequency * ((0x40 - (value & 0x3F)) / 256);
+
+  if (value & 0x0800) {
+    channel.increment = 1 / 16;
+  } else {
+    channel.increment = -1 / 16;
+  }
+
+  channel.initialVolume = (value >> 12 & 0xF) / 16;
+  channel.step = this.cpuFrequency * ((value >> 8 & 0x7) / 64);
+};
+
+GameBoyAdvanceAudio.prototype.updateEnvelope = function (channel, cycles) {
+  if (channel.step) {
+    if (cycles >= channel.nextStep) {
+      channel.volume += channel.increment;
+
+      if (channel.volume > 1) {
+        channel.volume = 1;
+      } else if (channel.volume < 0) {
+        channel.volume = 0;
+      }
+
+      channel.nextStep += channel.step;
+    }
+
+    if (this.nextEvent > channel.nextStep) {
+      this.nextEvent = channel.nextStep;
+    }
+  }
+};
+
+GameBoyAdvanceAudio.prototype.appendToFifoA = function (value) {
+  var b;
+
+  if (this.fifoA.length > 28) {
+    this.fifoA = this.fifoA.slice(-28);
+  }
+
+  for (var i = 0; i < 4; ++i) {
+    b = (value & 0xFF) << 24;
+    value >>= 8;
+    this.fifoA.push(b / 0x80000000);
+  }
+};
+
+GameBoyAdvanceAudio.prototype.appendToFifoB = function (value) {
+  var b;
+
+  if (this.fifoB.length > 28) {
+    this.fifoB = this.fifoB.slice(-28);
+  }
+
+  for (var i = 0; i < 4; ++i) {
+    b = (value & 0xFF) << 24;
+    value >>= 8;
+    this.fifoB.push(b / 0x80000000);
+  }
+};
+
+GameBoyAdvanceAudio.prototype.sampleFifoA = function () {
+  if (this.fifoA.length <= 16) {
+    var dma = this.core.irq.dma[this.dmaA];
+    dma.nextCount = 4;
+    this.core.mmu.serviceDma(this.dmaA, dma);
+  }
+
+  this.fifoASample = this.fifoA.shift();
+};
+
+GameBoyAdvanceAudio.prototype.sampleFifoB = function () {
+  if (this.fifoB.length <= 16) {
+    var dma = this.core.irq.dma[this.dmaB];
+    dma.nextCount = 4;
+    this.core.mmu.serviceDma(this.dmaB, dma);
+  }
+
+  this.fifoBSample = this.fifoB.shift();
+};
+
+GameBoyAdvanceAudio.prototype.scheduleFIFODma = function (number, info) {
+  switch (info.dest) {
+    case this.cpu.mmu.BASE_IO | this.cpu.irq.io.FIFO_A_LO:
+      // FIXME: is this needed or a hack?
+      info.dstControl = 2;
+      this.dmaA = number;
+      break;
+
+    case this.cpu.mmu.BASE_IO | this.cpu.irq.io.FIFO_B_LO:
+      info.dstControl = 2;
+      this.dmaB = number;
+      break;
+
+    default:
+      this.core.WARN('Tried to schedule FIFO DMA for non-FIFO destination');
+      break;
+  }
+};
+
+GameBoyAdvanceAudio.prototype.sample = function () {
+  var sampleLeft = 0;
+  var sampleRight = 0;
+  var sample;
+  var channel;
+  channel = this.squareChannels[0];
+
+  if (channel.playing) {
+    sample = channel.sample * this.soundRatio * this.PSG_MAX;
+
+    if (this.enabledLeft & 0x1) {
+      sampleLeft += sample;
+    }
+
+    if (this.enabledRight & 0x1) {
+      sampleRight += sample;
+    }
+  }
+
+  channel = this.squareChannels[1];
+
+  if (channel.playing) {
+    sample = channel.sample * this.soundRatio * this.PSG_MAX;
+
+    if (this.enabledLeft & 0x2) {
+      sampleLeft += sample;
+    }
+
+    if (this.enabledRight & 0x2) {
+      sampleRight += sample;
+    }
+  }
+
+  if (this.playingChannel3) {
+    sample = this.channel3Sample * this.soundRatio * this.channel3Volume * this.PSG_MAX;
+
+    if (this.enabledLeft & 0x4) {
+      sampleLeft += sample;
+    }
+
+    if (this.enabledRight & 0x4) {
+      sampleRight += sample;
+    }
+  }
+
+  if (this.playingChannel4) {
+    sample = this.channel4.sample * this.soundRatio * this.PSG_MAX;
+
+    if (this.enabledLeft & 0x8) {
+      sampleLeft += sample;
+    }
+
+    if (this.enabledRight & 0x8) {
+      sampleRight += sample;
+    }
+  }
+
+  if (this.enableChannelA) {
+    sample = this.fifoASample * this.FIFO_MAX * this.ratioChannelA;
+
+    if (this.enableLeftChannelA) {
+      sampleLeft += sample;
+    }
+
+    if (this.enableRightChannelA) {
+      sampleRight += sample;
+    }
+  }
+
+  if (this.enableChannelB) {
+    sample = this.fifoBSample * this.FIFO_MAX * this.ratioChannelB;
+
+    if (this.enableLeftChannelB) {
+      sampleLeft += sample;
+    }
+
+    if (this.enableRightChannelB) {
+      sampleRight += sample;
+    }
+  }
+
+  var samplePointer = this.samplePointer;
+  sampleLeft *= this.masterVolume / this.SOUND_MAX;
+  sampleLeft = Math.max(Math.min(sampleLeft, 1), -1);
+  sampleRight *= this.masterVolume / this.SOUND_MAX;
+  sampleRight = Math.max(Math.min(sampleRight, 1), -1);
+
+  if (this.buffers) {
+    this.buffers[0][samplePointer] = sampleLeft;
+    this.buffers[1][samplePointer] = sampleRight;
+  }
+
+  this.samplePointer = samplePointer + 1 & this.sampleMask;
+};
+
+GameBoyAdvanceAudio.prototype.audioProcess = function (audioProcessingEvent) {
+  var left = audioProcessingEvent.outputBuffer.getChannelData(0);
+  var right = audioProcessingEvent.outputBuffer.getChannelData(1);
+
+  if (this.masterEnable) {
+    var i;
+    var o = this.outputPointer;
+
+    for (i = 0; i < this.bufferSize; ++i, o += this.resampleRatio) {
+      if (o >= this.maxSamples) {
+        o -= this.maxSamples;
+      }
+
+      if ((o | 0) == this.samplePointer) {
+        ++this.backup;
+        break;
+      }
+
+      left[i] = this.buffers[0][o | 0];
+      right[i] = this.buffers[1][o | 0];
+    }
+
+    for (; i < this.bufferSize; ++i) {
+      left[i] = 0;
+      right[i] = 0;
+    }
+
+    this.outputPointer = o;
+    ++this.totalSamples;
+  } else {
+    for (i = 0; i < this.bufferSize; ++i) {
+      left[i] = 0;
+      right[i] = 0;
+    }
+  }
+};
+
+/***/ }),
+
+/***/ "./src/emulator/core.js":
+/*!******************************!*\
+  !*** ./src/emulator/core.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.ARMCore = function ARMCore() {
+  this.SP = 13;
+  this.LR = 14;
+  this.PC = 15;
+  this.MODE_ARM = 0;
+  this.MODE_THUMB = 1;
+  this.MODE_USER = 0x10;
+  this.MODE_FIQ = 0x11;
+  this.MODE_IRQ = 0x12;
+  this.MODE_SUPERVISOR = 0x13;
+  this.MODE_ABORT = 0x17;
+  this.MODE_UNDEFINED = 0x1B;
+  this.MODE_SYSTEM = 0x1F;
+  this.BANK_NONE = 0;
+  this.BANK_FIQ = 1;
+  this.BANK_IRQ = 2;
+  this.BANK_SUPERVISOR = 3;
+  this.BANK_ABORT = 4;
+  this.BANK_UNDEFINED = 5;
+  this.UNALLOC_MASK = 0x0FFFFF00;
+  this.USER_MASK = 0xF0000000;
+  this.PRIV_MASK = 0x000000CF; // This is out of spec, but it seems to be what's done in other implementations
+
+  this.STATE_MASK = 0x00000020;
+  this.WORD_SIZE_ARM = 4;
+  this.WORD_SIZE_THUMB = 2;
+  this.BASE_RESET = 0x00000000;
+  this.BASE_UNDEF = 0x00000004;
+  this.BASE_SWI = 0x00000008;
+  this.BASE_PABT = 0x0000000C;
+  this.BASE_DABT = 0x00000010;
+  this.BASE_IRQ = 0x00000018;
+  this.BASE_FIQ = 0x0000001C;
+  this.armCompiler = new ARMCoreArm(this);
+  this.thumbCompiler = new ARMCoreThumb(this);
+  this.generateConds();
+  this.gprs = new Int32Array(16);
+};
+
+ARMCore.prototype.resetCPU = function (startOffset) {
+  for (var i = 0; i < this.PC; ++i) {
+    this.gprs[i] = 0;
+  }
+
+  this.gprs[this.PC] = startOffset + this.WORD_SIZE_ARM;
+  this.loadInstruction = this.loadInstructionArm;
+  this.execMode = this.MODE_ARM;
+  this.instructionWidth = this.WORD_SIZE_ARM;
+  this.mode = this.MODE_SYSTEM;
+  this.cpsrI = false;
+  this.cpsrF = false;
+  this.cpsrV = false;
+  this.cpsrC = false;
+  this.cpsrZ = false;
+  this.cpsrN = false;
+  this.bankedRegisters = [new Int32Array(7), new Int32Array(7), new Int32Array(2), new Int32Array(2), new Int32Array(2), new Int32Array(2)];
+  this.spsr = 0;
+  this.bankedSPSRs = new Int32Array(6);
+  this.cycles = 0;
+  this.shifterOperand = 0;
+  this.shifterCarryOut = 0;
+  this.page = null;
+  this.pageId = 0;
+  this.pageRegion = -1;
+  this.instruction = null;
+  this.irq.clear();
+  var gprs = this.gprs;
+  var mmu = this.mmu;
+
+  this.step = function () {
+    var instruction = this.instruction || (this.instruction = this.loadInstruction(gprs[this.PC] - this.instructionWidth));
+    gprs[this.PC] += this.instructionWidth;
+    this.conditionPassed = true;
+    instruction();
+
+    if (!instruction.writesPC) {
+      if (this.instruction != null) {
+        // We might have gotten an interrupt from the instruction
+        if (instruction.next == null || instruction.next.page.invalid) {
+          instruction.next = this.loadInstruction(gprs[this.PC] - this.instructionWidth);
+        }
+
+        this.instruction = instruction.next;
+      }
+    } else {
+      if (this.conditionPassed) {
+        var pc = gprs[this.PC] &= 0xFFFFFFFE;
+
+        if (this.execMode == this.MODE_ARM) {
+          mmu.wait32(pc);
+          mmu.waitPrefetch32(pc);
+        } else {
+          mmu.wait(pc);
+          mmu.waitPrefetch(pc);
+        }
+
+        gprs[this.PC] += this.instructionWidth;
+
+        if (!instruction.fixedJump) {
+          this.instruction = null;
+        } else if (this.instruction != null) {
+          if (instruction.next == null || instruction.next.page.invalid) {
+            instruction.next = this.loadInstruction(gprs[this.PC] - this.instructionWidth);
+          }
+
+          this.instruction = instruction.next;
+        }
+      } else {
+        this.instruction = null;
+      }
+    }
+
+    this.irq.updateTimers();
+  };
+};
+
+ARMCore.prototype.freeze = function () {
+  return {
+    'gprs': [this.gprs[0], this.gprs[1], this.gprs[2], this.gprs[3], this.gprs[4], this.gprs[5], this.gprs[6], this.gprs[7], this.gprs[8], this.gprs[9], this.gprs[10], this.gprs[11], this.gprs[12], this.gprs[13], this.gprs[14], this.gprs[15]],
+    'mode': this.mode,
+    'cpsrI': this.cpsrI,
+    'cpsrF': this.cpsrF,
+    'cpsrV': this.cpsrV,
+    'cpsrC': this.cpsrC,
+    'cpsrZ': this.cpsrZ,
+    'cpsrN': this.cpsrN,
+    'bankedRegisters': [[this.bankedRegisters[0][0], this.bankedRegisters[0][1], this.bankedRegisters[0][2], this.bankedRegisters[0][3], this.bankedRegisters[0][4], this.bankedRegisters[0][5], this.bankedRegisters[0][6]], [this.bankedRegisters[1][0], this.bankedRegisters[1][1], this.bankedRegisters[1][2], this.bankedRegisters[1][3], this.bankedRegisters[1][4], this.bankedRegisters[1][5], this.bankedRegisters[1][6]], [this.bankedRegisters[2][0], this.bankedRegisters[2][1]], [this.bankedRegisters[3][0], this.bankedRegisters[3][1]], [this.bankedRegisters[4][0], this.bankedRegisters[4][1]], [this.bankedRegisters[5][0], this.bankedRegisters[5][1]]],
+    'spsr': this.spsr,
+    'bankedSPSRs': [this.bankedSPSRs[0], this.bankedSPSRs[1], this.bankedSPSRs[2], this.bankedSPSRs[3], this.bankedSPSRs[4], this.bankedSPSRs[5]],
+    'cycles': this.cycles
+  };
+};
+
+ARMCore.prototype.defrost = function (frost) {
+  this.instruction = null;
+  this.page = null;
+  this.pageId = 0;
+  this.pageRegion = -1;
+  this.gprs[0] = frost.gprs[0];
+  this.gprs[1] = frost.gprs[1];
+  this.gprs[2] = frost.gprs[2];
+  this.gprs[3] = frost.gprs[3];
+  this.gprs[4] = frost.gprs[4];
+  this.gprs[5] = frost.gprs[5];
+  this.gprs[6] = frost.gprs[6];
+  this.gprs[7] = frost.gprs[7];
+  this.gprs[8] = frost.gprs[8];
+  this.gprs[9] = frost.gprs[9];
+  this.gprs[10] = frost.gprs[10];
+  this.gprs[11] = frost.gprs[11];
+  this.gprs[12] = frost.gprs[12];
+  this.gprs[13] = frost.gprs[13];
+  this.gprs[14] = frost.gprs[14];
+  this.gprs[15] = frost.gprs[15];
+  this.mode = frost.mode;
+  this.cpsrI = frost.cpsrI;
+  this.cpsrF = frost.cpsrF;
+  this.cpsrV = frost.cpsrV;
+  this.cpsrC = frost.cpsrC;
+  this.cpsrZ = frost.cpsrZ;
+  this.cpsrN = frost.cpsrN;
+  this.bankedRegisters[0][0] = frost.bankedRegisters[0][0];
+  this.bankedRegisters[0][1] = frost.bankedRegisters[0][1];
+  this.bankedRegisters[0][2] = frost.bankedRegisters[0][2];
+  this.bankedRegisters[0][3] = frost.bankedRegisters[0][3];
+  this.bankedRegisters[0][4] = frost.bankedRegisters[0][4];
+  this.bankedRegisters[0][5] = frost.bankedRegisters[0][5];
+  this.bankedRegisters[0][6] = frost.bankedRegisters[0][6];
+  this.bankedRegisters[1][0] = frost.bankedRegisters[1][0];
+  this.bankedRegisters[1][1] = frost.bankedRegisters[1][1];
+  this.bankedRegisters[1][2] = frost.bankedRegisters[1][2];
+  this.bankedRegisters[1][3] = frost.bankedRegisters[1][3];
+  this.bankedRegisters[1][4] = frost.bankedRegisters[1][4];
+  this.bankedRegisters[1][5] = frost.bankedRegisters[1][5];
+  this.bankedRegisters[1][6] = frost.bankedRegisters[1][6];
+  this.bankedRegisters[2][0] = frost.bankedRegisters[2][0];
+  this.bankedRegisters[2][1] = frost.bankedRegisters[2][1];
+  this.bankedRegisters[3][0] = frost.bankedRegisters[3][0];
+  this.bankedRegisters[3][1] = frost.bankedRegisters[3][1];
+  this.bankedRegisters[4][0] = frost.bankedRegisters[4][0];
+  this.bankedRegisters[4][1] = frost.bankedRegisters[4][1];
+  this.bankedRegisters[5][0] = frost.bankedRegisters[5][0];
+  this.bankedRegisters[5][1] = frost.bankedRegisters[5][1];
+  this.spsr = frost.spsr;
+  this.bankedSPSRs[0] = frost.bankedSPSRs[0];
+  this.bankedSPSRs[1] = frost.bankedSPSRs[1];
+  this.bankedSPSRs[2] = frost.bankedSPSRs[2];
+  this.bankedSPSRs[3] = frost.bankedSPSRs[3];
+  this.bankedSPSRs[4] = frost.bankedSPSRs[4];
+  this.bankedSPSRs[5] = frost.bankedSPSRs[5];
+  this.cycles = frost.cycles;
+};
+
+ARMCore.prototype.fetchPage = function (address) {
+  var region = address >> this.mmu.BASE_OFFSET;
+  var pageId = this.mmu.addressToPage(region, address & this.mmu.OFFSET_MASK);
+
+  if (region == this.pageRegion) {
+    if (pageId == this.pageId && !this.page.invalid) {
+      return;
+    }
+
+    this.pageId = pageId;
+  } else {
+    this.pageMask = this.mmu.memory[region].PAGE_MASK;
+    this.pageRegion = region;
+    this.pageId = pageId;
+  }
+
+  this.page = this.mmu.accessPage(region, pageId);
+};
+
+ARMCore.prototype.loadInstructionArm = function (address) {
+  var next = null;
+  this.fetchPage(address);
+  var offset = (address & this.pageMask) >> 2;
+  next = this.page.arm[offset];
+
+  if (next) {
+    return next;
+  }
+
+  var instruction = this.mmu.load32(address) >>> 0;
+  next = this.compileArm(instruction);
+  next.next = null;
+  next.page = this.page;
+  next.address = address;
+  next.opcode = instruction;
+  this.page.arm[offset] = next;
+  return next;
+};
+
+ARMCore.prototype.loadInstructionThumb = function (address) {
+  var next = null;
+  this.fetchPage(address);
+  var offset = (address & this.pageMask) >> 1;
+  next = this.page.thumb[offset];
+
+  if (next) {
+    return next;
+  }
+
+  var instruction = this.mmu.load16(address);
+  next = this.compileThumb(instruction);
+  next.next = null;
+  next.page = this.page;
+  next.address = address;
+  next.opcode = instruction;
+  this.page.thumb[offset] = next;
+  return next;
+};
+
+ARMCore.prototype.selectBank = function (mode) {
+  switch (mode) {
+    case this.MODE_USER:
+    case this.MODE_SYSTEM:
+      // No banked registers
+      return this.BANK_NONE;
+
+    case this.MODE_FIQ:
+      return this.BANK_FIQ;
+
+    case this.MODE_IRQ:
+      return this.BANK_IRQ;
+
+    case this.MODE_SUPERVISOR:
+      return this.BANK_SUPERVISOR;
+
+    case this.MODE_ABORT:
+      return this.BANK_ABORT;
+
+    case this.MODE_UNDEFINED:
+      return this.BANK_UNDEFINED;
+
+    default:
+      throw "Invalid user mode passed to selectBank";
+  }
+};
+
+ARMCore.prototype.switchExecMode = function (newMode) {
+  if (this.execMode != newMode) {
+    this.execMode = newMode;
+
+    if (newMode == this.MODE_ARM) {
+      this.instructionWidth = this.WORD_SIZE_ARM;
+      this.loadInstruction = this.loadInstructionArm;
+    } else {
+      this.instructionWidth = this.WORD_SIZE_THUMB;
+      this.loadInstruction = this.loadInstructionThumb;
+    }
+  }
+};
+
+ARMCore.prototype.switchMode = function (newMode) {
+  if (newMode == this.mode) {
+    // Not switching modes after all
+    return;
+  }
+
+  if (newMode != this.MODE_USER || newMode != this.MODE_SYSTEM) {
+    // Switch banked registers
+    var newBank = this.selectBank(newMode);
+    var oldBank = this.selectBank(this.mode);
+
+    if (newBank != oldBank) {
+      // TODO: support FIQ
+      if (newMode == this.MODE_FIQ || this.mode == this.MODE_FIQ) {
+        var oldFiqBank = (oldBank == this.BANK_FIQ) + 0;
+        var newFiqBank = (newBank == this.BANK_FIQ) + 0;
+        this.bankedRegisters[oldFiqBank][2] = this.gprs[8];
+        this.bankedRegisters[oldFiqBank][3] = this.gprs[9];
+        this.bankedRegisters[oldFiqBank][4] = this.gprs[10];
+        this.bankedRegisters[oldFiqBank][5] = this.gprs[11];
+        this.bankedRegisters[oldFiqBank][6] = this.gprs[12];
+        this.gprs[8] = this.bankedRegisters[newFiqBank][2];
+        this.gprs[9] = this.bankedRegisters[newFiqBank][3];
+        this.gprs[10] = this.bankedRegisters[newFiqBank][4];
+        this.gprs[11] = this.bankedRegisters[newFiqBank][5];
+        this.gprs[12] = this.bankedRegisters[newFiqBank][6];
+      }
+
+      this.bankedRegisters[oldBank][0] = this.gprs[this.SP];
+      this.bankedRegisters[oldBank][1] = this.gprs[this.LR];
+      this.gprs[this.SP] = this.bankedRegisters[newBank][0];
+      this.gprs[this.LR] = this.bankedRegisters[newBank][1];
+      this.bankedSPSRs[oldBank] = this.spsr;
+      this.spsr = this.bankedSPSRs[newBank];
+    }
+  }
+
+  this.mode = newMode;
+};
+
+ARMCore.prototype.packCPSR = function () {
+  return this.mode | !!this.execMode << 5 | !!this.cpsrF << 6 | !!this.cpsrI << 7 | !!this.cpsrN << 31 | !!this.cpsrZ << 30 | !!this.cpsrC << 29 | !!this.cpsrV << 28;
+};
+
+ARMCore.prototype.unpackCPSR = function (spsr) {
+  this.switchMode(spsr & 0x0000001F);
+  this.switchExecMode(!!(spsr & 0x00000020));
+  this.cpsrF = spsr & 0x00000040;
+  this.cpsrI = spsr & 0x00000080;
+  this.cpsrN = spsr & 0x80000000;
+  this.cpsrZ = spsr & 0x40000000;
+  this.cpsrC = spsr & 0x20000000;
+  this.cpsrV = spsr & 0x10000000;
+  this.irq.testIRQ();
+};
+
+ARMCore.prototype.hasSPSR = function () {
+  return this.mode != this.MODE_SYSTEM && this.mode != this.MODE_USER;
+};
+
+ARMCore.prototype.raiseIRQ = function () {
+  if (this.cpsrI) {
+    return;
+  }
+
+  var cpsr = this.packCPSR();
+  var instructionWidth = this.instructionWidth;
+  this.switchMode(this.MODE_IRQ);
+  this.spsr = cpsr;
+  this.gprs[this.LR] = this.gprs[this.PC] - instructionWidth + 4;
+  this.gprs[this.PC] = this.BASE_IRQ + this.WORD_SIZE_ARM;
+  this.instruction = null;
+  this.switchExecMode(this.MODE_ARM);
+  this.cpsrI = true;
+};
+
+ARMCore.prototype.raiseTrap = function () {
+  var cpsr = this.packCPSR();
+  var instructionWidth = this.instructionWidth;
+  this.switchMode(this.MODE_SUPERVISOR);
+  this.spsr = cpsr;
+  this.gprs[this.LR] = this.gprs[this.PC] - instructionWidth;
+  this.gprs[this.PC] = this.BASE_SWI + this.WORD_SIZE_ARM;
+  this.instruction = null;
+  this.switchExecMode(this.MODE_ARM);
+  this.cpsrI = true;
+};
+
+ARMCore.prototype.badOp = function (instruction) {
+  var func = function func() {
+    throw "Illegal instruction: 0x" + instruction.toString(16);
+  };
+
+  func.writesPC = true;
+  func.fixedJump = false;
+  return func;
+};
+
+ARMCore.prototype.generateConds = function () {
+  var cpu = this;
+  this.conds = [// EQ
+  function () {
+    return cpu.conditionPassed = cpu.cpsrZ;
+  }, // NE
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrZ;
+  }, // CS
+  function () {
+    return cpu.conditionPassed = cpu.cpsrC;
+  }, // CC
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrC;
+  }, // MI
+  function () {
+    return cpu.conditionPassed = cpu.cpsrN;
+  }, // PL
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrN;
+  }, // VS
+  function () {
+    return cpu.conditionPassed = cpu.cpsrV;
+  }, // VC
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrV;
+  }, // HI
+  function () {
+    return cpu.conditionPassed = cpu.cpsrC && !cpu.cpsrZ;
+  }, // LS
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrC || cpu.cpsrZ;
+  }, // GE
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrN == !cpu.cpsrV;
+  }, // LT
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrN != !cpu.cpsrV;
+  }, // GT
+  function () {
+    return cpu.conditionPassed = !cpu.cpsrZ && !cpu.cpsrN == !cpu.cpsrV;
+  }, // LE
+  function () {
+    return cpu.conditionPassed = cpu.cpsrZ || !cpu.cpsrN != !cpu.cpsrV;
+  }, // AL
+  null, null];
+};
+
+ARMCore.prototype.barrelShiftImmediate = function (shiftType, immediate, rm) {
+  var cpu = this;
+  var gprs = this.gprs;
+  var shiftOp = this.badOp;
+
+  switch (shiftType) {
+    case 0x00000000:
+      // LSL
+      if (immediate) {
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = gprs[rm] << immediate;
+          cpu.shifterCarryOut = gprs[rm] & 1 << 32 - immediate;
+        };
+      } else {
+        // This boils down to no shift
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = gprs[rm];
+          cpu.shifterCarryOut = cpu.cpsrC;
+        };
+      }
+
+      break;
+
+    case 0x00000020:
+      // LSR
+      if (immediate) {
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = gprs[rm] >>> immediate;
+          cpu.shifterCarryOut = gprs[rm] & 1 << immediate - 1;
+        };
+      } else {
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = 0;
+          cpu.shifterCarryOut = gprs[rm] & 0x80000000;
+        };
+      }
+
+      break;
+
+    case 0x00000040:
+      // ASR
+      if (immediate) {
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = gprs[rm] >> immediate;
+          cpu.shifterCarryOut = gprs[rm] & 1 << immediate - 1;
+        };
+      } else {
+        shiftOp = function shiftOp() {
+          cpu.shifterCarryOut = gprs[rm] & 0x80000000;
+
+          if (cpu.shifterCarryOut) {
+            cpu.shifterOperand = 0xFFFFFFFF;
+          } else {
+            cpu.shifterOperand = 0;
+          }
+        };
+      }
+
+      break;
+
+    case 0x00000060:
+      // ROR
+      if (immediate) {
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = gprs[rm] >>> immediate | gprs[rm] << 32 - immediate;
+          cpu.shifterCarryOut = gprs[rm] & 1 << immediate - 1;
+        };
+      } else {
+        // RRX
+        shiftOp = function shiftOp() {
+          cpu.shifterOperand = !!cpu.cpsrC << 31 | gprs[rm] >>> 1;
+          cpu.shifterCarryOut = gprs[rm] & 0x00000001;
+        };
+      }
+
+      break;
+  }
+
+  return shiftOp;
+};
+
+ARMCore.prototype.compileArm = function (instruction) {
+  var op = this.badOp(instruction);
+  var i = instruction & 0x0E000000;
+  var cpu = this;
+  var gprs = this.gprs;
+  var condOp = this.conds[(instruction & 0xF0000000) >>> 28];
+
+  if ((instruction & 0x0FFFFFF0) == 0x012FFF10) {
+    // BX
+    var rm = instruction & 0xF;
+    op = this.armCompiler.constructBX(rm, condOp);
+    op.writesPC = true;
+    op.fixedJump = false;
+  } else if (!(instruction & 0x0C000000) && (i == 0x02000000 || (instruction & 0x00000090) != 0x00000090)) {
+    var opcode = instruction & 0x01E00000;
+    var s = instruction & 0x00100000;
+    var shiftsRs = false;
+
+    if ((opcode & 0x01800000) == 0x01000000 && !s) {
+      var r = instruction & 0x00400000;
+
+      if ((instruction & 0x00B0F000) == 0x0020F000) {
+        // MSR
+        var rm = instruction & 0x0000000F;
+        var immediate = instruction & 0x000000FF;
+        var rotateImm = (instruction & 0x00000F00) >> 7;
+        immediate = immediate >>> rotateImm | immediate << 32 - rotateImm;
+        op = this.armCompiler.constructMSR(rm, r, instruction, immediate, condOp);
+        op.writesPC = false;
+      } else if ((instruction & 0x00BF0000) == 0x000F0000) {
+        // MRS
+        var rd = (instruction & 0x0000F000) >> 12;
+        op = this.armCompiler.constructMRS(rd, r, condOp);
+        op.writesPC = rd == this.PC;
+      }
+    } else {
+      // Data processing/FSR transfer
+      var rn = (instruction & 0x000F0000) >> 16;
+      var rd = (instruction & 0x0000F000) >> 12; // Parse shifter operand
+
+      var shiftType = instruction & 0x00000060;
+      var rm = instruction & 0x0000000F;
+
+      var shiftOp = function shiftOp() {
+        throw 'BUG: invalid barrel shifter';
+      };
+
+      if (instruction & 0x02000000) {
+        var immediate = instruction & 0x000000FF;
+        var rotate = (instruction & 0x00000F00) >> 7;
+
+        if (!rotate) {
+          shiftOp = this.armCompiler.constructAddressingMode1Immediate(immediate);
+        } else {
+          shiftOp = this.armCompiler.constructAddressingMode1ImmediateRotate(immediate, rotate);
+        }
+      } else if (instruction & 0x00000010) {
+        var rs = (instruction & 0x00000F00) >> 8;
+        shiftsRs = true;
+
+        switch (shiftType) {
+          case 0x00000000:
+            // LSL
+            shiftOp = this.armCompiler.constructAddressingMode1LSL(rs, rm);
+            break;
+
+          case 0x00000020:
+            // LSR
+            shiftOp = this.armCompiler.constructAddressingMode1LSR(rs, rm);
+            break;
+
+          case 0x00000040:
+            // ASR
+            shiftOp = this.armCompiler.constructAddressingMode1ASR(rs, rm);
+            break;
+
+          case 0x00000060:
+            // ROR
+            shiftOp = this.armCompiler.constructAddressingMode1ROR(rs, rm);
+            break;
+        }
+      } else {
+        var immediate = (instruction & 0x00000F80) >> 7;
+        shiftOp = this.barrelShiftImmediate(shiftType, immediate, rm);
+      }
+
+      switch (opcode) {
+        case 0x00000000:
+          // AND
+          if (s) {
+            op = this.armCompiler.constructANDS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructAND(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00200000:
+          // EOR
+          if (s) {
+            op = this.armCompiler.constructEORS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructEOR(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00400000:
+          // SUB
+          if (s) {
+            op = this.armCompiler.constructSUBS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructSUB(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00600000:
+          // RSB
+          if (s) {
+            op = this.armCompiler.constructRSBS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructRSB(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00800000:
+          // ADD
+          if (s) {
+            op = this.armCompiler.constructADDS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructADD(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00A00000:
+          // ADC
+          if (s) {
+            op = this.armCompiler.constructADCS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructADC(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00C00000:
+          // SBC
+          if (s) {
+            op = this.armCompiler.constructSBCS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructSBC(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x00E00000:
+          // RSC
+          if (s) {
+            op = this.armCompiler.constructRSCS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructRSC(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x01000000:
+          // TST
+          op = this.armCompiler.constructTST(rd, rn, shiftOp, condOp);
+          break;
+
+        case 0x01200000:
+          // TEQ
+          op = this.armCompiler.constructTEQ(rd, rn, shiftOp, condOp);
+          break;
+
+        case 0x01400000:
+          // CMP
+          op = this.armCompiler.constructCMP(rd, rn, shiftOp, condOp);
+          break;
+
+        case 0x01600000:
+          // CMN
+          op = this.armCompiler.constructCMN(rd, rn, shiftOp, condOp);
+          break;
+
+        case 0x01800000:
+          // ORR
+          if (s) {
+            op = this.armCompiler.constructORRS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructORR(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x01A00000:
+          // MOV
+          if (s) {
+            op = this.armCompiler.constructMOVS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructMOV(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x01C00000:
+          // BIC
+          if (s) {
+            op = this.armCompiler.constructBICS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructBIC(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+
+        case 0x01E00000:
+          // MVN
+          if (s) {
+            op = this.armCompiler.constructMVNS(rd, rn, shiftOp, condOp);
+          } else {
+            op = this.armCompiler.constructMVN(rd, rn, shiftOp, condOp);
+          }
+
+          break;
+      }
+
+      op.writesPC = rd == this.PC;
+    }
+  } else if ((instruction & 0x0FB00FF0) == 0x01000090) {
+    // Single data swap
+    var rm = instruction & 0x0000000F;
+    var rd = instruction >> 12 & 0x0000000F;
+    var rn = instruction >> 16 & 0x0000000F;
+
+    if (instruction & 0x00400000) {
+      op = this.armCompiler.constructSWPB(rd, rn, rm, condOp);
+    } else {
+      op = this.armCompiler.constructSWP(rd, rn, rm, condOp);
+    }
+
+    op.writesPC = rd == this.PC;
+  } else {
+    switch (i) {
+      case 0x00000000:
+        if ((instruction & 0x010000F0) == 0x00000090) {
+          // Multiplies
+          var rd = (instruction & 0x000F0000) >> 16;
+          var rn = (instruction & 0x0000F000) >> 12;
+          var rs = (instruction & 0x00000F00) >> 8;
+          var rm = instruction & 0x0000000F;
+
+          switch (instruction & 0x00F00000) {
+            case 0x00000000:
+              // MUL
+              op = this.armCompiler.constructMUL(rd, rs, rm, condOp);
+              break;
+
+            case 0x00100000:
+              // MULS
+              op = this.armCompiler.constructMULS(rd, rs, rm, condOp);
+              break;
+
+            case 0x00200000:
+              // MLA
+              op = this.armCompiler.constructMLA(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00300000:
+              // MLAS
+              op = this.armCompiler.constructMLAS(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00800000:
+              // UMULL
+              op = this.armCompiler.constructUMULL(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00900000:
+              // UMULLS
+              op = this.armCompiler.constructUMULLS(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00A00000:
+              // UMLAL
+              op = this.armCompiler.constructUMLAL(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00B00000:
+              // UMLALS
+              op = this.armCompiler.constructUMLALS(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00C00000:
+              // SMULL
+              op = this.armCompiler.constructSMULL(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00D00000:
+              // SMULLS
+              op = this.armCompiler.constructSMULLS(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00E00000:
+              // SMLAL
+              op = this.armCompiler.constructSMLAL(rd, rn, rs, rm, condOp);
+              break;
+
+            case 0x00F00000:
+              // SMLALS
+              op = this.armCompiler.constructSMLALS(rd, rn, rs, rm, condOp);
+              break;
+          }
+
+          op.writesPC = rd == this.PC;
+        } else {
+          // Halfword and signed byte data transfer
+          var load = instruction & 0x00100000;
+          var rd = (instruction & 0x0000F000) >> 12;
+          var hiOffset = (instruction & 0x00000F00) >> 4;
+          var loOffset = rm = instruction & 0x0000000F;
+          var h = instruction & 0x00000020;
+          var s = instruction & 0x00000040;
+          var w = instruction & 0x00200000;
+          var i = instruction & 0x00400000;
+          var address;
+
+          if (i) {
+            var immediate = loOffset | hiOffset;
+            address = this.armCompiler.constructAddressingMode23Immediate(instruction, immediate, condOp);
+          } else {
+            address = this.armCompiler.constructAddressingMode23Register(instruction, rm, condOp);
+          }
+
+          address.writesPC = !!w && rn == this.PC;
+
+          if ((instruction & 0x00000090) == 0x00000090) {
+            if (load) {
+              // Load [signed] halfword/byte
+              if (h) {
+                if (s) {
+                  // LDRSH
+                  op = this.armCompiler.constructLDRSH(rd, address, condOp);
+                } else {
+                  // LDRH
+                  op = this.armCompiler.constructLDRH(rd, address, condOp);
+                }
+              } else {
+                if (s) {
+                  // LDRSB
+                  op = this.armCompiler.constructLDRSB(rd, address, condOp);
+                }
+              }
+            } else if (!s && h) {
+              // STRH
+              op = this.armCompiler.constructSTRH(rd, address, condOp);
+            }
+          }
+
+          op.writesPC = rd == this.PC || address.writesPC;
+        }
+
+        break;
+
+      case 0x04000000:
+      case 0x06000000:
+        // LDR/STR
+        var rd = (instruction & 0x0000F000) >> 12;
+        var load = instruction & 0x00100000;
+        var b = instruction & 0x00400000;
+        var i = instruction & 0x02000000;
+
+        var address = function address() {
+          throw "Unimplemented memory access: 0x" + instruction.toString(16);
+        };
+
+        if (~instruction & 0x01000000) {
+          // Clear the W bit if the P bit is clear--we don't support memory translation, so these turn into regular accesses
+          instruction &= 0xFFDFFFFF;
+        }
+
+        if (i) {
+          // Register offset
+          var rm = instruction & 0x0000000F;
+          var shiftType = instruction & 0x00000060;
+          var shiftImmediate = (instruction & 0x00000F80) >> 7;
+
+          if (shiftType || shiftImmediate) {
+            var shiftOp = this.barrelShiftImmediate(shiftType, shiftImmediate, rm);
+            address = this.armCompiler.constructAddressingMode2RegisterShifted(instruction, shiftOp, condOp);
+          } else {
+            address = this.armCompiler.constructAddressingMode23Register(instruction, rm, condOp);
+          }
+        } else {
+          // Immediate
+          var offset = instruction & 0x00000FFF;
+          address = this.armCompiler.constructAddressingMode23Immediate(instruction, offset, condOp);
+        }
+
+        if (load) {
+          if (b) {
+            // LDRB
+            op = this.armCompiler.constructLDRB(rd, address, condOp);
+          } else {
+            // LDR
+            op = this.armCompiler.constructLDR(rd, address, condOp);
+          }
+        } else {
+          if (b) {
+            // STRB
+            op = this.armCompiler.constructSTRB(rd, address, condOp);
+          } else {
+            // STR
+            op = this.armCompiler.constructSTR(rd, address, condOp);
+          }
+        }
+
+        op.writesPC = rd == this.PC || address.writesPC;
+        break;
+
+      case 0x08000000:
+        // Block data transfer
+        var load = instruction & 0x00100000;
+        var w = instruction & 0x00200000;
+        var user = instruction & 0x00400000;
+        var u = instruction & 0x00800000;
+        var p = instruction & 0x01000000;
+        var rs = instruction & 0x0000FFFF;
+        var rn = (instruction & 0x000F0000) >> 16;
+        var address;
+        var immediate = 0;
+        var offset = 0;
+        var overlap = false;
+
+        if (u) {
+          if (p) {
+            immediate = 4;
+          }
+
+          for (var m = 0x01, i = 0; i < 16; m <<= 1, ++i) {
+            if (rs & m) {
+              if (w && i == rn && !offset) {
+                rs &= ~m;
+                immediate += 4;
+                overlap = true;
+              }
+
+              offset += 4;
+            }
+          }
+        } else {
+          if (!p) {
+            immediate = 4;
+          }
+
+          for (var m = 0x01, i = 0; i < 16; m <<= 1, ++i) {
+            if (rs & m) {
+              if (w && i == rn && !offset) {
+                rs &= ~m;
+                immediate += 4;
+                overlap = true;
+              }
+
+              immediate -= 4;
+              offset -= 4;
+            }
+          }
+        }
+
+        if (w) {
+          address = this.armCompiler.constructAddressingMode4Writeback(immediate, offset, rn, overlap);
+        } else {
+          address = this.armCompiler.constructAddressingMode4(immediate, rn);
+        }
+
+        if (load) {
+          // LDM
+          if (user) {
+            op = this.armCompiler.constructLDMS(rs, address, condOp);
+          } else {
+            op = this.armCompiler.constructLDM(rs, address, condOp);
+          }
+
+          op.writesPC = !!(rs & 1 << 15);
+        } else {
+          // STM
+          if (user) {
+            op = this.armCompiler.constructSTMS(rs, address, condOp);
+          } else {
+            op = this.armCompiler.constructSTM(rs, address, condOp);
+          }
+
+          op.writesPC = false;
+        }
+
+        break;
+
+      case 0x0A000000:
+        // Branch
+        var immediate = instruction & 0x00FFFFFF;
+
+        if (immediate & 0x00800000) {
+          immediate |= 0xFF000000;
+        }
+
+        immediate <<= 2;
+        var link = instruction & 0x01000000;
+
+        if (link) {
+          op = this.armCompiler.constructBL(immediate, condOp);
+        } else {
+          op = this.armCompiler.constructB(immediate, condOp);
+        }
+
+        op.writesPC = true;
+        op.fixedJump = true;
+        break;
+
+      case 0x0C000000:
+        // Coprocessor data transfer
+        break;
+
+      case 0x0E000000:
+        // Coprocessor data operation/SWI
+        if ((instruction & 0x0F000000) == 0x0F000000) {
+          // SWI
+          var immediate = instruction & 0x00FFFFFF;
+          op = this.armCompiler.constructSWI(immediate, condOp);
+          op.writesPC = false;
+        }
+
+        break;
+
+      default:
+        throw 'Bad opcode: 0x' + instruction.toString(16);
+    }
+  }
+
+  op.execMode = this.MODE_ARM;
+  op.fixedJump = op.fixedJump || false;
+  return op;
+};
+
+ARMCore.prototype.compileThumb = function (instruction) {
+  var op = this.badOp(instruction & 0xFFFF);
+  var cpu = this;
+  var gprs = this.gprs;
+
+  if ((instruction & 0xFC00) == 0x4000) {
+    // Data-processing register
+    var rm = (instruction & 0x0038) >> 3;
+    var rd = instruction & 0x0007;
+
+    switch (instruction & 0x03C0) {
+      case 0x0000:
+        // AND
+        op = this.thumbCompiler.constructAND(rd, rm);
+        break;
+
+      case 0x0040:
+        // EOR
+        op = this.thumbCompiler.constructEOR(rd, rm);
+        break;
+
+      case 0x0080:
+        // LSL(2)
+        op = this.thumbCompiler.constructLSL2(rd, rm);
+        break;
+
+      case 0x00C0:
+        // LSR(2)
+        op = this.thumbCompiler.constructLSR2(rd, rm);
+        break;
+
+      case 0x0100:
+        // ASR(2)
+        op = this.thumbCompiler.constructASR2(rd, rm);
+        break;
+
+      case 0x0140:
+        // ADC
+        op = this.thumbCompiler.constructADC(rd, rm);
+        break;
+
+      case 0x0180:
+        // SBC
+        op = this.thumbCompiler.constructSBC(rd, rm);
+        break;
+
+      case 0x01C0:
+        // ROR
+        op = this.thumbCompiler.constructROR(rd, rm);
+        break;
+
+      case 0x0200:
+        // TST
+        op = this.thumbCompiler.constructTST(rd, rm);
+        break;
+
+      case 0x0240:
+        // NEG
+        op = this.thumbCompiler.constructNEG(rd, rm);
+        break;
+
+      case 0x0280:
+        // CMP(2)
+        op = this.thumbCompiler.constructCMP2(rd, rm);
+        break;
+
+      case 0x02C0:
+        // CMN
+        op = this.thumbCompiler.constructCMN(rd, rm);
+        break;
+
+      case 0x0300:
+        // ORR
+        op = this.thumbCompiler.constructORR(rd, rm);
+        break;
+
+      case 0x0340:
+        // MUL
+        op = this.thumbCompiler.constructMUL(rd, rm);
+        break;
+
+      case 0x0380:
+        // BIC
+        op = this.thumbCompiler.constructBIC(rd, rm);
+        break;
+
+      case 0x03C0:
+        // MVN
+        op = this.thumbCompiler.constructMVN(rd, rm);
+        break;
+    }
+
+    op.writesPC = false;
+  } else if ((instruction & 0xFC00) == 0x4400) {
+    // Special data processing / branch/exchange instruction set
+    var rm = (instruction & 0x0078) >> 3;
+    var rn = instruction & 0x0007;
+    var h1 = instruction & 0x0080;
+    var rd = rn | h1 >> 4;
+
+    switch (instruction & 0x0300) {
+      case 0x0000:
+        // ADD(4)
+        op = this.thumbCompiler.constructADD4(rd, rm);
+        op.writesPC = rd == this.PC;
+        break;
+
+      case 0x0100:
+        // CMP(3)
+        op = this.thumbCompiler.constructCMP3(rd, rm);
+        op.writesPC = false;
+        break;
+
+      case 0x0200:
+        // MOV(3)
+        op = this.thumbCompiler.constructMOV3(rd, rm);
+        op.writesPC = rd == this.PC;
+        break;
+
+      case 0x0300:
+        // BX
+        op = this.thumbCompiler.constructBX(rd, rm);
+        op.writesPC = true;
+        op.fixedJump = false;
+        break;
+    }
+  } else if ((instruction & 0xF800) == 0x1800) {
+    // Add/subtract
+    var rm = (instruction & 0x01C0) >> 6;
+    var rn = (instruction & 0x0038) >> 3;
+    var rd = instruction & 0x0007;
+
+    switch (instruction & 0x0600) {
+      case 0x0000:
+        // ADD(3)
+        op = this.thumbCompiler.constructADD3(rd, rn, rm);
+        break;
+
+      case 0x0200:
+        // SUB(3)
+        op = this.thumbCompiler.constructSUB3(rd, rn, rm);
+        break;
+
+      case 0x0400:
+        var immediate = (instruction & 0x01C0) >> 6;
+
+        if (immediate) {
+          // ADD(1)
+          op = this.thumbCompiler.constructADD1(rd, rn, immediate);
+        } else {
+          // MOV(2)
+          op = this.thumbCompiler.constructMOV2(rd, rn, rm);
+        }
+
+        break;
+
+      case 0x0600:
+        // SUB(1)
+        var immediate = (instruction & 0x01C0) >> 6;
+        op = this.thumbCompiler.constructSUB1(rd, rn, immediate);
+        break;
+    }
+
+    op.writesPC = false;
+  } else if (!(instruction & 0xE000)) {
+    // Shift by immediate
+    var rd = instruction & 0x0007;
+    var rm = (instruction & 0x0038) >> 3;
+    var immediate = (instruction & 0x07C0) >> 6;
+
+    switch (instruction & 0x1800) {
+      case 0x0000:
+        // LSL(1)
+        op = this.thumbCompiler.constructLSL1(rd, rm, immediate);
+        break;
+
+      case 0x0800:
+        // LSR(1)
+        op = this.thumbCompiler.constructLSR1(rd, rm, immediate);
+        break;
+
+      case 0x1000:
+        // ASR(1)
+        op = this.thumbCompiler.constructASR1(rd, rm, immediate);
+        break;
+
+      case 0x1800:
+        break;
+    }
+
+    op.writesPC = false;
+  } else if ((instruction & 0xE000) == 0x2000) {
+    // Add/subtract/compare/move immediate
+    var immediate = instruction & 0x00FF;
+    var rn = (instruction & 0x0700) >> 8;
+
+    switch (instruction & 0x1800) {
+      case 0x0000:
+        // MOV(1)
+        op = this.thumbCompiler.constructMOV1(rn, immediate);
+        break;
+
+      case 0x0800:
+        // CMP(1)
+        op = this.thumbCompiler.constructCMP1(rn, immediate);
+        break;
+
+      case 0x1000:
+        // ADD(2)
+        op = this.thumbCompiler.constructADD2(rn, immediate);
+        break;
+
+      case 0x1800:
+        // SUB(2)
+        op = this.thumbCompiler.constructSUB2(rn, immediate);
+        break;
+    }
+
+    op.writesPC = false;
+  } else if ((instruction & 0xF800) == 0x4800) {
+    // LDR(3)
+    var rd = (instruction & 0x0700) >> 8;
+    var immediate = (instruction & 0x00FF) << 2;
+    op = this.thumbCompiler.constructLDR3(rd, immediate);
+    op.writesPC = false;
+  } else if ((instruction & 0xF000) == 0x5000) {
+    // Load and store with relative offset
+    var rd = instruction & 0x0007;
+    var rn = (instruction & 0x0038) >> 3;
+    var rm = (instruction & 0x01C0) >> 6;
+    var opcode = instruction & 0x0E00;
+
+    switch (opcode) {
+      case 0x0000:
+        // STR(2)
+        op = this.thumbCompiler.constructSTR2(rd, rn, rm);
+        break;
+
+      case 0x0200:
+        // STRH(2)
+        op = this.thumbCompiler.constructSTRH2(rd, rn, rm);
+        break;
+
+      case 0x0400:
+        // STRB(2)
+        op = this.thumbCompiler.constructSTRB2(rd, rn, rm);
+        break;
+
+      case 0x0600:
+        // LDRSB
+        op = this.thumbCompiler.constructLDRSB(rd, rn, rm);
+        break;
+
+      case 0x0800:
+        // LDR(2)
+        op = this.thumbCompiler.constructLDR2(rd, rn, rm);
+        break;
+
+      case 0x0A00:
+        // LDRH(2)
+        op = this.thumbCompiler.constructLDRH2(rd, rn, rm);
+        break;
+
+      case 0x0C00:
+        // LDRB(2)
+        op = this.thumbCompiler.constructLDRB2(rd, rn, rm);
+        break;
+
+      case 0x0E00:
+        // LDRSH
+        op = this.thumbCompiler.constructLDRSH(rd, rn, rm);
+        break;
+    }
+
+    op.writesPC = false;
+  } else if ((instruction & 0xE000) == 0x6000) {
+    // Load and store with immediate offset
+    var rd = instruction & 0x0007;
+    var rn = (instruction & 0x0038) >> 3;
+    var immediate = (instruction & 0x07C0) >> 4;
+    var b = instruction & 0x1000;
+
+    if (b) {
+      immediate >>= 2;
+    }
+
+    var load = instruction & 0x0800;
+
+    if (load) {
+      if (b) {
+        // LDRB(1)
+        op = this.thumbCompiler.constructLDRB1(rd, rn, immediate);
+      } else {
+        // LDR(1)
+        op = this.thumbCompiler.constructLDR1(rd, rn, immediate);
+      }
+    } else {
+      if (b) {
+        // STRB(1)
+        op = this.thumbCompiler.constructSTRB1(rd, rn, immediate);
+      } else {
+        // STR(1)
+        op = this.thumbCompiler.constructSTR1(rd, rn, immediate);
+      }
+    }
+
+    op.writesPC = false;
+  } else if ((instruction & 0xF600) == 0xB400) {
+    // Push and pop registers
+    var r = !!(instruction & 0x0100);
+    var rs = instruction & 0x00FF;
+
+    if (instruction & 0x0800) {
+      // POP
+      op = this.thumbCompiler.constructPOP(rs, r);
+      op.writesPC = r;
+      op.fixedJump = false;
+    } else {
+      // PUSH
+      op = this.thumbCompiler.constructPUSH(rs, r);
+      op.writesPC = false;
+    }
+  } else if (instruction & 0x8000) {
+    switch (instruction & 0x7000) {
+      case 0x0000:
+        // Load and store halfword
+        var rd = instruction & 0x0007;
+        var rn = (instruction & 0x0038) >> 3;
+        var immediate = (instruction & 0x07C0) >> 5;
+
+        if (instruction & 0x0800) {
+          // LDRH(1)
+          op = this.thumbCompiler.constructLDRH1(rd, rn, immediate);
+        } else {
+          // STRH(1)
+          op = this.thumbCompiler.constructSTRH1(rd, rn, immediate);
+        }
+
+        op.writesPC = false;
+        break;
+
+      case 0x1000:
+        // SP-relative load and store
+        var rd = (instruction & 0x0700) >> 8;
+        var immediate = (instruction & 0x00FF) << 2;
+        var load = instruction & 0x0800;
+
+        if (load) {
+          // LDR(4)
+          op = this.thumbCompiler.constructLDR4(rd, immediate);
+        } else {
+          // STR(3)
+          op = this.thumbCompiler.constructSTR3(rd, immediate);
+        }
+
+        op.writesPC = false;
+        break;
+
+      case 0x2000:
+        // Load address
+        var rd = (instruction & 0x0700) >> 8;
+        var immediate = (instruction & 0x00FF) << 2;
+
+        if (instruction & 0x0800) {
+          // ADD(6)
+          op = this.thumbCompiler.constructADD6(rd, immediate);
+        } else {
+          // ADD(5)
+          op = this.thumbCompiler.constructADD5(rd, immediate);
+        }
+
+        op.writesPC = false;
+        break;
+
+      case 0x3000:
+        // Miscellaneous
+        if (!(instruction & 0x0F00)) {
+          // Adjust stack pointer
+          // ADD(7)/SUB(4)
+          var b = instruction & 0x0080;
+          var immediate = (instruction & 0x7F) << 2;
+
+          if (b) {
+            immediate = -immediate;
+          }
+
+          op = this.thumbCompiler.constructADD7(immediate);
+          op.writesPC = false;
+        }
+
+        break;
+
+      case 0x4000:
+        // Multiple load and store
+        var rn = (instruction & 0x0700) >> 8;
+        var rs = instruction & 0x00FF;
+
+        if (instruction & 0x0800) {
+          // LDMIA
+          op = this.thumbCompiler.constructLDMIA(rn, rs);
+        } else {
+          // STMIA
+          op = this.thumbCompiler.constructSTMIA(rn, rs);
+        }
+
+        op.writesPC = false;
+        break;
+
+      case 0x5000:
+        // Conditional branch
+        var cond = (instruction & 0x0F00) >> 8;
+        var immediate = instruction & 0x00FF;
+
+        if (cond == 0xF) {
+          // SWI
+          op = this.thumbCompiler.constructSWI(immediate);
+          op.writesPC = false;
+        } else {
+          // B(1)
+          if (instruction & 0x0080) {
+            immediate |= 0xFFFFFF00;
+          }
+
+          immediate <<= 1;
+          var condOp = this.conds[cond];
+          op = this.thumbCompiler.constructB1(immediate, condOp);
+          op.writesPC = true;
+          op.fixedJump = true;
+        }
+
+        break;
+
+      case 0x6000:
+      case 0x7000:
+        // BL(X)
+        var immediate = instruction & 0x07FF;
+        var h = instruction & 0x1800;
+
+        switch (h) {
+          case 0x0000:
+            // B(2)
+            if (immediate & 0x0400) {
+              immediate |= 0xFFFFF800;
+            }
+
+            immediate <<= 1;
+            op = this.thumbCompiler.constructB2(immediate);
+            op.writesPC = true;
+            op.fixedJump = true;
+            break;
+
+          case 0x0800:
+            // BLX (ARMv5T)
+
+            /*op = function() {
+            	var pc = gprs[cpu.PC];
+            	gprs[cpu.PC] = (gprs[cpu.LR] + (immediate << 1)) & 0xFFFFFFFC;
+            	gprs[cpu.LR] = pc - 1;
+            	cpu.switchExecMode(cpu.MODE_ARM);
+            }*/
+            break;
+
+          case 0x1000:
+            // BL(1)
+            if (immediate & 0x0400) {
+              immediate |= 0xFFFFFC00;
+            }
+
+            immediate <<= 12;
+            op = this.thumbCompiler.constructBL1(immediate);
+            op.writesPC = false;
+            break;
+
+          case 0x1800:
+            // BL(2)
+            op = this.thumbCompiler.constructBL2(immediate);
+            op.writesPC = true;
+            op.fixedJump = false;
+            break;
+        }
+
+        break;
+
+      default:
+        this.WARN("Undefined instruction: 0x" + instruction.toString(16));
+    }
+  } else {
+    throw 'Bad opcode: 0x' + instruction.toString(16);
+  }
+
+  op.execMode = this.MODE_THUMB;
+  op.fixedJump = op.fixedJump || false;
+  return op;
+};
+
+/***/ }),
+
+/***/ "./src/emulator/fades.js":
+/*!*******************************!*\
+  !*** ./src/emulator/fades.js ***!
+  \*******************************/
+/*! exports provided: lcdFade, fadeOut */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lcdFade", function() { return lcdFade; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fadeOut", function() { return fadeOut; });
+var fadeOut = function fadeOut(id, nextId, kill) {
+  var e = document.getElementById(id);
+  var e2 = document.getElementById(nextId);
+
+  if (!e) {
+    return;
+  }
+
+  var removeSelf = function removeSelf() {
+    if (kill) {
+      e.parentElement.removeChild(e);
+    } else {
+      e.setAttribute('class', 'dead');
+      e.removeEventListener('webkitTransitionEnd', removeSelf);
+      e.removeEventListener('oTransitionEnd', removeSelf);
+      e.removeEventListener('transitionend', removeSelf);
+    }
+
+    if (e2) {
+      e2.setAttribute('class', 'hidden');
+      setTimeout(function () {
+        return e2.removeAttribute('class');
+      }, 0);
+    }
+  };
+
+  e.addEventListener('webkitTransitionEnd', removeSelf, false);
+  e.addEventListener('oTransitionEnd', removeSelf, false);
+  e.addEventListener('transitionend', removeSelf, false);
+  e.setAttribute('class', 'hidden');
+};
+
+var lcdFade = function lcdFade(context, target, callback) {
+  var i = 0;
+  var drawInterval = setInterval(function () {
+    i++;
+    var pixelData = context.getImageData(0, 0, 240, 160);
+
+    for (var y = 0; y < 160; ++y) {
+      for (var x = 0; x < 240; ++x) {
+        var xDiff = Math.abs(x - 120);
+        var yDiff = Math.abs(y - 80) * 0.8;
+        var xFactor = (120 - i - xDiff) / 120;
+        var yFactor = (80 - i - (y & 1) * 10 - yDiff + Math.pow(xDiff, 1 / 2)) / 80;
+        pixelData.data[(x + y * 240) * 4 + 3] *= Math.pow(xFactor, 1 / 3) * Math.pow(yFactor, 1 / 2);
+      }
+    }
+
+    context.putImageData(pixelData, 0, 0);
+    target.clearRect(0, 0, 480, 320);
+
+    if (i > 40) {
+      clearInterval(drawInterval);
+    } else {
+      callback();
+    }
+  }, 50);
+};
+
+
+
+/***/ }),
+
+/***/ "./src/emulator/gba.js":
+/*!*****************************!*\
+  !*** ./src/emulator/gba.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function GameBoyAdvance() {
+  this.LOG_ERROR = 1;
+  this.LOG_WARN = 2;
+  this.LOG_STUB = 4;
+  this.LOG_INFO = 8;
+  this.LOG_DEBUG = 16;
+  this.SYS_ID = 'com.endrift.gbajs';
+  this.logLevel = this.LOG_ERROR | this.LOG_WARN;
+  this.rom = null;
+  this.cpu = new ARMCore();
+  this.mmu = new GameBoyAdvanceMMU();
+  this.irq = new GameBoyAdvanceInterruptHandler();
+  this.io = new GameBoyAdvanceIO();
+  this.audio = new GameBoyAdvanceAudio();
+  this.video = new GameBoyAdvanceVideo();
+  this.keypad = new GameBoyAdvanceKeypad();
+  this.sio = new GameBoyAdvanceSIO(); // TODO: simplify this graph
+
+  this.cpu.mmu = this.mmu;
+  this.cpu.irq = this.irq;
+  this.mmu.cpu = this.cpu;
+  this.mmu.core = this;
+  this.irq.cpu = this.cpu;
+  this.irq.io = this.io;
+  this.irq.audio = this.audio;
+  this.irq.video = this.video;
+  this.irq.core = this;
+  this.io.cpu = this.cpu;
+  this.io.audio = this.audio;
+  this.io.video = this.video;
+  this.io.keypad = this.keypad;
+  this.io.sio = this.sio;
+  this.io.core = this;
+  this.audio.cpu = this.cpu;
+  this.audio.core = this;
+  this.video.cpu = this.cpu;
+  this.video.core = this;
+  this.keypad.core = this;
+  this.sio.core = this;
+  this.keypad.registerHandlers();
+  this.doStep = this.waitFrame;
+  this.paused = false;
+  this.seenFrame = false;
+  this.seenSave = false;
+  this.lastVblank = 0;
+  this.queue = null;
+  this.reportFPS = null;
+  this.throttle = 16; // This is rough, but the 2/3ms difference gives us a good overhead
+
+  var self = this;
+
+  window.queueFrame = function (f) {
+    self.queue = window.setTimeout(f, self.throttle);
+  };
+
+  window.URL = window.URL || window.webkitURL;
+
+  this.video.vblankCallback = function () {
+    self.seenFrame = true;
+  };
+}
+
+;
+window.GameBoyAdvance = GameBoyAdvance;
+
+GameBoyAdvance.prototype.setCanvas = function (canvas) {
+  var self = this;
+
+  if (canvas.offsetWidth != 240 || canvas.offsetHeight != 160) {
+    this.indirectCanvas = document.createElement("canvas");
+    this.indirectCanvas.setAttribute("height", "160");
+    this.indirectCanvas.setAttribute("width", "240");
+    this.targetCanvas = canvas;
+    this.setCanvasDirect(this.indirectCanvas);
+    var targetContext = canvas.getContext('2d');
+
+    this.video.drawCallback = function () {
+      targetContext.drawImage(self.indirectCanvas, 0, 0, canvas.offsetWidth, canvas.offsetHeight);
+    };
+  } else {
+    this.setCanvasDirect(canvas);
+    var self = this;
+  }
+};
+
+GameBoyAdvance.prototype.setCanvasDirect = function (canvas) {
+  this.context = canvas.getContext('2d');
+  this.video.setBacking(this.context);
+};
+
+GameBoyAdvance.prototype.setBios = function (bios, real) {
+  this.mmu.loadBios(bios, real);
+};
+
+GameBoyAdvance.prototype.setRom = function (rom) {
+  this.reset();
+  this.rom = this.mmu.loadRom(rom, true);
+
+  if (!this.rom) {
+    return false;
+  }
+
+  this.retrieveSavedata();
+  return true;
+};
+
+GameBoyAdvance.prototype.hasRom = function () {
+  return !!this.rom;
+};
+
+GameBoyAdvance.prototype.loadRomFromFile = function (romBuffer, callback) {
+  this.setRom(romBuffer.buffer);
+
+  if (callback) {
+    callback(romBuffer.buffer);
+  }
+};
+
+GameBoyAdvance.prototype.reset = function () {
+  this.audio.pause(true);
+  this.mmu.clear();
+  this.io.clear();
+  this.audio.clear();
+  this.video.clear();
+  this.sio.clear();
+  this.mmu.mmap(this.mmu.REGION_IO, this.io);
+  this.mmu.mmap(this.mmu.REGION_PALETTE_RAM, this.video.renderPath.palette);
+  this.mmu.mmap(this.mmu.REGION_VRAM, this.video.renderPath.vram);
+  this.mmu.mmap(this.mmu.REGION_OAM, this.video.renderPath.oam);
+  this.cpu.resetCPU(0);
+};
+
+GameBoyAdvance.prototype.step = function () {
+  while (this.doStep()) {
+    this.cpu.step();
+  }
+};
+
+GameBoyAdvance.prototype.waitFrame = function () {
+  var seen = this.seenFrame;
+  this.seenFrame = false;
+  return !seen;
+};
+
+GameBoyAdvance.prototype.pause = function () {
+  this.paused = true;
+  this.audio.pause(true);
+
+  if (this.queue) {
+    clearTimeout(this.queue);
+    this.queue = null;
+  }
+};
+
+GameBoyAdvance.prototype.advanceFrame = function () {
+  this.step();
+
+  if (this.seenSave) {
+    if (!this.mmu.saveNeedsFlush()) {
+      this.storeSavedata();
+      this.seenSave = false;
+    } else {
+      this.mmu.flushSave();
+    }
+  } else if (this.mmu.saveNeedsFlush()) {
+    this.seenSave = true;
+    this.mmu.flushSave();
+  }
+};
+
+GameBoyAdvance.prototype.runStable = function () {
+  if (this.interval) {
+    return; // Already running
+  }
+
+  var self = this;
+  var timer = 0;
+  var frames = 0;
+
+  var _runFunc2;
+
+  var start = Date.now();
+  this.paused = false;
+  this.audio.pause(false);
+
+  if (this.reportFPS) {
+    _runFunc2 = function runFunc() {
+      try {
+        timer += Date.now() - start;
+
+        if (self.paused) {
+          return;
+        } else {
+          queueFrame(_runFunc2);
+        }
+
+        start = Date.now();
+        self.advanceFrame();
+        ++frames;
+
+        if (frames == 60) {
+          self.reportFPS(frames * 1000 / timer);
+          frames = 0;
+          timer = 0;
+        }
+      } catch (exception) {
+        self.ERROR(exception);
+
+        if (exception.stack) {
+          self.logStackTrace(exception.stack.split('\n'));
+        }
+
+        throw exception;
+      }
+    };
+  } else {
+    _runFunc2 = function _runFunc() {
+      try {
+        if (self.paused) {
+          return;
+        } else {
+          queueFrame(_runFunc2);
+        }
+
+        self.advanceFrame();
+      } catch (exception) {
+        self.ERROR(exception);
+
+        if (exception.stack) {
+          self.logStackTrace(exception.stack.split('\n'));
+        }
+
+        throw exception;
+      }
+    };
+  }
+
+  queueFrame(_runFunc2);
+};
+
+GameBoyAdvance.prototype.setSavedata = function (data) {
+  this.mmu.loadSavedata(data);
+};
+
+GameBoyAdvance.prototype.loadSavedataFromFile = function (saveFile) {
+  var reader = new FileReader();
+  var self = this;
+
+  reader.onload = function (e) {
+    self.setSavedata(e.target.result);
+  };
+
+  reader.readAsArrayBuffer(saveFile);
+};
+
+GameBoyAdvance.prototype.decodeSavedata = function (string) {
+  this.setSavedata(this.decodeBase64(string));
+};
+
+GameBoyAdvance.prototype.decodeBase64 = function (string) {
+  var length = string.length * 3 / 4;
+
+  if (string[string.length - 2] == '=') {
+    length -= 2;
+  } else if (string[string.length - 1] == '=') {
+    length -= 1;
+  }
+
+  var buffer = new ArrayBuffer(length);
+  var view = new Uint8Array(buffer);
+  var bits = string.match(/..../g);
+
+  for (var i = 0; i + 2 < length; i += 3) {
+    var s = atob(bits.shift());
+    view[i] = s.charCodeAt(0);
+    view[i + 1] = s.charCodeAt(1);
+    view[i + 2] = s.charCodeAt(2);
+  }
+
+  if (i < length) {
+    var s = atob(bits.shift());
+    view[i++] = s.charCodeAt(0);
+
+    if (s.length > 1) {
+      view[i++] = s.charCodeAt(1);
+    }
+  }
+
+  return buffer;
+};
+
+GameBoyAdvance.prototype.encodeBase64 = function (view) {
+  var data = [];
+  var b;
+  var wordstring = [];
+  var triplet;
+
+  for (var i = 0; i < view.byteLength; ++i) {
+    b = view.getUint8(i, true);
+    wordstring.push(String.fromCharCode(b));
+
+    while (wordstring.length >= 3) {
+      triplet = wordstring.splice(0, 3);
+      data.push(btoa(triplet.join('')));
+    }
+  }
+
+  ;
+
+  if (wordstring.length) {
+    data.push(btoa(wordstring.join('')));
+  }
+
+  return data.join('');
+};
+
+GameBoyAdvance.prototype.downloadSavedata = function () {
+  var sram = this.mmu.save;
+
+  if (!sram) {
+    this.WARN("No save data available");
+    return null;
+  }
+
+  if (window.URL) {
+    var url = window.URL.createObjectURL(new Blob([sram.buffer], {
+      type: 'application/octet-stream'
+    }));
+    window.open(url);
+  } else {
+    var data = this.encodeBase64(sram.view);
+    window.open('data:application/octet-stream;base64,' + data, this.rom.code + '.sav');
+  }
+};
+
+GameBoyAdvance.prototype.storeSavedata = function () {
+  var sram = this.mmu.save;
+
+  try {
+    var storage = window.localStorage;
+    storage[this.SYS_ID + '.' + this.mmu.cart.code] = this.encodeBase64(sram.view);
+  } catch (e) {
+    this.WARN('Could not store savedata! ' + e);
+  }
+};
+
+GameBoyAdvance.prototype.retrieveSavedata = function () {
+  try {
+    var storage = window.localStorage;
+    var data = storage[this.SYS_ID + '.' + this.mmu.cart.code];
+
+    if (data) {
+      this.decodeSavedata(data);
+      return true;
+    }
+  } catch (e) {
+    this.WARN('Could not retrieve savedata! ' + e);
+  }
+
+  return false;
+};
+
+GameBoyAdvance.prototype.freeze = function () {
+  return {
+    'cpu': this.cpu.freeze(),
+    'mmu': this.mmu.freeze(),
+    'irq': this.irq.freeze(),
+    'io': this.io.freeze(),
+    'audio': this.audio.freeze(),
+    'video': this.video.freeze()
+  };
+};
+
+GameBoyAdvance.prototype.defrost = function (frost) {
+  this.cpu.defrost(frost.cpu);
+  this.mmu.defrost(frost.mmu);
+  this.audio.defrost(frost.audio);
+  this.video.defrost(frost.video);
+  this.irq.defrost(frost.irq);
+  this.io.defrost(frost.io);
+};
+
+GameBoyAdvance.prototype.log = function (level, message) {};
+
+GameBoyAdvance.prototype.setLogger = function (logger) {
+  this.log = logger;
+};
+
+GameBoyAdvance.prototype.logStackTrace = function (stack) {
+  var overflow = stack.length - 32;
+  this.ERROR('Stack trace follows:');
+
+  if (overflow > 0) {
+    this.log(-1, '> (Too many frames)');
+  }
+
+  for (var i = Math.max(overflow, 0); i < stack.length; ++i) {
+    this.log(-1, '> ' + stack[i]);
+  }
+};
+
+GameBoyAdvance.prototype.ERROR = function (error) {
+  if (this.logLevel & this.LOG_ERROR) {
+    this.log(this.LOG_ERROR, error);
+  }
+};
+
+GameBoyAdvance.prototype.WARN = function (warn) {
+  if (this.logLevel & this.LOG_WARN) {
+    this.log(this.LOG_WARN, warn);
+  }
+};
+
+GameBoyAdvance.prototype.STUB = function (func) {
+  if (this.logLevel & this.LOG_STUB) {
+    this.log(this.LOG_STUB, func);
+  }
+};
+
+GameBoyAdvance.prototype.INFO = function (info) {
+  if (this.logLevel & this.LOG_INFO) {
+    this.log(this.LOG_INFO, info);
+  }
+};
+
+GameBoyAdvance.prototype.DEBUG = function (info) {
+  if (this.logLevel & this.LOG_DEBUG) {
+    this.log(this.LOG_DEBUG, info);
+  }
+};
+
+GameBoyAdvance.prototype.ASSERT_UNREACHED = function (err) {
+  throw new Error("Should be unreached: " + err);
+};
+
+GameBoyAdvance.prototype.ASSERT = function (test, err) {
+  if (!test) {
+    throw new Error("Assertion failed: " + err);
+  }
+};
+
+/***/ }),
+
+/***/ "./src/emulator/gpio.js":
+/*!******************************!*\
+  !*** ./src/emulator/gpio.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceGPIO = function GameBoyAdvanceGPIO(core, rom) {
+  this.core = core;
+  this.rom = rom;
+  this.readWrite = 0;
+  this.direction = 0;
+  this.device = new GameBoyAdvanceRTC(this); // TODO: Support more devices
+};
+
+GameBoyAdvanceGPIO.prototype.store16 = function (offset, value) {
+  switch (offset) {
+    case 0xC4:
+      this.device.setPins(value & 0xF);
+      break;
+
+    case 0xC6:
+      this.direction = value & 0xF;
+      this.device.setDirection(this.direction);
+      break;
+
+    case 0xC8:
+      this.readWrite = value & 1;
+      break;
+
+    default:
+      throw new Error('BUG: Bad offset passed to GPIO: ' + offset.toString(16));
+  }
+
+  if (this.readWrite) {
+    var old = this.rom.view.getUint16(offset, true);
+    old &= ~this.direction;
+    this.rom.view.setUint16(offset, old | value & this.direction, true);
+  }
+};
+
+GameBoyAdvanceGPIO.prototype.outputPins = function (nybble) {
+  if (this.readWrite) {
+    var old = this.rom.view.getUint16(0xC4, true);
+    old &= this.direction;
+    this.rom.view.setUint16(0xC4, old | nybble & ~this.direction & 0xF, true);
+  }
+};
+
+function GameBoyAdvanceRTC(gpio) {
+  this.gpio = gpio; // PINOUT: SCK | SIO | CS | -
+
+  this.pins = 0;
+  this.direction = 0;
+  this.totalBytes = [0, // Force reset
+  0, // Empty
+  7, // Date/Time
+  0, // Force IRQ
+  1, // Control register
+  0, // Empty
+  3, // Time
+  0 // Empty
+  ];
+  this.bytesRemaining = 0; // Transfer sequence:
+  // == Initiate
+  // > HI | - | LO | -
+  // > HI | - | HI | -
+  // == Transfer bit (x8)
+  // > LO | x | HI | -
+  // > HI | - | HI | -
+  // < ?? | x | ?? | -
+  // == Terminate
+  // >  - | - | LO | -
+
+  this.transferStep = 0;
+  this.reading = 0;
+  this.bitsRead = 0;
+  this.bits = 0;
+  this.command = -1;
+  this.control = 0x40;
+  this.time = [0, // Year
+  0, // Month
+  0, // Day
+  0, // Day of week
+  0, // Hour
+  0, // Minute
+  0 // Second
+  ];
+}
+
+;
+
+GameBoyAdvanceRTC.prototype.setPins = function (nybble) {
+  switch (this.transferStep) {
+    case 0:
+      if ((nybble & 5) == 1) {
+        this.transferStep = 1;
+      }
+
+      break;
+
+    case 1:
+      if (nybble & 4) {
+        this.transferStep = 2;
+      }
+
+      break;
+
+    case 2:
+      if (!(nybble & 1)) {
+        this.bits &= ~(1 << this.bitsRead);
+        this.bits |= (nybble & 2) >> 1 << this.bitsRead;
+      } else {
+        if (nybble & 4) {
+          // SIO direction should always != this.read
+          if (this.direction & 2 && !this.read) {
+            ++this.bitsRead;
+
+            if (this.bitsRead == 8) {
+              this.processByte();
+            }
+          } else {
+            this.gpio.outputPins(5 | this.sioOutputPin() << 1);
+            ++this.bitsRead;
+
+            if (this.bitsRead == 8) {
+              --this.bytesRemaining;
+
+              if (this.bytesRemaining <= 0) {
+                this.command = -1;
+              }
+
+              this.bitsRead = 0;
+            }
+          }
+        } else {
+          this.bitsRead = 0;
+          this.bytesRemaining = 0;
+          this.command = -1;
+          this.transferStep = 0;
+        }
+      }
+
+      break;
+  }
+
+  this.pins = nybble & 7;
+};
+
+GameBoyAdvanceRTC.prototype.setDirection = function (direction) {
+  this.direction = direction;
+};
+
+GameBoyAdvanceRTC.prototype.processByte = function () {
+  --this.bytesRemaining;
+
+  switch (this.command) {
+    case -1:
+      if ((this.bits & 0x0F) == 0x06) {
+        this.command = this.bits >> 4 & 7;
+        this.reading = this.bits & 0x80;
+        this.bytesRemaining = this.totalBytes[this.command];
+
+        switch (this.command) {
+          case 0:
+            this.control = 0;
+            break;
+
+          case 2:
+          case 6:
+            this.updateClock();
+            break;
+        }
+      } else {
+        this.gpio.core.WARN('Invalid RTC command byte: ' + this.bits.toString(16));
+      }
+
+      break;
+
+    case 4:
+      // Control
+      this.control = this.bits & 0x40;
+      break;
+  }
+
+  this.bits = 0;
+  this.bitsRead = 0;
+
+  if (!this.bytesRemaining) {
+    this.command = -1;
+  }
+};
+
+GameBoyAdvanceRTC.prototype.sioOutputPin = function () {
+  var outputByte = 0;
+
+  switch (this.command) {
+    case 4:
+      outputByte = this.control;
+      break;
+
+    case 2:
+    case 6:
+      outputByte = this.time[7 - this.bytesRemaining];
+      break;
+  }
+
+  var output = outputByte >> this.bitsRead & 1;
+  return output;
+};
+
+GameBoyAdvanceRTC.prototype.updateClock = function () {
+  var date = new Date();
+  this.time[0] = this.bcd(date.getFullYear());
+  this.time[1] = this.bcd(date.getMonth() + 1);
+  this.time[2] = this.bcd(date.getDate());
+  this.time[3] = date.getDay() - 1;
+
+  if (this.time[3] < 0) {
+    this.time[3] = 6;
+  }
+
+  if (this.control & 0x40) {
+    // 24 hour
+    this.time[4] = this.bcd(date.getHours());
+  } else {
+    this.time[4] = this.bcd(date.getHours() % 2);
+
+    if (date.getHours() >= 12) {
+      this.time[4] |= 0x80;
+    }
+  }
+
+  this.time[5] = this.bcd(date.getMinutes());
+  this.time[6] = this.bcd(date.getSeconds());
+};
+
+GameBoyAdvanceRTC.prototype.bcd = function (binary) {
+  var counter = binary % 10;
+  binary /= 10;
+  counter += binary % 10 << 4;
+  return counter;
+};
+
+/***/ }),
+
+/***/ "./src/emulator/index.js":
+/*!*******************************!*\
+  !*** ./src/emulator/index.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var js_sha1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! js-sha1 */ "./node_modules/js-sha1/src/sha1.js");
+/* harmony import */ var js_sha1__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(js_sha1__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fades__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fades */ "./src/emulator/fades.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./util */ "./src/emulator/util.js");
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./core */ "./src/emulator/core.js");
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_core__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _arm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./arm */ "./src/emulator/arm.js");
+/* harmony import */ var _arm__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_arm__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _thumb__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./thumb */ "./src/emulator/thumb.js");
+/* harmony import */ var _thumb__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_thumb__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _mmu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mmu */ "./src/emulator/mmu.js");
+/* harmony import */ var _mmu__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_mmu__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _io__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./io */ "./src/emulator/io.js");
+/* harmony import */ var _io__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_io__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _audio__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./audio */ "./src/emulator/audio.js");
+/* harmony import */ var _audio__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_audio__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _video__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./video */ "./src/emulator/video.js");
+/* harmony import */ var _video__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_video__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _video_proxy__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./video/proxy */ "./src/emulator/video/proxy.js");
+/* harmony import */ var _video_proxy__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_video_proxy__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _video_software__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./video/software */ "./src/emulator/video/software.js");
+/* harmony import */ var _video_software__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_video_software__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _irq__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./irq */ "./src/emulator/irq.js");
+/* harmony import */ var _irq__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_irq__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _keypad__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./keypad */ "./src/emulator/keypad.js");
+/* harmony import */ var _keypad__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_keypad__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _sio__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./sio */ "./src/emulator/sio.js");
+/* harmony import */ var _sio__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_sio__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _savedata__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./savedata */ "./src/emulator/savedata.js");
+/* harmony import */ var _gpio__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./gpio */ "./src/emulator/gpio.js");
+/* harmony import */ var _gpio__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_gpio__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _gba__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./gba */ "./src/emulator/gba.js");
+/* harmony import */ var _gba__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_gba__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _assets_bios_bin__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../assets/bios.bin */ "./assets/bios.bin");
+/* harmony import */ var _assets_bios_bin__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_bios_bin__WEBPACK_IMPORTED_MODULE_20__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var drawEmulator = function drawEmulator(buffer) {
+  var gba;
+  var runCommands = [];
+  var debug = null;
+
+  try {
+    gba = new GameBoyAdvance();
+    gba.keypad.eatInput = true;
+    gba.setLogger(function (level, error) {
+      console.log(error);
+      gba.pause();
+      var screen = document.getElementById('screen');
+
+      if (screen.getAttribute('class') == 'dead') {
+        console.log('We appear to have crashed multiple times without reseting.');
+        return;
+      }
+
+      var crash = document.createElement('img');
+      crash.setAttribute('id', 'crash');
+      crash.setAttribute('src', '../../assets/crash.png');
+      screen.parentElement.insertBefore(crash, screen);
+      screen.setAttribute('class', 'dead');
+    });
+  } catch (exception) {
+    gba = null;
+  }
+
+  var canvas = document.getElementById('screen');
+  gba.setCanvas(canvas);
+  gba.logLevel = gba.LOG_ERROR;
+  gba.setBios(_assets_bios_bin__WEBPACK_IMPORTED_MODULE_20___default.a);
+
+  function run(file) {
+    gba.loadRomFromFile(file, function (result) {
+      if (result) {
+        for (var i = 0; i < runCommands.length; ++i) {
+          runCommands[i]();
+        }
+
+        runCommands = [];
+        Object(_fades__WEBPACK_IMPORTED_MODULE_3__["fadeOut"])('preload', 'ingame');
+        Object(_fades__WEBPACK_IMPORTED_MODULE_3__["fadeOut"])('instructions', null, true);
+        gba.runStable();
+      } else {
+        setTimeout(function () {
+          load.onclick = function () {
+            document.getElementById('loader').click();
+          };
+        }, 3000);
+      }
+    });
+  }
+
+  function uploadSavedataPending(file) {
+    runCommands.push(function () {
+      gba.loadSavedataFromFile(file);
+    });
+  }
+
+  function togglePause() {
+    if (gba.paused) {
+      if (debug && debug.gbaCon) {
+        debug.gbaCon.run();
+      } else {
+        gba.runStable();
+      }
+    } else {
+      if (debug && debug.gbaCon) {
+        debug.gbaCon.pause();
+      } else {
+        gba.pause();
+      }
+    }
+  }
+
+  function screenshot() {
+    var canvas = gba.indirectCanvas;
+    window.open(canvas.toDataURL('image/png'), 'screenshot');
+  }
+
+  function setPixelated(pixelated) {
+    var screen = document.getElementById('screen');
+    var context = screen.getContext('2d');
+
+    if (context.webkitImageSmoothingEnabled) {
+      context.webkitImageSmoothingEnabled = !pixelated;
+    } else if (context.mozImageSmoothingEnabled) {
+      context.mozImageSmoothingEnabled = !pixelated;
+    } else if (window.navigator.appName != 'Microsoft Internet Explorer') {
+      if (pixelated) {
+        screen.setAttribute('width', '240');
+        screen.setAttribute('height', '160');
+      } else {
+        screen.setAttribute('width', '480');
+        screen.setAttribute('height', '320');
+      }
+
+      if (window.navigator.appName == 'Opera') {
+        // Ugly hack! Ew!
+        if (pixelated) {
+          screen.style.marginTop = '0';
+          screen.style.marginBottom = '-325px';
+        } else {
+          delete screen.style;
+        }
+      }
+    }
+  }
+
+  function enableDebug() {
+    window.onmessage = function (message) {
+      if (message.origin != document.domain && (message.origin != 'file://' || document.domain)) {
+        console.log('Failed XSS');
+        return;
+      }
+
+      switch (message.data) {
+        case 'connect':
+          if (message.source == debug) {
+            debug.postMessage('connect', document.domain || '*');
+          }
+
+          break;
+
+        case 'connected':
+          break;
+
+        case 'disconnect':
+          if (message.source == debug) {
+            debug = null;
+          }
+
+      }
+    };
+
+    window.onunload = function () {
+      if (debug && debug.postMessage) {
+        debug.postMessage('disconnect', document.domain || '*');
+      }
+    };
+
+    if (!debug || !debug.postMessage) {
+      debug = window.open('debugger.html', 'debug');
+    } else {
+      debug.postMessage('connect', document.domain || '*');
+    }
+  }
+
+  document.addEventListener('webkitfullscreenchange', function () {
+    var canvas = document.getElementById('screen');
+
+    if (document.webkitIsFullScreen) {
+      canvas.setAttribute('height', document.body.offsetHeight);
+      canvas.setAttribute('width', document.body.offsetHeight / 2 * 3);
+      canvas.setAttribute('style', 'margin: 0');
+    } else {
+      canvas.setAttribute('height', 320);
+      canvas.setAttribute('width', 480);
+      canvas.removeAttribute('style');
+    }
+  }, false);
+  run(buffer);
+  return gba;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (drawEmulator);
+
+/***/ }),
+
+/***/ "./src/emulator/io.js":
+/*!****************************!*\
+  !*** ./src/emulator/io.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceIO = function GameBoyAdvanceIO() {
+  // Video
+  this.DISPCNT = 0x000;
+  this.GREENSWP = 0x002;
+  this.DISPSTAT = 0x004;
+  this.VCOUNT = 0x006;
+  this.BG0CNT = 0x008;
+  this.BG1CNT = 0x00A;
+  this.BG2CNT = 0x00C;
+  this.BG3CNT = 0x00E;
+  this.BG0HOFS = 0x010;
+  this.BG0VOFS = 0x012;
+  this.BG1HOFS = 0x014;
+  this.BG1VOFS = 0x016;
+  this.BG2HOFS = 0x018;
+  this.BG2VOFS = 0x01A;
+  this.BG3HOFS = 0x01C;
+  this.BG3VOFS = 0x01E;
+  this.BG2PA = 0x020;
+  this.BG2PB = 0x022;
+  this.BG2PC = 0x024;
+  this.BG2PD = 0x026;
+  this.BG2X_LO = 0x028;
+  this.BG2X_HI = 0x02A;
+  this.BG2Y_LO = 0x02C;
+  this.BG2Y_HI = 0x02E;
+  this.BG3PA = 0x030;
+  this.BG3PB = 0x032;
+  this.BG3PC = 0x034;
+  this.BG3PD = 0x036;
+  this.BG3X_LO = 0x038;
+  this.BG3X_HI = 0x03A;
+  this.BG3Y_LO = 0x03C;
+  this.BG3Y_HI = 0x03E;
+  this.WIN0H = 0x040;
+  this.WIN1H = 0x042;
+  this.WIN0V = 0x044;
+  this.WIN1V = 0x046;
+  this.WININ = 0x048;
+  this.WINOUT = 0x04A;
+  this.MOSAIC = 0x04C;
+  this.BLDCNT = 0x050;
+  this.BLDALPHA = 0x052;
+  this.BLDY = 0x054; // Sound
+
+  this.SOUND1CNT_LO = 0x060;
+  this.SOUND1CNT_HI = 0x062;
+  this.SOUND1CNT_X = 0x064;
+  this.SOUND2CNT_LO = 0x068;
+  this.SOUND2CNT_HI = 0x06C;
+  this.SOUND3CNT_LO = 0x070;
+  this.SOUND3CNT_HI = 0x072;
+  this.SOUND3CNT_X = 0x074;
+  this.SOUND4CNT_LO = 0x078;
+  this.SOUND4CNT_HI = 0x07C;
+  this.SOUNDCNT_LO = 0x080;
+  this.SOUNDCNT_HI = 0x082;
+  this.SOUNDCNT_X = 0x084;
+  this.SOUNDBIAS = 0x088;
+  this.WAVE_RAM0_LO = 0x090;
+  this.WAVE_RAM0_HI = 0x092;
+  this.WAVE_RAM1_LO = 0x094;
+  this.WAVE_RAM1_HI = 0x096;
+  this.WAVE_RAM2_LO = 0x098;
+  this.WAVE_RAM2_HI = 0x09A;
+  this.WAVE_RAM3_LO = 0x09C;
+  this.WAVE_RAM3_HI = 0x09E;
+  this.FIFO_A_LO = 0x0A0;
+  this.FIFO_A_HI = 0x0A2;
+  this.FIFO_B_LO = 0x0A4;
+  this.FIFO_B_HI = 0x0A6; // DMA
+
+  this.DMA0SAD_LO = 0x0B0;
+  this.DMA0SAD_HI = 0x0B2;
+  this.DMA0DAD_LO = 0x0B4;
+  this.DMA0DAD_HI = 0x0B6;
+  this.DMA0CNT_LO = 0x0B8;
+  this.DMA0CNT_HI = 0x0BA;
+  this.DMA1SAD_LO = 0x0BC;
+  this.DMA1SAD_HI = 0x0BE;
+  this.DMA1DAD_LO = 0x0C0;
+  this.DMA1DAD_HI = 0x0C2;
+  this.DMA1CNT_LO = 0x0C4;
+  this.DMA1CNT_HI = 0x0C6;
+  this.DMA2SAD_LO = 0x0C8;
+  this.DMA2SAD_HI = 0x0CA;
+  this.DMA2DAD_LO = 0x0CC;
+  this.DMA2DAD_HI = 0x0CE;
+  this.DMA2CNT_LO = 0x0D0;
+  this.DMA2CNT_HI = 0x0D2;
+  this.DMA3SAD_LO = 0x0D4;
+  this.DMA3SAD_HI = 0x0D6;
+  this.DMA3DAD_LO = 0x0D8;
+  this.DMA3DAD_HI = 0x0DA;
+  this.DMA3CNT_LO = 0x0DC;
+  this.DMA3CNT_HI = 0x0DE; // Timers
+
+  this.TM0CNT_LO = 0x100;
+  this.TM0CNT_HI = 0x102;
+  this.TM1CNT_LO = 0x104;
+  this.TM1CNT_HI = 0x106;
+  this.TM2CNT_LO = 0x108;
+  this.TM2CNT_HI = 0x10A;
+  this.TM3CNT_LO = 0x10C;
+  this.TM3CNT_HI = 0x10E; // SIO (note: some of these are repeated)
+
+  this.SIODATA32_LO = 0x120;
+  this.SIOMULTI0 = 0x120;
+  this.SIODATA32_HI = 0x122;
+  this.SIOMULTI1 = 0x122;
+  this.SIOMULTI2 = 0x124;
+  this.SIOMULTI3 = 0x126;
+  this.SIOCNT = 0x128;
+  this.SIOMLT_SEND = 0x12A;
+  this.SIODATA8 = 0x12A;
+  this.RCNT = 0x134;
+  this.JOYCNT = 0x140;
+  this.JOY_RECV = 0x150;
+  this.JOY_TRANS = 0x154;
+  this.JOYSTAT = 0x158; // Keypad
+
+  this.KEYINPUT = 0x130;
+  this.KEYCNT = 0x132; // Interrupts, etc
+
+  this.IE = 0x200;
+  this.IF = 0x202;
+  this.WAITCNT = 0x204;
+  this.IME = 0x208;
+  this.POSTFLG = 0x300;
+  this.HALTCNT = 0x301;
+  this.DEFAULT_DISPCNT = 0x0080;
+  this.DEFAULT_SOUNDBIAS = 0x200;
+  this.DEFAULT_BGPA = 1;
+  this.DEFAULT_BGPD = 1;
+  this.DEFAULT_RCNT = 0x8000;
+};
+
+GameBoyAdvanceIO.prototype.clear = function () {
+  this.registers = new Uint16Array(this.cpu.mmu.SIZE_IO);
+  this.registers[this.DISPCNT >> 1] = this.DEFAULT_DISPCNT;
+  this.registers[this.SOUNDBIAS >> 1] = this.DEFAULT_SOUNDBIAS;
+  this.registers[this.BG2PA >> 1] = this.DEFAULT_BGPA;
+  this.registers[this.BG2PD >> 1] = this.DEFAULT_BGPD;
+  this.registers[this.BG3PA >> 1] = this.DEFAULT_BGPA;
+  this.registers[this.BG3PD >> 1] = this.DEFAULT_BGPD;
+  this.registers[this.RCNT >> 1] = this.DEFAULT_RCNT;
+};
+
+GameBoyAdvanceIO.prototype.freeze = function () {
+  return {
+    'registers': Serializer.prefix(this.registers.buffer)
+  };
+};
+
+GameBoyAdvanceIO.prototype.defrost = function (frost) {
+  this.registers = new Uint16Array(frost.registers); // Video registers don't serialize themselves
+
+  for (var i = 0; i <= this.BLDY; i += 2) {
+    this.store16(this.registers[i >> 1]);
+  }
+};
+
+GameBoyAdvanceIO.prototype.load8 = function (offset) {
+  throw 'Unimplmeneted unaligned I/O access';
+};
+
+GameBoyAdvanceIO.prototype.load16 = function (offset) {
+  return this.loadU16(offset) << 16 >> 16;
+};
+
+GameBoyAdvanceIO.prototype.load32 = function (offset) {
+  offset &= 0xFFFFFFFC;
+
+  switch (offset) {
+    case this.DMA0CNT_LO:
+    case this.DMA1CNT_LO:
+    case this.DMA2CNT_LO:
+    case this.DMA3CNT_LO:
+      return this.loadU16(offset | 2) << 16;
+
+    case this.IME:
+      return this.loadU16(offset) & 0xFFFF;
+
+    case this.JOY_RECV:
+    case this.JOY_TRANS:
+      this.core.STUB('Unimplemented JOY register read: 0x' + offset.toString(16));
+      return 0;
+  }
+
+  return this.loadU16(offset) | this.loadU16(offset | 2) << 16;
+};
+
+GameBoyAdvanceIO.prototype.loadU8 = function (offset) {
+  var odd = offset & 0x0001;
+  var value = this.loadU16(offset & 0xFFFE);
+  return value >>> (odd << 3) & 0xFF;
+};
+
+GameBoyAdvanceIO.prototype.loadU16 = function (offset) {
+  switch (offset) {
+    case this.DISPCNT:
+    case this.BG0CNT:
+    case this.BG1CNT:
+    case this.BG2CNT:
+    case this.BG3CNT:
+    case this.WININ:
+    case this.WINOUT:
+    case this.SOUND1CNT_LO:
+    case this.SOUND3CNT_LO:
+    case this.SOUNDCNT_LO:
+    case this.SOUNDCNT_HI:
+    case this.SOUNDBIAS:
+    case this.BLDCNT:
+    case this.BLDALPHA:
+    case this.TM0CNT_HI:
+    case this.TM1CNT_HI:
+    case this.TM2CNT_HI:
+    case this.TM3CNT_HI:
+    case this.DMA0CNT_HI:
+    case this.DMA1CNT_HI:
+    case this.DMA2CNT_HI:
+    case this.DMA3CNT_HI:
+    case this.RCNT:
+    case this.WAITCNT:
+    case this.IE:
+    case this.IF:
+    case this.IME:
+    case this.POSTFLG:
+      // Handled transparently by the written registers
+      break;
+    // Video
+
+    case this.DISPSTAT:
+      return this.registers[offset >> 1] | this.video.readDisplayStat();
+
+    case this.VCOUNT:
+      return this.video.vcount;
+    // Sound
+
+    case this.SOUND1CNT_HI:
+    case this.SOUND2CNT_LO:
+      return this.registers[offset >> 1] & 0xFFC0;
+
+    case this.SOUND1CNT_X:
+    case this.SOUND2CNT_HI:
+    case this.SOUND3CNT_X:
+      return this.registers[offset >> 1] & 0x4000;
+
+    case this.SOUND3CNT_HI:
+      return this.registers[offset >> 1] & 0xE000;
+
+    case this.SOUND4CNT_LO:
+      return this.registers[offset >> 1] & 0xFF00;
+
+    case this.SOUND4CNT_HI:
+      return this.registers[offset >> 1] & 0x40FF;
+
+    case this.SOUNDCNT_X:
+      this.core.STUB('Unimplemented sound register read: SOUNDCNT_X');
+      return this.registers[offset >> 1] | 0x0000;
+    // Timers
+
+    case this.TM0CNT_LO:
+      return this.cpu.irq.timerRead(0);
+
+    case this.TM1CNT_LO:
+      return this.cpu.irq.timerRead(1);
+
+    case this.TM2CNT_LO:
+      return this.cpu.irq.timerRead(2);
+
+    case this.TM3CNT_LO:
+      return this.cpu.irq.timerRead(3);
+    // SIO
+
+    case this.SIOCNT:
+      return this.sio.readSIOCNT();
+
+    case this.KEYINPUT:
+      this.keypad.pollGamepads();
+      return this.keypad.currentDown;
+
+    case this.KEYCNT:
+      this.core.STUB('Unimplemented I/O register read: KEYCNT');
+      return 0;
+
+    case this.BG0HOFS:
+    case this.BG0VOFS:
+    case this.BG1HOFS:
+    case this.BG1VOFS:
+    case this.BG2HOFS:
+    case this.BG2VOFS:
+    case this.BG3HOFS:
+    case this.BG3VOFS:
+    case this.BG2PA:
+    case this.BG2PB:
+    case this.BG2PC:
+    case this.BG2PD:
+    case this.BG3PA:
+    case this.BG3PB:
+    case this.BG3PC:
+    case this.BG3PD:
+    case this.BG2X_LO:
+    case this.BG2X_HI:
+    case this.BG2Y_LO:
+    case this.BG2Y_HI:
+    case this.BG3X_LO:
+    case this.BG3X_HI:
+    case this.BG3Y_LO:
+    case this.BG3Y_HI:
+    case this.WIN0H:
+    case this.WIN1H:
+    case this.WIN0V:
+    case this.WIN1V:
+    case this.BLDY:
+    case this.DMA0SAD_LO:
+    case this.DMA0SAD_HI:
+    case this.DMA0DAD_LO:
+    case this.DMA0DAD_HI:
+    case this.DMA0CNT_LO:
+    case this.DMA1SAD_LO:
+    case this.DMA1SAD_HI:
+    case this.DMA1DAD_LO:
+    case this.DMA1DAD_HI:
+    case this.DMA1CNT_LO:
+    case this.DMA2SAD_LO:
+    case this.DMA2SAD_HI:
+    case this.DMA2DAD_LO:
+    case this.DMA2DAD_HI:
+    case this.DMA2CNT_LO:
+    case this.DMA3SAD_LO:
+    case this.DMA3SAD_HI:
+    case this.DMA3DAD_LO:
+    case this.DMA3DAD_HI:
+    case this.DMA3CNT_LO:
+    case this.FIFO_A_LO:
+    case this.FIFO_A_HI:
+    case this.FIFO_B_LO:
+    case this.FIFO_B_HI:
+      this.core.WARN('Read for write-only register: 0x' + offset.toString(16));
+      return this.core.mmu.badMemory.loadU16(0);
+
+    case this.MOSAIC:
+      this.core.WARN('Read for write-only register: 0x' + offset.toString(16));
+      return 0;
+
+    case this.SIOMULTI0:
+    case this.SIOMULTI1:
+    case this.SIOMULTI2:
+    case this.SIOMULTI3:
+      return this.sio.read(offset - this.SIOMULTI0 >> 1);
+
+    case this.SIODATA8:
+      this.core.STUB('Unimplemented SIO register read: 0x' + offset.toString(16));
+      return 0;
+
+    case this.JOYCNT:
+    case this.JOYSTAT:
+      this.core.STUB('Unimplemented JOY register read: 0x' + offset.toString(16));
+      return 0;
+
+    default:
+      this.core.WARN('Bad I/O register read: 0x' + offset.toString(16));
+      return this.core.mmu.badMemory.loadU16(0);
+  }
+
+  return this.registers[offset >> 1];
+};
+
+GameBoyAdvanceIO.prototype.store8 = function (offset, value) {
+  switch (offset) {
+    case this.WININ:
+      this.value & 0x3F;
+      break;
+
+    case this.WININ | 1:
+      this.value & 0x3F;
+      break;
+
+    case this.WINOUT:
+      this.value & 0x3F;
+      break;
+
+    case this.WINOUT | 1:
+      this.value & 0x3F;
+      break;
+
+    case this.SOUND1CNT_LO:
+    case this.SOUND1CNT_LO | 1:
+    case this.SOUND1CNT_HI:
+    case this.SOUND1CNT_HI | 1:
+    case this.SOUND1CNT_X:
+    case this.SOUND1CNT_X | 1:
+    case this.SOUND2CNT_LO:
+    case this.SOUND2CNT_LO | 1:
+    case this.SOUND2CNT_HI:
+    case this.SOUND2CNT_HI | 1:
+    case this.SOUND3CNT_LO:
+    case this.SOUND3CNT_LO | 1:
+    case this.SOUND3CNT_HI:
+    case this.SOUND3CNT_HI | 1:
+    case this.SOUND3CNT_X:
+    case this.SOUND3CNT_X | 1:
+    case this.SOUND4CNT_LO:
+    case this.SOUND4CNT_LO | 1:
+    case this.SOUND4CNT_HI:
+    case this.SOUND4CNT_HI | 1:
+    case this.SOUNDCNT_LO:
+    case this.SOUNDCNT_LO | 1:
+    case this.SOUNDCNT_X:
+    case this.IF:
+    case this.IME:
+      break;
+
+    case this.SOUNDBIAS | 1:
+      this.STUB_REG('sound', offset);
+      break;
+
+    case this.HALTCNT:
+      value &= 0x80;
+
+      if (!value) {
+        this.core.irq.halt();
+      } else {
+        this.core.STUB('Stop');
+      }
+
+      return;
+
+    default:
+      this.STUB_REG('8-bit I/O', offset);
+      break;
+  }
+
+  if (offset & 1) {
+    value <<= 8;
+    value |= this.registers[offset >> 1] & 0x00FF;
+  } else {
+    value &= 0x00FF;
+    value |= this.registers[offset >> 1] & 0xFF00;
+  }
+
+  this.store16(offset & 0xFFFFFFE, value);
+};
+
+GameBoyAdvanceIO.prototype.store16 = function (offset, value) {
+  switch (offset) {
+    // Video
+    case this.DISPCNT:
+      this.video.renderPath.writeDisplayControl(value);
+      break;
+
+    case this.DISPSTAT:
+      value &= this.video.DISPSTAT_MASK;
+      this.video.writeDisplayStat(value);
+      break;
+
+    case this.BG0CNT:
+      this.video.renderPath.writeBackgroundControl(0, value);
+      break;
+
+    case this.BG1CNT:
+      this.video.renderPath.writeBackgroundControl(1, value);
+      break;
+
+    case this.BG2CNT:
+      this.video.renderPath.writeBackgroundControl(2, value);
+      break;
+
+    case this.BG3CNT:
+      this.video.renderPath.writeBackgroundControl(3, value);
+      break;
+
+    case this.BG0HOFS:
+      this.video.renderPath.writeBackgroundHOffset(0, value);
+      break;
+
+    case this.BG0VOFS:
+      this.video.renderPath.writeBackgroundVOffset(0, value);
+      break;
+
+    case this.BG1HOFS:
+      this.video.renderPath.writeBackgroundHOffset(1, value);
+      break;
+
+    case this.BG1VOFS:
+      this.video.renderPath.writeBackgroundVOffset(1, value);
+      break;
+
+    case this.BG2HOFS:
+      this.video.renderPath.writeBackgroundHOffset(2, value);
+      break;
+
+    case this.BG2VOFS:
+      this.video.renderPath.writeBackgroundVOffset(2, value);
+      break;
+
+    case this.BG3HOFS:
+      this.video.renderPath.writeBackgroundHOffset(3, value);
+      break;
+
+    case this.BG3VOFS:
+      this.video.renderPath.writeBackgroundVOffset(3, value);
+      break;
+
+    case this.BG2X_LO:
+      this.video.renderPath.writeBackgroundRefX(2, this.registers[offset >> 1 | 1] << 16 | value);
+      break;
+
+    case this.BG2X_HI:
+      this.video.renderPath.writeBackgroundRefX(2, this.registers[offset >> 1 ^ 1] | value << 16);
+      break;
+
+    case this.BG2Y_LO:
+      this.video.renderPath.writeBackgroundRefY(2, this.registers[offset >> 1 | 1] << 16 | value);
+      break;
+
+    case this.BG2Y_HI:
+      this.video.renderPath.writeBackgroundRefY(2, this.registers[offset >> 1 ^ 1] | value << 16);
+      break;
+
+    case this.BG2PA:
+      this.video.renderPath.writeBackgroundParamA(2, value);
+      break;
+
+    case this.BG2PB:
+      this.video.renderPath.writeBackgroundParamB(2, value);
+      break;
+
+    case this.BG2PC:
+      this.video.renderPath.writeBackgroundParamC(2, value);
+      break;
+
+    case this.BG2PD:
+      this.video.renderPath.writeBackgroundParamD(2, value);
+      break;
+
+    case this.BG3X_LO:
+      this.video.renderPath.writeBackgroundRefX(3, this.registers[offset >> 1 | 1] << 16 | value);
+      break;
+
+    case this.BG3X_HI:
+      this.video.renderPath.writeBackgroundRefX(3, this.registers[offset >> 1 ^ 1] | value << 16);
+      break;
+
+    case this.BG3Y_LO:
+      this.video.renderPath.writeBackgroundRefY(3, this.registers[offset >> 1 | 1] << 16 | value);
+      break;
+
+    case this.BG3Y_HI:
+      this.video.renderPath.writeBackgroundRefY(3, this.registers[offset >> 1 ^ 1] | value << 16);
+      break;
+
+    case this.BG3PA:
+      this.video.renderPath.writeBackgroundParamA(3, value);
+      break;
+
+    case this.BG3PB:
+      this.video.renderPath.writeBackgroundParamB(3, value);
+      break;
+
+    case this.BG3PC:
+      this.video.renderPath.writeBackgroundParamC(3, value);
+      break;
+
+    case this.BG3PD:
+      this.video.renderPath.writeBackgroundParamD(3, value);
+      break;
+
+    case this.WIN0H:
+      this.video.renderPath.writeWin0H(value);
+      break;
+
+    case this.WIN1H:
+      this.video.renderPath.writeWin1H(value);
+      break;
+
+    case this.WIN0V:
+      this.video.renderPath.writeWin0V(value);
+      break;
+
+    case this.WIN1V:
+      this.video.renderPath.writeWin1V(value);
+      break;
+
+    case this.WININ:
+      value &= 0x3F3F;
+      this.video.renderPath.writeWinIn(value);
+      break;
+
+    case this.WINOUT:
+      value &= 0x3F3F;
+      this.video.renderPath.writeWinOut(value);
+      break;
+
+    case this.BLDCNT:
+      value &= 0x7FFF;
+      this.video.renderPath.writeBlendControl(value);
+      break;
+
+    case this.BLDALPHA:
+      value &= 0x1F1F;
+      this.video.renderPath.writeBlendAlpha(value);
+      break;
+
+    case this.BLDY:
+      value &= 0x001F;
+      this.video.renderPath.writeBlendY(value);
+      break;
+
+    case this.MOSAIC:
+      this.video.renderPath.writeMosaic(value);
+      break;
+    // Sound
+
+    case this.SOUND1CNT_LO:
+      value &= 0x007F;
+      this.audio.writeSquareChannelSweep(0, value);
+      break;
+
+    case this.SOUND1CNT_HI:
+      this.audio.writeSquareChannelDLE(0, value);
+      break;
+
+    case this.SOUND1CNT_X:
+      value &= 0xC7FF;
+      this.audio.writeSquareChannelFC(0, value);
+      value &= ~0x8000;
+      break;
+
+    case this.SOUND2CNT_LO:
+      this.audio.writeSquareChannelDLE(1, value);
+      break;
+
+    case this.SOUND2CNT_HI:
+      value &= 0xC7FF;
+      this.audio.writeSquareChannelFC(1, value);
+      value &= ~0x8000;
+      break;
+
+    case this.SOUND3CNT_LO:
+      value &= 0x00E0;
+      this.audio.writeChannel3Lo(value);
+      break;
+
+    case this.SOUND3CNT_HI:
+      value &= 0xE0FF;
+      this.audio.writeChannel3Hi(value);
+      break;
+
+    case this.SOUND3CNT_X:
+      value &= 0xC7FF;
+      this.audio.writeChannel3X(value);
+      value &= ~0x8000;
+      break;
+
+    case this.SOUND4CNT_LO:
+      value &= 0xFF3F;
+      this.audio.writeChannel4LE(value);
+      break;
+
+    case this.SOUND4CNT_HI:
+      value &= 0xC0FF;
+      this.audio.writeChannel4FC(value);
+      value &= ~0x8000;
+      break;
+
+    case this.SOUNDCNT_LO:
+      value &= 0xFF77;
+      this.audio.writeSoundControlLo(value);
+      break;
+
+    case this.SOUNDCNT_HI:
+      value &= 0xFF0F;
+      this.audio.writeSoundControlHi(value);
+      break;
+
+    case this.SOUNDCNT_X:
+      value &= 0x0080;
+      this.audio.writeEnable(value);
+      break;
+
+    case this.WAVE_RAM0_LO:
+    case this.WAVE_RAM0_HI:
+    case this.WAVE_RAM1_LO:
+    case this.WAVE_RAM1_HI:
+    case this.WAVE_RAM2_LO:
+    case this.WAVE_RAM2_HI:
+    case this.WAVE_RAM3_LO:
+    case this.WAVE_RAM3_HI:
+      this.audio.writeWaveData(offset - this.WAVE_RAM0_LO, value, 2);
+      break;
+    // DMA
+
+    case this.DMA0SAD_LO:
+    case this.DMA0DAD_LO:
+    case this.DMA1SAD_LO:
+    case this.DMA1DAD_LO:
+    case this.DMA2SAD_LO:
+    case this.DMA2DAD_LO:
+    case this.DMA3SAD_LO:
+    case this.DMA3DAD_LO:
+      this.store32(offset, this.registers[(offset >> 1) + 1] << 16 | value);
+      return;
+
+    case this.DMA0SAD_HI:
+    case this.DMA0DAD_HI:
+    case this.DMA1SAD_HI:
+    case this.DMA1DAD_HI:
+    case this.DMA2SAD_HI:
+    case this.DMA2DAD_HI:
+    case this.DMA3SAD_HI:
+    case this.DMA3DAD_HI:
+      this.store32(offset - 2, this.registers[(offset >> 1) - 1] | value << 16);
+      return;
+
+    case this.DMA0CNT_LO:
+      this.cpu.irq.dmaSetWordCount(0, value);
+      break;
+
+    case this.DMA0CNT_HI:
+      // The DMA registers need to set the values before writing the control, as writing the
+      // control can synchronously trigger a DMA transfer
+      this.registers[offset >> 1] = value & 0xFFE0;
+      this.cpu.irq.dmaWriteControl(0, value);
+      return;
+
+    case this.DMA1CNT_LO:
+      this.cpu.irq.dmaSetWordCount(1, value);
+      break;
+
+    case this.DMA1CNT_HI:
+      this.registers[offset >> 1] = value & 0xFFE0;
+      this.cpu.irq.dmaWriteControl(1, value);
+      return;
+
+    case this.DMA2CNT_LO:
+      this.cpu.irq.dmaSetWordCount(2, value);
+      break;
+
+    case this.DMA2CNT_HI:
+      this.registers[offset >> 1] = value & 0xFFE0;
+      this.cpu.irq.dmaWriteControl(2, value);
+      return;
+
+    case this.DMA3CNT_LO:
+      this.cpu.irq.dmaSetWordCount(3, value);
+      break;
+
+    case this.DMA3CNT_HI:
+      this.registers[offset >> 1] = value & 0xFFE0;
+      this.cpu.irq.dmaWriteControl(3, value);
+      return;
+    // Timers
+
+    case this.TM0CNT_LO:
+      this.cpu.irq.timerSetReload(0, value);
+      return;
+
+    case this.TM1CNT_LO:
+      this.cpu.irq.timerSetReload(1, value);
+      return;
+
+    case this.TM2CNT_LO:
+      this.cpu.irq.timerSetReload(2, value);
+      return;
+
+    case this.TM3CNT_LO:
+      this.cpu.irq.timerSetReload(3, value);
+      return;
+
+    case this.TM0CNT_HI:
+      value &= 0x00C7;
+      this.cpu.irq.timerWriteControl(0, value);
+      break;
+
+    case this.TM1CNT_HI:
+      value &= 0x00C7;
+      this.cpu.irq.timerWriteControl(1, value);
+      break;
+
+    case this.TM2CNT_HI:
+      value &= 0x00C7;
+      this.cpu.irq.timerWriteControl(2, value);
+      break;
+
+    case this.TM3CNT_HI:
+      value &= 0x00C7;
+      this.cpu.irq.timerWriteControl(3, value);
+      break;
+    // SIO
+
+    case this.SIOMULTI0:
+    case this.SIOMULTI1:
+    case this.SIOMULTI2:
+    case this.SIOMULTI3:
+    case this.SIODATA8:
+      this.STUB_REG('SIO', offset);
+      break;
+
+    case this.RCNT:
+      this.sio.setMode(value >> 12 & 0xC | this.registers[this.SIOCNT >> 1] >> 12 & 0x3);
+      this.sio.writeRCNT(value);
+      break;
+
+    case this.SIOCNT:
+      this.sio.setMode(value >> 12 & 0x3 | this.registers[this.RCNT >> 1] >> 12 & 0xC);
+      this.sio.writeSIOCNT(value);
+      return;
+
+    case this.JOYCNT:
+    case this.JOYSTAT:
+      this.STUB_REG('JOY', offset);
+      break;
+    // Misc
+
+    case this.IE:
+      value &= 0x3FFF;
+      this.cpu.irq.setInterruptsEnabled(value);
+      break;
+
+    case this.IF:
+      this.cpu.irq.dismissIRQs(value);
+      return;
+
+    case this.WAITCNT:
+      value &= 0xDFFF;
+      this.cpu.mmu.adjustTimings(value);
+      break;
+
+    case this.IME:
+      value &= 0x0001;
+      this.cpu.irq.masterEnable(value);
+      break;
+
+    default:
+      this.STUB_REG('I/O', offset);
+  }
+
+  this.registers[offset >> 1] = value;
+};
+
+GameBoyAdvanceIO.prototype.store32 = function (offset, value) {
+  switch (offset) {
+    case this.BG2X_LO:
+      value &= 0x0FFFFFFF;
+      this.video.renderPath.writeBackgroundRefX(2, value);
+      break;
+
+    case this.BG2Y_LO:
+      value &= 0x0FFFFFFF;
+      this.video.renderPath.writeBackgroundRefY(2, value);
+      break;
+
+    case this.BG3X_LO:
+      value &= 0x0FFFFFFF;
+      this.video.renderPath.writeBackgroundRefX(3, value);
+      break;
+
+    case this.BG3Y_LO:
+      value &= 0x0FFFFFFF;
+      this.video.renderPath.writeBackgroundRefY(3, value);
+      break;
+
+    case this.DMA0SAD_LO:
+      this.cpu.irq.dmaSetSourceAddress(0, value);
+      break;
+
+    case this.DMA0DAD_LO:
+      this.cpu.irq.dmaSetDestAddress(0, value);
+      break;
+
+    case this.DMA1SAD_LO:
+      this.cpu.irq.dmaSetSourceAddress(1, value);
+      break;
+
+    case this.DMA1DAD_LO:
+      this.cpu.irq.dmaSetDestAddress(1, value);
+      break;
+
+    case this.DMA2SAD_LO:
+      this.cpu.irq.dmaSetSourceAddress(2, value);
+      break;
+
+    case this.DMA2DAD_LO:
+      this.cpu.irq.dmaSetDestAddress(2, value);
+      break;
+
+    case this.DMA3SAD_LO:
+      this.cpu.irq.dmaSetSourceAddress(3, value);
+      break;
+
+    case this.DMA3DAD_LO:
+      this.cpu.irq.dmaSetDestAddress(3, value);
+      break;
+
+    case this.FIFO_A_LO:
+      this.audio.appendToFifoA(value);
+      return;
+
+    case this.FIFO_B_LO:
+      this.audio.appendToFifoB(value);
+      return;
+    // High bits of this write should be ignored
+
+    case this.IME:
+      this.store16(offset, value & 0xFFFF);
+      return;
+
+    case this.JOY_RECV:
+    case this.JOY_TRANS:
+      this.STUB_REG('JOY', offset);
+      return;
+
+    default:
+      this.store16(offset, value & 0xFFFF);
+      this.store16(offset | 2, value >>> 16);
+      return;
+  }
+
+  this.registers[offset >> 1] = value & 0xFFFF;
+  this.registers[(offset >> 1) + 1] = value >>> 16;
+};
+
+GameBoyAdvanceIO.prototype.invalidatePage = function (address) {};
+
+GameBoyAdvanceIO.prototype.STUB_REG = function (type, offset) {
+  this.core.STUB('Unimplemented ' + type + ' register write: ' + offset.toString(16));
+};
+
+/***/ }),
+
+/***/ "./src/emulator/irq.js":
+/*!*****************************!*\
+  !*** ./src/emulator/irq.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceInterruptHandler = function GameBoyAdvanceInterruptHandler() {
+  this.FREQUENCY = 0x1000000;
+  this.cpu = null;
+  this.enable = false;
+  this.IRQ_VBLANK = 0x0;
+  this.IRQ_HBLANK = 0x1;
+  this.IRQ_VCOUNTER = 0x2;
+  this.IRQ_TIMER0 = 0x3;
+  this.IRQ_TIMER1 = 0x4;
+  this.IRQ_TIMER2 = 0x5;
+  this.IRQ_TIMER3 = 0x6;
+  this.IRQ_SIO = 0x7;
+  this.IRQ_DMA0 = 0x8;
+  this.IRQ_DMA1 = 0x9;
+  this.IRQ_DMA2 = 0xA;
+  this.IRQ_DMA3 = 0xB;
+  this.IRQ_KEYPAD = 0xC;
+  this.IRQ_GAMEPAK = 0xD;
+  this.MASK_VBLANK = 0x0001;
+  this.MASK_HBLANK = 0x0002;
+  this.MASK_VCOUNTER = 0x0004;
+  this.MASK_TIMER0 = 0x0008;
+  this.MASK_TIMER1 = 0x0010;
+  this.MASK_TIMER2 = 0x0020;
+  this.MASK_TIMER3 = 0x0040;
+  this.MASK_SIO = 0x0080;
+  this.MASK_DMA0 = 0x0100;
+  this.MASK_DMA1 = 0x0200;
+  this.MASK_DMA2 = 0x0400;
+  this.MASK_DMA3 = 0x0800;
+  this.MASK_KEYPAD = 0x1000;
+  this.MASK_GAMEPAK = 0x2000;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.clear = function () {
+  this.enable = false;
+  this.enabledIRQs = 0;
+  this.interruptFlags = 0;
+  this.dma = new Array();
+
+  for (var i = 0; i < 4; ++i) {
+    this.dma.push({
+      source: 0,
+      dest: 0,
+      count: 0,
+      nextSource: 0,
+      nextDest: 0,
+      nextCount: 0,
+      srcControl: 0,
+      dstControl: 0,
+      repeat: false,
+      width: 0,
+      drq: false,
+      timing: 0,
+      doIrq: false,
+      enable: false,
+      nextIRQ: 0
+    });
+  }
+
+  this.timersEnabled = 0;
+  this.timers = new Array();
+
+  for (var i = 0; i < 4; ++i) {
+    this.timers.push({
+      reload: 0,
+      oldReload: 0,
+      prescaleBits: 0,
+      countUp: false,
+      doIrq: false,
+      enable: false,
+      lastEvent: 0,
+      nextEvent: 0,
+      overflowInterval: 1
+    });
+  }
+
+  this.nextEvent = 0;
+  this.springIRQ = false;
+  this.resetSP();
+};
+
+GameBoyAdvanceInterruptHandler.prototype.freeze = function () {
+  return {
+    'enable': this.enable,
+    'enabledIRQs': this.enabledIRQs,
+    'interruptFlags': this.interruptFlags,
+    'dma': this.dma,
+    'timers': this.timers,
+    'nextEvent': this.nextEvent,
+    'springIRQ': this.springIRQ
+  };
+};
+
+GameBoyAdvanceInterruptHandler.prototype.defrost = function (frost) {
+  this.enable = frost.enable;
+  this.enabledIRQs = frost.enabledIRQs;
+  this.interruptFlags = frost.interruptFlags;
+  this.dma = frost.dma;
+  this.timers = frost.timers;
+  this.timersEnabled = 0;
+
+  if (this.timers[0].enable) {
+    ++this.timersEnabled;
+  }
+
+  if (this.timers[1].enable) {
+    ++this.timersEnabled;
+  }
+
+  if (this.timers[2].enable) {
+    ++this.timersEnabled;
+  }
+
+  if (this.timers[3].enable) {
+    ++this.timersEnabled;
+  }
+
+  this.nextEvent = frost.nextEvent;
+  this.springIRQ = frost.springIRQ;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.updateTimers = function () {
+  if (this.nextEvent > this.cpu.cycles) {
+    return;
+  }
+
+  if (this.springIRQ) {
+    this.cpu.raiseIRQ();
+    this.springIRQ = false;
+  }
+
+  this.video.updateTimers(this.cpu);
+  this.audio.updateTimers();
+
+  if (this.timersEnabled) {
+    var timer = this.timers[0];
+
+    if (timer.enable) {
+      if (this.cpu.cycles >= timer.nextEvent) {
+        timer.lastEvent = timer.nextEvent;
+        timer.nextEvent += timer.overflowInterval;
+        this.io.registers[this.io.TM0CNT_LO >> 1] = timer.reload;
+        timer.oldReload = timer.reload;
+
+        if (timer.doIrq) {
+          this.raiseIRQ(this.IRQ_TIMER0);
+        }
+
+        if (this.audio.enabled) {
+          if (this.audio.enableChannelA && !this.audio.soundTimerA && this.audio.dmaA >= 0) {
+            this.audio.sampleFifoA();
+          }
+
+          if (this.audio.enableChannelB && !this.audio.soundTimerB && this.audio.dmaB >= 0) {
+            this.audio.sampleFifoB();
+          }
+        }
+
+        timer = this.timers[1];
+
+        if (timer.countUp) {
+          if (++this.io.registers[this.io.TM1CNT_LO >> 1] == 0x10000) {
+            timer.nextEvent = this.cpu.cycles;
+          }
+        }
+      }
+    }
+
+    timer = this.timers[1];
+
+    if (timer.enable) {
+      if (this.cpu.cycles >= timer.nextEvent) {
+        timer.lastEvent = timer.nextEvent;
+        timer.nextEvent += timer.overflowInterval;
+
+        if (!timer.countUp || this.io.registers[this.io.TM1CNT_LO >> 1] == 0x10000) {
+          this.io.registers[this.io.TM1CNT_LO >> 1] = timer.reload;
+        }
+
+        timer.oldReload = timer.reload;
+
+        if (timer.doIrq) {
+          this.raiseIRQ(this.IRQ_TIMER1);
+        }
+
+        if (timer.countUp) {
+          timer.nextEvent = 0;
+        }
+
+        if (this.audio.enabled) {
+          if (this.audio.enableChannelA && this.audio.soundTimerA && this.audio.dmaA >= 0) {
+            this.audio.sampleFifoA();
+          }
+
+          if (this.audio.enableChannelB && this.audio.soundTimerB && this.audio.dmaB >= 0) {
+            this.audio.sampleFifoB();
+          }
+        }
+
+        timer = this.timers[2];
+
+        if (timer.countUp) {
+          if (++this.io.registers[this.io.TM2CNT_LO >> 1] == 0x10000) {
+            timer.nextEvent = this.cpu.cycles;
+          }
+        }
+      }
+    }
+
+    timer = this.timers[2];
+
+    if (timer.enable) {
+      if (this.cpu.cycles >= timer.nextEvent) {
+        timer.lastEvent = timer.nextEvent;
+        timer.nextEvent += timer.overflowInterval;
+
+        if (!timer.countUp || this.io.registers[this.io.TM2CNT_LO >> 1] == 0x10000) {
+          this.io.registers[this.io.TM2CNT_LO >> 1] = timer.reload;
+        }
+
+        timer.oldReload = timer.reload;
+
+        if (timer.doIrq) {
+          this.raiseIRQ(this.IRQ_TIMER2);
+        }
+
+        if (timer.countUp) {
+          timer.nextEvent = 0;
+        }
+
+        timer = this.timers[3];
+
+        if (timer.countUp) {
+          if (++this.io.registers[this.io.TM3CNT_LO >> 1] == 0x10000) {
+            timer.nextEvent = this.cpu.cycles;
+          }
+        }
+      }
+    }
+
+    timer = this.timers[3];
+
+    if (timer.enable) {
+      if (this.cpu.cycles >= timer.nextEvent) {
+        timer.lastEvent = timer.nextEvent;
+        timer.nextEvent += timer.overflowInterval;
+
+        if (!timer.countUp || this.io.registers[this.io.TM3CNT_LO >> 1] == 0x10000) {
+          this.io.registers[this.io.TM3CNT_LO >> 1] = timer.reload;
+        }
+
+        timer.oldReload = timer.reload;
+
+        if (timer.doIrq) {
+          this.raiseIRQ(this.IRQ_TIMER3);
+        }
+
+        if (timer.countUp) {
+          timer.nextEvent = 0;
+        }
+      }
+    }
+  }
+
+  var dma = this.dma[0];
+
+  if (dma.enable && dma.doIrq && dma.nextIRQ && this.cpu.cycles >= dma.nextIRQ) {
+    dma.nextIRQ = 0;
+    this.raiseIRQ(this.IRQ_DMA0);
+  }
+
+  dma = this.dma[1];
+
+  if (dma.enable && dma.doIrq && dma.nextIRQ && this.cpu.cycles >= dma.nextIRQ) {
+    dma.nextIRQ = 0;
+    this.raiseIRQ(this.IRQ_DMA1);
+  }
+
+  dma = this.dma[2];
+
+  if (dma.enable && dma.doIrq && dma.nextIRQ && this.cpu.cycles >= dma.nextIRQ) {
+    dma.nextIRQ = 0;
+    this.raiseIRQ(this.IRQ_DMA2);
+  }
+
+  dma = this.dma[3];
+
+  if (dma.enable && dma.doIrq && dma.nextIRQ && this.cpu.cycles >= dma.nextIRQ) {
+    dma.nextIRQ = 0;
+    this.raiseIRQ(this.IRQ_DMA3);
+  }
+
+  this.pollNextEvent();
+};
+
+GameBoyAdvanceInterruptHandler.prototype.resetSP = function () {
+  this.cpu.switchMode(this.cpu.MODE_SUPERVISOR);
+  this.cpu.gprs[this.cpu.SP] = 0x3007FE0;
+  this.cpu.switchMode(this.cpu.MODE_IRQ);
+  this.cpu.gprs[this.cpu.SP] = 0x3007FA0;
+  this.cpu.switchMode(this.cpu.MODE_SYSTEM);
+  this.cpu.gprs[this.cpu.SP] = 0x3007F00;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.swi32 = function (opcode) {
+  this.swi(opcode >> 16);
+};
+
+GameBoyAdvanceInterruptHandler.prototype.swi = function (opcode) {
+  if (this.core.mmu.bios.real) {
+    this.cpu.raiseTrap();
+    return;
+  }
+
+  switch (opcode) {
+    case 0x00:
+      // SoftReset
+      var mem = this.core.mmu.memory[this.core.mmu.REGION_WORKING_IRAM];
+      var flag = mem.loadU8(0x7FFA);
+
+      for (var i = 0x7E00; i < 0x8000; i += 4) {
+        mem.store32(i, 0);
+      }
+
+      this.resetSP();
+
+      if (!flag) {
+        this.cpu.gprs[this.cpu.LR] = 0x08000000;
+      } else {
+        this.cpu.gprs[this.cpu.LR] = 0x02000000;
+      }
+
+      this.cpu.switchExecMode(this.cpu.MODE_ARM);
+      this.cpu.instruction.writesPC = true;
+      this.cpu.gprs[this.cpu.PC] = this.cpu.gprs[this.cpu.LR];
+      break;
+
+    case 0x01:
+      // RegisterRamReset
+      var regions = this.cpu.gprs[0];
+
+      if (regions & 0x01) {
+        this.core.mmu.memory[this.core.mmu.REGION_WORKING_RAM] = new MemoryBlock(this.core.mmu.SIZE_WORKING_RAM, 9);
+      }
+
+      if (regions & 0x02) {
+        for (var i = 0; i < this.core.mmu.SIZE_WORKING_IRAM - 0x200; i += 4) {
+          this.core.mmu.memory[this.core.mmu.REGION_WORKING_IRAM].store32(i, 0);
+        }
+      }
+
+      if (regions & 0x1C) {
+        this.video.renderPath.clearSubsets(this.core.mmu, regions);
+      }
+
+      if (regions & 0xE0) {
+        this.core.STUB('Unimplemented RegisterRamReset');
+      }
+
+      break;
+
+    case 0x02:
+      // Halt
+      this.halt();
+      break;
+
+    case 0x05:
+      // VBlankIntrWait
+      this.cpu.gprs[0] = 1;
+      this.cpu.gprs[1] = 1;
+    // Fall through:
+
+    case 0x04:
+      // IntrWait
+      if (!this.enable) {
+        this.io.store16(this.io.IME, 1);
+      }
+
+      if (!this.cpu.gprs[0] && this.interruptFlags & this.cpu.gprs[1]) {
+        return;
+      }
+
+      this.dismissIRQs(0xFFFFFFFF);
+      this.cpu.raiseTrap();
+      break;
+
+    case 0x06:
+      // Div
+      var result = (this.cpu.gprs[0] | 0) / (this.cpu.gprs[1] | 0);
+      var mod = (this.cpu.gprs[0] | 0) % (this.cpu.gprs[1] | 0);
+      this.cpu.gprs[0] = result | 0;
+      this.cpu.gprs[1] = mod | 0;
+      this.cpu.gprs[3] = Math.abs(result | 0);
+      break;
+
+    case 0x07:
+      // DivArm
+      var result = (this.cpu.gprs[1] | 0) / (this.cpu.gprs[0] | 0);
+      var mod = (this.cpu.gprs[1] | 0) % (this.cpu.gprs[0] | 0);
+      this.cpu.gprs[0] = result | 0;
+      this.cpu.gprs[1] = mod | 0;
+      this.cpu.gprs[3] = Math.abs(result | 0);
+      break;
+
+    case 0x08:
+      // Sqrt
+      var root = Math.sqrt(this.cpu.gprs[0]);
+      this.cpu.gprs[0] = root | 0; // Coerce down to int
+
+      break;
+
+    case 0x0A:
+      // ArcTan2
+      var x = this.cpu.gprs[0] / 16384;
+      var y = this.cpu.gprs[1] / 16384;
+      this.cpu.gprs[0] = Math.atan2(y, x) / (2 * Math.PI) * 0x10000;
+      break;
+
+    case 0x0B:
+      // CpuSet
+      var source = this.cpu.gprs[0];
+      var dest = this.cpu.gprs[1];
+      var mode = this.cpu.gprs[2];
+      var count = mode & 0x000FFFFF;
+      var fill = mode & 0x01000000;
+      var wordsize = mode & 0x04000000 ? 4 : 2;
+
+      if (fill) {
+        if (wordsize == 4) {
+          source &= 0xFFFFFFFC;
+          dest &= 0xFFFFFFFC;
+          var word = this.cpu.mmu.load32(source);
+
+          for (var i = 0; i < count; ++i) {
+            this.cpu.mmu.store32(dest + (i << 2), word);
+          }
+        } else {
+          source &= 0xFFFFFFFE;
+          dest &= 0xFFFFFFFE;
+          var word = this.cpu.mmu.load16(source);
+
+          for (var i = 0; i < count; ++i) {
+            this.cpu.mmu.store16(dest + (i << 1), word);
+          }
+        }
+      } else {
+        if (wordsize == 4) {
+          source &= 0xFFFFFFFC;
+          dest &= 0xFFFFFFFC;
+
+          for (var i = 0; i < count; ++i) {
+            var word = this.cpu.mmu.load32(source + (i << 2));
+            this.cpu.mmu.store32(dest + (i << 2), word);
+          }
+        } else {
+          source &= 0xFFFFFFFE;
+          dest &= 0xFFFFFFFE;
+
+          for (var i = 0; i < count; ++i) {
+            var word = this.cpu.mmu.load16(source + (i << 1));
+            this.cpu.mmu.store16(dest + (i << 1), word);
+          }
+        }
+      }
+
+      return;
+
+    case 0x0C:
+      // FastCpuSet
+      var source = this.cpu.gprs[0] & 0xFFFFFFFC;
+      var dest = this.cpu.gprs[1] & 0xFFFFFFFC;
+      var mode = this.cpu.gprs[2];
+      var count = mode & 0x000FFFFF;
+      count = count + 7 >> 3 << 3;
+      var fill = mode & 0x01000000;
+
+      if (fill) {
+        var word = this.cpu.mmu.load32(source);
+
+        for (var i = 0; i < count; ++i) {
+          this.cpu.mmu.store32(dest + (i << 2), word);
+        }
+      } else {
+        for (var i = 0; i < count; ++i) {
+          var word = this.cpu.mmu.load32(source + (i << 2));
+          this.cpu.mmu.store32(dest + (i << 2), word);
+        }
+      }
+
+      return;
+
+    case 0x0E:
+      // BgAffineSet
+      var i = this.cpu.gprs[2];
+      var ox, oy;
+      var cx, cy;
+      var sx, sy;
+      var theta;
+      var offset = this.cpu.gprs[0];
+      var destination = this.cpu.gprs[1];
+      var a, b, c, d;
+      var rx, ry;
+
+      while (i--) {
+        // [ sx   0  0 ]   [ cos(theta)  -sin(theta)  0 ]   [ 1  0  cx - ox ]   [ A B rx ]
+        // [  0  sy  0 ] * [ sin(theta)   cos(theta)  0 ] * [ 0  1  cy - oy ] = [ C D ry ]
+        // [  0   0  1 ]   [     0            0       1 ]   [ 0  0     1    ]   [ 0 0  1 ]
+        ox = this.core.mmu.load32(offset) / 256;
+        oy = this.core.mmu.load32(offset + 4) / 256;
+        cx = this.core.mmu.load16(offset + 8);
+        cy = this.core.mmu.load16(offset + 10);
+        sx = this.core.mmu.load16(offset + 12) / 256;
+        sy = this.core.mmu.load16(offset + 14) / 256;
+        theta = (this.core.mmu.loadU16(offset + 16) >> 8) / 128 * Math.PI;
+        offset += 20; // Rotation
+
+        a = d = Math.cos(theta);
+        b = c = Math.sin(theta); // Scale
+
+        a *= sx;
+        b *= -sx;
+        c *= sy;
+        d *= sy; // Translate
+
+        rx = ox - (a * cx + b * cy);
+        ry = oy - (c * cx + d * cy);
+        this.core.mmu.store16(destination, a * 256 | 0);
+        this.core.mmu.store16(destination + 2, b * 256 | 0);
+        this.core.mmu.store16(destination + 4, c * 256 | 0);
+        this.core.mmu.store16(destination + 6, d * 256 | 0);
+        this.core.mmu.store32(destination + 8, rx * 256 | 0);
+        this.core.mmu.store32(destination + 12, ry * 256 | 0);
+        destination += 16;
+      }
+
+      break;
+
+    case 0x0F:
+      // ObjAffineSet
+      var i = this.cpu.gprs[2];
+      var sx, sy;
+      var theta;
+      var offset = this.cpu.gprs[0];
+      var destination = this.cpu.gprs[1];
+      var diff = this.cpu.gprs[3];
+      var a, b, c, d;
+
+      while (i--) {
+        // [ sx   0 ]   [ cos(theta)  -sin(theta) ]   [ A B ]
+        // [  0  sy ] * [ sin(theta)   cos(theta) ] = [ C D ]
+        sx = this.core.mmu.load16(offset) / 256;
+        sy = this.core.mmu.load16(offset + 2) / 256;
+        theta = (this.core.mmu.loadU16(offset + 4) >> 8) / 128 * Math.PI;
+        offset += 6; // Rotation
+
+        a = d = Math.cos(theta);
+        b = c = Math.sin(theta); // Scale
+
+        a *= sx;
+        b *= -sx;
+        c *= sy;
+        d *= sy;
+        this.core.mmu.store16(destination, a * 256 | 0);
+        this.core.mmu.store16(destination + diff, b * 256 | 0);
+        this.core.mmu.store16(destination + diff * 2, c * 256 | 0);
+        this.core.mmu.store16(destination + diff * 3, d * 256 | 0);
+        destination += diff * 4;
+      }
+
+      break;
+
+    case 0x11:
+      // LZ77UnCompWram
+      this.lz77(this.cpu.gprs[0], this.cpu.gprs[1], 1);
+      break;
+
+    case 0x12:
+      // LZ77UnCompVram
+      this.lz77(this.cpu.gprs[0], this.cpu.gprs[1], 2);
+      break;
+
+    case 0x13:
+      // HuffUnComp
+      this.huffman(this.cpu.gprs[0], this.cpu.gprs[1]);
+      break;
+
+    case 0x14:
+      // RlUnCompWram
+      this.rl(this.cpu.gprs[0], this.cpu.gprs[1], 1);
+      break;
+
+    case 0x15:
+      // RlUnCompVram
+      this.rl(this.cpu.gprs[0], this.cpu.gprs[1], 2);
+      break;
+
+    case 0x1F:
+      // MidiKey2Freq
+      var key = this.cpu.mmu.load32(this.cpu.gprs[0] + 4);
+      this.cpu.gprs[0] = key / Math.pow(2, (180 - this.cpu.gprs[1] - this.cpu.gprs[2] / 256) / 12) >>> 0;
+      break;
+
+    default:
+      throw "Unimplemented software interrupt: 0x" + opcode.toString(16);
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.masterEnable = function (value) {
+  this.enable = value;
+
+  if (this.enable && this.enabledIRQs & this.interruptFlags) {
+    this.cpu.raiseIRQ();
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.setInterruptsEnabled = function (value) {
+  this.enabledIRQs = value;
+
+  if (this.enabledIRQs & this.MASK_SIO) {
+    this.core.STUB('Serial I/O interrupts not implemented');
+  }
+
+  if (this.enabledIRQs & this.MASK_KEYPAD) {
+    this.core.STUB('Keypad interrupts not implemented');
+  }
+
+  if (this.enable && this.enabledIRQs & this.interruptFlags) {
+    this.cpu.raiseIRQ();
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.pollNextEvent = function () {
+  var nextEvent = this.video.nextEvent;
+  var test;
+
+  if (this.audio.enabled) {
+    test = this.audio.nextEvent;
+
+    if (!nextEvent || test < nextEvent) {
+      nextEvent = test;
+    }
+  }
+
+  if (this.timersEnabled) {
+    var timer = this.timers[0];
+    test = timer.nextEvent;
+
+    if (timer.enable && test && (!nextEvent || test < nextEvent)) {
+      nextEvent = test;
+    }
+
+    timer = this.timers[1];
+    test = timer.nextEvent;
+
+    if (timer.enable && test && (!nextEvent || test < nextEvent)) {
+      nextEvent = test;
+    }
+
+    timer = this.timers[2];
+    test = timer.nextEvent;
+
+    if (timer.enable && test && (!nextEvent || test < nextEvent)) {
+      nextEvent = test;
+    }
+
+    timer = this.timers[3];
+    test = timer.nextEvent;
+
+    if (timer.enable && test && (!nextEvent || test < nextEvent)) {
+      nextEvent = test;
+    }
+  }
+
+  var dma = this.dma[0];
+  test = dma.nextIRQ;
+
+  if (dma.enable && dma.doIrq && test && (!nextEvent || test < nextEvent)) {
+    nextEvent = test;
+  }
+
+  dma = this.dma[1];
+  test = dma.nextIRQ;
+
+  if (dma.enable && dma.doIrq && test && (!nextEvent || test < nextEvent)) {
+    nextEvent = test;
+  }
+
+  dma = this.dma[2];
+  test = dma.nextIRQ;
+
+  if (dma.enable && dma.doIrq && test && (!nextEvent || test < nextEvent)) {
+    nextEvent = test;
+  }
+
+  dma = this.dma[3];
+  test = dma.nextIRQ;
+
+  if (dma.enable && dma.doIrq && test && (!nextEvent || test < nextEvent)) {
+    nextEvent = test;
+  }
+
+  this.core.ASSERT(nextEvent >= this.cpu.cycles, "Next event is before present");
+  this.nextEvent = nextEvent;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.waitForIRQ = function () {
+  var timer;
+  var irqPending = this.testIRQ() || this.video.hblankIRQ || this.video.vblankIRQ || this.video.vcounterIRQ;
+
+  if (this.timersEnabled) {
+    timer = this.timers[0];
+    irqPending = irqPending || timer.doIrq;
+    timer = this.timers[1];
+    irqPending = irqPending || timer.doIrq;
+    timer = this.timers[2];
+    irqPending = irqPending || timer.doIrq;
+    timer = this.timers[3];
+    irqPending = irqPending || timer.doIrq;
+  }
+
+  if (!irqPending) {
+    return false;
+  }
+
+  for (;;) {
+    this.pollNextEvent();
+
+    if (!this.nextEvent) {
+      return false;
+    } else {
+      this.cpu.cycles = this.nextEvent;
+      this.updateTimers();
+
+      if (this.interruptFlags) {
+        return true;
+      }
+    }
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.testIRQ = function () {
+  if (this.enable && this.enabledIRQs & this.interruptFlags) {
+    this.springIRQ = true;
+    this.nextEvent = this.cpu.cycles;
+    return true;
+  }
+
+  return false;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.raiseIRQ = function (irqType) {
+  this.interruptFlags |= 1 << irqType;
+  this.io.registers[this.io.IF >> 1] = this.interruptFlags;
+
+  if (this.enable && this.enabledIRQs & 1 << irqType) {
+    this.cpu.raiseIRQ();
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.dismissIRQs = function (irqMask) {
+  this.interruptFlags &= ~irqMask;
+  this.io.registers[this.io.IF >> 1] = this.interruptFlags;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.dmaSetSourceAddress = function (dma, address) {
+  this.dma[dma].source = address & 0xFFFFFFFE;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.dmaSetDestAddress = function (dma, address) {
+  this.dma[dma].dest = address & 0xFFFFFFFE;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.dmaSetWordCount = function (dma, count) {
+  this.dma[dma].count = count ? count : dma == 3 ? 0x10000 : 0x4000;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.dmaWriteControl = function (dma, control) {
+  var currentDma = this.dma[dma];
+  var wasEnabled = currentDma.enable;
+  currentDma.dstControl = (control & 0x0060) >> 5;
+  currentDma.srcControl = (control & 0x0180) >> 7;
+  currentDma.repeat = !!(control & 0x0200);
+  currentDma.width = control & 0x0400 ? 4 : 2;
+  currentDma.drq = !!(control & 0x0800);
+  currentDma.timing = (control & 0x3000) >> 12;
+  currentDma.doIrq = !!(control & 0x4000);
+  currentDma.enable = !!(control & 0x8000);
+  currentDma.nextIRQ = 0;
+
+  if (currentDma.drq) {
+    this.core.WARN('DRQ not implemented');
+  }
+
+  if (!wasEnabled && currentDma.enable) {
+    currentDma.nextSource = currentDma.source;
+    currentDma.nextDest = currentDma.dest;
+    currentDma.nextCount = currentDma.count;
+    this.cpu.mmu.scheduleDma(dma, currentDma);
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.timerSetReload = function (timer, reload) {
+  this.timers[timer].reload = reload & 0xFFFF;
+};
+
+GameBoyAdvanceInterruptHandler.prototype.timerWriteControl = function (timer, control) {
+  var currentTimer = this.timers[timer];
+  var oldPrescale = currentTimer.prescaleBits;
+
+  switch (control & 0x0003) {
+    case 0x0000:
+      currentTimer.prescaleBits = 0;
+      break;
+
+    case 0x0001:
+      currentTimer.prescaleBits = 6;
+      break;
+
+    case 0x0002:
+      currentTimer.prescaleBits = 8;
+      break;
+
+    case 0x0003:
+      currentTimer.prescaleBits = 10;
+      break;
+  }
+
+  currentTimer.countUp = !!(control & 0x0004);
+  currentTimer.doIrq = !!(control & 0x0040);
+  currentTimer.overflowInterval = 0x10000 - currentTimer.reload << currentTimer.prescaleBits;
+  var wasEnabled = currentTimer.enable;
+  currentTimer.enable = !!((control & 0x0080) >> 7 << timer);
+
+  if (!wasEnabled && currentTimer.enable) {
+    if (!currentTimer.countUp) {
+      currentTimer.lastEvent = this.cpu.cycles;
+      currentTimer.nextEvent = this.cpu.cycles + currentTimer.overflowInterval;
+    } else {
+      currentTimer.nextEvent = 0;
+    }
+
+    this.io.registers[this.io.TM0CNT_LO + (timer << 2) >> 1] = currentTimer.reload;
+    currentTimer.oldReload = currentTimer.reload;
+    ++this.timersEnabled;
+  } else if (wasEnabled && !currentTimer.enable) {
+    if (!currentTimer.countUp) {
+      this.io.registers[this.io.TM0CNT_LO + (timer << 2) >> 1] = currentTimer.oldReload + (this.cpu.cycles - currentTimer.lastEvent) >> oldPrescale;
+    }
+
+    --this.timersEnabled;
+  } else if (currentTimer.prescaleBits != oldPrescale && !currentTimer.countUp) {
+    // FIXME: this might be before present
+    currentTimer.nextEvent = currentTimer.lastEvent + currentTimer.overflowInterval;
+  } // We've changed the timers somehow...we need to reset the next event
+
+
+  this.pollNextEvent();
+};
+
+GameBoyAdvanceInterruptHandler.prototype.timerRead = function (timer) {
+  var currentTimer = this.timers[timer];
+
+  if (currentTimer.enable && !currentTimer.countUp) {
+    return currentTimer.oldReload + (this.cpu.cycles - currentTimer.lastEvent) >> currentTimer.prescaleBits;
+  } else {
+    return this.io.registers[this.io.TM0CNT_LO + (timer << 2) >> 1];
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.halt = function () {
+  if (!this.enable) {
+    throw "Requested HALT when interrupts were disabled!";
+  }
+
+  if (!this.waitForIRQ()) {
+    throw "Waiting on interrupt forever.";
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.lz77 = function (source, dest, unitsize) {
+  // TODO: move to a different file
+  var remaining = (this.cpu.mmu.load32(source) & 0xFFFFFF00) >> 8; // We assume the signature byte (0x10) is correct
+
+  var blockheader;
+  var sPointer = source + 4;
+  var dPointer = dest;
+  var blocksRemaining = 0;
+  var block;
+  var disp;
+  var bytes;
+  var buffer = 0;
+  var loaded;
+
+  while (remaining > 0) {
+    if (blocksRemaining) {
+      if (blockheader & 0x80) {
+        // Compressed
+        block = this.cpu.mmu.loadU8(sPointer) | this.cpu.mmu.loadU8(sPointer + 1) << 8;
+        sPointer += 2;
+        disp = dPointer - ((block & 0x000F) << 8 | (block & 0xFF00) >> 8) - 1;
+        bytes = ((block & 0x00F0) >> 4) + 3;
+
+        while (bytes-- && remaining) {
+          loaded = this.cpu.mmu.loadU8(disp++);
+
+          if (unitsize == 2) {
+            buffer >>= 8;
+            buffer |= loaded << 8;
+
+            if (dPointer & 1) {
+              this.cpu.mmu.store16(dPointer - 1, buffer);
+            }
+          } else {
+            this.cpu.mmu.store8(dPointer, loaded);
+          }
+
+          --remaining;
+          ++dPointer;
+        }
+      } else {
+        // Uncompressed
+        loaded = this.cpu.mmu.loadU8(sPointer++);
+
+        if (unitsize == 2) {
+          buffer >>= 8;
+          buffer |= loaded << 8;
+
+          if (dPointer & 1) {
+            this.cpu.mmu.store16(dPointer - 1, buffer);
+          }
+        } else {
+          this.cpu.mmu.store8(dPointer, loaded);
+        }
+
+        --remaining;
+        ++dPointer;
+      }
+
+      blockheader <<= 1;
+      --blocksRemaining;
+    } else {
+      blockheader = this.cpu.mmu.loadU8(sPointer++);
+      blocksRemaining = 8;
+    }
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.huffman = function (source, dest) {
+  source = source & 0xFFFFFFFC;
+  var header = this.cpu.mmu.load32(source);
+  var remaining = header >> 8;
+  var bits = header & 0xF;
+
+  if (32 % bits) {
+    throw 'Unimplemented unaligned Huffman';
+  }
+
+  var padding = 4 - remaining & 0x3;
+  remaining &= 0xFFFFFFFC; // We assume the signature byte (0x20) is correct
+
+  var tree = [];
+  var treesize = (this.cpu.mmu.loadU8(source + 4) << 1) + 1;
+  var block;
+  var sPointer = source + 5 + treesize;
+  var dPointer = dest & 0xFFFFFFFC;
+  var i;
+
+  for (i = 0; i < treesize; ++i) {
+    tree.push(this.cpu.mmu.loadU8(source + 5 + i));
+  }
+
+  var node;
+  var offset = 0;
+  var bitsRemaining;
+  var readBits;
+  var bitsSeen = 0;
+  node = tree[0];
+
+  while (remaining > 0) {
+    var bitstream = this.cpu.mmu.load32(sPointer);
+    sPointer += 4;
+
+    for (bitsRemaining = 32; bitsRemaining > 0; --bitsRemaining, bitstream <<= 1) {
+      if (typeof node === 'number') {
+        // Lazily construct tree
+        var next = (offset - 1 | 1) + ((node & 0x3F) << 1) + 2;
+        node = {
+          l: next,
+          r: next + 1,
+          lTerm: node & 0x80,
+          rTerm: node & 0x40
+        };
+        tree[offset] = node;
+      }
+
+      if (bitstream & 0x80000000) {
+        // Go right
+        if (node.rTerm) {
+          readBits = tree[node.r];
+        } else {
+          offset = node.r;
+          node = tree[node.r];
+          continue;
+        }
+      } else {
+        // Go left
+        if (node.lTerm) {
+          readBits = tree[node.l];
+        } else {
+          offset = node.l;
+          node = tree[offset];
+          continue;
+        }
+      }
+
+      block |= (readBits & (1 << bits) - 1) << bitsSeen;
+      bitsSeen += bits;
+      offset = 0;
+      node = tree[0];
+
+      if (bitsSeen == 32) {
+        bitsSeen = 0;
+        this.cpu.mmu.store32(dPointer, block);
+        dPointer += 4;
+        remaining -= 4;
+        block = 0;
+      }
+    }
+  }
+
+  if (padding) {
+    this.cpu.mmu.store32(dPointer, block);
+  }
+};
+
+GameBoyAdvanceInterruptHandler.prototype.rl = function (source, dest, unitsize) {
+  source = source & 0xFFFFFFFC;
+  var remaining = (this.cpu.mmu.load32(source) & 0xFFFFFF00) >> 8;
+  var padding = 4 - remaining & 0x3; // We assume the signature byte (0x30) is correct
+
+  var blockheader;
+  var block;
+  var sPointer = source + 4;
+  var dPointer = dest;
+  var buffer = 0;
+
+  while (remaining > 0) {
+    blockheader = this.cpu.mmu.loadU8(sPointer++);
+
+    if (blockheader & 0x80) {
+      // Compressed
+      blockheader &= 0x7F;
+      blockheader += 3;
+      block = this.cpu.mmu.loadU8(sPointer++);
+
+      while (blockheader-- && remaining) {
+        --remaining;
+
+        if (unitsize == 2) {
+          buffer >>= 8;
+          buffer |= block << 8;
+
+          if (dPointer & 1) {
+            this.cpu.mmu.store16(dPointer - 1, buffer);
+          }
+        } else {
+          this.cpu.mmu.store8(dPointer, block);
+        }
+
+        ++dPointer;
+      }
+    } else {
+      // Uncompressed
+      blockheader++;
+
+      while (blockheader-- && remaining) {
+        --remaining;
+        block = this.cpu.mmu.loadU8(sPointer++);
+
+        if (unitsize == 2) {
+          buffer >>= 8;
+          buffer |= block << 8;
+
+          if (dPointer & 1) {
+            this.cpu.mmu.store16(dPointer - 1, buffer);
+          }
+        } else {
+          this.cpu.mmu.store8(dPointer, block);
+        }
+
+        ++dPointer;
+      }
+    }
+  }
+
+  while (padding--) {
+    this.cpu.mmu.store8(dPointer++, 0);
+  }
+};
+
+/***/ }),
+
+/***/ "./src/emulator/keypad.js":
+/*!********************************!*\
+  !*** ./src/emulator/keypad.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceKeypad = function GameBoyAdvanceKeypad() {
+  this.KEYCODE_LEFT = 37;
+  this.KEYCODE_UP = 38;
+  this.KEYCODE_RIGHT = 39;
+  this.KEYCODE_DOWN = 40;
+  this.KEYCODE_START = 13;
+  this.KEYCODE_SELECT = 220;
+  this.KEYCODE_A = 90;
+  this.KEYCODE_B = 88;
+  this.KEYCODE_L = 65;
+  this.KEYCODE_R = 83;
+  this.GAMEPAD_LEFT = 14;
+  this.GAMEPAD_UP = 12;
+  this.GAMEPAD_RIGHT = 15;
+  this.GAMEPAD_DOWN = 13;
+  this.GAMEPAD_START = 9;
+  this.GAMEPAD_SELECT = 8;
+  this.GAMEPAD_A = 1;
+  this.GAMEPAD_B = 0;
+  this.GAMEPAD_L = 4;
+  this.GAMEPAD_R = 5;
+  this.GAMEPAD_THRESHOLD = 0.2;
+  this.A = 0;
+  this.B = 1;
+  this.SELECT = 2;
+  this.START = 3;
+  this.RIGHT = 4;
+  this.LEFT = 5;
+  this.UP = 6;
+  this.DOWN = 7;
+  this.R = 8;
+  this.L = 9;
+  this.currentDown = 0x03FF;
+  this.eatInput = false;
+  this.gamepads = [];
+};
+
+GameBoyAdvanceKeypad.prototype.keyboardHandler = function (e) {
+  var toggle = 0;
+
+  switch (e.keyCode) {
+    case this.KEYCODE_START:
+      toggle = this.START;
+      break;
+
+    case this.KEYCODE_SELECT:
+      toggle = this.SELECT;
+      break;
+
+    case this.KEYCODE_A:
+      toggle = this.A;
+      break;
+
+    case this.KEYCODE_B:
+      toggle = this.B;
+      break;
+
+    case this.KEYCODE_L:
+      toggle = this.L;
+      break;
+
+    case this.KEYCODE_R:
+      toggle = this.R;
+      break;
+
+    case this.KEYCODE_UP:
+      toggle = this.UP;
+      break;
+
+    case this.KEYCODE_RIGHT:
+      toggle = this.RIGHT;
+      break;
+
+    case this.KEYCODE_DOWN:
+      toggle = this.DOWN;
+      break;
+
+    case this.KEYCODE_LEFT:
+      toggle = this.LEFT;
+      break;
+
+    default:
+      return;
+  }
+
+  toggle = 1 << toggle;
+
+  if (e.type == "keydown") {
+    this.currentDown &= ~toggle;
+  } else {
+    this.currentDown |= toggle;
+  }
+
+  if (this.eatInput) {
+    e.preventDefault();
+  }
+};
+
+GameBoyAdvanceKeypad.prototype.gamepadHandler = function (gamepad) {
+  var value = 0;
+
+  if (gamepad.buttons[this.GAMEPAD_LEFT] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.LEFT;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_UP] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.UP;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_RIGHT] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.RIGHT;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_DOWN] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.DOWN;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_START] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.START;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_SELECT] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.SELECT;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_A] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.A;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_B] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.B;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_L] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.L;
+  }
+
+  if (gamepad.buttons[this.GAMEPAD_R] > this.GAMEPAD_THRESHOLD) {
+    value |= 1 << this.R;
+  }
+
+  this.currentDown = ~value & 0x3FF;
+};
+
+GameBoyAdvanceKeypad.prototype.gamepadConnectHandler = function (gamepad) {
+  this.gamepads.push(gamepad);
+};
+
+GameBoyAdvanceKeypad.prototype.gamepadDisconnectHandler = function (gamepad) {
+  this.gamepads = self.gamepads.filter(function (other) {
+    return other != gamepad;
+  });
+};
+
+GameBoyAdvanceKeypad.prototype.pollGamepads = function () {
+  var navigatorList = [];
+
+  if (navigator.webkitGetGamepads) {
+    navigatorList = navigator.webkitGetGamepads();
+  } else if (navigator.getGamepads) {
+    navigatorList = navigator.getGamepads();
+  } // Let's all give a shout out to Chrome for making us get the gamepads EVERY FRAME
+
+
+  if (navigatorList.length) {
+    this.gamepads = [];
+  }
+
+  for (var i = 0; i < navigatorList.length; ++i) {
+    if (navigatorList[i]) {
+      this.gamepads.push(navigatorList[i]);
+    }
+  }
+
+  if (this.gamepads.length > 0) {
+    this.gamepadHandler(this.gamepads[0]);
+  }
+};
+
+GameBoyAdvanceKeypad.prototype.registerHandlers = function () {
+  window.addEventListener("keydown", this.keyboardHandler.bind(this), true);
+  window.addEventListener("keyup", this.keyboardHandler.bind(this), true);
+  window.addEventListener("gamepadconnected", this.gamepadConnectHandler.bind(this), true);
+  window.addEventListener("mozgamepadconnected", this.gamepadConnectHandler.bind(this), true);
+  window.addEventListener("webkitgamepadconnected", this.gamepadConnectHandler.bind(this), true);
+  window.addEventListener("gamepaddisconnected", this.gamepadDisconnectHandler.bind(this), true);
+  window.addEventListener("mozgamepaddisconnected", this.gamepadDisconnectHandler.bind(this), true);
+  window.addEventListener("webkitgamepaddisconnected", this.gamepadDisconnectHandler.bind(this), true);
+};
+
+/***/ }),
+
+/***/ "./src/emulator/mmu.js":
+/*!*****************************!*\
+  !*** ./src/emulator/mmu.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.MemoryView = function MemoryView(memory, offset) {
+  this.buffer = memory;
+  this.view = new DataView(this.buffer, typeof offset === "number" ? offset : 0);
+  this.mask = memory.byteLength - 1;
+  this.resetMask();
+};
+
+MemoryView.prototype.resetMask = function () {
+  this.mask8 = this.mask & 0xFFFFFFFF;
+  this.mask16 = this.mask & 0xFFFFFFFE;
+  this.mask32 = this.mask & 0xFFFFFFFC;
+};
+
+MemoryView.prototype.load8 = function (offset) {
+  return this.view.getInt8(offset & this.mask8);
+};
+
+MemoryView.prototype.load16 = function (offset) {
+  // Unaligned 16-bit loads are unpredictable...let's just pretend they work
+  return this.view.getInt16(offset & this.mask, true);
+};
+
+MemoryView.prototype.loadU8 = function (offset) {
+  return this.view.getUint8(offset & this.mask8);
+};
+
+MemoryView.prototype.loadU16 = function (offset) {
+  // Unaligned 16-bit loads are unpredictable...let's just pretend they work
+  return this.view.getUint16(offset & this.mask, true);
+};
+
+MemoryView.prototype.load32 = function (offset) {
+  // Unaligned 32-bit loads are "rotated" so they make some semblance of sense
+  var rotate = (offset & 3) << 3;
+  var mem = this.view.getInt32(offset & this.mask32, true);
+  return mem >>> rotate | mem << 32 - rotate;
+};
+
+MemoryView.prototype.store8 = function (offset, value) {
+  this.view.setInt8(offset & this.mask8, value);
+};
+
+MemoryView.prototype.store16 = function (offset, value) {
+  this.view.setInt16(offset & this.mask16, value, true);
+};
+
+MemoryView.prototype.store32 = function (offset, value) {
+  this.view.setInt32(offset & this.mask32, value, true);
+};
+
+MemoryView.prototype.invalidatePage = function (address) {};
+
+MemoryView.prototype.replaceData = function (memory, offset) {
+  this.buffer = memory;
+  this.view = new DataView(this.buffer, typeof offset === "number" ? offset : 0);
+
+  if (this.icache) {
+    this.icache = new Array(this.icache.length);
+  }
+};
+
+window.MemoryBlock = function MemoryBlock(size, cacheBits) {
+  MemoryView.call(this, new ArrayBuffer(size));
+  this.ICACHE_PAGE_BITS = cacheBits;
+  this.PAGE_MASK = (2 << this.ICACHE_PAGE_BITS) - 1;
+  this.icache = new Array(size >> this.ICACHE_PAGE_BITS + 1);
+};
+
+MemoryBlock.prototype = Object.create(MemoryView.prototype);
+
+MemoryBlock.prototype.invalidatePage = function (address) {
+  var page = this.icache[(address & this.mask) >> this.ICACHE_PAGE_BITS];
+
+  if (page) {
+    page.invalid = true;
+  }
+};
+
+function ROMView(rom, offset) {
+  MemoryView.call(this, rom, offset);
+  this.ICACHE_PAGE_BITS = 10;
+  this.PAGE_MASK = (2 << this.ICACHE_PAGE_BITS) - 1;
+  this.icache = new Array(rom.byteLength >> this.ICACHE_PAGE_BITS + 1);
+  this.mask = 0x01FFFFFF;
+  this.resetMask();
+}
+
+;
+ROMView.prototype = Object.create(MemoryView.prototype);
+
+ROMView.prototype.store8 = function (offset, value) {};
+
+ROMView.prototype.store16 = function (offset, value) {
+  if (offset < 0xCA && offset >= 0xC4) {
+    if (!this.gpio) {
+      this.gpio = this.mmu.allocGPIO(this);
+    }
+
+    this.gpio.store16(offset, value);
+  }
+};
+
+ROMView.prototype.store32 = function (offset, value) {
+  if (offset < 0xCA && offset >= 0xC4) {
+    if (!this.gpio) {
+      this.gpio = this.mmu.allocGPIO(this);
+    }
+
+    this.gpio.store32(offset, value);
+  }
+};
+
+function BIOSView(rom, offset) {
+  MemoryView.call(this, rom, offset);
+  this.ICACHE_PAGE_BITS = 16;
+  this.PAGE_MASK = (2 << this.ICACHE_PAGE_BITS) - 1;
+  this.icache = new Array(1);
+}
+
+;
+BIOSView.prototype = Object.create(MemoryView.prototype);
+
+BIOSView.prototype.load8 = function (offset) {
+  if (offset >= this.buffer.byteLength) {
+    return -1;
+  }
+
+  return this.view.getInt8(offset);
+};
+
+BIOSView.prototype.load16 = function (offset) {
+  if (offset >= this.buffer.byteLength) {
+    return -1;
+  }
+
+  return this.view.getInt16(offset, true);
+};
+
+BIOSView.prototype.loadU8 = function (offset) {
+  if (offset >= this.buffer.byteLength) {
+    return -1;
+  }
+
+  return this.view.getUint8(offset);
+};
+
+BIOSView.prototype.loadU16 = function (offset) {
+  if (offset >= this.buffer.byteLength) {
+    return -1;
+  }
+
+  return this.view.getUint16(offset, true);
+};
+
+BIOSView.prototype.load32 = function (offset) {
+  if (offset >= this.buffer.byteLength) {
+    return -1;
+  }
+
+  return this.view.getInt32(offset, true);
+};
+
+BIOSView.prototype.store8 = function (offset, value) {};
+
+BIOSView.prototype.store16 = function (offset, value) {};
+
+BIOSView.prototype.store32 = function (offset, value) {};
+
+function BadMemory(mmu, cpu) {
+  this.cpu = cpu;
+  this.mmu = mmu;
+}
+
+;
+
+BadMemory.prototype.load8 = function (offset) {
+  return this.mmu.load8(this.cpu.gprs[this.cpu.PC] - this.cpu.instructionWidth + (offset & 0x3));
+};
+
+BadMemory.prototype.load16 = function (offset) {
+  return this.mmu.load16(this.cpu.gprs[this.cpu.PC] - this.cpu.instructionWidth + (offset & 0x2));
+};
+
+BadMemory.prototype.loadU8 = function (offset) {
+  return this.mmu.loadU8(this.cpu.gprs[this.cpu.PC] - this.cpu.instructionWidth + (offset & 0x3));
+};
+
+BadMemory.prototype.loadU16 = function (offset) {
+  return this.mmu.loadU16(this.cpu.gprs[this.cpu.PC] - this.cpu.instructionWidth + (offset & 0x2));
+};
+
+BadMemory.prototype.load32 = function (offset) {
+  if (this.cpu.execMode == this.cpu.MODE_ARM) {
+    return this.mmu.load32(this.cpu.gprs[this.cpu.gprs.PC] - this.cpu.instructionWidth);
+  } else {
+    var halfword = this.mmu.loadU16(this.cpu.gprs[this.cpu.PC] - this.cpu.instructionWidth);
+    return halfword | halfword << 16;
+  }
+};
+
+BadMemory.prototype.store8 = function (offset, value) {};
+
+BadMemory.prototype.store16 = function (offset, value) {};
+
+BadMemory.prototype.store32 = function (offset, value) {};
+
+BadMemory.prototype.invalidatePage = function (address) {};
+
+window.GameBoyAdvanceMMU = function GameBoyAdvanceMMU() {
+  this.REGION_BIOS = 0x0;
+  this.REGION_WORKING_RAM = 0x2;
+  this.REGION_WORKING_IRAM = 0x3;
+  this.REGION_IO = 0x4;
+  this.REGION_PALETTE_RAM = 0x5;
+  this.REGION_VRAM = 0x6;
+  this.REGION_OAM = 0x7;
+  this.REGION_CART0 = 0x8;
+  this.REGION_CART1 = 0xA;
+  this.REGION_CART2 = 0xC;
+  this.REGION_CART_SRAM = 0xE;
+  this.BASE_BIOS = 0x00000000;
+  this.BASE_WORKING_RAM = 0x02000000;
+  this.BASE_WORKING_IRAM = 0x03000000;
+  this.BASE_IO = 0x04000000;
+  this.BASE_PALETTE_RAM = 0x05000000;
+  this.BASE_VRAM = 0x06000000;
+  this.BASE_OAM = 0x07000000;
+  this.BASE_CART0 = 0x08000000;
+  this.BASE_CART1 = 0x0A000000;
+  this.BASE_CART2 = 0x0C000000;
+  this.BASE_CART_SRAM = 0x0E000000;
+  this.BASE_MASK = 0x0F000000;
+  this.BASE_OFFSET = 24;
+  this.OFFSET_MASK = 0x00FFFFFF;
+  this.SIZE_BIOS = 0x00004000;
+  this.SIZE_WORKING_RAM = 0x00040000;
+  this.SIZE_WORKING_IRAM = 0x00008000;
+  this.SIZE_IO = 0x00000400;
+  this.SIZE_PALETTE_RAM = 0x00000400;
+  this.SIZE_VRAM = 0x00018000;
+  this.SIZE_OAM = 0x00000400;
+  this.SIZE_CART0 = 0x02000000;
+  this.SIZE_CART1 = 0x02000000;
+  this.SIZE_CART2 = 0x02000000;
+  this.SIZE_CART_SRAM = 0x00008000;
+  this.SIZE_CART_FLASH512 = 0x00010000;
+  this.SIZE_CART_FLASH1M = 0x00020000;
+  this.SIZE_CART_EEPROM = 0x00002000;
+  this.DMA_TIMING_NOW = 0;
+  this.DMA_TIMING_VBLANK = 1;
+  this.DMA_TIMING_HBLANK = 2;
+  this.DMA_TIMING_CUSTOM = 3;
+  this.DMA_INCREMENT = 0;
+  this.DMA_DECREMENT = 1;
+  this.DMA_FIXED = 2;
+  this.DMA_INCREMENT_RELOAD = 3;
+  this.DMA_OFFSET = [1, -1, 0, 1];
+  this.WAITSTATES = [0, 0, 2, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4];
+  this.WAITSTATES_32 = [0, 0, 5, 0, 0, 1, 0, 1, 7, 7, 9, 9, 13, 13, 8];
+  this.WAITSTATES_SEQ = [0, 0, 2, 0, 0, 0, 0, 0, 2, 2, 4, 4, 8, 8, 4];
+  this.WAITSTATES_SEQ_32 = [0, 0, 5, 0, 0, 1, 0, 1, 5, 5, 9, 9, 17, 17, 8];
+  this.NULLWAIT = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  for (var i = 15; i < 256; ++i) {
+    this.WAITSTATES[i] = 0;
+    this.WAITSTATES_32[i] = 0;
+    this.WAITSTATES_SEQ[i] = 0;
+    this.WAITSTATES_SEQ_32[i] = 0;
+    this.NULLWAIT[i] = 0;
+  }
+
+  this.ROM_WS = [4, 3, 2, 8];
+  this.ROM_WS_SEQ = [[2, 1], [4, 1], [8, 1]];
+  this.ICACHE_PAGE_BITS = 8;
+  this.PAGE_MASK = (2 << this.ICACHE_PAGE_BITS) - 1;
+  this.bios = null;
+};
+
+GameBoyAdvanceMMU.prototype.mmap = function (region, object) {
+  this.memory[region] = object;
+};
+
+GameBoyAdvanceMMU.prototype.clear = function () {
+  this.badMemory = new BadMemory(this, this.cpu);
+  this.memory = [this.bios, this.badMemory, // Unused
+  new MemoryBlock(this.SIZE_WORKING_RAM, 9), new MemoryBlock(this.SIZE_WORKING_IRAM, 7), null, // This is owned by GameBoyAdvanceIO
+  null, // This is owned by GameBoyAdvancePalette
+  null, // This is owned by GameBoyAdvanceVRAM
+  null, // This is owned by GameBoyAdvanceOAM
+  this.badMemory, this.badMemory, this.badMemory, this.badMemory, this.badMemory, this.badMemory, this.badMemory, this.badMemory // Unused
+  ];
+
+  for (var i = 16; i < 256; ++i) {
+    this.memory[i] = this.badMemory;
+  }
+
+  this.waitstates = this.WAITSTATES.slice(0);
+  this.waitstatesSeq = this.WAITSTATES_SEQ.slice(0);
+  this.waitstates32 = this.WAITSTATES_32.slice(0);
+  this.waitstatesSeq32 = this.WAITSTATES_SEQ_32.slice(0);
+  this.waitstatesPrefetch = this.WAITSTATES_SEQ.slice(0);
+  this.waitstatesPrefetch32 = this.WAITSTATES_SEQ_32.slice(0);
+  this.cart = null;
+  this.save = null;
+  this.DMA_REGISTER = [this.core.io.DMA0CNT_HI >> 1, this.core.io.DMA1CNT_HI >> 1, this.core.io.DMA2CNT_HI >> 1, this.core.io.DMA3CNT_HI >> 1];
+};
+
+GameBoyAdvanceMMU.prototype.freeze = function () {
+  return {
+    'ram': Serializer.prefix(this.memory[this.REGION_WORKING_RAM].buffer),
+    'iram': Serializer.prefix(this.memory[this.REGION_WORKING_IRAM].buffer)
+  };
+};
+
+GameBoyAdvanceMMU.prototype.defrost = function (frost) {
+  this.memory[this.REGION_WORKING_RAM].replaceData(frost.ram);
+  this.memory[this.REGION_WORKING_IRAM].replaceData(frost.iram);
+};
+
+GameBoyAdvanceMMU.prototype.loadBios = function (bios, real) {
+  this.bios = new BIOSView(bios);
+  this.bios.real = !!real;
+};
+
+GameBoyAdvanceMMU.prototype.loadRom = function (rom, process) {
+  var cart = {
+    title: null,
+    code: null,
+    maker: null,
+    memory: rom,
+    saveType: null
+  };
+  var lo = new ROMView(rom);
+
+  if (lo.view.getUint8(0xB2) != 0x96) {
+    // Not a valid ROM
+    return null;
+  }
+
+  lo.mmu = this; // Needed for GPIO
+
+  this.memory[this.REGION_CART0] = lo;
+  this.memory[this.REGION_CART1] = lo;
+  this.memory[this.REGION_CART2] = lo;
+
+  if (rom.byteLength > 0x01000000) {
+    var hi = new ROMView(rom, 0x01000000);
+    this.memory[this.REGION_CART0 + 1] = hi;
+    this.memory[this.REGION_CART1 + 1] = hi;
+    this.memory[this.REGION_CART2 + 1] = hi;
+  }
+
+  if (process) {
+    var name = '';
+
+    for (var i = 0; i < 12; ++i) {
+      var c = lo.loadU8(i + 0xA0);
+
+      if (!c) {
+        break;
+      }
+
+      name += String.fromCharCode(c);
+    }
+
+    cart.title = name;
+    var code = '';
+
+    for (var i = 0; i < 4; ++i) {
+      var c = lo.loadU8(i + 0xAC);
+
+      if (!c) {
+        break;
+      }
+
+      code += String.fromCharCode(c);
+    }
+
+    cart.code = code;
+    var maker = '';
+
+    for (var i = 0; i < 2; ++i) {
+      var c = lo.loadU8(i + 0xB0);
+
+      if (!c) {
+        break;
+      }
+
+      maker += String.fromCharCode(c);
+    }
+
+    cart.maker = maker; // Find savedata type
+
+    var state = '';
+    var next;
+    var terminal = false;
+
+    for (var i = 0xE4; i < rom.byteLength && !terminal; ++i) {
+      next = String.fromCharCode(lo.loadU8(i));
+      state += next;
+
+      switch (state) {
+        case 'F':
+        case 'FL':
+        case 'FLA':
+        case 'FLAS':
+        case 'FLASH':
+        case 'FLASH_':
+        case 'FLASH5':
+        case 'FLASH51':
+        case 'FLASH512':
+        case 'FLASH512_':
+        case 'FLASH1':
+        case 'FLASH1M':
+        case 'FLASH1M_':
+        case 'S':
+        case 'SR':
+        case 'SRA':
+        case 'SRAM':
+        case 'SRAM_':
+        case 'E':
+        case 'EE':
+        case 'EEP':
+        case 'EEPR':
+        case 'EEPRO':
+        case 'EEPROM':
+        case 'EEPROM_':
+          break;
+
+        case 'FLASH_V':
+        case 'FLASH512_V':
+        case 'FLASH1M_V':
+        case 'SRAM_V':
+        case 'EEPROM_V':
+          terminal = true;
+          break;
+
+        default:
+          state = next;
+          break;
+      }
+    }
+
+    if (terminal) {
+      cart.saveType = state;
+
+      switch (state) {
+        case 'FLASH_V':
+        case 'FLASH512_V':
+          this.save = this.memory[this.REGION_CART_SRAM] = new FlashSavedata(this.SIZE_CART_FLASH512);
+          break;
+
+        case 'FLASH1M_V':
+          this.save = this.memory[this.REGION_CART_SRAM] = new FlashSavedata(this.SIZE_CART_FLASH1M);
+          break;
+
+        case 'SRAM_V':
+          this.save = this.memory[this.REGION_CART_SRAM] = new SRAMSavedata(this.SIZE_CART_SRAM);
+          break;
+
+        case 'EEPROM_V':
+          this.save = this.memory[this.REGION_CART2 + 1] = new EEPROMSavedata(this.SIZE_CART_EEPROM, this);
+          break;
+      }
+    }
+
+    if (!this.save) {
+      // Assume we have SRAM
+      this.save = this.memory[this.REGION_CART_SRAM] = new SRAMSavedata(this.SIZE_CART_SRAM);
+    }
+  }
+
+  this.cart = cart;
+  return cart;
+};
+
+GameBoyAdvanceMMU.prototype.loadSavedata = function (save) {
+  this.save.replaceData(save);
+};
+
+GameBoyAdvanceMMU.prototype.load8 = function (offset) {
+  return this.memory[offset >>> this.BASE_OFFSET].load8(offset & 0x00FFFFFF);
+};
+
+GameBoyAdvanceMMU.prototype.load16 = function (offset) {
+  return this.memory[offset >>> this.BASE_OFFSET].load16(offset & 0x00FFFFFF);
+};
+
+GameBoyAdvanceMMU.prototype.load32 = function (offset) {
+  return this.memory[offset >>> this.BASE_OFFSET].load32(offset & 0x00FFFFFF);
+};
+
+GameBoyAdvanceMMU.prototype.loadU8 = function (offset) {
+  return this.memory[offset >>> this.BASE_OFFSET].loadU8(offset & 0x00FFFFFF);
+};
+
+GameBoyAdvanceMMU.prototype.loadU16 = function (offset) {
+  return this.memory[offset >>> this.BASE_OFFSET].loadU16(offset & 0x00FFFFFF);
+};
+
+GameBoyAdvanceMMU.prototype.store8 = function (offset, value) {
+  var maskedOffset = offset & 0x00FFFFFF;
+  var memory = this.memory[offset >>> this.BASE_OFFSET];
+  memory.store8(maskedOffset, value);
+  memory.invalidatePage(maskedOffset);
+};
+
+GameBoyAdvanceMMU.prototype.store16 = function (offset, value) {
+  var maskedOffset = offset & 0x00FFFFFE;
+  var memory = this.memory[offset >>> this.BASE_OFFSET];
+  memory.store16(maskedOffset, value);
+  memory.invalidatePage(maskedOffset);
+};
+
+GameBoyAdvanceMMU.prototype.store32 = function (offset, value) {
+  var maskedOffset = offset & 0x00FFFFFC;
+  var memory = this.memory[offset >>> this.BASE_OFFSET];
+  memory.store32(maskedOffset, value);
+  memory.invalidatePage(maskedOffset);
+  memory.invalidatePage(maskedOffset + 2);
+};
+
+GameBoyAdvanceMMU.prototype.waitPrefetch = function (memory) {
+  this.cpu.cycles += 1 + this.waitstatesPrefetch[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.waitPrefetch32 = function (memory) {
+  this.cpu.cycles += 1 + this.waitstatesPrefetch32[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.wait = function (memory) {
+  this.cpu.cycles += 1 + this.waitstates[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.wait32 = function (memory) {
+  this.cpu.cycles += 1 + this.waitstates32[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.waitSeq = function (memory) {
+  this.cpu.cycles += 1 + this.waitstatesSeq[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.waitSeq32 = function (memory) {
+  this.cpu.cycles += 1 + this.waitstatesSeq32[memory >>> this.BASE_OFFSET];
+};
+
+GameBoyAdvanceMMU.prototype.waitMul = function (rs) {
+  if (rs & 0xFFFFFF00 == 0xFFFFFF00 || !(rs & 0xFFFFFF00)) {
+    this.cpu.cycles += 1;
+  } else if (rs & 0xFFFF0000 == 0xFFFF0000 || !(rs & 0xFFFF0000)) {
+    this.cpu.cycles += 2;
+  } else if (rs & 0xFF000000 == 0xFF000000 || !(rs & 0xFF000000)) {
+    this.cpu.cycles += 3;
+  } else {
+    this.cpu.cycles += 4;
+  }
+};
+
+GameBoyAdvanceMMU.prototype.waitMulti32 = function (memory, seq) {
+  this.cpu.cycles += 1 + this.waitstates32[memory >>> this.BASE_OFFSET];
+  this.cpu.cycles += (1 + this.waitstatesSeq32[memory >>> this.BASE_OFFSET]) * (seq - 1);
+};
+
+GameBoyAdvanceMMU.prototype.addressToPage = function (region, address) {
+  return address >> this.memory[region].ICACHE_PAGE_BITS;
+};
+
+GameBoyAdvanceMMU.prototype.accessPage = function (region, pageId) {
+  var memory = this.memory[region];
+  var page = memory.icache[pageId];
+
+  if (!page || page.invalid) {
+    page = {
+      thumb: new Array(1 << memory.ICACHE_PAGE_BITS),
+      arm: new Array(1 << memory.ICACHE_PAGE_BITS - 1),
+      invalid: false
+    };
+    memory.icache[pageId] = page;
+  }
+
+  return page;
+};
+
+GameBoyAdvanceMMU.prototype.scheduleDma = function (number, info) {
+  switch (info.timing) {
+    case this.DMA_TIMING_NOW:
+      this.serviceDma(number, info);
+      break;
+
+    case this.DMA_TIMING_HBLANK:
+      // Handled implicitly
+      break;
+
+    case this.DMA_TIMING_VBLANK:
+      // Handled implicitly
+      break;
+
+    case this.DMA_TIMING_CUSTOM:
+      switch (number) {
+        case 0:
+          this.core.WARN('Discarding invalid DMA0 scheduling');
+          break;
+
+        case 1:
+        case 2:
+          this.cpu.irq.audio.scheduleFIFODma(number, info);
+          break;
+
+        case 3:
+          this.cpu.irq.video.scheduleVCaptureDma(dma, info);
+          break;
+      }
+
+  }
+};
+
+GameBoyAdvanceMMU.prototype.runHblankDmas = function () {
+  var dma;
+
+  for (var i = 0; i < this.cpu.irq.dma.length; ++i) {
+    dma = this.cpu.irq.dma[i];
+
+    if (dma.enable && dma.timing == this.DMA_TIMING_HBLANK) {
+      this.serviceDma(i, dma);
+    }
+  }
+};
+
+GameBoyAdvanceMMU.prototype.runVblankDmas = function () {
+  var dma;
+
+  for (var i = 0; i < this.cpu.irq.dma.length; ++i) {
+    dma = this.cpu.irq.dma[i];
+
+    if (dma.enable && dma.timing == this.DMA_TIMING_VBLANK) {
+      this.serviceDma(i, dma);
+    }
+  }
+};
+
+GameBoyAdvanceMMU.prototype.serviceDma = function (number, info) {
+  if (!info.enable) {
+    // There was a DMA scheduled that got canceled
+    return;
+  }
+
+  var width = info.width;
+  var sourceOffset = this.DMA_OFFSET[info.srcControl] * width;
+  var destOffset = this.DMA_OFFSET[info.dstControl] * width;
+  var wordsRemaining = info.nextCount;
+  var source = info.nextSource & this.OFFSET_MASK;
+  var dest = info.nextDest & this.OFFSET_MASK;
+  var sourceRegion = info.nextSource >>> this.BASE_OFFSET;
+  var destRegion = info.nextDest >>> this.BASE_OFFSET;
+  var sourceBlock = this.memory[sourceRegion];
+  var destBlock = this.memory[destRegion];
+  var sourceView = null;
+  var destView = null;
+  var sourceMask = 0xFFFFFFFF;
+  var destMask = 0xFFFFFFFF;
+  var word;
+
+  if (destBlock.ICACHE_PAGE_BITS) {
+    var endPage = dest + wordsRemaining * width >> destBlock.ICACHE_PAGE_BITS;
+
+    for (var i = dest >> destBlock.ICACHE_PAGE_BITS; i <= endPage; ++i) {
+      destBlock.invalidatePage(i << destBlock.ICACHE_PAGE_BITS);
+    }
+  }
+
+  if (destRegion == this.REGION_WORKING_RAM || destRegion == this.REGION_WORKING_IRAM) {
+    destView = destBlock.view;
+    destMask = destBlock.mask;
+  }
+
+  if (sourceRegion == this.REGION_WORKING_RAM || sourceRegion == this.REGION_WORKING_IRAM || sourceRegion == this.REGION_CART0 || sourceRegion == this.REGION_CART1) {
+    sourceView = sourceBlock.view;
+    sourceMask = sourceBlock.mask;
+  }
+
+  if (sourceBlock && destBlock) {
+    if (sourceView && destView) {
+      if (width == 4) {
+        source &= 0xFFFFFFFC;
+        dest &= 0xFFFFFFFC;
+
+        while (wordsRemaining--) {
+          word = sourceView.getInt32(source & sourceMask);
+          destView.setInt32(dest & destMask, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      } else {
+        while (wordsRemaining--) {
+          word = sourceView.getUint16(source & sourceMask);
+          destView.setUint16(dest & destMask, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      }
+    } else if (sourceView) {
+      if (width == 4) {
+        source &= 0xFFFFFFFC;
+        dest &= 0xFFFFFFFC;
+
+        while (wordsRemaining--) {
+          word = sourceView.getInt32(source & sourceMask, true);
+          destBlock.store32(dest, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      } else {
+        while (wordsRemaining--) {
+          word = sourceView.getUint16(source & sourceMask, true);
+          destBlock.store16(dest, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      }
+    } else {
+      if (width == 4) {
+        source &= 0xFFFFFFFC;
+        dest &= 0xFFFFFFFC;
+
+        while (wordsRemaining--) {
+          word = sourceBlock.load32(source);
+          destBlock.store32(dest, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      } else {
+        while (wordsRemaining--) {
+          word = sourceBlock.loadU16(source);
+          destBlock.store16(dest, word);
+          source += sourceOffset;
+          dest += destOffset;
+        }
+      }
+    }
+  } else {
+    this.core.WARN('Invalid DMA');
+  }
+
+  if (info.doIrq) {
+    info.nextIRQ = this.cpu.cycles + 2;
+    info.nextIRQ += width == 4 ? this.waitstates32[sourceRegion] + this.waitstates32[destRegion] : this.waitstates[sourceRegion] + this.waitstates[destRegion];
+    info.nextIRQ += (info.count - 1) * (width == 4 ? this.waitstatesSeq32[sourceRegion] + this.waitstatesSeq32[destRegion] : this.waitstatesSeq[sourceRegion] + this.waitstatesSeq[destRegion]);
+  }
+
+  info.nextSource = source | sourceRegion << this.BASE_OFFSET;
+  info.nextDest = dest | destRegion << this.BASE_OFFSET;
+  info.nextCount = wordsRemaining;
+
+  if (!info.repeat) {
+    info.enable = false; // Clear the enable bit in memory
+
+    var io = this.memory[this.REGION_IO];
+    io.registers[this.DMA_REGISTER[number]] &= 0x7FE0;
+  } else {
+    info.nextCount = info.count;
+
+    if (info.dstControl == this.DMA_INCREMENT_RELOAD) {
+      info.nextDest = info.dest;
+    }
+
+    this.scheduleDma(number, info);
+  }
+};
+
+GameBoyAdvanceMMU.prototype.adjustTimings = function (word) {
+  var sram = word & 0x0003;
+  var ws0 = (word & 0x000C) >> 2;
+  var ws0seq = (word & 0x0010) >> 4;
+  var ws1 = (word & 0x0060) >> 5;
+  var ws1seq = (word & 0x0080) >> 7;
+  var ws2 = (word & 0x0300) >> 8;
+  var ws2seq = (word & 0x0400) >> 10;
+  var prefetch = word & 0x4000;
+  this.waitstates[this.REGION_CART_SRAM] = this.ROM_WS[sram];
+  this.waitstatesSeq[this.REGION_CART_SRAM] = this.ROM_WS[sram];
+  this.waitstates32[this.REGION_CART_SRAM] = this.ROM_WS[sram];
+  this.waitstatesSeq32[this.REGION_CART_SRAM] = this.ROM_WS[sram];
+  this.waitstates[this.REGION_CART0] = this.waitstates[this.REGION_CART0 + 1] = this.ROM_WS[ws0];
+  this.waitstates[this.REGION_CART1] = this.waitstates[this.REGION_CART1 + 1] = this.ROM_WS[ws1];
+  this.waitstates[this.REGION_CART2] = this.waitstates[this.REGION_CART2 + 1] = this.ROM_WS[ws2];
+  this.waitstatesSeq[this.REGION_CART0] = this.waitstatesSeq[this.REGION_CART0 + 1] = this.ROM_WS_SEQ[0][ws0seq];
+  this.waitstatesSeq[this.REGION_CART1] = this.waitstatesSeq[this.REGION_CART1 + 1] = this.ROM_WS_SEQ[1][ws1seq];
+  this.waitstatesSeq[this.REGION_CART2] = this.waitstatesSeq[this.REGION_CART2 + 1] = this.ROM_WS_SEQ[2][ws2seq];
+  this.waitstates32[this.REGION_CART0] = this.waitstates32[this.REGION_CART0 + 1] = this.waitstates[this.REGION_CART0] + 1 + this.waitstatesSeq[this.REGION_CART0];
+  this.waitstates32[this.REGION_CART1] = this.waitstates32[this.REGION_CART1 + 1] = this.waitstates[this.REGION_CART1] + 1 + this.waitstatesSeq[this.REGION_CART1];
+  this.waitstates32[this.REGION_CART2] = this.waitstates32[this.REGION_CART2 + 1] = this.waitstates[this.REGION_CART2] + 1 + this.waitstatesSeq[this.REGION_CART2];
+  this.waitstatesSeq32[this.REGION_CART0] = this.waitstatesSeq32[this.REGION_CART0 + 1] = 2 * this.waitstatesSeq[this.REGION_CART0] + 1;
+  this.waitstatesSeq32[this.REGION_CART1] = this.waitstatesSeq32[this.REGION_CART1 + 1] = 2 * this.waitstatesSeq[this.REGION_CART1] + 1;
+  this.waitstatesSeq32[this.REGION_CART2] = this.waitstatesSeq32[this.REGION_CART2 + 1] = 2 * this.waitstatesSeq[this.REGION_CART2] + 1;
+
+  if (prefetch) {
+    this.waitstatesPrefetch[this.REGION_CART0] = this.waitstatesPrefetch[this.REGION_CART0 + 1] = 0;
+    this.waitstatesPrefetch[this.REGION_CART1] = this.waitstatesPrefetch[this.REGION_CART1 + 1] = 0;
+    this.waitstatesPrefetch[this.REGION_CART2] = this.waitstatesPrefetch[this.REGION_CART2 + 1] = 0;
+    this.waitstatesPrefetch32[this.REGION_CART0] = this.waitstatesPrefetch32[this.REGION_CART0 + 1] = 0;
+    this.waitstatesPrefetch32[this.REGION_CART1] = this.waitstatesPrefetch32[this.REGION_CART1 + 1] = 0;
+    this.waitstatesPrefetch32[this.REGION_CART2] = this.waitstatesPrefetch32[this.REGION_CART2 + 1] = 0;
+  } else {
+    this.waitstatesPrefetch[this.REGION_CART0] = this.waitstatesPrefetch[this.REGION_CART0 + 1] = this.waitstatesSeq[this.REGION_CART0];
+    this.waitstatesPrefetch[this.REGION_CART1] = this.waitstatesPrefetch[this.REGION_CART1 + 1] = this.waitstatesSeq[this.REGION_CART1];
+    this.waitstatesPrefetch[this.REGION_CART2] = this.waitstatesPrefetch[this.REGION_CART2 + 1] = this.waitstatesSeq[this.REGION_CART2];
+    this.waitstatesPrefetch32[this.REGION_CART0] = this.waitstatesPrefetch32[this.REGION_CART0 + 1] = this.waitstatesSeq32[this.REGION_CART0];
+    this.waitstatesPrefetch32[this.REGION_CART1] = this.waitstatesPrefetch32[this.REGION_CART1 + 1] = this.waitstatesSeq32[this.REGION_CART1];
+    this.waitstatesPrefetch32[this.REGION_CART2] = this.waitstatesPrefetch32[this.REGION_CART2 + 1] = this.waitstatesSeq32[this.REGION_CART2];
+  }
+};
+
+GameBoyAdvanceMMU.prototype.saveNeedsFlush = function () {
+  return this.save.writePending;
+};
+
+GameBoyAdvanceMMU.prototype.flushSave = function () {
+  this.save.writePending = false;
+};
+
+GameBoyAdvanceMMU.prototype.allocGPIO = function (rom) {
+  return new GameBoyAdvanceGPIO(this.core, rom);
+};
+
+/***/ }),
+
+/***/ "./src/emulator/reset.js":
+/*!*******************************!*\
+  !*** ./src/emulator/reset.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _fades__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fades */ "./src/emulator/fades.js");
+
+
+var reset = function reset(gba) {
+  gba.pause();
+  gba.reset();
+  var crash = document.getElementById('crash');
+
+  if (crash) {
+    var context = gba.targetCanvas.getContext('2d');
+    context.clearRect(0, 0, 480, 320);
+    gba.video.drawCallback();
+    crash.parentElement.removeChild(crash);
+    var canvas = document.getElementById('screen');
+    canvas.removeAttribute('class');
+  } else {
+    Object(_fades__WEBPACK_IMPORTED_MODULE_0__["lcdFade"])(gba.context, gba.targetCanvas.getContext('2d'), gba.video.drawCallback);
+  }
+
+  Object(_fades__WEBPACK_IMPORTED_MODULE_0__["fadeOut"])('ingame', 'preload');
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (reset);
+
+/***/ }),
+
+/***/ "./src/emulator/savedata.js":
+/*!**********************************!*\
+  !*** ./src/emulator/savedata.js ***!
+  \**********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mmu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mmu */ "./src/emulator/mmu.js");
+/* harmony import */ var _mmu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_mmu__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function SRAMSavedata(size) {
+  MemoryView.call(this, new ArrayBuffer(size), 0);
+  this.writePending = false;
+}
+
+;
+SRAMSavedata.prototype = Object.create(MemoryView.prototype);
+
+SRAMSavedata.prototype.store8 = function (offset, value) {
+  this.view.setInt8(offset, value);
+  this.writePending = true;
+};
+
+SRAMSavedata.prototype.store16 = function (offset, value) {
+  this.view.setInt16(offset, value, true);
+  this.writePending = true;
+};
+
+SRAMSavedata.prototype.store32 = function (offset, value) {
+  this.view.setInt32(offset, value, true);
+  this.writePending = true;
+};
+
+function FlashSavedata(size) {
+  MemoryView.call(this, new ArrayBuffer(size), 0);
+  this.COMMAND_WIPE = 0x10;
+  this.COMMAND_ERASE_SECTOR = 0x30;
+  this.COMMAND_ERASE = 0x80;
+  this.COMMAND_ID = 0x90;
+  this.COMMAND_WRITE = 0xA0;
+  this.COMMAND_SWITCH_BANK = 0xB0;
+  this.COMMAND_TERMINATE_ID = 0xF0;
+  this.ID_PANASONIC = 0x1B32;
+  this.ID_SANYO = 0x1362;
+  this.bank0 = new DataView(this.buffer, 0, 0x00010000);
+
+  if (size > 0x00010000) {
+    this.id = this.ID_SANYO;
+    this.bank1 = new DataView(this.buffer, 0x00010000);
+  } else {
+    this.id = this.ID_PANASONIC;
+    this.bank1 = null;
+  }
+
+  this.bank = this.bank0;
+  this.idMode = false;
+  this.writePending = false;
+  this.first = 0;
+  this.second = 0;
+  this.command = 0;
+  this.pendingCommand = 0;
+}
+
+;
+FlashSavedata.prototype = Object.create(MemoryView.prototype);
+
+FlashSavedata.prototype.load8 = function (offset) {
+  if (this.idMode && offset < 2) {
+    return this.id >> (offset << 3) & 0xFF;
+  } else if (offset < 0x10000) {
+    return this.bank.getInt8(offset);
+  } else {
+    return 0;
+  }
+};
+
+FlashSavedata.prototype.load16 = function (offset) {
+  return this.load8(offset) & 0xFF | this.load8(offset + 1) << 8;
+};
+
+FlashSavedata.prototype.load32 = function (offset) {
+  return this.load8(offset) & 0xFF | this.load8(offset + 1) << 8 | this.load8(offset + 2) << 16 | this.load8(offset + 3) << 24;
+};
+
+FlashSavedata.prototype.loadU8 = function (offset) {
+  return this.load8(offset) & 0xFF;
+};
+
+FlashSavedata.prototype.loadU16 = function (offset) {
+  return this.loadU8(offset) & 0xFF | this.loadU8(offset + 1) << 8;
+};
+
+FlashSavedata.prototype.store8 = function (offset, value) {
+  switch (this.command) {
+    case 0:
+      if (offset == 0x5555) {
+        if (this.second == 0x55) {
+          switch (value) {
+            case this.COMMAND_ERASE:
+              this.pendingCommand = value;
+              break;
+
+            case this.COMMAND_ID:
+              this.idMode = true;
+              break;
+
+            case this.COMMAND_TERMINATE_ID:
+              this.idMode = false;
+              break;
+
+            default:
+              this.command = value;
+              break;
+          }
+
+          this.second = 0;
+          this.first = 0;
+        } else {
+          this.command = 0;
+          this.first = value;
+          this.idMode = false;
+        }
+      } else if (offset == 0x2AAA && this.first == 0xAA) {
+        this.first = 0;
+
+        if (this.pendingCommand) {
+          this.command = this.pendingCommand;
+        } else {
+          this.second = value;
+        }
+      }
+
+      break;
+
+    case this.COMMAND_ERASE:
+      switch (value) {
+        case this.COMMAND_WIPE:
+          if (offset == 0x5555) {
+            for (var i = 0; i < this.view.byteLength; i += 4) {
+              this.view.setInt32(i, -1);
+            }
+          }
+
+          break;
+
+        case this.COMMAND_ERASE_SECTOR:
+          if ((offset & 0x0FFF) == 0) {
+            for (var i = offset; i < offset + 0x1000; i += 4) {
+              this.bank.setInt32(i, -1);
+            }
+          }
+
+          break;
+      }
+
+      this.pendingCommand = 0;
+      this.command = 0;
+      break;
+
+    case this.COMMAND_WRITE:
+      this.bank.setInt8(offset, value);
+      this.command = 0;
+      this.writePending = true;
+      break;
+
+    case this.COMMAND_SWITCH_BANK:
+      if (this.bank1 && offset == 0) {
+        if (value == 1) {
+          this.bank = this.bank1;
+        } else {
+          this.bank = this.bank0;
+        }
+      }
+
+      this.command = 0;
+      break;
+  }
+};
+
+FlashSavedata.prototype.store16 = function (offset, value) {
+  throw new Error("Unaligned save to flash!");
+};
+
+FlashSavedata.prototype.store32 = function (offset, value) {
+  throw new Error("Unaligned save to flash!");
+};
+
+FlashSavedata.prototype.replaceData = function (memory) {
+  var bank = this.view === this.bank1;
+  MemoryView.prototype.replaceData.call(this, memory, 0);
+  this.bank0 = new DataView(this.buffer, 0, 0x00010000);
+
+  if (memory.byteLength > 0x00010000) {
+    this.bank1 = new DataView(this.buffer, 0x00010000);
+  } else {
+    this.bank1 = null;
+  }
+
+  this.bank = bank ? this.bank1 : this.bank0;
+};
+
+window.EEPROMSavedata = function EEPROMSavedata(size, mmu) {
+  MemoryView.call(this, new ArrayBuffer(size), 0);
+  this.writeAddress = 0;
+  this.readBitsRemaining = 0;
+  this.readAddress = 0;
+  this.command = 0;
+  this.commandBitsRemaining = 0;
+  this.realSize = 0;
+  this.addressBits = 0;
+  this.writePending = false;
+  this.dma = mmu.core.irq.dma[3];
+  this.COMMAND_NULL = 0;
+  this.COMMAND_PENDING = 1;
+  this.COMMAND_WRITE = 2;
+  this.COMMAND_READ_PENDING = 3;
+  this.COMMAND_READ = 4;
+};
+
+EEPROMSavedata.prototype = Object.create(MemoryView.prototype);
+
+EEPROMSavedata.prototype.load8 = function (offset) {
+  throw new Error("Unsupported 8-bit access!");
+};
+
+EEPROMSavedata.prototype.load16 = function (offset) {
+  return this.loadU16(offset);
+};
+
+EEPROMSavedata.prototype.loadU8 = function (offset) {
+  throw new Error("Unsupported 8-bit access!");
+};
+
+EEPROMSavedata.prototype.loadU16 = function (offset) {
+  if (this.command != this.COMMAND_READ || !this.dma.enable) {
+    return 1;
+  }
+
+  --this.readBitsRemaining;
+
+  if (this.readBitsRemaining < 64) {
+    var step = 63 - this.readBitsRemaining;
+    var data = this.view.getUint8(this.readAddress + step >> 3, false) >> 0x7 - (step & 0x7);
+
+    if (!this.readBitsRemaining) {
+      this.command = this.COMMAND_NULL;
+    }
+
+    return data & 0x1;
+  }
+
+  return 0;
+};
+
+EEPROMSavedata.prototype.load32 = function (offset) {
+  throw new Error("Unsupported 32-bit access!");
+};
+
+EEPROMSavedata.prototype.store8 = function (offset, value) {
+  throw new Error("Unsupported 8-bit access!");
+};
+
+EEPROMSavedata.prototype.store16 = function (offset, value) {
+  switch (this.command) {
+    // Read header
+    case this.COMMAND_NULL:
+    default:
+      this.command = value & 0x1;
+      break;
+
+    case this.COMMAND_PENDING:
+      this.command <<= 1;
+      this.command |= value & 0x1;
+
+      if (this.command == this.COMMAND_WRITE) {
+        if (!this.realSize) {
+          var bits = this.dma.count - 67;
+          this.realSize = 8 << bits;
+          this.addressBits = bits;
+        }
+
+        this.commandBitsRemaining = this.addressBits + 64 + 1;
+        this.writeAddress = 0;
+      } else {
+        if (!this.realSize) {
+          var bits = this.dma.count - 3;
+          this.realSize = 8 << bits;
+          this.addressBits = bits;
+        }
+
+        this.commandBitsRemaining = this.addressBits + 1;
+        this.readAddress = 0;
+      }
+
+      break;
+    // Do commands
+
+    case this.COMMAND_WRITE:
+      // Write
+      if (--this.commandBitsRemaining > 64) {
+        this.writeAddress <<= 1;
+        this.writeAddress |= (value & 0x1) << 6;
+      } else if (this.commandBitsRemaining <= 0) {
+        this.command = this.COMMAND_NULL;
+        this.writePending = true;
+      } else {
+        var current = this.view.getUint8(this.writeAddress >> 3);
+        current &= ~(1 << 0x7 - (this.writeAddress & 0x7));
+        current |= (value & 0x1) << 0x7 - (this.writeAddress & 0x7);
+        this.view.setUint8(this.writeAddress >> 3, current);
+        ++this.writeAddress;
+      }
+
+      break;
+
+    case this.COMMAND_READ_PENDING:
+      // Read
+      if (--this.commandBitsRemaining > 0) {
+        this.readAddress <<= 1;
+
+        if (value & 0x1) {
+          this.readAddress |= 0x40;
+        }
+      } else {
+        this.readBitsRemaining = 68;
+        this.command = this.COMMAND_READ;
+      }
+
+      break;
+  }
+};
+
+EEPROMSavedata.prototype.store32 = function (offset, value) {
+  throw new Error("Unsupported 32-bit access!");
+};
+
+EEPROMSavedata.prototype.replaceData = function (memory) {
+  MemoryView.prototype.replaceData.call(this, memory, 0);
+};
+
+/***/ }),
+
+/***/ "./src/emulator/setVolume.js":
+/*!***********************************!*\
+  !*** ./src/emulator/setVolume.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var setVolume = function setVolume(gba, value) {
+  return gba.audio.masterVolume = Math.pow(2, value) - 1;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (setVolume);
+
+/***/ }),
+
+/***/ "./src/emulator/sio.js":
+/*!*****************************!*\
+  !*** ./src/emulator/sio.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceSIO = function GameBoyAdvanceSIO() {
+  this.SIO_NORMAL_8 = 0;
+  this.SIO_NORMAL_32 = 1;
+  this.SIO_MULTI = 2;
+  this.SIO_UART = 3;
+  this.SIO_GPIO = 8;
+  this.SIO_JOYBUS = 12;
+  this.BAUD = [9600, 38400, 57600, 115200];
+};
+
+GameBoyAdvanceSIO.prototype.clear = function () {
+  this.mode = this.SIO_GPIO;
+  this.sd = false;
+  this.irq = false;
+  this.multiplayer = {
+    baud: 0,
+    si: 0,
+    id: 0,
+    error: 0,
+    busy: 0,
+    states: [0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF]
+  };
+  this.linkLayer = null;
+};
+
+GameBoyAdvanceSIO.prototype.setMode = function (mode) {
+  if (mode & 0x8) {
+    mode &= 0xC;
+  } else {
+    mode &= 0x3;
+  }
+
+  this.mode = mode;
+  this.core.INFO('Setting SIO mode to ' + hex(mode, 1));
+};
+
+GameBoyAdvanceSIO.prototype.writeRCNT = function (value) {
+  if (this.mode != this.SIO_GPIO) {
+    return;
+  }
+
+  this.core.STUB('General purpose serial not supported');
+};
+
+GameBoyAdvanceSIO.prototype.writeSIOCNT = function (value) {
+  switch (this.mode) {
+    case this.SIO_NORMAL_8:
+      this.core.STUB('8-bit transfer unsupported');
+      break;
+
+    case this.SIO_NORMAL_32:
+      this.core.STUB('32-bit transfer unsupported');
+      break;
+
+    case this.SIO_MULTI:
+      this.multiplayer.baud = value & 0x0003;
+
+      if (this.linkLayer) {
+        this.linkLayer.setBaud(this.BAUD[this.multiplayer.baud]);
+      }
+
+      if (!this.multiplayer.si) {
+        this.multiplayer.busy = value & 0x0080;
+
+        if (this.linkLayer && this.multiplayer.busy) {
+          this.linkLayer.startMultiplayerTransfer();
+        }
+      }
+
+      this.irq = value & 0x4000;
+      break;
+
+    case this.SIO_UART:
+      this.core.STUB('UART unsupported');
+      break;
+
+    case this.SIO_GPIO:
+      // This register isn't used in general-purpose mode
+      break;
+
+    case this.SIO_JOYBUS:
+      this.core.STUB('JOY BUS unsupported');
+      break;
+  }
+};
+
+GameBoyAdvanceSIO.prototype.readSIOCNT = function () {
+  var value = this.mode << 12 & 0xFFFF;
+
+  switch (this.mode) {
+    case this.SIO_NORMAL_8:
+      this.core.STUB('8-bit transfer unsupported');
+      break;
+
+    case this.SIO_NORMAL_32:
+      this.core.STUB('32-bit transfer unsupported');
+      break;
+
+    case this.SIO_MULTI:
+      value |= this.multiplayer.baud;
+      value |= this.multiplayer.si;
+      value |= !!this.sd << 3;
+      value |= this.multiplayer.id << 4;
+      value |= this.multiplayer.error;
+      value |= this.multiplayer.busy;
+      value |= !!this.multiplayer.irq << 14;
+      break;
+
+    case this.SIO_UART:
+      this.core.STUB('UART unsupported');
+      break;
+
+    case this.SIO_GPIO:
+      // This register isn't used in general-purpose mode
+      break;
+
+    case this.SIO_JOYBUS:
+      this.core.STUB('JOY BUS unsupported');
+      break;
+  }
+
+  return value;
+};
+
+GameBoyAdvanceSIO.prototype.read = function (slot) {
+  switch (this.mode) {
+    case this.SIO_NORMAL_32:
+      this.core.STUB('32-bit transfer unsupported');
+      break;
+
+    case this.SIO_MULTI:
+      return this.multiplayer.states[slot];
+
+    case this.SIO_UART:
+      this.core.STUB('UART unsupported');
+      break;
+
+    default:
+      this.core.WARN('Reading from transfer register in unsupported mode');
+      break;
+  }
+
+  return 0;
+};
+
+/***/ }),
+
+/***/ "./src/emulator/thumb.js":
+/*!*******************************!*\
+  !*** ./src/emulator/thumb.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.ARMCoreThumb = ARMCoreThumb = function ARMCoreThumb(cpu) {
+  this.cpu = cpu;
+};
+
+ARMCoreThumb.prototype.constructADC = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var m = (gprs[rm] >>> 0) + !!cpu.cpsrC;
+    var oldD = gprs[rd];
+    var d = (oldD >>> 0) + m;
+    var oldDn = oldD >> 31;
+    var dn = d >> 31;
+    var mn = m >> 31;
+    cpu.cpsrN = dn;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = d > 0xFFFFFFFF;
+    cpu.cpsrV = oldDn == mn && oldDn != dn && mn != dn;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = (gprs[rn] >>> 0) + immediate;
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = d > 0xFFFFFFFF;
+    cpu.cpsrV = !(gprs[rn] >> 31) && (gprs[rn] >> 31 ^ d) >> 31 && d >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD2 = function (rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = (gprs[rn] >>> 0) + immediate;
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = d > 0xFFFFFFFF;
+    cpu.cpsrV = !(gprs[rn] >> 31) && (gprs[rn] ^ d) >> 31 && (immediate ^ d) >> 31;
+    gprs[rn] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD3 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = (gprs[rn] >>> 0) + (gprs[rm] >>> 0);
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = d > 0xFFFFFFFF;
+    cpu.cpsrV = !((gprs[rn] ^ gprs[rm]) >> 31) && (gprs[rn] ^ d) >> 31 && (gprs[rm] ^ d) >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD4 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] += gprs[rm];
+  };
+};
+
+ARMCoreThumb.prototype.constructADD5 = function (rd, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = (gprs[cpu.PC] & 0xFFFFFFFC) + immediate;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD6 = function (rd, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[cpu.SP] + immediate;
+  };
+};
+
+ARMCoreThumb.prototype.constructADD7 = function (immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[cpu.SP] += immediate;
+  };
+};
+
+ARMCoreThumb.prototype.constructAND = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[rd] & gprs[rm];
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructASR1 = function (rd, rm, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+
+    if (immediate == 0) {
+      cpu.cpsrC = gprs[rm] >> 31;
+
+      if (cpu.cpsrC) {
+        gprs[rd] = 0xFFFFFFFF;
+      } else {
+        gprs[rd] = 0;
+      }
+    } else {
+      cpu.cpsrC = gprs[rm] & 1 << immediate - 1;
+      gprs[rd] = gprs[rm] >> immediate;
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructASR2 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var rs = gprs[rm] & 0xFF;
+
+    if (rs) {
+      if (rs < 32) {
+        cpu.cpsrC = gprs[rd] & 1 << rs - 1;
+        gprs[rd] >>= rs;
+      } else {
+        cpu.cpsrC = gprs[rd] >> 31;
+
+        if (cpu.cpsrC) {
+          gprs[rd] = 0xFFFFFFFF;
+        } else {
+          gprs[rd] = 0;
+        }
+      }
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructB1 = function (immediate, condOp) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+
+    if (condOp()) {
+      gprs[cpu.PC] += immediate;
+    }
+  };
+};
+
+ARMCoreThumb.prototype.constructB2 = function (immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[cpu.PC] += immediate;
+  };
+};
+
+ARMCoreThumb.prototype.constructBIC = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[rd] & ~gprs[rm];
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructBL1 = function (immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[cpu.LR] = gprs[cpu.PC] + immediate;
+  };
+};
+
+ARMCoreThumb.prototype.constructBL2 = function (immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var pc = gprs[cpu.PC];
+    gprs[cpu.PC] = gprs[cpu.LR] + (immediate << 1);
+    gprs[cpu.LR] = pc - 1;
+  };
+};
+
+ARMCoreThumb.prototype.constructBX = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    cpu.switchExecMode(gprs[rm] & 0x00000001);
+    var misalign = 0;
+
+    if (rm == 15) {
+      misalign = gprs[rm] & 0x00000002;
+    }
+
+    gprs[cpu.PC] = gprs[rm] & 0xFFFFFFFE - misalign;
+  };
+};
+
+ARMCoreThumb.prototype.constructCMN = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var aluOut = (gprs[rd] >>> 0) + (gprs[rm] >>> 0);
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = aluOut > 0xFFFFFFFF;
+    cpu.cpsrV = gprs[rd] >> 31 == gprs[rm] >> 31 && gprs[rd] >> 31 != aluOut >> 31 && gprs[rm] >> 31 != aluOut >> 31;
+  };
+};
+
+ARMCoreThumb.prototype.constructCMP1 = function (rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var aluOut = gprs[rn] - immediate;
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rn] >>> 0 >= immediate;
+    cpu.cpsrV = gprs[rn] >> 31 && (gprs[rn] ^ aluOut) >> 31;
+  };
+};
+
+ARMCoreThumb.prototype.constructCMP2 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = gprs[rd];
+    var m = gprs[rm];
+    var aluOut = d - m;
+    var an = aluOut >> 31;
+    var dn = d >> 31;
+    cpu.cpsrN = an;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = d >>> 0 >= m >>> 0;
+    cpu.cpsrV = dn != m >> 31 && dn != an;
+  };
+};
+
+ARMCoreThumb.prototype.constructCMP3 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var aluOut = gprs[rd] - gprs[rm];
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rd] >>> 0 >= gprs[rm] >>> 0;
+    cpu.cpsrV = (gprs[rd] ^ gprs[rm]) >> 31 && (gprs[rd] ^ aluOut) >> 31;
+  };
+};
+
+ARMCoreThumb.prototype.constructEOR = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[rd] ^ gprs[rm];
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructLDMIA = function (rn, rs) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var address = gprs[rn];
+    var total = 0;
+    var m, i;
+
+    for (m = 0x01, i = 0; i < 8; m <<= 1, ++i) {
+      if (rs & m) {
+        gprs[i] = cpu.mmu.load32(address);
+        address += 4;
+        ++total;
+      }
+    }
+
+    cpu.mmu.waitMulti32(address, total);
+
+    if (!(1 << rn & rs)) {
+      gprs[rn] = address;
+    }
+  };
+};
+
+ARMCoreThumb.prototype.constructLDR1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var n = gprs[rn] + immediate;
+    gprs[rd] = cpu.mmu.load32(n);
+    cpu.mmu.wait32(n);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDR2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.load32(gprs[rn] + gprs[rm]);
+    cpu.mmu.wait32(gprs[rn] + gprs[rm]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDR3 = function (rd, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.load32((gprs[cpu.PC] & 0xFFFFFFFC) + immediate);
+    cpu.mmu.wait32(gprs[cpu.PC]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDR4 = function (rd, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.load32(gprs[cpu.SP] + immediate);
+    cpu.mmu.wait32(gprs[cpu.SP] + immediate);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRB1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var n = gprs[rn] + immediate;
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.loadU8(n);
+    cpu.mmu.wait(n);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRB2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.loadU8(gprs[rn] + gprs[rm]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRH1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var n = gprs[rn] + immediate;
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.loadU16(n);
+    cpu.mmu.wait(n);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRH2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.loadU16(gprs[rn] + gprs[rm]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRSB = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.load8(gprs[rn] + gprs[rm]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLDRSH = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = cpu.mmu.load16(gprs[rn] + gprs[rm]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+    ++cpu.cycles;
+  };
+};
+
+ARMCoreThumb.prototype.constructLSL1 = function (rd, rm, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+
+    if (immediate == 0) {
+      gprs[rd] = gprs[rm];
+    } else {
+      cpu.cpsrC = gprs[rm] & 1 << 32 - immediate;
+      gprs[rd] = gprs[rm] << immediate;
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructLSL2 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var rs = gprs[rm] & 0xFF;
+
+    if (rs) {
+      if (rs < 32) {
+        cpu.cpsrC = gprs[rd] & 1 << 32 - rs;
+        gprs[rd] <<= rs;
+      } else {
+        if (rs > 32) {
+          cpu.cpsrC = 0;
+        } else {
+          cpu.cpsrC = gprs[rd] & 0x00000001;
+        }
+
+        gprs[rd] = 0;
+      }
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructLSR1 = function (rd, rm, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+
+    if (immediate == 0) {
+      cpu.cpsrC = gprs[rm] >> 31;
+      gprs[rd] = 0;
+    } else {
+      cpu.cpsrC = gprs[rm] & 1 << immediate - 1;
+      gprs[rd] = gprs[rm] >>> immediate;
+    }
+
+    cpu.cpsrN = 0;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructLSR2 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var rs = gprs[rm] & 0xFF;
+
+    if (rs) {
+      if (rs < 32) {
+        cpu.cpsrC = gprs[rd] & 1 << rs - 1;
+        gprs[rd] >>>= rs;
+      } else {
+        if (rs > 32) {
+          cpu.cpsrC = 0;
+        } else {
+          cpu.cpsrC = gprs[rd] >> 31;
+        }
+
+        gprs[rd] = 0;
+      }
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructMOV1 = function (rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rn] = immediate;
+    cpu.cpsrN = immediate >> 31;
+    cpu.cpsrZ = !(immediate & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructMOV2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = gprs[rn];
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = 0;
+    cpu.cpsrV = 0;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructMOV3 = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[rm];
+  };
+};
+
+ARMCoreThumb.prototype.constructMUL = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    cpu.mmu.waitMul(gprs[rm]);
+
+    if (gprs[rm] & 0xFFFF0000 && gprs[rd] & 0xFFFF0000) {
+      // Our data type is a double--we'll lose bits if we do it all at once!
+      var hi = (gprs[rd] & 0xFFFF0000) * gprs[rm] & 0xFFFFFFFF;
+      var lo = (gprs[rd] & 0x0000FFFF) * gprs[rm] & 0xFFFFFFFF;
+      gprs[rd] = hi + lo & 0xFFFFFFFF;
+    } else {
+      gprs[rd] *= gprs[rm];
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructMVN = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = ~gprs[rm];
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructNEG = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = -gprs[rm];
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = 0 >= d >>> 0;
+    cpu.cpsrV = gprs[rm] >> 31 && d >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructORR = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    gprs[rd] = gprs[rd] | gprs[rm];
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructPOP = function (rs, r) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    ++cpu.cycles;
+    var address = gprs[cpu.SP];
+    var total = 0;
+    var m, i;
+
+    for (m = 0x01, i = 0; i < 8; m <<= 1, ++i) {
+      if (rs & m) {
+        cpu.mmu.waitSeq32(address);
+        gprs[i] = cpu.mmu.load32(address);
+        address += 4;
+        ++total;
+      }
+    }
+
+    if (r) {
+      gprs[cpu.PC] = cpu.mmu.load32(address) & 0xFFFFFFFE;
+      address += 4;
+      ++total;
+    }
+
+    cpu.mmu.waitMulti32(address, total);
+    gprs[cpu.SP] = address;
+  };
+};
+
+ARMCoreThumb.prototype.constructPUSH = function (rs, r) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var address = gprs[cpu.SP] - 4;
+    var total = 0;
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+
+    if (r) {
+      cpu.mmu.store32(address, gprs[cpu.LR]);
+      address -= 4;
+      ++total;
+    }
+
+    var m, i;
+
+    for (m = 0x80, i = 7; m; m >>= 1, --i) {
+      if (rs & m) {
+        cpu.mmu.store32(address, gprs[i]);
+        address -= 4;
+        ++total;
+        break;
+      }
+    }
+
+    for (m >>= 1, --i; m; m >>= 1, --i) {
+      if (rs & m) {
+        cpu.mmu.store32(address, gprs[i]);
+        address -= 4;
+        ++total;
+      }
+    }
+
+    cpu.mmu.waitMulti32(address, total);
+    gprs[cpu.SP] = address + 4;
+  };
+};
+
+ARMCoreThumb.prototype.constructROR = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var rs = gprs[rm] & 0xFF;
+
+    if (rs) {
+      var r4 = rs & 0x1F;
+
+      if (r4 > 0) {
+        cpu.cpsrC = gprs[rd] & 1 << r4 - 1;
+        gprs[rd] = gprs[rd] >>> r4 | gprs[rd] << 32 - r4;
+      } else {
+        cpu.cpsrC = gprs[rd] >> 31;
+      }
+    }
+
+    cpu.cpsrN = gprs[rd] >> 31;
+    cpu.cpsrZ = !(gprs[rd] & 0xFFFFFFFF);
+  };
+};
+
+ARMCoreThumb.prototype.constructSBC = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var m = (gprs[rm] >>> 0) + !cpu.cpsrC;
+    var d = (gprs[rd] >>> 0) - m;
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rd] >>> 0 >= d >>> 0;
+    cpu.cpsrV = (gprs[rd] ^ m) >> 31 && (gprs[rd] ^ d) >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructSTMIA = function (rn, rs) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.wait(gprs[cpu.PC]);
+    var address = gprs[rn];
+    var total = 0;
+    var m, i;
+
+    for (m = 0x01, i = 0; i < 8; m <<= 1, ++i) {
+      if (rs & m) {
+        cpu.mmu.store32(address, gprs[i]);
+        address += 4;
+        ++total;
+        break;
+      }
+    }
+
+    for (m <<= 1, ++i; i < 8; m <<= 1, ++i) {
+      if (rs & m) {
+        cpu.mmu.store32(address, gprs[i]);
+        address += 4;
+        ++total;
+      }
+    }
+
+    cpu.mmu.waitMulti32(address, total);
+    gprs[rn] = address;
+  };
+};
+
+ARMCoreThumb.prototype.constructSTR1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var n = gprs[rn] + immediate;
+    cpu.mmu.store32(n, gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait32(n);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTR2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.store32(gprs[rn] + gprs[rm], gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait32(gprs[rn] + gprs[rm]);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTR3 = function (rd, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.store32(gprs[cpu.SP] + immediate, gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait32(gprs[cpu.SP] + immediate);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTRB1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var n = gprs[rn] + immediate;
+    cpu.mmu.store8(n, gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait(n);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTRB2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.store8(gprs[rn] + gprs[rm], gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTRH1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    var n = gprs[rn] + immediate;
+    cpu.mmu.store16(n, gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait(n);
+  };
+};
+
+ARMCoreThumb.prototype.constructSTRH2 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.store16(gprs[rn] + gprs[rm], gprs[rd]);
+    cpu.mmu.wait(gprs[cpu.PC]);
+    cpu.mmu.wait(gprs[rn] + gprs[rm]);
+  };
+};
+
+ARMCoreThumb.prototype.constructSUB1 = function (rd, rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = gprs[rn] - immediate;
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rn] >>> 0 >= immediate;
+    cpu.cpsrV = gprs[rn] >> 31 && (gprs[rn] ^ d) >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructSUB2 = function (rn, immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = gprs[rn] - immediate;
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rn] >>> 0 >= immediate;
+    cpu.cpsrV = gprs[rn] >> 31 && (gprs[rn] ^ d) >> 31;
+    gprs[rn] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructSUB3 = function (rd, rn, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var d = gprs[rn] - gprs[rm];
+    cpu.cpsrN = d >> 31;
+    cpu.cpsrZ = !(d & 0xFFFFFFFF);
+    cpu.cpsrC = gprs[rn] >>> 0 >= gprs[rm] >>> 0;
+    cpu.cpsrV = gprs[rn] >> 31 != gprs[rm] >> 31 && gprs[rn] >> 31 != d >> 31;
+    gprs[rd] = d;
+  };
+};
+
+ARMCoreThumb.prototype.constructSWI = function (immediate) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.irq.swi(immediate);
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+  };
+};
+
+ARMCoreThumb.prototype.constructTST = function (rd, rm) {
+  var cpu = this.cpu;
+  var gprs = cpu.gprs;
+  return function () {
+    cpu.mmu.waitPrefetch(gprs[cpu.PC]);
+    var aluOut = gprs[rd] & gprs[rm];
+    cpu.cpsrN = aluOut >> 31;
+    cpu.cpsrZ = !(aluOut & 0xFFFFFFFF);
+  };
+};
+
+/***/ }),
+
+/***/ "./src/emulator/util.js":
+/*!******************************!*\
+  !*** ./src/emulator/util.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function hex(number, leading, usePrefix) {
+  if (typeof usePrefix === 'undefined') {
+    usePrefix = true;
+  }
+
+  if (typeof leading === 'undefined') {
+    leading = 8;
+  }
+
+  var string = (number >>> 0).toString(16).toUpperCase();
+  leading -= string.length;
+  if (leading < 0) return string;
+  return (usePrefix ? '0x' : '') + new Array(leading + 1).join('0') + string;
+}
+
+var Serializer = {
+  TAG_INT: 1,
+  TAG_STRING: 2,
+  TAG_STRUCT: 3,
+  TAG_BLOB: 4,
+  TAG_BOOLEAN: 5,
+  TYPE: 'application/octet-stream',
+  pointer: function pointer() {
+    this.index = 0;
+    this.top = 0;
+    this.stack = [];
+  },
+  pack: function pack(value) {
+    var object = new DataView(new ArrayBuffer(4));
+    object.setUint32(0, value, true);
+    return object.buffer;
+  },
+  pack8: function pack8(value) {
+    var object = new DataView(new ArrayBuffer(1));
+    object.setUint8(0, value, true);
+    return object.buffer;
+  },
+  prefix: function prefix(value) {
+    return new Blob([Serializer.pack(value.size || value.length || value.byteLength), value], {
+      type: Serializer.TYPE
+    });
+  },
+  serialize: function serialize(stream) {
+    var parts = [];
+    var size = 4;
+
+    for (i in stream) {
+      if (stream.hasOwnProperty(i)) {
+        var tag;
+        var head = Serializer.prefix(i);
+        var body;
+
+        switch (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(stream[i])) {
+          case 'number':
+            tag = Serializer.TAG_INT;
+            body = Serializer.pack(stream[i]);
+            break;
+
+          case 'string':
+            tag = Serializer.TAG_STRING;
+            body = Serializer.prefix(stream[i]);
+            break;
+
+          case 'object':
+            if (stream[i].type == Serializer.TYPE) {
+              tag = Serializer.TAG_BLOB;
+              body = stream[i];
+            } else {
+              tag = Serializer.TAG_STRUCT;
+              body = Serializer.serialize(stream[i]);
+            }
+
+            break;
+
+          case 'boolean':
+            tag = Serializer.TAG_BOOLEAN;
+            body = Serializer.pack8(stream[i]);
+            break;
+
+          default:
+            console.log(stream[i]);
+            break;
+        }
+
+        size += 1 + head.size + (body.size || body.byteLength || body.length);
+        parts.push(Serializer.pack8(tag));
+        parts.push(head);
+        parts.push(body);
+      }
+    }
+
+    parts.unshift(Serializer.pack(size));
+    return new Blob(parts);
+  },
+  deserialize: function deserialize(blob, callback) {
+    var reader = new FileReader();
+
+    reader.onload = function (data) {
+      callback(Serializer.deserealizeStream(new DataView(data.target.result), new Serializer.pointer()));
+    };
+
+    reader.readAsArrayBuffer(blob);
+  },
+  deserealizeStream: function deserealizeStream(view, pointer) {
+    pointer.push();
+    var object = {};
+    var remaining = view.getUint32(pointer.advance(4), true);
+
+    while (pointer.mark() < remaining) {
+      var tag = view.getUint8(pointer.advance(1));
+      var head = pointer.readString(view);
+      var body;
+
+      switch (tag) {
+        case Serializer.TAG_INT:
+          body = view.getUint32(pointer.advance(4), true);
+          break;
+
+        case Serializer.TAG_STRING:
+          body = pointer.readString(view);
+          break;
+
+        case Serializer.TAG_STRUCT:
+          body = Serializer.deserealizeStream(view, pointer);
+          break;
+
+        case Serializer.TAG_BLOB:
+          var size = view.getUint32(pointer.advance(4), true);
+          body = view.buffer.slice(pointer.advance(size), pointer.advance(0));
+          break;
+
+        case Serializer.TAG_BOOLEAN:
+          body = !!view.getUint8(pointer.advance(1));
+          break;
+      }
+
+      object[head] = body;
+    }
+
+    if (pointer.mark() > remaining) {
+      throw "Size of serialized data exceeded";
+    }
+
+    pointer.pop();
+    return object;
+  },
+  serializePNG: function serializePNG(blob, base, callback) {
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+    var pixels = base.getContext('2d').getImageData(0, 0, base.width, base.height);
+    var transparent = 0;
+
+    for (var y = 0; y < base.height; ++y) {
+      for (var x = 0; x < base.width; ++x) {
+        if (!pixels.data[(x + y * base.width) * 4 + 3]) {
+          ++transparent;
+        }
+      }
+    }
+
+    var bytesInCanvas = transparent * 3 + (base.width * base.height - transparent);
+
+    for (var multiplier = 1; bytesInCanvas * multiplier * multiplier < blob.size; ++multiplier) {
+      ;
+    }
+
+    var edges = bytesInCanvas * multiplier * multiplier - blob.size;
+    var padding = Math.ceil(edges / (base.width * multiplier));
+    canvas.setAttribute('width', base.width * multiplier);
+    canvas.setAttribute('height', base.height * multiplier + padding);
+    var reader = new FileReader();
+
+    reader.onload = function (data) {
+      var view = new Uint8Array(data.target.result);
+      var pointer = 0;
+      var pixelPointer = 0;
+      var newPixels = context.createImageData(canvas.width, canvas.height + padding);
+
+      for (var y = 0; y < canvas.height; ++y) {
+        for (var x = 0; x < canvas.width; ++x) {
+          var oldY = y / multiplier | 0;
+          var oldX = x / multiplier | 0;
+
+          if (oldY > base.height || !pixels.data[(oldX + oldY * base.width) * 4 + 3]) {
+            newPixels.data[pixelPointer++] = view[pointer++];
+            newPixels.data[pixelPointer++] = view[pointer++];
+            newPixels.data[pixelPointer++] = view[pointer++];
+            newPixels.data[pixelPointer++] = 0;
+          } else {
+            var _byte = view[pointer++];
+            newPixels.data[pixelPointer++] = pixels.data[(oldX + oldY * base.width) * 4 + 0] | _byte & 7;
+            newPixels.data[pixelPointer++] = pixels.data[(oldX + oldY * base.width) * 4 + 1] | _byte >> 3 & 7;
+            newPixels.data[pixelPointer++] = pixels.data[(oldX + oldY * base.width) * 4 + 2] | _byte >> 6 & 7;
+            newPixels.data[pixelPointer++] = pixels.data[(oldX + oldY * base.width) * 4 + 3];
+          }
+        }
+      }
+
+      context.putImageData(newPixels, 0, 0);
+      callback(canvas.toDataURL('image/png'));
+    };
+
+    reader.readAsArrayBuffer(blob);
+    return canvas;
+  },
+  deserializePNG: function deserializePNG(blob, callback) {
+    var reader = new FileReader();
+
+    reader.onload = function (data) {
+      var image = document.createElement('img');
+      image.setAttribute('src', data.target.result);
+      var canvas = document.createElement('canvas');
+      canvas.setAttribute('height', image.height);
+      canvas.setAttribute('width', image.width);
+      var context = canvas.getContext('2d');
+      context.drawImage(image, 0, 0);
+      var pixels = context.getImageData(0, 0, canvas.width, canvas.height);
+      var data = [];
+
+      for (var y = 0; y < canvas.height; ++y) {
+        for (var x = 0; x < canvas.width; ++x) {
+          if (!pixels.data[(x + y * canvas.width) * 4 + 3]) {
+            data.push(pixels.data[(x + y * canvas.width) * 4 + 0]);
+            data.push(pixels.data[(x + y * canvas.width) * 4 + 1]);
+            data.push(pixels.data[(x + y * canvas.width) * 4 + 2]);
+          } else {
+            var _byte2 = 0;
+            _byte2 |= pixels.data[(x + y * canvas.width) * 4 + 0] & 7;
+            _byte2 |= (pixels.data[(x + y * canvas.width) * 4 + 1] & 7) << 3;
+            _byte2 |= (pixels.data[(x + y * canvas.width) * 4 + 2] & 7) << 6;
+            data.push(_byte2);
+          }
+        }
+      }
+
+      newBlob = new Blob(data.map(function (_byte3) {
+        var array = new Uint8Array(1);
+        array[0] = _byte3;
+        return array;
+      }), {
+        type: Serializer.TYPE
+      });
+      Serializer.deserialize(newBlob, callback);
+    };
+
+    reader.readAsDataURL(blob);
+  }
+};
+
+Serializer.pointer.prototype.advance = function (amount) {
+  var index = this.index;
+  this.index += amount;
+  return index;
+};
+
+Serializer.pointer.prototype.mark = function () {
+  return this.index - this.top;
+};
+
+Serializer.pointer.prototype.push = function () {
+  this.stack.push(this.top);
+  this.top = this.index;
+};
+
+Serializer.pointer.prototype.pop = function () {
+  this.top = this.stack.pop();
+};
+
+Serializer.pointer.prototype.readString = function (view) {
+  var length = view.getUint32(this.advance(4), true);
+  var bytes = [];
+
+  for (var i = 0; i < length; ++i) {
+    bytes.push(String.fromCharCode(view.getUint8(this.advance(1))));
+  }
+
+  return bytes.join('');
+};
+
+/***/ }),
+
+/***/ "./src/emulator/video.js":
+/*!*******************************!*\
+  !*** ./src/emulator/video.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+window.GameBoyAdvanceVideo = function GameBoyAdvanceVideo() {
+  this.renderPath = new GameBoyAdvanceSoftwareRenderer();
+  this.CYCLES_PER_PIXEL = 4;
+  this.HORIZONTAL_PIXELS = 240;
+  this.HBLANK_PIXELS = 68;
+  this.HDRAW_LENGTH = 1006;
+  this.HBLANK_LENGTH = 226;
+  this.HORIZONTAL_LENGTH = 1232;
+  this.VERTICAL_PIXELS = 160;
+  this.VBLANK_PIXELS = 68;
+  this.VERTICAL_TOTAL_PIXELS = 228;
+  this.TOTAL_LENGTH = 280896;
+
+  this.drawCallback = function () {};
+
+  this.vblankCallback = function () {};
+};
+
+GameBoyAdvanceVideo.prototype.clear = function () {
+  this.renderPath.clear(this.cpu.mmu); // DISPSTAT
+
+  this.DISPSTAT_MASK = 0xFF38;
+  this.inHblank = false;
+  this.inVblank = false;
+  this.vcounter = 0;
+  this.vblankIRQ = 0;
+  this.hblankIRQ = 0;
+  this.vcounterIRQ = 0;
+  this.vcountSetting = 0; // VCOUNT
+
+  this.vcount = -1;
+  this.lastHblank = 0;
+  this.nextHblank = this.HDRAW_LENGTH;
+  this.nextEvent = this.nextHblank;
+  this.nextHblankIRQ = 0;
+  this.nextVblankIRQ = 0;
+  this.nextVcounterIRQ = 0;
+};
+
+GameBoyAdvanceVideo.prototype.freeze = function () {
+  return {
+    'inHblank': this.inHblank,
+    'inVblank': this.inVblank,
+    'vcounter': this.vcounter,
+    'vblankIRQ': this.vblankIRQ,
+    'hblankIRQ': this.hblankIRQ,
+    'vcounterIRQ': this.vcounterIRQ,
+    'vcountSetting': this.vcountSetting,
+    'vcount': this.vcount,
+    'lastHblank': this.lastHblank,
+    'nextHblank': this.nextHblank,
+    'nextEvent': this.nextEvent,
+    'nextHblankIRQ': this.nextHblankIRQ,
+    'nextVblankIRQ': this.nextVblankIRQ,
+    'nextVcounterIRQ': this.nextVcounterIRQ,
+    'renderPath': this.renderPath.freeze(this.core.encodeBase64)
+  };
+};
+
+GameBoyAdvanceVideo.prototype.defrost = function (frost) {
+  this.inHblank = frost.inHblank;
+  this.inVblank = frost.inVblank;
+  this.vcounter = frost.vcounter;
+  this.vblankIRQ = frost.vblankIRQ;
+  this.hblankIRQ = frost.hblankIRQ;
+  this.vcounterIRQ = frost.vcounterIRQ;
+  this.vcountSetting = frost.vcountSetting;
+  this.vcount = frost.vcount;
+  this.lastHblank = frost.lastHblank;
+  this.nextHblank = frost.nextHblank;
+  this.nextEvent = frost.nextEvent;
+  this.nextHblankIRQ = frost.nextHblankIRQ;
+  this.nextVblankIRQ = frost.nextVblankIRQ;
+  this.nextVcounterIRQ = frost.nextVcounterIRQ;
+  this.renderPath.defrost(frost.renderPath, this.core.decodeBase64);
+};
+
+GameBoyAdvanceVideo.prototype.setBacking = function (backing) {
+  var pixelData = backing.createImageData(this.HORIZONTAL_PIXELS, this.VERTICAL_PIXELS);
+  this.context = backing; // Clear backing first
+
+  for (var offset = 0; offset < this.HORIZONTAL_PIXELS * this.VERTICAL_PIXELS * 4;) {
+    pixelData.data[offset++] = 0xFF;
+    pixelData.data[offset++] = 0xFF;
+    pixelData.data[offset++] = 0xFF;
+    pixelData.data[offset++] = 0xFF;
+  }
+
+  this.renderPath.setBacking(pixelData);
+};
+
+GameBoyAdvanceVideo.prototype.updateTimers = function (cpu) {
+  var cycles = cpu.cycles;
+
+  if (this.nextEvent <= cycles) {
+    if (this.inHblank) {
+      // End Hblank
+      this.inHblank = false;
+      this.nextEvent = this.nextHblank;
+      ++this.vcount;
+
+      switch (this.vcount) {
+        case this.VERTICAL_PIXELS:
+          this.inVblank = true;
+          this.renderPath.finishDraw(this);
+          this.nextVblankIRQ = this.nextEvent + this.TOTAL_LENGTH;
+          this.cpu.mmu.runVblankDmas();
+
+          if (this.vblankIRQ) {
+            this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_VBLANK);
+          }
+
+          this.vblankCallback();
+          break;
+
+        case this.VERTICAL_TOTAL_PIXELS - 1:
+          this.inVblank = false;
+          break;
+
+        case this.VERTICAL_TOTAL_PIXELS:
+          this.vcount = 0;
+          this.renderPath.startDraw();
+          break;
+      }
+
+      this.vcounter = this.vcount == this.vcountSetting;
+
+      if (this.vcounter && this.vcounterIRQ) {
+        this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_VCOUNTER);
+        this.nextVcounterIRQ += this.TOTAL_LENGTH;
+      }
+
+      if (this.vcount < this.VERTICAL_PIXELS) {
+        this.renderPath.drawScanline(this.vcount);
+      }
+    } else {
+      // Begin Hblank
+      this.inHblank = true;
+      this.lastHblank = this.nextHblank;
+      this.nextEvent = this.lastHblank + this.HBLANK_LENGTH;
+      this.nextHblank = this.nextEvent + this.HDRAW_LENGTH;
+      this.nextHblankIRQ = this.nextHblank;
+
+      if (this.vcount < this.VERTICAL_PIXELS) {
+        this.cpu.mmu.runHblankDmas();
+      }
+
+      if (this.hblankIRQ) {
+        this.cpu.irq.raiseIRQ(this.cpu.irq.IRQ_HBLANK);
+      }
+    }
+  }
+};
+
+GameBoyAdvanceVideo.prototype.writeDisplayStat = function (value) {
+  this.vblankIRQ = value & 0x0008;
+  this.hblankIRQ = value & 0x0010;
+  this.vcounterIRQ = value & 0x0020;
+  this.vcountSetting = (value & 0xFF00) >> 8;
+
+  if (this.vcounterIRQ) {
+    // FIXME: this can be too late if we're in the middle of an Hblank
+    this.nextVcounterIRQ = this.nextHblank + this.HBLANK_LENGTH + (this.vcountSetting - this.vcount) * this.HORIZONTAL_LENGTH;
+
+    if (this.nextVcounterIRQ < this.nextEvent) {
+      this.nextVcounterIRQ += this.TOTAL_LENGTH;
+    }
+  }
+};
+
+GameBoyAdvanceVideo.prototype.readDisplayStat = function () {
+  return this.inVblank | this.inHblank << 1 | this.vcounter << 2;
+};
+
+GameBoyAdvanceVideo.prototype.finishDraw = function (pixelData) {
+  this.context.putImageData(pixelData, 0, 0);
+  this.drawCallback();
+};
+
+/***/ }),
+
+/***/ "./src/emulator/video/proxy.js":
+/*!*************************************!*\
+  !*** ./src/emulator/video/proxy.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function MemoryProxy(owner, size, blockSize) {
+  this.owner = owner;
+  this.blocks = [];
+  this.blockSize = blockSize;
+  this.mask = (1 << blockSize) - 1;
+  this.size = size;
+
+  if (blockSize) {
+    for (var i = 0; i < size >> blockSize; ++i) {
+      this.blocks.push(new MemoryView(new ArrayBuffer(1 << blockSize)));
+    }
+  } else {
+    this.blockSize = 31;
+    this.mask = -1;
+    this.blocks[0] = new MemoryView(new ArrayBuffer(size));
+  }
+}
+
+;
+
+MemoryProxy.prototype.combine = function () {
+  if (this.blocks.length > 1) {
+    var combined = new Uint8Array(this.size);
+
+    for (var i = 0; i < this.blocks.length; ++i) {
+      combined.set(new Uint8Array(this.blocks[i].buffer), i << this.blockSize);
+    }
+
+    return combined.buffer;
+  } else {
+    return this.blocks[0].buffer;
+  }
+};
+
+MemoryProxy.prototype.replace = function (buffer) {
+  for (var i = 0; i < this.blocks.length; ++i) {
+    this.blocks[i] = new MemoryView(buffer.slice(i << this.blockSize, (i << this.blockSize) + this.blocks[i].buffer.byteLength));
+  }
+};
+
+MemoryProxy.prototype.load8 = function (offset) {
+  return this.blocks[offset >> this.blockSize].load8(offset & this.mask);
+};
+
+MemoryProxy.prototype.load16 = function (offset) {
+  return this.blocks[offset >> this.blockSize].load16(offset & this.mask);
+};
+
+MemoryProxy.prototype.loadU8 = function (offset) {
+  return this.blocks[offset >> this.blockSize].loadU8(offset & this.mask);
+};
+
+MemoryProxy.prototype.loadU16 = function (offset) {
+  return this.blocks[offset >> this.blockSize].loadU16(offset & this.mask);
+};
+
+MemoryProxy.prototype.load32 = function (offset) {
+  return this.blocks[offset >> this.blockSize].load32(offset & this.mask);
+};
+
+MemoryProxy.prototype.store8 = function (offset, value) {
+  if (offset >= this.size) {
+    return;
+  }
+
+  this.owner.memoryDirtied(this, offset >> this.blockSize);
+  this.blocks[offset >> this.blockSize].store8(offset & this.mask, value);
+  this.blocks[offset >> this.blockSize].store8(offset & this.mask ^ 1, value);
+};
+
+MemoryProxy.prototype.store16 = function (offset, value) {
+  if (offset >= this.size) {
+    return;
+  }
+
+  this.owner.memoryDirtied(this, offset >> this.blockSize);
+  return this.blocks[offset >> this.blockSize].store16(offset & this.mask, value);
+};
+
+MemoryProxy.prototype.store32 = function (offset, value) {
+  if (offset >= this.size) {
+    return;
+  }
+
+  this.owner.memoryDirtied(this, offset >> this.blockSize);
+  return this.blocks[offset >> this.blockSize].store32(offset & this.mask, value);
+};
+
+MemoryProxy.prototype.invalidatePage = function (address) {};
+
+function GameBoyAdvanceRenderProxy() {
+  this.worker = new Worker('js/video/worker.js');
+  this.currentFrame = 0;
+  this.delay = 0;
+  this.skipFrame = false;
+  this.dirty = null;
+  var self = this;
+  var handlers = {
+    finish: function finish(data) {
+      self.backing = data.backing;
+      self.caller.finishDraw(self.backing);
+      --self.delay;
+    }
+  };
+
+  this.worker.onmessage = function (message) {
+    handlers[message.data['type']](message.data);
+  };
+}
+
+;
+
+GameBoyAdvanceRenderProxy.prototype.memoryDirtied = function (mem, block) {
+  this.dirty = this.dirty || {};
+  this.dirty.memory = this.dirty.memory || {};
+
+  if (mem === this.palette) {
+    this.dirty.memory.palette = mem.blocks[0].buffer;
+  }
+
+  if (mem === this.oam) {
+    this.dirty.memory.oam = mem.blocks[0].buffer;
+  }
+
+  if (mem === this.vram) {
+    this.dirty.memory.vram = this.dirty.memory.vram || [];
+    this.dirty.memory.vram[block] = mem.blocks[block].buffer;
+  }
+};
+
+GameBoyAdvanceRenderProxy.prototype.clear = function (mmu) {
+  this.palette = new MemoryProxy(this, mmu.SIZE_PALETTE_RAM, 0);
+  this.vram = new MemoryProxy(this, mmu.SIZE_VRAM, 13);
+  this.oam = new MemoryProxy(this, mmu.SIZE_OAM, 0);
+  this.dirty = null;
+  this.scanlineQueue = [];
+  this.worker.postMessage({
+    type: 'clear',
+    SIZE_VRAM: mmu.SIZE_VRAM,
+    SIZE_OAM: mmu.SIZE_OAM
+  });
+};
+
+GameBoyAdvanceRenderProxy.prototype.freeze = function (encodeBase64) {
+  return {
+    'palette': Serializer.prefix(this.palette.combine()),
+    'vram': Serializer.prefix(this.vram.combine()),
+    'oam': Serializer.prefix(this.oam.combine())
+  };
+};
+
+GameBoyAdvanceRenderProxy.prototype.defrost = function (frost, decodeBase64) {
+  this.palette.replace(frost.palette);
+  this.memoryDirtied(this.palette, 0);
+  this.vram.replace(frost.vram);
+
+  for (var i = 0; i < this.vram.blocks.length; ++i) {
+    this.memoryDirtied(this.vram, i);
+  }
+
+  this.oam.replace(frost.oam);
+  this.memoryDirtied(this.oam, 0);
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeDisplayControl = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.DISPCNT = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundControl = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGCNT = this.dirty.BGCNT || [];
+  this.dirty.BGCNT[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundHOffset = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGHOFS = this.dirty.BGHOFS || [];
+  this.dirty.BGHOFS[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundVOffset = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGVOFS = this.dirty.BGVOFS || [];
+  this.dirty.BGVOFS[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundRefX = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGX = this.dirty.BGX || [];
+  this.dirty.BGX[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundRefY = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGY = this.dirty.BGY || [];
+  this.dirty.BGY[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundParamA = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGPA = this.dirty.BGPA || [];
+  this.dirty.BGPA[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundParamB = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGPB = this.dirty.BGPB || [];
+  this.dirty.BGPB[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundParamC = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGPC = this.dirty.BGPC || [];
+  this.dirty.BGPC[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBackgroundParamD = function (bg, value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BGPD = this.dirty.BGPD || [];
+  this.dirty.BGPD[bg] = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWin0H = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WIN0H = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWin1H = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WIN1H = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWin0V = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WIN0V = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWin1V = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WIN1V = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWinIn = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WININ = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeWinOut = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.WINOUT = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBlendControl = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BLDCNT = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBlendAlpha = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BLDALPHA = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeBlendY = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.BLDY = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.writeMosaic = function (value) {
+  this.dirty = this.dirty || {};
+  this.dirty.MOSAIC = value;
+};
+
+GameBoyAdvanceRenderProxy.prototype.clearSubsets = function (mmu, regions) {
+  this.dirty = this.dirty || {};
+
+  if (regions & 0x04) {
+    this.palette = new MemoryProxy(this, mmu.SIZE_PALETTE_RAM, 0);
+    mmu.mmap(mmu.REGION_PALETTE_RAM, this.palette);
+    this.memoryDirtied(this.palette, 0);
+  }
+
+  if (regions & 0x08) {
+    this.vram = new MemoryProxy(this, mmu.SIZE_VRAM, 13);
+    mmu.mmap(mmu.REGION_VRAM, this.vram);
+
+    for (var i = 0; i < this.vram.blocks.length; ++i) {
+      this.memoryDirtied(this.vram, i);
+    }
+  }
+
+  if (regions & 0x10) {
+    this.oam = new MemoryProxy(this, mmu.SIZE_OAM, 0);
+    mmu.mmap(mmu.REGION_OAM, this.oam);
+    this.memoryDirtied(this.oam, 0);
+  }
+};
+
+GameBoyAdvanceRenderProxy.prototype.setBacking = function (backing) {
+  this.backing = backing;
+  this.worker.postMessage({
+    type: 'start',
+    backing: this.backing
+  });
+};
+
+GameBoyAdvanceRenderProxy.prototype.drawScanline = function (y) {
+  if (!this.skipFrame) {
+    if (this.dirty) {
+      if (this.dirty.memory) {
+        if (this.dirty.memory.palette) {
+          this.dirty.memory.palette = this.dirty.memory.palette.slice(0);
+        }
+
+        if (this.dirty.memory.oam) {
+          this.dirty.memory.oam = this.dirty.memory.oam.slice(0);
+        }
+
+        if (this.dirty.memory.vram) {
+          for (var i = 0; i < 12; ++i) {
+            if (this.dirty.memory.vram[i]) {
+              this.dirty.memory.vram[i] = this.dirty.memory.vram[i].slice(0);
+            }
+          }
+        }
+      }
+
+      this.scanlineQueue.push({
+        y: y,
+        dirty: this.dirty
+      });
+      this.dirty = null;
+    }
+  }
+};
+
+GameBoyAdvanceRenderProxy.prototype.startDraw = function () {
+  ++this.currentFrame;
+
+  if (this.delay <= 0) {
+    this.skipFrame = false;
+  }
+
+  if (!this.skipFrame) {
+    ++this.delay;
+  }
+};
+
+GameBoyAdvanceRenderProxy.prototype.finishDraw = function (caller) {
+  this.caller = caller;
+
+  if (!this.skipFrame) {
+    this.worker.postMessage({
+      type: 'finish',
+      scanlines: this.scanlineQueue,
+      frame: this.currentFrame
+    });
+    this.scanlineQueue = [];
+
+    if (this.delay > 2) {
+      this.skipFrame = true;
+    }
+  }
+};
+
+/***/ }),
+
+/***/ "./src/emulator/video/software.js":
+/*!****************************************!*\
+  !*** ./src/emulator/video/software.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function MemoryAligned16(size) {
+  this.buffer = new Uint16Array(size >> 1);
+}
+
+;
+
+MemoryAligned16.prototype.load8 = function (offset) {
+  return this.loadU8(offset) << 24 >> 24;
+};
+
+MemoryAligned16.prototype.load16 = function (offset) {
+  return this.loadU16(offset) << 16 >> 16;
+};
+
+MemoryAligned16.prototype.loadU8 = function (offset) {
+  var index = offset >> 1;
+
+  if (offset & 1) {
+    return (this.buffer[index] & 0xFF00) >>> 8;
+  } else {
+    return this.buffer[index] & 0x00FF;
+  }
+};
+
+MemoryAligned16.prototype.loadU16 = function (offset) {
+  return this.buffer[offset >> 1];
+};
+
+MemoryAligned16.prototype.load32 = function (offset) {
+  return this.buffer[offset >> 1 & ~1] | this.buffer[offset >> 1 | 1] << 16;
+};
+
+MemoryAligned16.prototype.store8 = function (offset, value) {
+  var index = offset >> 1;
+  this.store16(offset, value << 8 | value);
+};
+
+MemoryAligned16.prototype.store16 = function (offset, value) {
+  this.buffer[offset >> 1] = value;
+};
+
+MemoryAligned16.prototype.store32 = function (offset, value) {
+  var index = offset >> 1;
+  this.store16(offset, this.buffer[index] = value & 0xFFFF);
+  this.store16(offset + 2, this.buffer[index + 1] = value >>> 16);
+};
+
+MemoryAligned16.prototype.insert = function (start, data) {
+  this.buffer.set(data, start);
+};
+
+MemoryAligned16.prototype.invalidatePage = function (address) {};
+
+function GameBoyAdvanceVRAM(size) {
+  MemoryAligned16.call(this, size);
+  this.vram = this.buffer;
+}
+
+;
+GameBoyAdvanceVRAM.prototype = Object.create(MemoryAligned16.prototype);
+
+function GameBoyAdvanceOAM(size) {
+  MemoryAligned16.call(this, size);
+  this.oam = this.buffer;
+  this.objs = new Array(128);
+
+  for (var i = 0; i < 128; ++i) {
+    this.objs[i] = new GameBoyAdvanceOBJ(this, i);
+  }
+
+  this.scalerot = new Array(32);
+
+  for (var i = 0; i < 32; ++i) {
+    this.scalerot[i] = {
+      a: 1,
+      b: 0,
+      c: 0,
+      d: 1
+    };
+  }
+}
+
+;
+GameBoyAdvanceOAM.prototype = Object.create(MemoryAligned16.prototype);
+
+GameBoyAdvanceOAM.prototype.overwrite = function (memory) {
+  for (var i = 0; i < this.buffer.byteLength >> 1; ++i) {
+    this.store16(i << 1, memory[i]);
+  }
+};
+
+GameBoyAdvanceOAM.prototype.store16 = function (offset, value) {
+  var index = (offset & 0x3F8) >> 3;
+  var obj = this.objs[index];
+  var scalerot = this.scalerot[index >> 2];
+  var layer = obj.priority;
+  var disable = obj.disable;
+  var y = obj.y;
+
+  switch (offset & 0x00000006) {
+    case 0:
+      // Attribute 0
+      obj.y = value & 0x00FF;
+      var wasScalerot = obj.scalerot;
+      obj.scalerot = value & 0x0100;
+
+      if (obj.scalerot) {
+        obj.scalerotOam = this.scalerot[obj.scalerotParam];
+        obj.doublesize = !!(value & 0x0200);
+        obj.disable = 0;
+        obj.hflip = 0;
+        obj.vflip = 0;
+      } else {
+        obj.doublesize = false;
+        obj.disable = value & 0x0200;
+
+        if (wasScalerot) {
+          obj.hflip = obj.scalerotParam & 0x0008;
+          obj.vflip = obj.scalerotParam & 0x0010;
+        }
+      }
+
+      obj.mode = (value & 0x0C00) >> 6; // This lines up with the stencil format
+
+      obj.mosaic = value & 0x1000;
+      obj.multipalette = value & 0x2000;
+      obj.shape = (value & 0xC000) >> 14;
+      obj.recalcSize();
+      break;
+
+    case 2:
+      // Attribute 1
+      obj.x = value & 0x01FF;
+
+      if (obj.scalerot) {
+        obj.scalerotParam = (value & 0x3E00) >> 9;
+        obj.scalerotOam = this.scalerot[obj.scalerotParam];
+        obj.hflip = 0;
+        obj.vflip = 0;
+        obj.drawScanline = obj.drawScanlineAffine;
+      } else {
+        obj.hflip = value & 0x1000;
+        obj.vflip = value & 0x2000;
+        obj.drawScanline = obj.drawScanlineNormal;
+      }
+
+      obj.size = (value & 0xC000) >> 14;
+      obj.recalcSize();
+      break;
+
+    case 4:
+      // Attribute 2
+      obj.tileBase = value & 0x03FF;
+      obj.priority = (value & 0x0C00) >> 10;
+      obj.palette = (value & 0xF000) >> 8; // This is shifted up 4 to make pushPixel faster
+
+      break;
+
+    case 6:
+      // Scaling/rotation parameter
+      switch (index & 0x3) {
+        case 0:
+          scalerot.a = (value << 16) / 0x1000000;
+          break;
+
+        case 1:
+          scalerot.b = (value << 16) / 0x1000000;
+          break;
+
+        case 2:
+          scalerot.c = (value << 16) / 0x1000000;
+          break;
+
+        case 3:
+          scalerot.d = (value << 16) / 0x1000000;
+          break;
+      }
+
+      break;
+  }
+
+  MemoryAligned16.prototype.store16.call(this, offset, value);
+};
+
+function GameBoyAdvancePalette() {
+  this.colors = [new Array(0x100), new Array(0x100)];
+  this.adjustedColors = [new Array(0x100), new Array(0x100)];
+  this.passthroughColors = [this.colors[0], // BG0
+  this.colors[0], // BG1
+  this.colors[0], // BG2
+  this.colors[0], // BG3
+  this.colors[1], // OBJ
+  this.colors[0] // Backdrop
+  ];
+  this.blendY = 1;
+}
+
+;
+
+GameBoyAdvancePalette.prototype.overwrite = function (memory) {
+  for (var i = 0; i < 512; ++i) {
+    this.store16(i << 1, memory[i]);
+  }
+};
+
+GameBoyAdvancePalette.prototype.loadU8 = function (offset) {
+  return this.loadU16(offset) >> 8 * (offset & 1) & 0xFF;
+};
+
+GameBoyAdvancePalette.prototype.loadU16 = function (offset) {
+  return this.colors[(offset & 0x200) >> 9][(offset & 0x1FF) >> 1];
+};
+
+GameBoyAdvancePalette.prototype.load16 = function (offset) {
+  return this.loadU16(offset) << 16 >> 16;
+};
+
+GameBoyAdvancePalette.prototype.load32 = function (offset) {
+  return this.loadU16(offset) | this.loadU16(offset + 2) << 16;
+};
+
+GameBoyAdvancePalette.prototype.store16 = function (offset, value) {
+  var type = (offset & 0x200) >> 9;
+  var index = (offset & 0x1FF) >> 1;
+  this.colors[type][index] = value;
+  this.adjustedColors[type][index] = this.adjustColor(value);
+};
+
+GameBoyAdvancePalette.prototype.store32 = function (offset, value) {
+  this.store16(offset, value & 0xFFFF);
+  this.store16(offset + 2, value >> 16);
+};
+
+GameBoyAdvancePalette.prototype.invalidatePage = function (address) {};
+
+GameBoyAdvancePalette.prototype.convert16To32 = function (value, input) {
+  var r = (value & 0x001F) << 3;
+  var g = (value & 0x03E0) >> 2;
+  var b = (value & 0x7C00) >> 7;
+  input[0] = r;
+  input[1] = g;
+  input[2] = b;
+};
+
+GameBoyAdvancePalette.prototype.mix = function (aWeight, aColor, bWeight, bColor) {
+  var ar = aColor & 0x001F;
+  var ag = (aColor & 0x03E0) >> 5;
+  var ab = (aColor & 0x7C00) >> 10;
+  var br = bColor & 0x001F;
+  var bg = (bColor & 0x03E0) >> 5;
+  var bb = (bColor & 0x7C00) >> 10;
+  var r = Math.min(aWeight * ar + bWeight * br, 0x1F);
+  var g = Math.min(aWeight * ag + bWeight * bg, 0x1F);
+  var b = Math.min(aWeight * ab + bWeight * bb, 0x1F);
+  return r | g << 5 | b << 10;
+};
+
+GameBoyAdvancePalette.prototype.makeDarkPalettes = function (layers) {
+  if (this.adjustColor != this.adjustColorDark) {
+    this.adjustColor = this.adjustColorDark;
+    this.resetPalettes();
+  }
+
+  this.resetPaletteLayers(layers);
+};
+
+GameBoyAdvancePalette.prototype.makeBrightPalettes = function (layers) {
+  if (this.adjustColor != this.adjustColorBright) {
+    this.adjustColor = this.adjustColorBright;
+    this.resetPalettes();
+  }
+
+  this.resetPaletteLayers(layers);
+};
+
+GameBoyAdvancePalette.prototype.makeNormalPalettes = function () {
+  this.passthroughColors[0] = this.colors[0];
+  this.passthroughColors[1] = this.colors[0];
+  this.passthroughColors[2] = this.colors[0];
+  this.passthroughColors[3] = this.colors[0];
+  this.passthroughColors[4] = this.colors[1];
+  this.passthroughColors[5] = this.colors[0];
+};
+
+GameBoyAdvancePalette.prototype.makeSpecialPalette = function (layer) {
+  this.passthroughColors[layer] = this.adjustedColors[layer == 4 ? 1 : 0];
+};
+
+GameBoyAdvancePalette.prototype.makeNormalPalette = function (layer) {
+  this.passthroughColors[layer] = this.colors[layer == 4 ? 1 : 0];
+};
+
+GameBoyAdvancePalette.prototype.resetPaletteLayers = function (layers) {
+  if (layers & 0x01) {
+    this.passthroughColors[0] = this.adjustedColors[0];
+  } else {
+    this.passthroughColors[0] = this.colors[0];
+  }
+
+  if (layers & 0x02) {
+    this.passthroughColors[1] = this.adjustedColors[0];
+  } else {
+    this.passthroughColors[1] = this.colors[0];
+  }
+
+  if (layers & 0x04) {
+    this.passthroughColors[2] = this.adjustedColors[0];
+  } else {
+    this.passthroughColors[2] = this.colors[0];
+  }
+
+  if (layers & 0x08) {
+    this.passthroughColors[3] = this.adjustedColors[0];
+  } else {
+    this.passthroughColors[3] = this.colors[0];
+  }
+
+  if (layers & 0x10) {
+    this.passthroughColors[4] = this.adjustedColors[1];
+  } else {
+    this.passthroughColors[4] = this.colors[1];
+  }
+
+  if (layers & 0x20) {
+    this.passthroughColors[5] = this.adjustedColors[0];
+  } else {
+    this.passthroughColors[5] = this.colors[0];
+  }
+};
+
+GameBoyAdvancePalette.prototype.resetPalettes = function () {
+  var i;
+  var outPalette = this.adjustedColors[0];
+  var inPalette = this.colors[0];
+
+  for (i = 0; i < 256; ++i) {
+    outPalette[i] = this.adjustColor(inPalette[i]);
+  }
+
+  outPalette = this.adjustedColors[1];
+  inPalette = this.colors[1];
+
+  for (i = 0; i < 256; ++i) {
+    outPalette[i] = this.adjustColor(inPalette[i]);
+  }
+};
+
+GameBoyAdvancePalette.prototype.accessColor = function (layer, index) {
+  return this.passthroughColors[layer][index];
+};
+
+GameBoyAdvancePalette.prototype.adjustColorDark = function (color) {
+  var r = color & 0x001F;
+  var g = (color & 0x03E0) >> 5;
+  var b = (color & 0x7C00) >> 10;
+  r = r - r * this.blendY;
+  g = g - g * this.blendY;
+  b = b - b * this.blendY;
+  return r | g << 5 | b << 10;
+};
+
+GameBoyAdvancePalette.prototype.adjustColorBright = function (color) {
+  var r = color & 0x001F;
+  var g = (color & 0x03E0) >> 5;
+  var b = (color & 0x7C00) >> 10;
+  r = r + (31 - r) * this.blendY;
+  g = g + (31 - g) * this.blendY;
+  b = b + (31 - b) * this.blendY;
+  return r | g << 5 | b << 10;
+};
+
+GameBoyAdvancePalette.prototype.adjustColor = GameBoyAdvancePalette.prototype.adjustColorBright;
+
+GameBoyAdvancePalette.prototype.setBlendY = function (y) {
+  if (this.blendY != y) {
+    this.blendY = y;
+    this.resetPalettes();
+  }
+};
+
+function GameBoyAdvanceOBJ(oam, index) {
+  this.TILE_OFFSET = 0x10000;
+  this.oam = oam;
+  this.index = index;
+  this.x = 0;
+  this.y = 0;
+  this.scalerot = 0;
+  this.doublesize = false;
+  this.disable = 1;
+  this.mode = 0;
+  this.mosaic = false;
+  this.multipalette = false;
+  this.shape = 0;
+  this.scalerotParam = 0;
+  this.hflip = 0;
+  this.vflip = 0;
+  this.tileBase = 0;
+  this.priority = 0;
+  this.palette = 0;
+  this.drawScanline = this.drawScanlineNormal;
+  this.pushPixel = GameBoyAdvanceSoftwareRenderer.pushPixel;
+  this.cachedWidth = 8;
+  this.cachedHeight = 8;
+}
+
+;
+
+GameBoyAdvanceOBJ.prototype.drawScanlineNormal = function (backing, y, yOff, start, end) {
+  var video = this.oam.video;
+  var x;
+  var underflow;
+  var offset;
+  var mask = this.mode | video.target2[video.LAYER_OBJ] | this.priority << 1;
+
+  if (this.mode == 0x10) {
+    mask |= video.TARGET1_MASK;
+  }
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[video.LAYER_OBJ];
+  }
+
+  var totalWidth = this.cachedWidth;
+
+  if (this.x < video.HORIZONTAL_PIXELS) {
+    if (this.x < start) {
+      underflow = start - this.x;
+      offset = start;
+    } else {
+      underflow = 0;
+      offset = this.x;
+    }
+
+    if (end < this.cachedWidth + this.x) {
+      totalWidth = end - this.x;
+    }
+  } else {
+    underflow = start + 512 - this.x;
+    offset = start;
+
+    if (end < this.cachedWidth - underflow) {
+      totalWidth = end;
+    }
+  }
+
+  var localX;
+  var localY;
+
+  if (!this.vflip) {
+    localY = y - yOff;
+  } else {
+    localY = this.cachedHeight - y + yOff - 1;
+  }
+
+  var localYLo = localY & 0x7;
+  var mosaicX;
+  var tileOffset;
+  var paletteShift = this.multipalette ? 1 : 0;
+
+  if (video.objCharacterMapping) {
+    tileOffset = (localY & 0x01F8) * this.cachedWidth >> 6;
+  } else {
+    tileOffset = (localY & 0x01F8) << 2 - paletteShift;
+  }
+
+  if (this.mosaic) {
+    mosaicX = video.objMosaicX - 1 - (video.objMosaicX + offset - 1) % video.objMosaicX;
+    offset += mosaicX;
+    underflow += mosaicX;
+  }
+
+  if (!this.hflip) {
+    localX = underflow;
+  } else {
+    localX = this.cachedWidth - underflow - 1;
+  }
+
+  var tileRow = video.accessTile(this.TILE_OFFSET + (x & 0x4) * paletteShift, this.tileBase + (tileOffset << paletteShift) + ((localX & 0x01F8) >> 3 - paletteShift), localYLo << paletteShift);
+
+  for (x = underflow; x < totalWidth; ++x) {
+    mosaicX = this.mosaic ? offset % video.objMosaicX : 0;
+
+    if (!this.hflip) {
+      localX = x - mosaicX;
+    } else {
+      localX = this.cachedWidth - (x - mosaicX) - 1;
+    }
+
+    if (!paletteShift) {
+      if (!(x & 0x7) || this.mosaic && !mosaicX) {
+        tileRow = video.accessTile(this.TILE_OFFSET, this.tileBase + tileOffset + (localX >> 3), localYLo);
+      }
+    } else {
+      if (!(x & 0x3) || this.mosaic && !mosaicX) {
+        tileRow = video.accessTile(this.TILE_OFFSET + (localX & 0x4), this.tileBase + (tileOffset << 1) + ((localX & 0x01F8) >> 2), localYLo << 1);
+      }
+    }
+
+    this.pushPixel(video.LAYER_OBJ, this, video, tileRow, localX & 0x7, offset, backing, mask, false);
+    offset++;
+  }
+};
+
+GameBoyAdvanceOBJ.prototype.drawScanlineAffine = function (backing, y, yOff, start, end) {
+  var video = this.oam.video;
+  var x;
+  var underflow;
+  var offset;
+  var mask = this.mode | video.target2[video.LAYER_OBJ] | this.priority << 1;
+
+  if (this.mode == 0x10) {
+    mask |= video.TARGET1_MASK;
+  }
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[video.LAYER_OBJ];
+  }
+
+  var localX;
+  var localY;
+  var yDiff = y - yOff;
+  var tileOffset;
+  var paletteShift = this.multipalette ? 1 : 0;
+  var totalWidth = this.cachedWidth << this.doublesize;
+  var totalHeight = this.cachedHeight << this.doublesize;
+  var drawWidth = totalWidth;
+
+  if (drawWidth > video.HORIZONTAL_PIXELS) {
+    totalWidth = video.HORIZONTAL_PIXELS;
+  }
+
+  if (this.x < video.HORIZONTAL_PIXELS) {
+    if (this.x < start) {
+      underflow = start - this.x;
+      offset = start;
+    } else {
+      underflow = 0;
+      offset = this.x;
+    }
+
+    if (end < drawWidth + this.x) {
+      drawWidth = end - this.x;
+    }
+  } else {
+    underflow = start + 512 - this.x;
+    offset = start;
+
+    if (end < drawWidth - underflow) {
+      drawWidth = end;
+    }
+  }
+
+  for (x = underflow; x < drawWidth; ++x) {
+    localX = this.scalerotOam.a * (x - (totalWidth >> 1)) + this.scalerotOam.b * (yDiff - (totalHeight >> 1)) + (this.cachedWidth >> 1);
+    localY = this.scalerotOam.c * (x - (totalWidth >> 1)) + this.scalerotOam.d * (yDiff - (totalHeight >> 1)) + (this.cachedHeight >> 1);
+
+    if (this.mosaic) {
+      localX -= x % video.objMosaicX * this.scalerotOam.a + y % video.objMosaicY * this.scalerotOam.b;
+      localY -= x % video.objMosaicX * this.scalerotOam.c + y % video.objMosaicY * this.scalerotOam.d;
+    }
+
+    if (localX < 0 || localX >= this.cachedWidth || localY < 0 || localY >= this.cachedHeight) {
+      offset++;
+      continue;
+    }
+
+    if (video.objCharacterMapping) {
+      tileOffset = (localY & 0x01F8) * this.cachedWidth >> 6;
+    } else {
+      tileOffset = (localY & 0x01F8) << 2 - paletteShift;
+    }
+
+    tileRow = video.accessTile(this.TILE_OFFSET + (localX & 0x4) * paletteShift, this.tileBase + (tileOffset << paletteShift) + ((localX & 0x01F8) >> 3 - paletteShift), (localY & 0x7) << paletteShift);
+    this.pushPixel(video.LAYER_OBJ, this, video, tileRow, localX & 0x7, offset, backing, mask, false);
+    offset++;
+  }
+};
+
+GameBoyAdvanceOBJ.prototype.recalcSize = function () {
+  switch (this.shape) {
+    case 0:
+      // Square
+      this.cachedHeight = this.cachedWidth = 8 << this.size;
+      break;
+
+    case 1:
+      // Horizontal
+      switch (this.size) {
+        case 0:
+          this.cachedHeight = 8;
+          this.cachedWidth = 16;
+          break;
+
+        case 1:
+          this.cachedHeight = 8;
+          this.cachedWidth = 32;
+          break;
+
+        case 2:
+          this.cachedHeight = 16;
+          this.cachedWidth = 32;
+          break;
+
+        case 3:
+          this.cachedHeight = 32;
+          this.cachedWidth = 64;
+          break;
+      }
+
+      break;
+
+    case 2:
+      // Vertical
+      switch (this.size) {
+        case 0:
+          this.cachedHeight = 16;
+          this.cachedWidth = 8;
+          break;
+
+        case 1:
+          this.cachedHeight = 32;
+          this.cachedWidth = 8;
+          break;
+
+        case 2:
+          this.cachedHeight = 32;
+          this.cachedWidth = 16;
+          break;
+
+        case 3:
+          this.cachedHeight = 64;
+          this.cachedWidth = 32;
+          break;
+      }
+
+      break;
+
+    default: // Bad!
+
+  }
+};
+
+function GameBoyAdvanceOBJLayer(video, index) {
+  this.video = video;
+  this.bg = false;
+  this.index = video.LAYER_OBJ;
+  this.priority = index;
+  this.enabled = false;
+  this.objwin = 0;
+}
+
+;
+
+GameBoyAdvanceOBJLayer.prototype.drawScanline = function (backing, layer, start, end) {
+  var y = this.video.vcount;
+  var wrappedY;
+  var mosaicY;
+  var obj;
+
+  if (start >= end) {
+    return;
+  }
+
+  var objs = this.video.oam.objs;
+
+  for (var i = 0; i < objs.length; ++i) {
+    obj = objs[i];
+
+    if (obj.disable) {
+      continue;
+    }
+
+    if ((obj.mode & this.video.OBJWIN_MASK) != this.objwin) {
+      continue;
+    }
+
+    if (!(obj.mode & this.video.OBJWIN_MASK) && this.priority != obj.priority) {
+      continue;
+    }
+
+    if (obj.y < this.video.VERTICAL_PIXELS) {
+      wrappedY = obj.y;
+    } else {
+      wrappedY = obj.y - 256;
+    }
+
+    var totalHeight;
+
+    if (!obj.scalerot) {
+      totalHeight = obj.cachedHeight;
+    } else {
+      totalHeight = obj.cachedHeight << obj.doublesize;
+    }
+
+    if (!obj.mosaic) {
+      mosaicY = y;
+    } else {
+      mosaicY = y - y % this.video.objMosaicY;
+    }
+
+    if (wrappedY <= y && wrappedY + totalHeight > y) {
+      obj.drawScanline(backing, mosaicY, wrappedY, start, end);
+    }
+  }
+};
+
+GameBoyAdvanceOBJLayer.prototype.objComparator = function (a, b) {
+  return a.index - b.index;
+};
+
+window.GameBoyAdvanceSoftwareRenderer = function GameBoyAdvanceSoftwareRenderer() {
+  this.LAYER_BG0 = 0;
+  this.LAYER_BG1 = 1;
+  this.LAYER_BG2 = 2;
+  this.LAYER_BG3 = 3;
+  this.LAYER_OBJ = 4;
+  this.LAYER_BACKDROP = 5;
+  this.HORIZONTAL_PIXELS = 240;
+  this.VERTICAL_PIXELS = 160;
+  this.LAYER_MASK = 0x06;
+  this.BACKGROUND_MASK = 0x01;
+  this.TARGET2_MASK = 0x08;
+  this.TARGET1_MASK = 0x10;
+  this.OBJWIN_MASK = 0x20;
+  this.WRITTEN_MASK = 0x80;
+  this.PRIORITY_MASK = this.LAYER_MASK | this.BACKGROUND_MASK;
+  this.drawBackdrop = new function (video) {
+    this.bg = true;
+    this.priority = -1;
+    this.index = video.LAYER_BACKDROP;
+    this.enabled = true;
+
+    this.drawScanline = function (backing, layer, start, end) {
+      // TODO: interactions with blend modes and OBJWIN
+      for (var x = start; x < end; ++x) {
+        if (!(backing.stencil[x] & video.WRITTEN_MASK)) {
+          backing.color[x] = video.palette.accessColor(this.index, 0);
+          backing.stencil[x] = video.WRITTEN_MASK;
+        } else if (backing.stencil[x] & video.TARGET1_MASK) {
+          backing.color[x] = video.palette.mix(video.blendB, video.palette.accessColor(this.index, 0), video.blendA, backing.color[x]);
+          backing.stencil[x] = video.WRITTEN_MASK;
+        }
+      }
+    };
+  }(this);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.clear = function (mmu) {
+  this.palette = new GameBoyAdvancePalette();
+  this.vram = new GameBoyAdvanceVRAM(mmu.SIZE_VRAM);
+  this.oam = new GameBoyAdvanceOAM(mmu.SIZE_OAM);
+  this.oam.video = this;
+  this.objLayers = [new GameBoyAdvanceOBJLayer(this, 0), new GameBoyAdvanceOBJLayer(this, 1), new GameBoyAdvanceOBJLayer(this, 2), new GameBoyAdvanceOBJLayer(this, 3)];
+  this.objwinLayer = new GameBoyAdvanceOBJLayer(this, 4);
+  this.objwinLayer.objwin = this.OBJWIN_MASK; // DISPCNT
+
+  this.backgroundMode = 0;
+  this.displayFrameSelect = 0;
+  this.hblankIntervalFree = 0;
+  this.objCharacterMapping = 0;
+  this.forcedBlank = 1;
+  this.win0 = 0;
+  this.win1 = 0;
+  this.objwin = 0; // VCOUNT
+
+  this.vcount = -1; // WIN0H
+
+  this.win0Left = 0;
+  this.win0Right = 240; // WIN1H
+
+  this.win1Left = 0;
+  this.win1Right = 240; // WIN0V
+
+  this.win0Top = 0;
+  this.win0Bottom = 160; // WIN1V
+
+  this.win1Top = 0;
+  this.win1Bottom = 160; // WININ/WINOUT
+
+  this.windows = new Array();
+
+  for (var i = 0; i < 4; ++i) {
+    this.windows.push({
+      enabled: [false, false, false, false, false, true],
+      special: 0
+    });
+  }
+
+  ; // BLDCNT
+
+  this.target1 = new Array(5);
+  this.target2 = new Array(5);
+  this.blendMode = 0; // BLDALPHA
+
+  this.blendA = 0;
+  this.blendB = 0; // BLDY
+
+  this.blendY = 0; // MOSAIC
+
+  this.bgMosaicX = 1;
+  this.bgMosaicY = 1;
+  this.objMosaicX = 1;
+  this.objMosaicY = 1;
+  this.lastHblank = 0;
+  this.nextHblank = this.HDRAW_LENGTH;
+  this.nextEvent = this.nextHblank;
+  this.nextHblankIRQ = 0;
+  this.nextVblankIRQ = 0;
+  this.nextVcounterIRQ = 0;
+  this.bg = new Array();
+
+  for (var i = 0; i < 4; ++i) {
+    this.bg.push({
+      bg: true,
+      index: i,
+      enabled: false,
+      video: this,
+      vram: this.vram,
+      priority: 0,
+      charBase: 0,
+      mosaic: false,
+      multipalette: false,
+      screenBase: 0,
+      overflow: 0,
+      size: 0,
+      x: 0,
+      y: 0,
+      refx: 0,
+      refy: 0,
+      dx: 1,
+      dmx: 0,
+      dy: 0,
+      dmy: 1,
+      sx: 0,
+      sy: 0,
+      pushPixel: GameBoyAdvanceSoftwareRenderer.pushPixel,
+      drawScanline: this.drawScanlineBGMode0
+    });
+  }
+
+  this.bgModes = [this.drawScanlineBGMode0, this.drawScanlineBGMode2, // Modes 1 and 2 are identical for layers 2 and 3
+  this.drawScanlineBGMode2, this.drawScanlineBGMode3, this.drawScanlineBGMode4, this.drawScanlineBGMode5];
+  this.drawLayers = [this.bg[0], this.bg[1], this.bg[2], this.bg[3], this.objLayers[0], this.objLayers[1], this.objLayers[2], this.objLayers[3], this.objwinLayer, this.drawBackdrop];
+  this, objwinActive = false;
+  this.alphaEnabled = false;
+  this.scanline = {
+    color: new Uint16Array(this.HORIZONTAL_PIXELS),
+    // Stencil format:
+    // Bits 0-1: Layer
+    // Bit 2: Is background
+    // Bit 3: Is Target 2
+    // Bit 4: Is Target 1
+    // Bit 5: Is OBJ Window
+    // Bit 6: Reserved
+    // Bit 7: Has been written
+    stencil: new Uint8Array(this.HORIZONTAL_PIXELS)
+  };
+  this.sharedColor = [0, 0, 0];
+  this.sharedMap = {
+    tile: 0,
+    hflip: false,
+    vflip: false,
+    palette: 0
+  };
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.clearSubsets = function (mmu, regions) {
+  if (regions & 0x04) {
+    this.palette.overwrite(new Uint16Array(mmu.SIZE_PALETTE >> 1));
+  }
+
+  if (regions & 0x08) {
+    this.vram.insert(0, new Uint16Array(mmu.SIZE_VRAM >> 1));
+  }
+
+  if (regions & 0x10) {
+    this.oam.overwrite(new Uint16Array(mmu.SIZE_OAM >> 1));
+    this.oam.video = this;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.freeze = function () {};
+
+GameBoyAdvanceSoftwareRenderer.prototype.defrost = function (frost) {};
+
+GameBoyAdvanceSoftwareRenderer.prototype.setBacking = function (backing) {
+  this.pixelData = backing; // Clear backing first
+
+  for (var offset = 0; offset < this.HORIZONTAL_PIXELS * this.VERTICAL_PIXELS * 4;) {
+    this.pixelData.data[offset++] = 0xFF;
+    this.pixelData.data[offset++] = 0xFF;
+    this.pixelData.data[offset++] = 0xFF;
+    this.pixelData.data[offset++] = 0xFF;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeDisplayControl = function (value) {
+  this.backgroundMode = value & 0x0007;
+  this.displayFrameSelect = value & 0x0010;
+  this.hblankIntervalFree = value & 0x0020;
+  this.objCharacterMapping = value & 0x0040;
+  this.forcedBlank = value & 0x0080;
+  this.bg[0].enabled = value & 0x0100;
+  this.bg[1].enabled = value & 0x0200;
+  this.bg[2].enabled = value & 0x0400;
+  this.bg[3].enabled = value & 0x0800;
+  this.objLayers[0].enabled = value & 0x1000;
+  this.objLayers[1].enabled = value & 0x1000;
+  this.objLayers[2].enabled = value & 0x1000;
+  this.objLayers[3].enabled = value & 0x1000;
+  this.win0 = value & 0x2000;
+  this.win1 = value & 0x4000;
+  this.objwin = value & 0x8000;
+  this.objwinLayer.enabled = value & 0x1000 && value & 0x8000; // Total hack so we can store both things that would set it to 256-color mode in the same variable
+
+  this.bg[2].multipalette &= ~0x0001;
+  this.bg[3].multipalette &= ~0x0001;
+
+  if (this.backgroundMode > 0) {
+    this.bg[2].multipalette |= 0x0001;
+  }
+
+  if (this.backgroundMode == 2) {
+    this.bg[3].multipalette |= 0x0001;
+  }
+
+  this.resetLayers();
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundControl = function (bg, value) {
+  var bgData = this.bg[bg];
+  bgData.priority = value & 0x0003;
+  bgData.charBase = (value & 0x000C) << 12;
+  bgData.mosaic = value & 0x0040;
+  bgData.multipalette &= ~0x0080;
+
+  if (bg < 2 || this.backgroundMode == 0) {
+    bgData.multipalette |= value & 0x0080;
+  }
+
+  bgData.screenBase = (value & 0x1F00) << 3;
+  bgData.overflow = value & 0x2000;
+  bgData.size = (value & 0xC000) >> 14;
+  this.drawLayers.sort(this.layerComparator);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundHOffset = function (bg, value) {
+  this.bg[bg].x = value & 0x1FF;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundVOffset = function (bg, value) {
+  this.bg[bg].y = value & 0x1FF;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundRefX = function (bg, value) {
+  this.bg[bg].refx = (value << 4) / 0x1000;
+  this.bg[bg].sx = this.bg[bg].refx;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundRefY = function (bg, value) {
+  this.bg[bg].refy = (value << 4) / 0x1000;
+  this.bg[bg].sy = this.bg[bg].refy;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamA = function (bg, value) {
+  this.bg[bg].dx = (value << 16) / 0x1000000;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamB = function (bg, value) {
+  this.bg[bg].dmx = (value << 16) / 0x1000000;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamC = function (bg, value) {
+  this.bg[bg].dy = (value << 16) / 0x1000000;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBackgroundParamD = function (bg, value) {
+  this.bg[bg].dmy = (value << 16) / 0x1000000;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWin0H = function (value) {
+  this.win0Left = (value & 0xFF00) >> 8;
+  this.win0Right = Math.min(this.HORIZONTAL_PIXELS, value & 0x00FF);
+
+  if (this.win0Left > this.win0Right) {
+    this.win0Right = this.HORIZONTAL_PIXELS;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWin1H = function (value) {
+  this.win1Left = (value & 0xFF00) >> 8;
+  this.win1Right = Math.min(this.HORIZONTAL_PIXELS, value & 0x00FF);
+
+  if (this.win1Left > this.win1Right) {
+    this.win1Right = this.HORIZONTAL_PIXELS;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWin0V = function (value) {
+  this.win0Top = (value & 0xFF00) >> 8;
+  this.win0Bottom = Math.min(this.VERTICAL_PIXELS, value & 0x00FF);
+
+  if (this.win0Top > this.win0Bottom) {
+    this.win0Bottom = this.VERTICAL_PIXELS;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWin1V = function (value) {
+  this.win1Top = (value & 0xFF00) >> 8;
+  this.win1Bottom = Math.min(this.VERTICAL_PIXELS, value & 0x00FF);
+
+  if (this.win1Top > this.win1Bottom) {
+    this.win1Bottom = this.VERTICAL_PIXELS;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWindow = function (index, value) {
+  var window = this.windows[index];
+  window.enabled[0] = value & 0x01;
+  window.enabled[1] = value & 0x02;
+  window.enabled[2] = value & 0x04;
+  window.enabled[3] = value & 0x08;
+  window.enabled[4] = value & 0x10;
+  window.special = value & 0x20;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWinIn = function (value) {
+  this.writeWindow(0, value);
+  this.writeWindow(1, value >> 8);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeWinOut = function (value) {
+  this.writeWindow(2, value);
+  this.writeWindow(3, value >> 8);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBlendControl = function (value) {
+  this.target1[0] = !!(value & 0x0001) * this.TARGET1_MASK;
+  this.target1[1] = !!(value & 0x0002) * this.TARGET1_MASK;
+  this.target1[2] = !!(value & 0x0004) * this.TARGET1_MASK;
+  this.target1[3] = !!(value & 0x0008) * this.TARGET1_MASK;
+  this.target1[4] = !!(value & 0x0010) * this.TARGET1_MASK;
+  this.target1[5] = !!(value & 0x0020) * this.TARGET1_MASK;
+  this.target2[0] = !!(value & 0x0100) * this.TARGET2_MASK;
+  this.target2[1] = !!(value & 0x0200) * this.TARGET2_MASK;
+  this.target2[2] = !!(value & 0x0400) * this.TARGET2_MASK;
+  this.target2[3] = !!(value & 0x0800) * this.TARGET2_MASK;
+  this.target2[4] = !!(value & 0x1000) * this.TARGET2_MASK;
+  this.target2[5] = !!(value & 0x2000) * this.TARGET2_MASK;
+  this.blendMode = (value & 0x00C0) >> 6;
+
+  switch (this.blendMode) {
+    case 1: // Alpha
+    // Fall through
+
+    case 0:
+      // Normal
+      this.palette.makeNormalPalettes();
+      break;
+
+    case 2:
+      // Brighter
+      this.palette.makeBrightPalettes(value & 0x3F);
+      break;
+
+    case 3:
+      // Darker
+      this.palette.makeDarkPalettes(value & 0x3F);
+      break;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.setBlendEnabled = function (layer, enabled, override) {
+  this.alphaEnabled = enabled && override == 1;
+
+  if (enabled) {
+    switch (override) {
+      case 1: // Alpha
+      // Fall through
+
+      case 0:
+        // Normal
+        this.palette.makeNormalPalette(layer);
+        break;
+
+      case 2: // Brighter
+
+      case 3:
+        // Darker
+        this.palette.makeSpecialPalette(layer);
+        break;
+    }
+  } else {
+    this.palette.makeNormalPalette(layer);
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBlendAlpha = function (value) {
+  this.blendA = (value & 0x001F) / 16;
+
+  if (this.blendA > 1) {
+    this.blendA = 1;
+  }
+
+  this.blendB = ((value & 0x1F00) >> 8) / 16;
+
+  if (this.blendB > 1) {
+    this.blendB = 1;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeBlendY = function (value) {
+  this.blendY = value;
+  this.palette.setBlendY(value >= 16 ? 1 : value / 16);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.writeMosaic = function (value) {
+  this.bgMosaicX = (value & 0xF) + 1;
+  this.bgMosaicY = (value >> 4 & 0xF) + 1;
+  this.objMosaicX = (value >> 8 & 0xF) + 1;
+  this.objMosaicY = (value >> 12 & 0xF) + 1;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.resetLayers = function () {
+  if (this.backgroundMode > 1) {
+    this.bg[0].enabled = false;
+    this.bg[1].enabled = false;
+  }
+
+  if (this.bg[2].enabled) {
+    this.bg[2].drawScanline = this.bgModes[this.backgroundMode];
+  }
+
+  if (this.backgroundMode == 0 || this.backgroundMode == 2) {
+    if (this.bg[3].enabled) {
+      this.bg[3].drawScanline = this.bgModes[this.backgroundMode];
+    }
+  } else {
+    this.bg[3].enabled = false;
+  }
+
+  this.drawLayers.sort(this.layerComparator);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.layerComparator = function (a, b) {
+  var diff = b.priority - a.priority;
+
+  if (!diff) {
+    if (a.bg && !b.bg) {
+      return -1;
+    } else if (!a.bg && b.bg) {
+      return 1;
+    }
+
+    return b.index - a.index;
+  }
+
+  return diff;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.accessMapMode0 = function (base, size, x, yBase, out) {
+  var offset = base + (x >> 2 & 0x3E) + yBase;
+
+  if (size & 1) {
+    offset += (x & 0x100) << 3;
+  }
+
+  var mem = this.vram.loadU16(offset);
+  out.tile = mem & 0x03FF;
+  out.hflip = mem & 0x0400;
+  out.vflip = mem & 0x0800;
+  out.palette = (mem & 0xF000) >> 8; // This is shifted up 4 to make pushPixel faster
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.accessMapMode1 = function (base, size, x, yBase, out) {
+  var offset = base + (x >> 3) + yBase;
+  out.tile = this.vram.loadU8(offset);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.accessTile = function (base, tile, y) {
+  var offset = base + (tile << 5);
+  offset |= y << 2;
+  return this.vram.load32(offset);
+};
+
+GameBoyAdvanceSoftwareRenderer.pushPixel = function (layer, map, video, row, x, offset, backing, mask, raw) {
+  var index;
+
+  if (!raw) {
+    if (this.multipalette) {
+      index = row >> (x << 3) & 0xFF;
+    } else {
+      index = row >> (x << 2) & 0xF;
+    } // Index 0 is transparent
+
+
+    if (!index) {
+      return;
+    } else if (!this.multipalette) {
+      index |= map.palette;
+    }
+  }
+
+  var stencil = video.WRITTEN_MASK;
+  var oldStencil = backing.stencil[offset];
+  var blend = video.blendMode;
+
+  if (video.objwinActive) {
+    if (oldStencil & video.OBJWIN_MASK) {
+      if (video.windows[3].enabled[layer]) {
+        video.setBlendEnabled(layer, video.windows[3].special && video.target1[layer], blend);
+
+        if (video.windows[3].special && video.alphaEnabled) {
+          mask |= video.target1[layer];
+        }
+
+        stencil |= video.OBJWIN_MASK;
+      } else {
+        return;
+      }
+    } else if (video.windows[2].enabled[layer]) {
+      video.setBlendEnabled(layer, video.windows[2].special && video.target1[layer], blend);
+
+      if (video.windows[2].special && video.alphaEnabled) {
+        mask |= video.target1[layer];
+      }
+    } else {
+      return;
+    }
+  }
+
+  if (mask & video.TARGET1_MASK && oldStencil & video.TARGET2_MASK) {
+    video.setBlendEnabled(layer, true, 1);
+  }
+
+  var pixel = raw ? row : video.palette.accessColor(layer, index);
+
+  if (mask & video.TARGET1_MASK) {
+    video.setBlendEnabled(layer, !!blend, blend);
+  }
+
+  var highPriority = (mask & video.PRIORITY_MASK) < (oldStencil & video.PRIORITY_MASK); // Backgrounds can draw over each other, too.
+
+  if ((mask & video.PRIORITY_MASK) == (oldStencil & video.PRIORITY_MASK)) {
+    highPriority = mask & video.BACKGROUND_MASK;
+  }
+
+  if (!(oldStencil & video.WRITTEN_MASK)) {
+    // Nothing here yet, just continue
+    stencil |= mask;
+  } else if (highPriority) {
+    // We are higher priority
+    if (mask & video.TARGET1_MASK && oldStencil & video.TARGET2_MASK) {
+      pixel = video.palette.mix(video.blendA, pixel, video.blendB, backing.color[offset]);
+    } // We just drew over something, so it doesn't make sense for us to be a TARGET1 anymore...
+
+
+    stencil |= mask & ~video.TARGET1_MASK;
+  } else if ((mask & video.PRIORITY_MASK) > (oldStencil & video.PRIORITY_MASK)) {
+    // We're below another layer, but might be the blend target for it
+    stencil = oldStencil & ~(video.TARGET1_MASK | video.TARGET2_MASK);
+
+    if (mask & video.TARGET2_MASK && oldStencil & video.TARGET1_MASK) {
+      pixel = video.palette.mix(video.blendB, pixel, video.blendA, backing.color[offset]);
+    } else {
+      return;
+    }
+  } else {
+    return;
+  }
+
+  if (mask & video.OBJWIN_MASK) {
+    // We ARE the object window, don't draw pixels!
+    backing.stencil[offset] |= video.OBJWIN_MASK;
+    return;
+  }
+
+  backing.color[offset] = pixel;
+  backing.stencil[offset] = stencil;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.identity = function (x) {
+  return x;
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBlank = function (backing) {
+  for (var x = 0; x < this.HORIZONTAL_PIXELS; ++x) {
+    backing.color[x] = 0xFFFF;
+    backing.stencil[x] = 0;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.prepareScanline = function (backing) {
+  for (var x = 0; x < this.HORIZONTAL_PIXELS; ++x) {
+    backing.stencil[x] = this.target2[this.LAYER_BACKDROP];
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode0 = function (backing, bg, start, end) {
+  var video = this.video;
+  var x;
+  var y = video.vcount;
+  var offset = start;
+  var xOff = bg.x;
+  var yOff = bg.y;
+  var localX;
+  var localXLo;
+  var localY = y + yOff;
+
+  if (this.mosaic) {
+    localY -= y % video.bgMosaicY;
+  }
+
+  var localYLo = localY & 0x7;
+  var mosaicX;
+  var screenBase = bg.screenBase;
+  var charBase = bg.charBase;
+  var size = bg.size;
+  var index = bg.index;
+  var map = video.sharedMap;
+  var paletteShift = bg.multipalette ? 1 : 0;
+  var mask = video.target2[index] | bg.priority << 1 | video.BACKGROUND_MASK;
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[index];
+  }
+
+  var yBase = localY << 3 & 0x7C0;
+
+  if (size == 2) {
+    yBase += localY << 3 & 0x800;
+  } else if (size == 3) {
+    yBase += localY << 4 & 0x1000;
+  }
+
+  var xMask;
+
+  if (size & 1) {
+    xMask = 0x1FF;
+  } else {
+    xMask = 0xFF;
+  }
+
+  video.accessMapMode0(screenBase, size, start + xOff & xMask, yBase, map);
+  var tileRow = video.accessTile(charBase, map.tile << paletteShift, (!map.vflip ? localYLo : 7 - localYLo) << paletteShift);
+
+  for (x = start; x < end; ++x) {
+    localX = x + xOff & xMask;
+    mosaicX = this.mosaic ? offset % video.bgMosaicX : 0;
+    localX -= mosaicX;
+    localXLo = localX & 0x7;
+
+    if (!paletteShift) {
+      if (!localXLo || this.mosaic && !mosaicX) {
+        video.accessMapMode0(screenBase, size, localX, yBase, map);
+        tileRow = video.accessTile(charBase, map.tile, !map.vflip ? localYLo : 7 - localYLo);
+
+        if (!tileRow && !localXLo) {
+          x += 7;
+          offset += 8;
+          continue;
+        }
+      }
+    } else {
+      if (!localXLo || this.mosaic && !mosaicX) {
+        video.accessMapMode0(screenBase, size, localX, yBase, map);
+      }
+
+      if (!(localXLo & 0x3) || this.mosaic && !mosaicX) {
+        tileRow = video.accessTile(charBase + (!!(localX & 0x4) == !map.hflip ? 4 : 0), map.tile << 1, (!map.vflip ? localYLo : 7 - localYLo) << 1);
+
+        if (!tileRow && !(localXLo & 0x3)) {
+          x += 3;
+          offset += 4;
+          continue;
+        }
+      }
+    }
+
+    if (map.hflip) {
+      localXLo = 7 - localXLo;
+    }
+
+    bg.pushPixel(index, map, video, tileRow, localXLo, offset, backing, mask, false);
+    offset++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode2 = function (backing, bg, start, end) {
+  var video = this.video;
+  var x;
+  var y = video.vcount;
+  var offset = start;
+  var localX;
+  var localY;
+  var screenBase = bg.screenBase;
+  var charBase = bg.charBase;
+  var size = bg.size;
+  var sizeAdjusted = 128 << size;
+  var index = bg.index;
+  var map = video.sharedMap;
+  var color;
+  var mask = video.target2[index] | bg.priority << 1 | video.BACKGROUND_MASK;
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[index];
+  }
+
+  var yBase;
+
+  for (x = start; x < end; ++x) {
+    localX = bg.dx * x + bg.sx;
+    localY = bg.dy * x + bg.sy;
+
+    if (this.mosaic) {
+      localX -= x % video.bgMosaicX * bg.dx + y % video.bgMosaicY * bg.dmx;
+      localY -= x % video.bgMosaicX * bg.dy + y % video.bgMosaicY * bg.dmy;
+    }
+
+    if (bg.overflow) {
+      localX &= sizeAdjusted - 1;
+
+      if (localX < 0) {
+        localX += sizeAdjusted;
+      }
+
+      localY &= sizeAdjusted - 1;
+
+      if (localY < 0) {
+        localY += sizeAdjusted;
+      }
+    } else if (localX < 0 || localY < 0 || localX >= sizeAdjusted || localY >= sizeAdjusted) {
+      offset++;
+      continue;
+    }
+
+    yBase = (localY << 1 & 0x7F0) << size;
+    video.accessMapMode1(screenBase, size, localX, yBase, map);
+    color = this.vram.loadU8(charBase + (map.tile << 6) + ((localY & 0x7) << 3) + (localX & 0x7));
+    bg.pushPixel(index, map, video, color, 0, offset, backing, mask, false);
+    offset++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode3 = function (backing, bg, start, end) {
+  var video = this.video;
+  var x;
+  var y = video.vcount;
+  var offset = start;
+  var localX;
+  var localY;
+  var index = bg.index;
+  var map = video.sharedMap;
+  var color;
+  var mask = video.target2[index] | bg.priority << 1 | video.BACKGROUND_MASK;
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[index];
+  }
+
+  var yBase;
+
+  for (x = start; x < end; ++x) {
+    localX = bg.dx * x + bg.sx;
+    localY = bg.dy * x + bg.sy;
+
+    if (this.mosaic) {
+      localX -= x % video.bgMosaicX * bg.dx + y % video.bgMosaicY * bg.dmx;
+      localY -= x % video.bgMosaicX * bg.dy + y % video.bgMosaicY * bg.dmy;
+    }
+
+    if (localX < 0 || localY < 0 || localX >= video.HORIZONTAL_PIXELS || localY >= video.VERTICAL_PIXELS) {
+      offset++;
+      continue;
+    }
+
+    color = this.vram.loadU16(localY * video.HORIZONTAL_PIXELS + localX << 1);
+    bg.pushPixel(index, map, video, color, 0, offset, backing, mask, true);
+    offset++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode4 = function (backing, bg, start, end) {
+  var video = this.video;
+  var x;
+  var y = video.vcount;
+  var offset = start;
+  var localX;
+  var localY;
+  var charBase = 0;
+
+  if (video.displayFrameSelect) {
+    charBase += 0xA000;
+  }
+
+  var size = bg.size;
+  var index = bg.index;
+  var map = video.sharedMap;
+  var color;
+  var mask = video.target2[index] | bg.priority << 1 | video.BACKGROUND_MASK;
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[index];
+  }
+
+  var yBase;
+
+  for (x = start; x < end; ++x) {
+    localX = bg.dx * x + bg.sx;
+    localY = 0 | bg.dy * x + bg.sy;
+
+    if (this.mosaic) {
+      localX -= x % video.bgMosaicX * bg.dx + y % video.bgMosaicY * bg.dmx;
+      localY -= x % video.bgMosaicX * bg.dy + y % video.bgMosaicY * bg.dmy;
+    }
+
+    yBase = localY << 2 & 0x7E0;
+
+    if (localX < 0 || localY < 0 || localX >= video.HORIZONTAL_PIXELS || localY >= video.VERTICAL_PIXELS) {
+      offset++;
+      continue;
+    }
+
+    color = this.vram.loadU8(charBase + localY * video.HORIZONTAL_PIXELS + localX);
+    bg.pushPixel(index, map, video, color, 0, offset, backing, mask, false);
+    offset++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanlineBGMode5 = function (backing, bg, start, end) {
+  var video = this.video;
+  var x;
+  var y = video.vcount;
+  var offset = start;
+  var localX;
+  var localY;
+  var charBase = 0;
+
+  if (video.displayFrameSelect) {
+    charBase += 0xA000;
+  }
+
+  var index = bg.index;
+  var map = video.sharedMap;
+  var color;
+  var mask = video.target2[index] | bg.priority << 1 | video.BACKGROUND_MASK;
+
+  if (video.blendMode == 1 && video.alphaEnabled) {
+    mask |= video.target1[index];
+  }
+
+  var yBase;
+
+  for (x = start; x < end; ++x) {
+    localX = bg.dx * x + bg.sx;
+    localY = bg.dy * x + bg.sy;
+
+    if (this.mosaic) {
+      localX -= x % video.bgMosaicX * bg.dx + y % video.bgMosaicY * bg.dmx;
+      localY -= x % video.bgMosaicX * bg.dy + y % video.bgMosaicY * bg.dmy;
+    }
+
+    if (localX < 0 || localY < 0 || localX >= 160 || localY >= 128) {
+      offset++;
+      continue;
+    }
+
+    color = this.vram.loadU16(charBase + (localY * 160 + localX) << 1);
+    bg.pushPixel(index, map, video, color, 0, offset, backing, mask, true);
+    offset++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.drawScanline = function (y) {
+  var backing = this.scanline;
+
+  if (this.forcedBlank) {
+    this.drawScanlineBlank(backing);
+    return;
+  }
+
+  this.prepareScanline(backing);
+  var layer;
+  var firstStart;
+  var firstEnd;
+  var lastStart;
+  var lastEnd;
+  this.vcount = y; // Draw lower priority first and then draw over them
+
+  for (var i = 0; i < this.drawLayers.length; ++i) {
+    layer = this.drawLayers[i];
+
+    if (!layer.enabled) {
+      continue;
+    }
+
+    this.objwinActive = false;
+
+    if (!(this.win0 || this.win1 || this.objwin)) {
+      this.setBlendEnabled(layer.index, this.target1[layer.index], this.blendMode);
+      layer.drawScanline(backing, layer, 0, this.HORIZONTAL_PIXELS);
+    } else {
+      firstStart = 0;
+      firstEnd = this.HORIZONTAL_PIXELS;
+      lastStart = 0;
+      lastEnd = this.HORIZONTAL_PIXELS;
+
+      if (this.win0 && y >= this.win0Top && y < this.win0Bottom) {
+        if (this.windows[0].enabled[layer.index]) {
+          this.setBlendEnabled(layer.index, this.windows[0].special && this.target1[layer.index], this.blendMode);
+          layer.drawScanline(backing, layer, this.win0Left, this.win0Right);
+        }
+
+        firstStart = Math.max(firstStart, this.win0Left);
+        firstEnd = Math.min(firstEnd, this.win0Left);
+        lastStart = Math.max(lastStart, this.win0Right);
+        lastEnd = Math.min(lastEnd, this.win0Right);
+      }
+
+      if (this.win1 && y >= this.win1Top && y < this.win1Bottom) {
+        if (this.windows[1].enabled[layer.index]) {
+          this.setBlendEnabled(layer.index, this.windows[1].special && this.target1[layer.index], this.blendMode);
+
+          if (!this.windows[0].enabled[layer.index] && (this.win1Left < firstStart || this.win1Right < lastStart)) {
+            // We've been cut in two by window 0!
+            layer.drawScanline(backing, layer, this.win1Left, firstStart);
+            layer.drawScanline(backing, layer, lastEnd, this.win1Right);
+          } else {
+            layer.drawScanline(backing, layer, this.win1Left, this.win1Right);
+          }
+        }
+
+        firstStart = Math.max(firstStart, this.win1Left);
+        firstEnd = Math.min(firstEnd, this.win1Left);
+        lastStart = Math.max(lastStart, this.win1Right);
+        lastEnd = Math.min(lastEnd, this.win1Right);
+      } // Do last two
+
+
+      if (this.windows[2].enabled[layer.index] || this.objwin && this.windows[3].enabled[layer.index]) {
+        // WINOUT/OBJWIN
+        this.objwinActive = this.objwin;
+        this.setBlendEnabled(layer.index, this.windows[2].special && this.target1[layer.index], this.blendMode); // Window 3 handled in pushPixel
+
+        if (firstEnd > lastStart) {
+          layer.drawScanline(backing, layer, 0, this.HORIZONTAL_PIXELS);
+        } else {
+          if (firstEnd) {
+            layer.drawScanline(backing, layer, 0, firstEnd);
+          }
+
+          if (lastStart < this.HORIZONTAL_PIXELS) {
+            layer.drawScanline(backing, layer, lastStart, this.HORIZONTAL_PIXELS);
+          }
+
+          if (lastEnd < firstStart) {
+            layer.drawScanline(backing, layer, lastEnd, firstStart);
+          }
+        }
+      }
+
+      this.setBlendEnabled(this.LAYER_BACKDROP, this.target1[this.LAYER_BACKDROP] && this.windows[2].special, this.blendMode);
+    }
+
+    if (layer.bg) {
+      layer.sx += layer.dmx;
+      layer.sy += layer.dmy;
+    }
+  }
+
+  this.finishScanline(backing);
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.finishScanline = function (backing) {
+  var color;
+  var bd = this.palette.accessColor(this.LAYER_BACKDROP, 0);
+  var xx = this.vcount * this.HORIZONTAL_PIXELS * 4;
+  var isTarget2 = this.target2[this.LAYER_BACKDROP];
+
+  for (var x = 0; x < this.HORIZONTAL_PIXELS; ++x) {
+    if (backing.stencil[x] & this.WRITTEN_MASK) {
+      color = backing.color[x];
+
+      if (isTarget2 && backing.stencil[x] & this.TARGET1_MASK) {
+        color = this.palette.mix(this.blendA, color, this.blendB, bd);
+      }
+
+      this.palette.convert16To32(color, this.sharedColor);
+    } else {
+      this.palette.convert16To32(bd, this.sharedColor);
+    }
+
+    this.pixelData.data[xx++] = this.sharedColor[0];
+    this.pixelData.data[xx++] = this.sharedColor[1];
+    this.pixelData.data[xx++] = this.sharedColor[2];
+    xx++;
+  }
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.startDraw = function () {// Nothing to do
+};
+
+GameBoyAdvanceSoftwareRenderer.prototype.finishDraw = function (caller) {
+  this.bg[2].sx = this.bg[2].refx;
+  this.bg[2].sy = this.bg[2].refy;
+  this.bg[3].sx = this.bg[3].refx;
+  this.bg[3].sy = this.bg[3].refy;
+  caller.finishDraw(this.pixelData);
+};
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./react */ "./src/react/index.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_react__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./src/react/index.js":
+/*!****************************!*\
+  !*** ./src/react/index.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var js_sha1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! js-sha1 */ "./node_modules/js-sha1/src/sha1.js");
+/* harmony import */ var js_sha1__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(js_sha1__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _emulator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../emulator */ "./src/emulator/index.js");
+/* harmony import */ var _emulator_reset__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../emulator/reset */ "./src/emulator/reset.js");
+/* harmony import */ var _emulator_setVolume__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../emulator/setVolume */ "./src/emulator/setVolume.js");
+
+
+
+
+
+
+
+
+var ReactGbaJs = function ReactGbaJs(_ref) {
+  var romBufferMemory = _ref.romBufferMemory,
+      volume = _ref.volume;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      gba = _useState2[0],
+      setGba = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (gba !== null) {
+      Object(_emulator_reset__WEBPACK_IMPORTED_MODULE_5__["default"])(gba);
+    }
+
+    var newGbaInstance = Object(_emulator__WEBPACK_IMPORTED_MODULE_4__["default"])(romBufferMemory);
+    setGba(newGbaInstance);
+  }, [js_sha1__WEBPACK_IMPORTED_MODULE_3___default()(romBufferMemory)]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    if (gba === null) {
+      return;
+    }
+
+    Object(_emulator_setVolume__WEBPACK_IMPORTED_MODULE_6__["default"])(gba, volume);
+  }, [gba, volume]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("canvas", {
+    id: "screen",
+    width: "480",
+    height: "320"
+  });
+};
+
+ReactGbaJs.propTypes = {
+  romBufferMemory: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.object.isRequired,
+  volume: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (ReactGbaJs);
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=react-gbajs.js.map
