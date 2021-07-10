@@ -1,6 +1,6 @@
 # IPFS-GBA
 
-<span style="display:block;text-align:center">
+<span style="display:block;text-align:center;">
 
 [![Video](https://img.youtube.com/vi/jdD_Mvz4hjM/0.jpg)](https://www.youtube.com/watch?v=jdD_Mvz4hjM)
 
