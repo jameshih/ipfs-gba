@@ -20,7 +20,7 @@ $ cd frontend && yarn start
 - [x] fetch ipfs hash from erc721
 - [x] fetch rom from ipfs hash
 
-## Rinkeby contracs
+## Rinkeby contracts
 
 Ipfs_hash store in token = QmPJD8k2Lawf6hEo79AjUGFU8xoZ6bNMjC12GM9AAPrA7v
 
