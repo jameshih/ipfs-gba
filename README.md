@@ -1,12 +1,8 @@
 # IPFS-GBA
 
-<p align="center">
-<iframe src="https://www.youtube.com/embed/jdD_Mvz4hjM
-" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</p>
-<p align="center">
 play gba games from ipfs
-</p>
+
+[![Video](https://img.youtube.com/vi/jdD_Mvz4hjM/0.jpg)](https://www.youtube.com/watch?v=jdD_Mvz4hjM)
 
 ## Instructions
 
